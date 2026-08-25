@@ -17,7 +17,7 @@ Song Guess ist ein privates, browserbasiertes Musikquiz, das Spotify als Player 
 Pools können kombiniert werden. Ein Song, der in mehreren Pools vorkommt, landet trotzdem nur einmal im Lostopf.
 
 - Meine Mischung — quer durch die Jahrzehnte, Schwerpunkt ab den 1950ern.
-- Guilty Fun / NL / FR — kuratierte, von regionalen Guilty-Pleasures-Ausgaben inspirierte Auswahl.
+- Guilty Fun
 - Film & TV — Songs mit Film-/Serienbezug.
 - Rock.
 - Urban / Hip-Hop.
