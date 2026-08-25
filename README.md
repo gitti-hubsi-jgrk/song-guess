@@ -1,2 +1,2 @@
-# Song Guess
-Elegante Spotify-Web-App. Client ID und Redirect URI in config.js eintragen.
+# Song Guess v2
+Online-Modus mit Spieler:innen, Scoreboard, Fragenpool, gleichzeitig/nacheinander und Älter/Jünger.

@@ -1,72 +1,92 @@
 [
   {
-    "id": "01",
+    "id": 1,
     "title": "Dancing Queen",
     "artist": "ABBA",
     "year": 1976,
-    "spotify_uri": "spotify:track:0GjEhVFGZW8afUYGChu3Rr"
+    "country": "Schweden",
+    "genre": "Pop",
+    "spotifyUri": "spotify:track:0GjEhVFGZW8afUYGChu3Rr"
   },
   {
-    "id": "02",
+    "id": 2,
     "title": "Billie Jean",
     "artist": "Michael Jackson",
-    "year": 1983,
-    "spotify_uri": "spotify:track:5ChkMS8OtdzJeqyybCc9R5"
+    "year": 1982,
+    "country": "USA",
+    "genre": "Pop",
+    "spotifyUri": "spotify:track:5ChkMS8OtdzJeqyybCc9R5"
   },
   {
-    "id": "03",
+    "id": 3,
+    "title": "Enjoy the Silence",
+    "artist": "Depeche Mode",
+    "year": 1990,
+    "country": "Vereinigtes Königreich",
+    "genre": "Synth-Pop",
+    "spotifyUri": "spotify:track:1EjQRTG53jsinzk2xlVVJP"
+  },
+  {
+    "id": 4,
+    "title": "Take on Me",
+    "artist": "a-ha",
+    "year": 1985,
+    "country": "Norwegen",
+    "genre": "Synth-Pop",
+    "spotifyUri": "spotify:track:2WfaOiMkCvy7F5fcp2zZ8L"
+  },
+  {
+    "id": 5,
     "title": "Smells Like Teen Spirit",
     "artist": "Nirvana",
     "year": 1991,
-    "spotify_uri": "spotify:track:5ghIJDpPoe3CfHMGu71E6T"
+    "country": "USA",
+    "genre": "Grunge",
+    "spotifyUri": "spotify:track:5ghIJDpPoe3CfHMGu71E6T"
   },
   {
-    "id": "04",
+    "id": 6,
     "title": "Wannabe",
     "artist": "Spice Girls",
     "year": 1996,
-    "spotify_uri": "spotify:track:1Je1IMUlBXcx1Fz0WE7oPT"
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "spotifyUri": "spotify:track:1Je1IMUlBXcx1Fz0WE7oPT"
   },
   {
-    "id": "05",
-    "title": "Viva La Vida",
-    "artist": "Coldplay",
+    "id": 7,
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Indie Rock",
+    "spotifyUri": "spotify:track:003vvx7Niy0yvhvHt4a68B"
+  },
+  {
+    "id": 8,
+    "title": "Poker Face",
+    "artist": "Lady Gaga",
     "year": 2008,
-    "spotify_uri": "spotify:track:1mea3bSkSGXuIRvnydlB5b"
+    "country": "USA",
+    "genre": "Pop",
+    "spotifyUri": "spotify:track:5R8dQOPq8haW94K7mgERlO"
   },
   {
-    "id": "06",
+    "id": 9,
     "title": "Rolling in the Deep",
     "artist": "Adele",
-    "year": 2011,
-    "spotify_uri": "spotify:track:1c8gk2PeTE04A1pIDH9YMk"
+    "year": 2010,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Soul",
+    "spotifyUri": "spotify:track:4OSBTYWVwsQhGLF9NHvIbR"
   },
   {
-    "id": "07",
-    "title": "Happy",
-    "artist": "Pharrell Williams",
-    "year": 2013,
-    "spotify_uri": "spotify:track:60nZcImufyMA1MKQY3dcCH"
-  },
-  {
-    "id": "08",
-    "title": "Shake It Off",
-    "artist": "Taylor Swift",
-    "year": 2014,
-    "spotify_uri": "spotify:track:0cqRj7pUJDkTCEsJkx8snD"
-  },
-  {
-    "id": "09",
+    "id": 10,
     "title": "Blinding Lights",
     "artist": "The Weeknd",
     "year": 2019,
-    "spotify_uri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
-  },
-  {
-    "id": "10",
-    "title": "Flowers",
-    "artist": "Miley Cyrus",
-    "year": 2023,
-    "spotify_uri": "spotify:track:0yLdNVWF3Srea0uzk55zFn"
+    "country": "Kanada",
+    "genre": "Synth-Pop",
+    "spotifyUri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
   }
 ]
