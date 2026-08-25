@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#141414">
+<title>Song Guess</title>
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#141414;
+  --surface:#1c1c1c;
+  --surface2:#202020;
+  --text:#f3f0e9;
+  --muted:#9e9a91;
+  --line:#33312e;
+  --accent:#c6a15b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:24px}
+.app{width:min(100%,430px)}
+.header{display:flex;justify-content:space-between;align-items:end;margin:0 2px 18px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-size:30px;line-height:1;margin:4px 0 0;font-weight:650;letter-spacing:-.03em}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:18px;box-shadow:0 22px 60px #0007}
+.deck{position:relative;height:338px;border-radius:20px;background:#171717;border:1px solid #2f2d29;overflow:hidden}
+.platter{position:absolute;left:26px;top:42px;width:250px;height:250px;border-radius:50%;background:#0d0d0d;box-shadow:0 12px 30px #000a,inset 0 0 0 1px #252525}
+.record{position:absolute;inset:7px;border-radius:50%;background:
+radial-gradient(circle at center,
+var(--accent) 0 6%,
+#111 6.2% 10%,
+#202020 10.2% 12%,
+#0e0e0e 12.2% 22%,
+#1b1b1b 22.2% 23%,
+#0d0d0d 23.2% 34%,
+#1b1b1b 34.2% 35%,
+#0d0d0d 35.2% 100%);
+}
+.record.spinning{animation:spin 5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.centerlabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:10px;letter-spacing:.16em;font-weight:800;color:#17130c}
+.armbase{position:absolute;right:26px;top:42px;width:54px;height:54px;border-radius:50%;background:#252525;border:1px solid #3b3935}
+.arm{position:absolute;right:42px;top:67px;width:132px;height:10px;border-radius:999px;background:linear-gradient(90deg,#8b8174,#c5b9a9);transform-origin:right center;transform:rotate(63deg);box-shadow:0 2px 4px #0008}
+.head{position:absolute;left:-11px;top:-8px;width:29px;height:26px;border-radius:5px;background:#2b2927;border:1px solid #49443f}
+.marker{position:absolute;left:22px;bottom:20px;font-size:10px;letter-spacing:.14em;color:#77726b}
+.controls{display:grid;grid-template-columns:1fr 104px 1fr;gap:12px;align-items:center;margin-top:18px}
+.side,.play{appearance:none;border:0}
+.side{height:52px;border-radius:14px;background:var(--surface2);border:1px solid var(--line);color:var(--text);font-size:13px;font-weight:600}
+.play{width:104px;height:104px;border-radius:52px;background:var(--text);color:#161616;font-size:38px;box-shadow:0 10px 25px #0007}
+.status{text-align:center;font-size:14px;color:var(--muted);min-height:20px;margin-top:16px}
+.connect{display:none;width:100%;margin-top:14px;height:48px;border:0;border-radius:14px;background:var(--accent);color:#17130c;font-weight:750}
+.answer{display:none;margin-top:16px;padding:18px;border-radius:16px;border:1px solid var(--line);background:#161616}
+.year{font-size:42px;font-weight:700;letter-spacing:-.04em;color:var(--accent)}
+.title{font-size:20px;font-weight:650;margin-top:4px;letter-spacing:-.02em}
+.artist{font-size:14px;color:var(--muted);margin-top:3px}
+.footer{text-align:center;margin-top:12px;font-size:11px;color:#68645e;letter-spacing:.02em}
+@media(max-width:380px){
+  .deck{height:310px}.platter{width:225px;height:225px;left:20px}.controls{grid-template-columns:1fr 94px 1fr}.play{width:94px;height:94px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <div><div class="kicker">music timeline</div><h1>Song Guess</h1></div>
+    <div class="kicker">01</div>
+  </div>
+
+  <section class="card">
+    <div class="deck">
+      <div class="platter"><div id="record" class="record"><div class="centerlabel">SONG<br>GUESS</div></div></div>
+      <div class="armbase"></div>
+      <div class="arm"><div class="head"></div></div>
+      <div class="marker">LISTEN · PLACE · REVEAL</div>
+    </div>
+
+    <div class="controls">
+      <button class="side" id="restart">↺ &nbsp; Restart</button>
+      <button class="play" id="play" aria-label="Abspielen">▶</button>
+      <button class="side" id="reveal">Reveal &nbsp; ?</button>
+    </div>
+
+    <div id="status" class="status">Karte wird geladen …</div>
+    <button id="login" class="connect">Mit Spotify verbinden</button>
+
+    <div id="answer" class="answer">
+      <div id="year" class="year"></div>
+      <div id="title" class="title"></div>
+      <div id="artist" class="artist"></div>
+    </div>
+  </section>
+  <div class="footer">Songdaten bleiben bis zur Auflösung verborgen.</div>
+</div>
+
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script>
+const params=new URLSearchParams(location.search);
+const cardId=(params.get("c")||"01").padStart(2,"0");
+document.querySelector(".header .kicker:last-child").textContent=cardId;
+const playBtn=document.getElementById("play"),restartBtn=document.getElementById("restart"),revealBtn=document.getElementById("reveal"),loginBtn=document.getElementById("login"),statusEl=document.getElementById("status"),recordEl=document.getElementById("record"),answer=document.getElementById("answer");
+let track=null,player=null,deviceId=null,token=null,playing=false;
+const scopes=["streaming","user-read-email","user-read-private","user-modify-playback-state","user-read-playback-state"].join(" ");
+function b64url(bytes){return btoa(String.fromCharCode(...bytes)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+async function sha256(txt){return new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(txt)))}
+function randomVerifier(){const a=new Uint8Array(64);crypto.getRandomValues(a);return b64url(a)}
+async function login(){const verifier=randomVerifier();sessionStorage.setItem("pkce_verifier",verifier);sessionStorage.setItem("return_card",cardId);const challenge=b64url(await sha256(verifier));const u=new URL("https://accounts.spotify.com/authorize");u.search=new URLSearchParams({client_id:SONG_GUESS_CONFIG.clientId,response_type:"code",redirect_uri:SONG_GUESS_CONFIG.redirectUri,scope:scopes,code_challenge_method:"S256",code_challenge:challenge,state:crypto.randomUUID()});location.href=u}
+async function exchangeCode(code){const verifier=sessionStorage.getItem("pkce_verifier");const body=new URLSearchParams({grant_type:"authorization_code",code,redirect_uri:SONG_GUESS_CONFIG.redirectUri,client_id:SONG_GUESS_CONFIG.clientId,code_verifier:verifier});const r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});if(!r.ok)throw new Error();const j=await r.json();localStorage.setItem("spotify_access_token",j.access_token);localStorage.setItem("spotify_refresh_token",j.refresh_token||"");localStorage.setItem("spotify_token_expires",Date.now()+j.expires_in*1000);return j.access_token}
+async function refreshToken(){const refresh=localStorage.getItem("spotify_refresh_token");if(!refresh)return null;const body=new URLSearchParams({grant_type:"refresh_token",refresh_token:refresh,client_id:SONG_GUESS_CONFIG.clientId});const r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});if(!r.ok)return null;const j=await r.json();localStorage.setItem("spotify_access_token",j.access_token);if(j.refresh_token)localStorage.setItem("spotify_refresh_token",j.refresh_token);localStorage.setItem("spotify_token_expires",Date.now()+j.expires_in*1000);return j.access_token}
+async function getToken(){const t=localStorage.getItem("spotify_access_token"),exp=Number(localStorage.getItem("spotify_token_expires")||0);if(t&&Date.now()<exp-60000)return t;return await refreshToken()}
+async function api(path,opts={}){const r=await fetch("https://api.spotify.com/v1"+path,{...opts,headers:{Authorization:"Bearer "+token,"Content-Type":"application/json",...(opts.headers||{})}});if(!r.ok&&r.status!==204)throw new Error(await r.text());return r}
+function setPlaying(on){playing=on;playBtn.textContent=on?"❚❚":"▶";recordEl.classList.toggle("spinning",on)}
+async function startTrack(position=0){if(!deviceId){statusEl.textContent="Spotify-Player ist noch nicht bereit.";return}try{await api("/me/player/play?device_id="+encodeURIComponent(deviceId),{method:"PUT",body:JSON.stringify({uris:[track.spotify_uri],position_ms:position})});setPlaying(true);statusEl.textContent="Spielt …"}catch(e){statusEl.textContent="Spotify konnte den Song nicht starten."}}
+async function toggle(){if(!player)return;if(!playing)await startTrack();else{await player.pause();setPlaying(false);statusEl.textContent="Pausiert"}}
+async function initPlayer(){const launch=async()=>{if(player)return;player=new Spotify.Player({name:SONG_GUESS_CONFIG.deviceName||"Song Guess",getOAuthToken:cb=>cb(token),volume:.8});player.addListener("ready",({device_id})=>{deviceId=device_id;statusEl.textContent="Bereit. Tippe ▶."});player.addListener("account_error",()=>statusEl.textContent="Spotify Premium erforderlich.");player.addListener("player_state_changed",s=>{if(s)setPlaying(!s.paused)});await player.connect()};window.onSpotifyWebPlaybackSDKReady=launch;if(window.Spotify&&window.Spotify.Player)launch()}
+async function init(){track=(await fetch("songs.json",{cache:"no-store"}).then(r=>r.json())).find(x=>x.id===cardId);if(!track){statusEl.textContent="Unbekannte Karte.";return}const p=new URLSearchParams(location.search);if(p.get("code")){try{token=await exchangeCode(p.get("code"));const c=sessionStorage.getItem("return_card")||cardId;history.replaceState({},"",location.pathname+"?c="+encodeURIComponent(c))}catch(e){statusEl.textContent="Spotify-Anmeldung fehlgeschlagen.";loginBtn.style.display="block";return}}else token=await getToken();if(!token){statusEl.textContent="Einmalig mit Spotify verbinden.";loginBtn.style.display="block";return}await initPlayer()}
+playBtn.onclick=toggle;restartBtn.onclick=()=>startTrack(0);loginBtn.onclick=login;revealBtn.onclick=()=>{if(!track)return;document.getElementById("year").textContent=track.year;document.getElementById("title").textContent=track.title;document.getElementById("artist").textContent=track.artist;answer.style.display="block";revealBtn.textContent="Revealed ✓"};init();
+</script>
+</body></html>
