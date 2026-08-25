@@ -1,92 +1,1846 @@
 [
   {
     "id": 1,
+    "title": "Over the Rainbow",
+    "artist": "Judy Garland",
+    "year": 1939,
+    "country": "USA",
+    "genre": "Soundtrack",
+    "film": "The Wizard of Oz",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Boogie Woogie Bugle Boy",
+    "artist": "The Andrews Sisters",
+    "year": 1941,
+    "country": "USA",
+    "genre": "Swing",
+    "film": "Buck Privates",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "La Vie en rose",
+    "artist": "Édith Piaf",
+    "year": 1946,
+    "country": "Frankreich",
+    "genre": "Chanson",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Blue Suede Shoes",
+    "artist": "Elvis Presley",
+    "year": 1956,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Johnny B. Goode",
+    "artist": "Chuck Berry",
+    "year": 1958,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Volare",
+    "artist": "Domenico Modugno",
+    "year": 1958,
+    "country": "Italien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "What'd I Say",
+    "artist": "Ray Charles",
+    "year": 1959,
+    "country": "USA",
+    "genre": "R&B",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "At Last",
+    "artist": "Etta James",
+    "year": 1960,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Hit the Road Jack",
+    "artist": "Ray Charles",
+    "year": 1961,
+    "country": "USA",
+    "genre": "R&B",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Stand by Me",
+    "artist": "Ben E. King",
+    "year": 1961,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Can't Help Falling in Love",
+    "artist": "Elvis Presley",
+    "year": 1961,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Blue Hawaii",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Be My Baby",
+    "artist": "The Ronettes",
+    "year": 1963,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "I Want to Hold Your Hand",
+    "artist": "The Beatles",
+    "year": 1963,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Rock",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "My Girl",
+    "artist": "The Temptations",
+    "year": 1964,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "You Really Got Me",
+    "artist": "The Kinks",
+    "year": 1964,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Satisfaction",
+    "artist": "The Rolling Stones",
+    "year": 1965,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "California Dreamin'",
+    "artist": "The Mamas & the Papas",
+    "year": 1965,
+    "country": "USA",
+    "genre": "Folk Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "These Boots Are Made for Walkin'",
+    "artist": "Nancy Sinatra",
+    "year": 1966,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Ain't No Mountain High Enough",
+    "artist": "Marvin Gaye & Tammi Terrell",
+    "year": 1967,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Respect",
+    "artist": "Aretha Franklin",
+    "year": 1967,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Son of a Preacher Man",
+    "artist": "Dusty Springfield",
+    "year": 1968,
+    "country": "Vereinigtes Königreich",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Hey Jude",
+    "artist": "The Beatles",
+    "year": 1968,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Venus",
+    "artist": "Shocking Blue",
+    "year": 1969,
+    "country": "Niederlande",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Aquarius / Let the Sunshine In",
+    "artist": "The 5th Dimension",
+    "year": 1969,
+    "country": "USA",
+    "genre": "Pop/Soul",
+    "film": "Hair",
+    "pools": [
+      "mix",
+      "gp_de",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Close to You",
+    "artist": "Carpenters",
+    "year": 1970,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Your Song",
+    "artist": "Elton John",
+    "year": 1970,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Let's Stay Together",
+    "artist": "Al Green",
+    "year": 1971,
+    "country": "USA",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "American Pie",
+    "artist": "Don McLean",
+    "year": 1971,
+    "country": "USA",
+    "genre": "Folk Rock",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Superstition",
+    "artist": "Stevie Wonder",
+    "year": 1972,
+    "country": "USA",
+    "genre": "Funk",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "The Jean Genie",
+    "artist": "David Bowie",
+    "year": 1973,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Kung Fu Fighting",
+    "artist": "Carl Douglas",
+    "year": 1974,
+    "country": "Jamaika/VK",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Mamma Mia",
+    "artist": "ABBA",
+    "year": 1975,
+    "country": "Schweden",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "year": 1975,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Don't Go Breaking My Heart",
+    "artist": "Elton John & Kiki Dee",
+    "year": 1976,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 35,
     "title": "Dancing Queen",
     "artist": "ABBA",
     "year": 1976,
     "country": "Schweden",
     "genre": "Pop",
-    "spotifyUri": "spotify:track:0GjEhVFGZW8afUYGChu3Rr"
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ]
   },
   {
-    "id": 2,
+    "id": 36,
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "year": 1976,
+    "country": "USA",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Stayin' Alive",
+    "artist": "Bee Gees",
+    "year": 1977,
+    "country": "Vereinigtes Königreich/Australien",
+    "genre": "Disco",
+    "film": "Saturday Night Fever",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "We Will Rock You",
+    "artist": "Queen",
+    "year": 1977,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "I Will Survive",
+    "artist": "Gloria Gaynor",
+    "year": 1978,
+    "country": "USA",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Rasputin",
+    "artist": "Boney M.",
+    "year": 1978,
+    "country": "Deutschland",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Le Freak",
+    "artist": "Chic",
+    "year": 1978,
+    "country": "USA",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Video Killed the Radio Star",
+    "artist": "The Buggles",
+    "year": 1979,
+    "country": "Vereinigtes Königreich",
+    "genre": "New Wave",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Another Brick in the Wall, Pt. 2",
+    "artist": "Pink Floyd",
+    "year": 1979,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "I'm Coming Out",
+    "artist": "Diana Ross",
+    "year": 1980,
+    "country": "USA",
+    "genre": "Disco/Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Super Trouper",
+    "artist": "ABBA",
+    "year": 1980,
+    "country": "Schweden",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Jessie's Girl",
+    "artist": "Rick Springfield",
+    "year": 1981,
+    "country": "Australien",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Just Can't Get Enough",
+    "artist": "Depeche Mode",
+    "year": 1981,
+    "country": "Vereinigtes Königreich",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Sarà perché ti amo",
+    "artist": "Ricchi e Poveri",
+    "year": 1981,
+    "country": "Italien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 49,
     "title": "Billie Jean",
     "artist": "Michael Jackson",
     "year": 1982,
     "country": "USA",
     "genre": "Pop",
-    "spotifyUri": "spotify:track:5ChkMS8OtdzJeqyybCc9R5"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
   },
   {
-    "id": 3,
-    "title": "Enjoy the Silence",
-    "artist": "Depeche Mode",
-    "year": 1990,
+    "id": 50,
+    "title": "Eye of the Tiger",
+    "artist": "Survivor",
+    "year": 1982,
+    "country": "USA",
+    "genre": "Rock",
+    "film": "Rocky III",
+    "pools": [
+      "mix",
+      "rock",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Major Tom (völlig losgelöst)",
+    "artist": "Peter Schilling",
+    "year": 1982,
+    "country": "Deutschland",
+    "genre": "Neue Deutsche Welle",
+    "film": "",
+    "pools": [
+      "mix",
+      "de"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "99 Luftballons",
+    "artist": "Nena",
+    "year": 1983,
+    "country": "Deutschland",
+    "genre": "Neue Deutsche Welle",
+    "film": "",
+    "pools": [
+      "mix",
+      "de"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Sweet Dreams (Are Made of This)",
+    "artist": "Eurythmics",
+    "year": 1983,
     "country": "Vereinigtes Königreich",
     "genre": "Synth-Pop",
-    "spotifyUri": "spotify:track:1EjQRTG53jsinzk2xlVVJP"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
   },
   {
-    "id": 4,
+    "id": 54,
+    "title": "Somebody's Watching Me",
+    "artist": "Rockwell",
+    "year": 1984,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Wake Me Up Before You Go-Go",
+    "artist": "Wham!",
+    "year": 1984,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 56,
     "title": "Take on Me",
     "artist": "a-ha",
     "year": 1985,
     "country": "Norwegen",
     "genre": "Synth-Pop",
-    "spotifyUri": "spotify:track:2WfaOiMkCvy7F5fcp2zZ8L"
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
   },
   {
-    "id": 5,
+    "id": 57,
+    "title": "The Power of Love",
+    "artist": "Huey Lewis and the News",
+    "year": 1985,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "Back to the Future",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Walk Like an Egyptian",
+    "artist": "The Bangles",
+    "year": 1986,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Walk This Way",
+    "artist": "Run-D.M.C. feat. Aerosmith",
+    "year": 1986,
+    "country": "USA",
+    "genre": "Rap Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "rock"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "La Isla Bonita",
+    "artist": "Madonna",
+    "year": 1987,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Bamboléo",
+    "artist": "Gipsy Kings",
+    "year": 1987,
+    "country": "Frankreich",
+    "genre": "Rumba",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "fr"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Never Gonna Give You Up",
+    "artist": "Rick Astley",
+    "year": 1987,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Looking for Freedom",
+    "artist": "David Hasselhoff",
+    "year": 1988,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Fast Car",
+    "artist": "Tracy Chapman",
+    "year": 1988,
+    "country": "USA",
+    "genre": "Folk Rock",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Love Shack",
+    "artist": "The B-52's",
+    "year": 1989,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Pump Up the Jam",
+    "artist": "Technotronic",
+    "year": 1989,
+    "country": "Belgien",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Enjoy the Silence",
+    "artist": "Depeche Mode",
+    "year": 1990,
+    "country": "Vereinigtes Königreich",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Unbelievable",
+    "artist": "EMF",
+    "year": 1990,
+    "country": "Vereinigtes Königreich",
+    "genre": "Alternative Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "I'm Too Sexy",
+    "artist": "Right Said Fred",
+    "year": 1991,
+    "country": "Vereinigtes Königreich",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 70,
     "title": "Smells Like Teen Spirit",
     "artist": "Nirvana",
     "year": 1991,
     "country": "USA",
     "genre": "Grunge",
-    "spotifyUri": "spotify:track:5ghIJDpPoe3CfHMGu71E6T"
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
   },
   {
-    "id": 6,
+    "id": 71,
+    "title": "The One and Only",
+    "artist": "Chesney Hawkes",
+    "year": 1991,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "I Will Always Love You",
+    "artist": "Whitney Houston",
+    "year": 1992,
+    "country": "USA",
+    "genre": "Pop/Soul",
+    "film": "The Bodyguard",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Jump Around",
+    "artist": "House of Pain",
+    "year": 1992,
+    "country": "USA",
+    "genre": "Hip-Hop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "urban"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "No Limit",
+    "artist": "2 Unlimited",
+    "year": 1993,
+    "country": "Niederlande/Belgien",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Mr. Boombastic",
+    "artist": "Shaggy",
+    "year": 1995,
+    "country": "Jamaika",
+    "genre": "Reggae Fusion",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "year": 1995,
+    "country": "Vereinigtes Königreich",
+    "genre": "Britpop",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
+  },
+  {
+    "id": 77,
     "title": "Wannabe",
     "artist": "Spice Girls",
     "year": 1996,
     "country": "Vereinigtes Königreich",
     "genre": "Pop",
-    "spotifyUri": "spotify:track:1Je1IMUlBXcx1Fz0WE7oPT"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
   },
   {
-    "id": 7,
+    "id": 78,
+    "title": "Bailando",
+    "artist": "Paradisio",
+    "year": 1996,
+    "country": "Belgien",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "MMMBop",
+    "artist": "Hanson",
+    "year": 1997,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Everybody (Backstreet's Back)",
+    "artist": "Backstreet Boys",
+    "year": 1997,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "...Baby One More Time",
+    "artist": "Britney Spears",
+    "year": 1998,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Life",
+    "artist": "Des'ree",
+    "year": 1998,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Soul",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Mambo No. 5",
+    "artist": "Lou Bega",
+    "year": 1999,
+    "country": "Deutschland",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Sex Bomb",
+    "artist": "Tom Jones & Mousse T.",
+    "year": 1999,
+    "country": "Vereinigtes Königreich/Deutschland",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Oops!... I Did It Again",
+    "artist": "Britney Spears",
+    "year": 2000,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Who Let the Dogs Out",
+    "artist": "Baha Men",
+    "year": 2000,
+    "country": "Bahamas",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "It Wasn't Me",
+    "artist": "Shaggy",
+    "year": 2000,
+    "country": "Jamaika",
+    "genre": "Reggae Fusion",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Can't Get You Out of My Head",
+    "artist": "Kylie Minogue",
+    "year": 2001,
+    "country": "Australien",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Whenever, Wherever",
+    "artist": "Shakira",
+    "year": 2001,
+    "country": "Kolumbien",
+    "genre": "Latin Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Lose Yourself",
+    "artist": "Eminem",
+    "year": 2002,
+    "country": "USA",
+    "genre": "Hip-Hop",
+    "film": "8 Mile",
+    "pools": [
+      "mix",
+      "urban",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "The Ketchup Song (Aserejé)",
+    "artist": "Las Ketchup",
+    "year": 2002,
+    "country": "Spanien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "Without Me",
+    "artist": "Eminem",
+    "year": 2002,
+    "country": "USA",
+    "genre": "Hip-Hop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Crazy in Love",
+    "artist": "Beyoncé feat. Jay-Z",
+    "year": 2003,
+    "country": "USA",
+    "genre": "R&B/Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban"
+    ]
+  },
+  {
+    "id": 94,
     "title": "Mr. Brightside",
     "artist": "The Killers",
     "year": 2003,
     "country": "USA",
     "genre": "Indie Rock",
-    "spotifyUri": "spotify:track:003vvx7Niy0yvhvHt4a68B"
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ]
   },
   {
-    "id": 8,
+    "id": 95,
+    "title": "Toxic",
+    "artist": "Britney Spears",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Dragostea Din Tei",
+    "artist": "O-Zone",
+    "year": 2003,
+    "country": "Moldau",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Yeah!",
+    "artist": "Usher feat. Lil Jon & Ludacris",
+    "year": 2004,
+    "country": "USA",
+    "genre": "R&B/Hip-Hop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Unwritten",
+    "artist": "Natasha Bedingfield",
+    "year": 2004,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Gasolina",
+    "artist": "Daddy Yankee",
+    "year": 2004,
+    "country": "Puerto Rico",
+    "genre": "Reggaeton",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Hips Don't Lie",
+    "artist": "Shakira feat. Wyclef Jean",
+    "year": 2006,
+    "country": "Kolumbien",
+    "genre": "Latin Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Rehab",
+    "artist": "Amy Winehouse",
+    "year": 2006,
+    "country": "Vereinigtes Königreich",
+    "genre": "Soul",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Umbrella",
+    "artist": "Rihanna feat. Jay-Z",
+    "year": 2007,
+    "country": "Barbados",
+    "genre": "Pop/R&B",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Destination Calabria",
+    "artist": "Alex Gaudino feat. Crystal Waters",
+    "year": 2007,
+    "country": "Italien",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Viva la Vida",
+    "artist": "Coldplay",
+    "year": 2008,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 105,
     "title": "Poker Face",
     "artist": "Lady Gaga",
     "year": 2008,
     "country": "USA",
     "genre": "Pop",
-    "spotifyUri": "spotify:track:5R8dQOPq8haW94K7mgERlO"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
   },
   {
-    "id": 9,
+    "id": 106,
+    "title": "I Gotta Feeling",
+    "artist": "The Black Eyed Peas",
+    "year": 2009,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Bad Romance",
+    "artist": "Lady Gaga",
+    "year": 2009,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 108,
     "title": "Rolling in the Deep",
     "artist": "Adele",
     "year": 2010,
     "country": "Vereinigtes Königreich",
     "genre": "Pop/Soul",
-    "spotifyUri": "spotify:track:4OSBTYWVwsQhGLF9NHvIbR"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
   },
   {
-    "id": 10,
+    "id": 109,
+    "title": "California Gurls",
+    "artist": "Katy Perry feat. Snoop Dogg",
+    "year": 2010,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Party Rock Anthem",
+    "artist": "LMFAO",
+    "year": 2011,
+    "country": "USA",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Somebody That I Used to Know",
+    "artist": "Gotye feat. Kimbra",
+    "year": 2011,
+    "country": "Australien/Belgien",
+    "genre": "Indie Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Call Me Maybe",
+    "artist": "Carly Rae Jepsen",
+    "year": 2011,
+    "country": "Kanada",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Gangnam Style",
+    "artist": "PSY",
+    "year": 2012,
+    "country": "Südkorea",
+    "genre": "K-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Diamonds",
+    "artist": "Rihanna",
+    "year": 2012,
+    "country": "Barbados",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Happy",
+    "artist": "Pharrell Williams",
+    "year": 2013,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Despicable Me 2",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 116,
+    "title": "Get Lucky",
+    "artist": "Daft Punk feat. Pharrell Williams",
+    "year": 2013,
+    "country": "Frankreich",
+    "genre": "Disco/Funk",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 117,
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson feat. Bruno Mars",
+    "year": 2014,
+    "country": "Vereinigtes Königreich/USA",
+    "genre": "Funk Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 119,
+    "title": "Lean On",
+    "artist": "Major Lazer & DJ Snake feat. MØ",
+    "year": 2015,
+    "country": "USA/Frankreich/Dänemark",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Can't Stop the Feeling!",
+    "artist": "Justin Timberlake",
+    "year": 2016,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Trolls",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 121,
+    "title": "We Don't Talk Anymore",
+    "artist": "Charlie Puth feat. Selena Gomez",
+    "year": 2016,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Despacito",
+    "artist": "Luis Fonsi feat. Daddy Yankee",
+    "year": 2017,
+    "country": "Puerto Rico",
+    "genre": "Latin Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Mi Gente",
+    "artist": "J Balvin & Willy William",
+    "year": 2017,
+    "country": "Kolumbien/Frankreich",
+    "genre": "Reggaeton",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "fr"
+    ]
+  },
+  {
+    "id": 124,
+    "title": "Shallow",
+    "artist": "Lady Gaga & Bradley Cooper",
+    "year": 2018,
+    "country": "USA",
+    "genre": "Soundtrack",
+    "film": "A Star Is Born",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ]
+  },
+  {
+    "id": 125,
+    "title": "These Days",
+    "artist": "Rudimental feat. Jess Glynne, Macklemore & Dan Caplen",
+    "year": 2018,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 126,
+    "title": "Old Town Road",
+    "artist": "Lil Nas X feat. Billy Ray Cyrus",
+    "year": 2019,
+    "country": "USA",
+    "genre": "Country Rap",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl",
+      "urban"
+    ]
+  },
+  {
+    "id": 127,
     "title": "Blinding Lights",
     "artist": "The Weeknd",
     "year": 2019,
     "country": "Kanada",
     "genre": "Synth-Pop",
-    "spotifyUri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 128,
+    "title": "Dance Monkey",
+    "artist": "Tones and I",
+    "year": 2019,
+    "country": "Australien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 129,
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "year": 2020,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 130,
+    "title": "good 4 u",
+    "artist": "Olivia Rodrigo",
+    "year": 2021,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "rock"
+    ]
+  },
+  {
+    "id": 131,
+    "title": "Stay",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "year": 2021,
+    "country": "Australien/Kanada",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ]
+  },
+  {
+    "id": 132,
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "year": 2022,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 133,
+    "title": "About Damn Time",
+    "artist": "Lizzo",
+    "year": 2022,
+    "country": "USA",
+    "genre": "Pop/Funk",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 134,
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "year": 2023,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 135,
+    "title": "(It Goes Like) Nanana",
+    "artist": "Peggy Gou",
+    "year": 2023,
+    "country": "Südkorea",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ]
+  },
+  {
+    "id": 136,
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "year": 2024,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 137,
+    "title": "Beautiful Things",
+    "artist": "Benson Boone",
+    "year": 2024,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix"
+    ]
+  },
+  {
+    "id": 138,
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "year": 2009,
+    "country": "Belgien",
+    "genre": "Electro Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr",
+      "gp_fr"
+    ]
+  },
+  {
+    "id": 139,
+    "title": "Je veux",
+    "artist": "Zaz",
+    "year": 2010,
+    "country": "Frankreich",
+    "genre": "Chanson Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 140,
+    "title": "Dernière danse",
+    "artist": "Indila",
+    "year": 2013,
+    "country": "Frankreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 141,
+    "title": "Papaoutai",
+    "artist": "Stromae",
+    "year": 2013,
+    "country": "Belgien",
+    "genre": "Electro Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 142,
+    "title": "Balance ton quoi",
+    "artist": "Angèle",
+    "year": 2018,
+    "country": "Belgien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 143,
+    "title": "Tout oublier",
+    "artist": "Angèle feat. Roméo Elvis",
+    "year": 2018,
+    "country": "Belgien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
+  },
+  {
+    "id": 144,
+    "title": "Djadja",
+    "artist": "Aya Nakamura",
+    "year": 2018,
+    "country": "Frankreich",
+    "genre": "Afropop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ]
   }
 ]

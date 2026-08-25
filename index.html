@@ -1,21 +1,233 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Song Guess</title>
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0e10"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Song Guess</title>
 <style>
-:root{--b:#0d0e10;--p:#191b1f;--p2:#24262b;--t:#f5f3ec;--m:#99958d;--v:#8d45ef;--g:#d0a957}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#1d1820,#0d0e10 42%);color:var(--t);font-family:system-ui,-apple-system,sans-serif}.app{max-width:720px;margin:auto;padding:24px 18px 50px}.top,.roundtop{display:flex;justify-content:space-between;align-items:center}.brand small{letter-spacing:.28em;color:#aaa}.brand h1{font-size:40px;margin:5px 0}.brand span{color:#a565ff}.card{background:linear-gradient(145deg,#1b1d21,#121315);border:1px solid #303238;border-radius:25px;padding:22px;margin:16px 0;box-shadow:0 20px 50px #0008}.hero{text-align:center}.vinyl{width:210px;height:210px;margin:18px auto;border-radius:50%;background:repeating-radial-gradient(circle,#09090a 0 7px,#171719 8px 9px);border:1px solid #333;display:grid;place-items:center}.vinyl:after{content:"SG";display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--v);font-weight:900}.spin{animation:s 3s linear infinite}@keyframes s{to{transform:rotate(360deg)}}button,input{font:inherit}.primary,.secondary,.chip{border:0;border-radius:13px;padding:14px 16px;font-weight:750}.primary{width:100%;background:linear-gradient(135deg,#6b34da,#9849ec);color:#fff}.secondary{background:#25272c;color:#fff;border:1px solid #383b41}.spotify{background:#1ed760;color:#07180c}.muted{color:var(--m)}.field{margin:20px 0}.field>label{display:block;font-weight:800;margin-bottom:10px}.input{width:100%;background:#111216;color:#fff;border:1px solid #3b3d43;border-radius:11px;padding:12px}.prow{display:flex;gap:8px;margin:8px 0}.prow input{flex:1}.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}.chip{background:#24262b;color:#ddd;text-align:left;border:1px solid #373940}.chip.on{border-color:#a768ff;background:#322441}.seg{display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#111216;padding:5px;border-radius:13px}.seg button{border:0;border-radius:9px;padding:11px;background:transparent;color:#aaa}.seg button.on{background:#342646;color:#fff}.hidden{display:none!important}.question{text-align:center;margin:25px 0}.cat{color:#b975ff;font-weight:900}.play{display:block;margin:20px auto;width:94px;height:94px;border:0;border-radius:50%;font-size:36px}.badge{background:#3a2135;color:#ff9bca;padding:6px 10px;border-radius:999px}.scorebar{position:sticky;bottom:8px;display:flex;justify-content:space-around;background:#101114ee;border:1px solid #292b31;border-radius:17px;padding:11px;margin-top:16px}.score{text-align:center;font-size:12px}.score b{display:block;font-size:23px}.reveal{background:#1e2024;border:1px solid #36383e;border-radius:17px;padding:17px;margin:18px 0}.answer{font-size:26px;font-weight:900}.meta{display:grid;gap:7px;margin-top:12px}.meta div{display:flex;justify-content:space-between;background:#292b30;padding:9px;border-radius:9px}.judge{background:#22242a;border-radius:14px;padding:12px;margin:10px 0}.judge header{display:flex;justify-content:space-between}.judgeBtns{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.judgeBtns button{border:0;border-radius:9px;padding:9px 11px;color:#fff;background:#444}.compare{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:center}.songbox{background:#202228;border-radius:17px;padding:18px;text-align:center}.tiny{font-size:12px;color:#aaa}@media(max-width:480px){.brand h1{font-size:35px}.vinyl{width:185px;height:185px}}
+:root{--bg:#0d0e10;--panel:#17191d;--panel2:#22252b;--line:#32353c;--text:#f5f3ed;--muted:#9b9890;--violet:#9450ef;--gold:#d0a95c;--green:#5ed57c;--red:#d86072;--blue:#6bb9ef}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}
+body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-height:100vh}
+.app{width:min(100%,900px);margin:auto;padding:max(20px,env(safe-area-inset-top)) 18px max(40px,env(safe-area-inset-bottom))}
+.top,.row,.roundtop{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand small{font-size:11px;letter-spacing:.28em;color:#aaa59b;font-weight:800}.brand h1{margin:4px 0;font-size:clamp(34px,7vw,48px);letter-spacing:-.04em}.brand h1 span{color:#a96bff}
+.card{background:linear-gradient(145deg,#191b20,#121315);border:1px solid var(--line);border-radius:26px;padding:clamp(17px,4vw,24px);margin:16px 0;box-shadow:0 20px 60px #0008}.hero{text-align:center}
+.vinyl{width:min(48vw,230px);aspect-ratio:1;margin:16px auto 24px;border-radius:50%;background:repeating-radial-gradient(circle,#08090a 0 7px,#17181a 8px 9px);border:1px solid #36383e;display:grid;place-items:center;box-shadow:0 0 42px #8644ce44}.vinyl:after{content:"SG";width:30%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:var(--violet);font-weight:950}.spin{animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.primary,.secondary,.chip,.modebtn{border:0;border-radius:14px;padding:14px 16px;font-weight:780;cursor:pointer}.primary{background:linear-gradient(135deg,#6c34da,#9b4ff0);color:white;width:100%}.secondary{background:#24272c;border:1px solid #3a3d43;color:white}.spotify{background:#1ed760;color:#07190c}.muted{color:var(--muted)}.tiny{font-size:12px;color:var(--muted)}
+.nav{display:flex;gap:8px}.nav button{padding:10px 12px}.field{margin:22px 0}.field>label{display:block;font-weight:850;margin-bottom:10px}.input{width:100%;background:#111216;color:white;border:1px solid #3b3e44;border-radius:12px;padding:13px}.prow{display:flex;gap:8px;margin:8px 0}.prow input{flex:1}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.chip{background:#23262b;color:#ddd;text-align:left;border:1px solid #393c42}.chip.on{background:#342441;border-color:#a86aff;color:white}.poolmeta{display:block;font-size:11px;color:#9c98a0;margin-top:3px;font-weight:500}
+.seg{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;background:#111216;padding:5px;border-radius:14px}.seg.three{grid-template-columns:repeat(3,1fr)}.seg button{border:0;border-radius:10px;padding:11px 7px;background:transparent;color:#aaa}.seg button.on{background:#352649;color:white}
+.toggleline{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #2a2c31}.toggleline input{width:22px;height:22px}
+.hidden{display:none!important}.roundtop{font-size:14px;color:#aaa}.badge{background:#392135;color:#ff9fcb;padding:7px 11px;border-radius:999px}.question{text-align:center;margin:24px 0}.cat{color:#ba7bff;font-size:13px;letter-spacing:.06em;font-weight:950}.question h2{font-size:clamp(23px,5vw,34px);margin:8px 0}
+.playerzone{position:relative}.play{display:block;width:100px;height:100px;border:0;border-radius:50%;margin:16px auto;background:#f5f2e9;color:#121315;font-size:37px;box-shadow:0 12px 30px #0008}
+.clipbar{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:10px auto 2px}.modebtn{padding:9px 11px;background:#202329;color:#aaa;border:1px solid #33363c;font-size:12px}.modebtn.on{color:white;border-color:var(--violet);background:#332340}
+.scorebar{position:sticky;z-index:3;bottom:max(8px,env(safe-area-inset-bottom));display:flex;gap:8px;justify-content:space-around;background:#101115ee;border:1px solid #2c2f35;border-radius:18px;padding:11px;margin-top:18px;backdrop-filter:blur(12px)}.score{text-align:center;font-size:12px;min-width:50px}.score b{display:block;font-size:23px}
+.reveal{background:#1d2025;border:1px solid #383b42;border-radius:18px;padding:18px;margin:18px 0}.answer{font-size:clamp(25px,5vw,34px);font-weight:920}.meta{display:grid;gap:7px;margin-top:13px}.meta>div{display:flex;justify-content:space-between;gap:15px;background:#292c32;padding:10px;border-radius:10px}.spotifylink{display:inline-flex;margin-top:12px;padding:11px 13px;background:#1ed760;color:#07190c;border-radius:12px;text-decoration:none;font-weight:850}
+.judge{background:#22252a;border-radius:14px;padding:12px;margin:10px 0}.judge header{display:flex;justify-content:space-between}.judgeBtns{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.judgeBtns button{border:0;border-radius:9px;padding:10px 11px;color:white;background:#45484e}.judgeBtns button.sel{outline:2px solid white}
+.compare{display:grid;grid-template-columns:1fr 36px 1fr;gap:10px;align-items:center}.songbox{background:#202328;border-radius:18px;padding:16px;text-align:center}.songbox .playab{width:100%;margin-top:8px}.songbox.playing{outline:2px solid var(--violet)}
+.roundsetup{background:#17191d;border:1px solid var(--line);border-radius:18px;padding:16px;margin-top:16px}.roundsetup h3{margin-top:0}
+.historyItem{background:#202329;border-radius:14px;padding:14px;margin:9px 0}.historyItem .row{align-items:flex-start}.winner{color:var(--gold);font-weight:900}.empty{text-align:center;color:var(--muted);padding:30px}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{background:#22252a;border-radius:13px;padding:14px;text-align:center}.stat b{font-size:25px;display:block}
+.endrank{font-size:18px;padding:10px 0;border-bottom:1px solid #333}.endrank:first-child{font-size:23px;color:var(--gold)}
+@media(min-width:700px){.setupgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.setupgrid .card{margin:0}.chips{grid-template-columns:repeat(3,1fr)}.roundbody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:20px;align-items:start}.scorebar{position:static}.compare{gap:18px}.statgrid{grid-template-columns:repeat(4,1fr)}}
 </style></head><body><div class="app">
-<section id="home"><div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><button class="secondary" onclick="show('setup')">⚙</button></div><div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted">Online spielen – ganz ohne Karten.</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button></div><div class="card"><b>Spotify</b><p id="spstate" class="muted">Noch nicht verbunden.</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div></section>
-<section id="setup" class="hidden"><div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div><div class="card">
-<div class="field"><label>1. Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button></div>
-<div class="field"><label>2. Fragenpool</label><div id="cats" class="chips"></div></div>
-<div class="field"><label>3. Fragenwahl</label><div class="seg"><button data-g="qm" data-v="fixed" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
-<div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
-<div class="field"><label>4. Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Nacheinander</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
-<div class="field"><label>5. Anzahl Songs</label><input id="count" class="input" type="number" min="1" value="10"></div><button class="primary" onclick="startGame()">▶ Spiel starten</button></div></section>
-<section id="round" class="hidden"><div class="roundtop"><span id="rno"></span><span id="badge" class="badge"></span></div><div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div id="record" class="vinyl"></div><button id="play" class="play">▶</button></div><div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div class="songbox"><h2>A</h2><button class="secondary" onclick="playCompare(0)">▶ Song A</button></div><b>VS.</b><div class="songbox"><h2>B</h2><button class="secondary" onclick="playCompare(1)">▶ Song B</button></div></div></div><button id="revbtn" class="primary" style="margin-top:20px" onclick="reveal()">Reveal & Punkte vergeben</button><div id="rev" class="hidden"></div><div id="scores" class="scorebar"></div></section>
-</div><script src="config.js"></script><script>
-const C={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],compare:["↕ ÄLTER ODER JÜNGER?","Welcher Song ist älter?"]};let songs=[],names=["Vanessa","Niki","Ariane"],score=[],sel=new Set(["year","artist","country","title","compare"]),qm="fixed",ps="one",am="turns",ri=0,total=10,turn=0,cc=[],song=null,pair=[],token=null,device=null,spotify=null,playing=false;const $=x=>document.getElementById(x);function show(x){["home","setup","round"].forEach(y=>$(y).classList.toggle("hidden",x!==y))}function addPlayer(v=""){let d=document.createElement("div");d.className="prow";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}names.forEach(addPlayer);Object.entries(C).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(sel.has(k)?"on":"");b.textContent=v[0];b.onclick=()=>{sel.has(k)?sel.delete(k):sel.add(k);b.classList.toggle("on")};$("cats").appendChild(b)});document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x=>x.classList.remove("on"));b.classList.add("on");if(b.dataset.g==="qm")qm=b.dataset.v;if(b.dataset.g==="ps")ps=b.dataset.v;if(b.dataset.g==="am")am=b.dataset.v});fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>songs=x);
-function pick(ex=[]){let p=songs.filter(x=>!ex.includes(x.id));return p[Math.floor(Math.random()*p.length)]}function cats(){let a=[...sel];return ps==="all"?a.filter(x=>x!=="compare"):[a[Math.floor(Math.random()*a.length)]]}function startGame(){names=[...document.querySelectorAll(".pname")].map(x=>x.value.trim()).filter(Boolean);if(!names.length||!sel.size)return alert("Bitte Spieler:innen und mindestens eine Kategorie wählen.");score=names.map(()=>0);total=Math.max(1,+$("count").value||10);ri=0;turn=0;show("round");next()}function next(){if(ri>=total)return end();$("rev").classList.add("hidden");$("revbtn").classList.remove("hidden");ri++;cc=cats();song=pick();let cp=cc[0]==="compare";if(cp)pair=[song,pick([song.id])];$("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);$("rno").textContent=`Runde ${ri} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":`${names[turn]} ist dran`;if(!cp){$("clabel").textContent=ps==="all"?cc.map(x=>C[x][0]).join(" · "):C[cc[0]][0];$("qtext").textContent=ps==="all"?"Was wisst ihr über diesen Song?":C[cc[0]][1]}render();playing=false;$("record").classList.remove("spin");$("play").textContent="▶"}function render(){$("scores").innerHTML=names.map((n,i)=>`<div class="score">${n}<b>${score[i]}</b></div>`).join("")}
-$("play").onclick=()=>playSong(song);async function playSong(s){if(!token)return alert("Bitte zuerst Spotify verbinden.");if(!device)return alert("Spotify-Player ist noch nicht bereit. Kurz warten.");if(!playing){await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[s.spotifyUri]})});playing=true;$("record").classList.add("spin");$("play").textContent="Ⅱ"}else{await fetch("https://api.spotify.com/v1/me/player/pause",{method:"PUT",headers:{Authorization:`Bearer ${token}`}});playing=false;$("record").classList.remove("spin");$("play").textContent="▶"}}function playCompare(i){playing=false;playSong(pair[i])}
-function reveal(){let cp=cc[0]==="compare";$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let sol=cp?`<div class="reveal"><div class="answer">${pair[0].year<pair[1].year?"A":"B"} ist älter</div><div class="meta"><div><b>A</b><span>${pair[0].title} · ${pair[0].artist} · ${pair[0].year}</span></div><div><b>B</b><span>${pair[1].title} · ${pair[1].artist} · ${pair[1].year}</span></div></div></div>`:`<div class="reveal"><div class="answer">${song.year} · ${song.title}</div><h3>${song.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${song.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(song.year/10)*10}er</span></div><div><b>Genre</b><span>${song.genre}</span></div></div></div>`;$("rev").innerHTML=sol+judge(cp)}
-function judge(cp){let a=am==="all"?names.map((n,i)=>jperson(n,i,cp)).join(""):jperson(names[turn],turn,cp);return `<h3>Punkte vergeben</h3>${a}<button class="primary" onclick="finish()">Punkte speichern & weiter</button>`}function jperson(n,i,cp){let year=cc.includes("year")&&!cp;let b=year?`<button onclick="setp(this,${i},0)">Daneben 0</button><button onclick="setp(this,${i},1)">±3 J. +1</button><button onclick="setp(this,${i},2)">±1 J. +2</button><button onclick="setp(this,${i},3)">Exakt +3</button>`:`<button onclick="setp(this,${i},0)">✕ 0</button><button onclick="setp(this,${i},1)">✓ +1</button>`;if(ps==="all"&&!cp)b=cc.map(c=>`<span class="tiny">${C[c][0]}</span><button onclick="togglep(this,${i})">0 / +1</button>`).join("");return `<div class="judge" data-i="${i}" data-p="0"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${b}</div></div>`}function setp(b,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.style.outline="");b.style.outline="2px solid white"}function togglep(b,i){b.dataset.on=b.dataset.on==="1"?"0":"1";b.textContent=b.dataset.on==="1"?"+1":"0 / +1";let x=document.querySelector(`.judge[data-i="${i}"]`),n=[...x.querySelectorAll("button")].filter(z=>z.dataset.on==="1").length;x.dataset.p=n;x.querySelector(".pts").textContent=n+" P."}function finish(){document.querySelectorAll(".judge").forEach(x=>score[+x.dataset.i]+=+x.dataset.p);if(am==="turns")turn=(turn+1)%names.length;next()}function end(){show("home");let r=names.map((n,i)=>[n,score[i]]).sort((a,b)=>b[1]-a[1]);document.querySelector("#home .hero").innerHTML=`<h2>🏆 Spiel beendet</h2><div class="reveal">${r.map((x,i)=>`<p><b>${i+1}. ${x[0]}</b> — ${x[1]} Punkte</p>`).join("")}</div><button class="primary" onclick="location.reload()">Neues Spiel</button>`}
-const cfg=window.SONG_GUESS_CONFIG;function rnd(n=64){let a=new Uint8Array(n);crypto.getRandomValues(a);return [...a].map(x=>x.toString(16).padStart(2,"0")).join("")}async function chall(v){let d=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(v));return btoa(String.fromCharCode(...new Uint8Array(d))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}$("spbtn").onclick=async()=>{let v=rnd();sessionStorage.pkce=v;let ch=await chall(v);location.href="https://accounts.spotify.com/authorize?"+new URLSearchParams({client_id:cfg.clientId,response_type:"code",redirect_uri:cfg.redirectUri,scope:"streaming user-read-email user-read-private user-modify-playback-state user-read-playback-state",code_challenge_method:"S256",code_challenge:ch})};async function auth(){let code=new URLSearchParams(location.search).get("code");if(code){let body=new URLSearchParams({client_id:cfg.clientId,grant_type:"authorization_code",code,redirect_uri:cfg.redirectUri,code_verifier:sessionStorage.pkce});let r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});let j=await r.json();token=j.access_token;sessionStorage.sgtoken=token;history.replaceState({},document.title,location.pathname);init()}else{token=sessionStorage.sgtoken;if(token)init()}}function init(){$("spstate").textContent="Verbunden – Player wird vorbereitet …";$("spbtn").textContent="Spotify verbunden ✓";let s=document.createElement("script");s.src="https://sdk.scdn.co/spotify-player.js";document.body.appendChild(s)}window.onSpotifyWebPlaybackSDKReady=()=>{if(!token)return;spotify=new Spotify.Player({name:cfg.deviceName,getOAuthToken:cb=>cb(token),volume:.8});spotify.addListener("ready",x=>{device=x.device_id;$("spstate").textContent="Mit Spotify verbunden ✓"});spotify.connect()};auth();
+<section id="home">
+ <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button></div>
+ <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
+</section>
+
+<section id="setup" class="hidden">
+ <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
+ <div class="setupgrid">
+  <div class="card">
+   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button></div>
+   <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p></div>
+   <div class="field"><label>3 · Anzahl Songs</label><input id="count" class="input" type="number" min="1" value="15"></div>
+  </div>
+  <div class="card">
+   <div class="field"><label>4 · Fragenpool</label><div id="cats" class="chips"></div></div>
+   <div class="field"><label>Fragenwahl</label><div class="seg"><button data-g="qm" data-v="game" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
+   <div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
+   <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Nacheinander</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
+   <div class="field"><label>Standard-Ausschnitt</label><div class="seg three"><button data-g="clip" data-v="full">Ganz</button><button data-g="clip" data-v="start30" class="on">30 s Start</button><button data-g="clip" data-v="random30">30 s Zufall</button></div><p class="tiny">Während jeder Runde jederzeit änderbar.</p></div>
+   <div class="toggleline"><span>Spielhistorie speichern</span><input id="saveHistory" type="checkbox" checked></div>
+   <div class="toggleline"><span>Dauerhafte Scores speichern</span><input id="saveStats" type="checkbox" checked></div>
+  </div>
+ </div>
+ <button class="primary" style="margin-top:18px" onclick="startGame()">▶ Spiel starten</button>
+</section>
+
+<section id="round" class="hidden">
+ <div class="roundtop"><span id="rno"></span><span id="badge" class="badge"></span></div>
+ <div id="roundSetup" class="roundsetup hidden"><h3>Fragen für diese Runde</h3><div id="roundCats" class="chips"></div><button class="primary" style="margin-top:12px" onclick="confirmRoundCats()">Runde starten</button></div>
+ <div id="roundContent">
+  <div class="roundbody">
+   <div>
+    <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div id="record" class="vinyl"></div><button id="play" class="play">▶</button></div>
+    <div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
+    <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
+    <button id="revbtn" class="primary" style="margin-top:14px" onclick="reveal()">Reveal & Punkte</button>
+   </div>
+   <div><div id="rev" class="hidden"></div><div id="scores" class="scorebar"></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="history" class="hidden">
+ <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Historie & Scores</h2><button class="secondary" onclick="clearHistory()">Löschen</button></div>
+ <div class="card"><h3>Spielerstatistik</h3><div id="stats"></div></div>
+ <div class="card"><h3>Letzte Spiele</h3><div id="historyList"></div></div>
+</section>
+</div>
+<script src="config.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"]};
+const POOLS={mix:["Meine Mischung","Quer durch die Jahrzehnte"],gp_de:["Guilty Pleasures DE","GP-inspirierte Auswahl"],gp_nl:["Guilty Pleasures NL","GP-inspirierte Auswahl"],gp_fr:["Guilty Pleasures FR","Plaisirs coupables"],soundtrack:["Film & TV","Songs & Themes"],rock:["Rock","Rock & Alternative"],urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],fr:["Französisch","Frankreich & Belgien"],de:["Deutschsprachig","DACH"]};
+let songs=[],names=["Vanessa","Niki","Ariane"],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
+let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,total=15,roundIndex=0,turn=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set();
+let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={};
+
+function show(id){["home","setup","round","history"].forEach(x=>$(x).classList.toggle("hidden",x!==id));stopPlayback()}
+function addPlayer(v=""){let d=document.createElement("div");d.className="prow";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
+names.forEach(addPlayer);
+
+function setupSelectors(){
+ Object.entries(CATS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedCats.has(k)?"on":"");b.innerHTML=`${v[0]}`;b.onclick=()=>{selectedCats.has(k)?selectedCats.delete(k):selectedCats.add(k);b.classList.toggle("on")};$("cats").appendChild(b)});
+ Object.entries(POOLS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedPools.has(k)?"on":"");let n=songs.filter(s=>s.pools.includes(k)).length;b.innerHTML=`${v[0]}<span class="poolmeta">${n} Songs · ${v[1]}</span>`;b.onclick=()=>{selectedPools.has(k)?selectedPools.delete(k):selectedPools.add(k);b.classList.toggle("on");updatePoolCount()};$("pools").appendChild(b)});
+ document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x=>x.classList.remove("on"));b.classList.add("on");if(b.dataset.g==="qm")qm=b.dataset.v;if(b.dataset.g==="ps")ps=b.dataset.v;if(b.dataset.g==="am")am=b.dataset.v;if(b.dataset.g==="clip")clipMode=b.dataset.v});
+ document.querySelectorAll(".modebtn").forEach(b=>b.onclick=()=>setClip(b.dataset.clip));
+}
+function updatePoolCount(){let ids=new Set(songs.filter(s=>s.pools.some(p=>selectedPools.has(p))).map(s=>s.id));$("poolCount").textContent=`${ids.size} unterschiedliche Songs im kombinierten Pool.`}
+fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>{songs=x;$("songCount").textContent=songs.length;setupSelectors();updatePoolCount()});
+
+function setClip(v){clipMode=v;document.querySelectorAll(".modebtn").forEach(b=>b.classList.toggle("on",b.dataset.clip===v));stopPlayback()}
+function poolSongs(){return songs.filter(s=>s.pools.some(p=>selectedPools.has(p)))}
+function randomSong(ex=[]){let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}let s=base[Math.floor(Math.random()*base.length)];if(s)usedIds.add(s.id);return s}
+function gameCats(){let a=[...selectedCats];if(ps==="all")return a.filter(x=>x!=="compare" && !(x==="film" && !song?.film));return [a[Math.floor(Math.random()*a.length)]]}
+
+function startGame(){
+ names=[...document.querySelectorAll(".pname")].map(x=>x.value.trim()).filter(Boolean);
+ if(!names.length)return alert("Bitte mindestens eine Person eintragen.");
+ if(!selectedPools.size)return alert("Bitte mindestens einen Songpool wählen.");
+ if(!selectedCats.size)return alert("Bitte mindestens eine Fragekategorie wählen.");
+ roundPool=poolSongs(); if(!roundPool.length)return alert("Dieser Pool enthält keine Songs.");
+ total=Math.max(1,Math.min(100,+$("count").value||15));saveHistory=$("saveHistory").checked;saveStats=$("saveStats").checked;
+ scores=names.map(()=>0);roundIndex=0;turn=0;usedIds.clear();show("round");nextRound();
+}
+function prepareRound(){
+ if(roundIndex>=total)return endGame();
+ roundIndex++;song=randomSong();pair=[];$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":`${names[turn]} ist dran`;
+ $("rev").classList.add("hidden");$("revbtn").classList.remove("hidden");$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
+ if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");return}
+ currentCats=gameCats();renderRound();
+}
+function nextRound(){stopPlayback();prepareRound()}
+function buildRoundSelector(){
+ $("roundCats").innerHTML="";let chosen=new Set([...selectedCats].filter(c=>c!=="film"||song.film));
+ [...selectedCats].forEach(k=>{if(k==="film"&&!song.film)return;let b=document.createElement("button");b.className="chip on";b.dataset.cat=k;b.textContent=CATS[k][0];b.onclick=()=>b.classList.toggle("on");$("roundCats").appendChild(b)});
+}
+function confirmRoundCats(){let a=[...$("roundCats").querySelectorAll(".chip.on")].map(b=>b.dataset.cat);if(!a.length)return alert("Bitte mindestens eine Frage wählen.");currentCats=ps==="one"?[a[Math.floor(Math.random()*a.length)]]:a.filter(x=>x!=="compare");$("roundSetup").classList.add("hidden");$("roundContent").classList.remove("hidden");renderRound()}
+function renderRound(){
+ if(currentCats.includes("film")&&!song.film)currentCats=currentCats.filter(x=>x!=="film");
+ if(!currentCats.length)currentCats=["year"];
+ let cp=currentCats[0]==="compare";if(cp)pair=[song,randomSong([song.id])];
+ $("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);
+ if(!cp){$("clabel").textContent=ps==="all"?currentCats.map(x=>CATS[x][0]).join(" · "):CATS[currentCats[0]][0];$("qtext").textContent=ps==="all"?"Was wisst ihr über diesen Song?":CATS[currentCats[0]][1]}
+ setClip(clipMode);renderScores();
+}
+function renderScores(){$("scores").innerHTML=names.map((n,i)=>`<div class="score">${n}<b>${scores[i]}</b></div>`).join("")}
+
+async function getToken(){return token}
+async function resolveTrack(s){
+ if(resolvedCache[s.id])return resolvedCache[s.id];
+ let key="sgtrack_"+s.id;let cached=localStorage.getItem(key);if(cached){try{return resolvedCache[s.id]=JSON.parse(cached)}catch(e){}}
+ let q=`track:${s.title} artist:${s.artist.split("&")[0].split("feat.")[0].trim()}`;
+ let r=await fetch("https://api.spotify.com/v1/search?type=track&limit=5&q="+encodeURIComponent(q),{headers:{Authorization:"Bearer "+token}});
+ if(!r.ok)throw new Error("Spotify search failed");
+ let j=await r.json(),t=j.tracks?.items?.[0];if(!t)throw new Error("Song nicht gefunden");
+ let obj={uri:t.uri,url:t.external_urls.spotify,duration:t.duration_ms};
+ resolvedCache[s.id]=obj;localStorage.setItem(key,JSON.stringify(obj));return obj;
+}
+async function playSong(s,key){
+ if(!token)return alert("Bitte zuerst Spotify verbinden.");
+ if(!deviceId)return alert("Spotify-Player ist noch nicht bereit. Kurz warten und nochmals probieren.");
+ if(playingKey===key){stopPlayback();return}
+ stopPlayback();
+ try{
+  let t=await resolveTrack(s),pos=0,duration=null;
+  if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000}
+  if(clipMode==="start30")duration=30000;
+  await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
+  playingKey=key;updatePlayUI();
+  if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
+ }catch(e){alert("Song konnte über Spotify nicht gestartet werden.")}
+}
+async function stopPlayback(){
+ if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
+ if(playingKey&&token){try{await fetch("https://api.spotify.com/v1/me/player/pause",{method:"PUT",headers:{Authorization:`Bearer ${token}`}})}catch(e){}}
+ playingKey=null;updatePlayUI()
+}
+function updatePlayUI(){
+ $("record")?.classList.toggle("spin",playingKey==="main");if($("play"))$("play").textContent=playingKey==="main"?"Ⅱ":"▶";
+ ["A","B"].forEach((x,i)=>{let btn=$("play"+x),box=$("box"+x);if(btn)btn.textContent=playingKey==="cmp"+i?"Ⅱ Pause":`▶ Song ${x}`;if(box)box.classList.toggle("playing",playingKey==="cmp"+i)})
+}
+$("play").onclick=()=>playSong(song,"main");
+function toggleCompare(i){playSong(pair[i],"cmp"+i)}
+
+async function songRevealHTML(s,label=""){
+ let t=null;try{t=await resolveTrack(s)}catch(e){}
+ return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}</div>${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}</div>`;
+}
+async function reveal(){
+ stopPlayback();$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
+ if(cp){let older=pair[0].year<=pair[1].year?"A":"B";sol=`<div class="reveal"><div class="answer">${older} ist älter</div><p class="muted">${Math.abs(pair[0].year-pair[1].year)} Jahre Unterschied</p></div>`+await songRevealHTML(pair[0],"SONG A")+await songRevealHTML(pair[1],"SONG B")}
+ else sol=await songRevealHTML(song);
+ $("rev").innerHTML=sol+judgeUI(cp);
+}
+function judgeUI(cp){let list=am==="all"?names.map((n,i)=>judgePerson(n,i,cp)).join(""):judgePerson(names[turn],turn,cp);return `<h3>Punkte vergeben</h3>${list}<button class="primary" onclick="finishJudge()">Punkte speichern & weiter</button>`}
+function judgePerson(n,i,cp){
+ let year=currentCats.includes("year")&&!cp,buttons="";
+ if(ps==="all"&&!cp){
+   buttons=currentCats.map(c=>c==="year"?`<div style="width:100%"><span class="tiny">${CATS[c][0]}</span><div class="judgeBtns"><button onclick="catPts(this,${i},'year',0)">0</button><button onclick="catPts(this,${i},'year',1)">±3 +1</button><button onclick="catPts(this,${i},'year',2)">±1 +2</button><button onclick="catPts(this,${i},'year',3)">Exakt +3</button></div></div>`:`<button data-cat="${c}" onclick="toggleCat(this,${i},'${c}')">${CATS[c][0]} 0 / +1</button>`).join("")
+ } else if(year)buttons=`<button onclick="setPts(this,${i},0)">Daneben 0</button><button onclick="setPts(this,${i},1)">±3 J. +1</button><button onclick="setPts(this,${i},2)">±1 J. +2</button><button onclick="setPts(this,${i},3)">Exakt +3</button>`;
+ else buttons=`<button onclick="setPts(this,${i},0)">✕ 0</button><button onclick="setPts(this,${i},1)">✓ +1</button>`;
+ return `<div class="judge" data-i="${i}" data-p="0"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
+}
+function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel")}
+function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.classList.toggle("sel",btn.dataset.on==="1");btn.textContent=`${CATS[c][0]} ${btn.dataset.on==="1"?"+1":"0 / +1"}`;recountJudge(i)}
+function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
+function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P."}
+function finishJudge(){document.querySelectorAll(".judge").forEach(x=>scores[+x.dataset.i]+=+(x.dataset.p||0));if(am==="turns")turn=(turn+1)%names.length;nextRound()}
+function endGame(){
+ stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total};
+ if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}
+ if(saveStats){let st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let max=Math.max(...scores);names.forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=scores[i];if(scores[i]===max)st[n].wins++});localStorage.setItem("sg_stats",JSON.stringify(st))}
+ show("home");document.querySelector("#home .hero").innerHTML=`<h2>🏆 Spiel beendet</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
+}
+function showHistory(){show("history");let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let entries=Object.entries(st).sort((a,b)=>b[1].wins-a[1].wins||b[1].points-a[1].points);
+ $("stats").innerHTML=entries.length?`<div class="statgrid">${entries.map(([n,s])=>`<div class="stat"><b>${s.wins}</b>Siege<br><span class="tiny">${n} · ${s.games} Spiele · ${s.points} P.</span></div>`).join("")}</div>`:`<div class="empty">Noch keine gespeicherten Scores.</div>`;
+ $("historyList").innerHTML=h.length?h.map(g=>`<div class="historyItem"><div class="row"><div><b>${new Date(g.date).toLocaleDateString("de-DE")}</b><div class="tiny">${g.rounds} Songs · ${g.pools.map(p=>POOLS[p]?.[0]||p).join(", ")}</div></div><div class="winner">🏆 ${g.ranking[0].name}</div></div><p>${g.ranking.map(x=>`${x.name}: ${x.score}`).join(" · ")}</p></div>`).join(""):`<div class="empty">Noch keine gespeicherten Spiele.</div>`;
+}
+function clearHistory(){if(confirm("Historie und dauerhafte Scores auf diesem Gerät löschen?")){localStorage.removeItem("sg_history");localStorage.removeItem("sg_stats");showHistory()}}
+
+/* Spotify PKCE */
+const cfg=window.SONG_GUESS_CONFIG;
+function randomVerifier(){let a=new Uint8Array(64);crypto.getRandomValues(a);return [...a].map(x=>x.toString(16).padStart(2,"0")).join("")}
+async function challenge(v){let d=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(v));return btoa(String.fromCharCode(...new Uint8Array(d))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+$("spbtn").onclick=async()=>{let v=randomVerifier();localStorage.setItem("sg_pkce",v);let ch=await challenge(v);location.href="https://accounts.spotify.com/authorize?"+new URLSearchParams({client_id:cfg.clientId,response_type:"code",redirect_uri:cfg.redirectUri,scope:"streaming user-read-email user-read-private user-modify-playback-state user-read-playback-state",code_challenge_method:"S256",code_challenge:ch})};
+async function exchange(code){let body=new URLSearchParams({client_id:cfg.clientId,grant_type:"authorization_code",code,redirect_uri:cfg.redirectUri,code_verifier:localStorage.getItem("sg_pkce")});let r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});if(!r.ok)throw new Error();let j=await r.json();localStorage.setItem("sg_token",j.access_token);localStorage.setItem("sg_refresh",j.refresh_token||"");localStorage.setItem("sg_exp",Date.now()+j.expires_in*1000);return j.access_token}
+async function refresh(){let ref=localStorage.getItem("sg_refresh");if(!ref)return null;let body=new URLSearchParams({client_id:cfg.clientId,grant_type:"refresh_token",refresh_token:ref});let r=await fetch("https://accounts.spotify.com/api/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body});if(!r.ok)return null;let j=await r.json();localStorage.setItem("sg_token",j.access_token);localStorage.setItem("sg_exp",Date.now()+j.expires_in*1000);if(j.refresh_token)localStorage.setItem("sg_refresh",j.refresh_token);return j.access_token}
+async function spotifyAuth(){
+ let code=new URLSearchParams(location.search).get("code");
+ try{
+  if(code){token=await exchange(code);history.replaceState({},document.title,location.pathname)}
+  else{let exp=+localStorage.getItem("sg_exp"),t=localStorage.getItem("sg_token");token=t&&Date.now()<exp-60000?t:await refresh()}
+  if(token)initSpotify();else{$("spstate").textContent="Noch nicht verbunden."}
+ }catch(e){$("spstate").textContent="Spotify-Verbindung erneuern."}
+}
+function initSpotify(){
+ $("spstate").textContent="Verbunden – Player wird vorbereitet …";$("spbtn").textContent="Spotify verbunden ✓";
+ let s=document.createElement("script");s.src="https://sdk.scdn.co/spotify-player.js";document.body.appendChild(s)
+}
+window.onSpotifyWebPlaybackSDKReady=()=>{if(!token)return;spotifyPlayer=new Spotify.Player({name:cfg.deviceName,getOAuthToken:cb=>cb(token),volume:.8});spotifyPlayer.addListener("ready",({device_id})=>{deviceId=device_id;$("spstate").textContent="Mit Spotify verbunden ✓"});spotifyPlayer.addListener("authentication_error",async()=>{token=await refresh();if(!token)$("spstate").textContent="Spotify neu verbinden."});spotifyPlayer.connect()};
+spotifyAuth();
 </script></body></html>
