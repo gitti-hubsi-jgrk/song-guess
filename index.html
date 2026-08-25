@@ -175,7 +175,25 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 <script>
 const $=id=>document.getElementById(id);
 const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"]};
-const POOLS={mix:["Meine Mischung","kuratiert, generationenübergreifend"],gp_de:["Guilty Pleasures DE","kuratierte Auswahl"],gp_nl:["Guilty Pleasures NL","kuratierte Auswahl"],gp_fr:["Guilty Pleasures FR","kuratierte Auswahl"],soundtrack:["Film & TV","Songs & Themes"],rock:["Rock","Rock & Alternative"],urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],fr:["Französisch","Frankreich & Belgien"],de:["Deutschsprachig","DACH"],eurovision:["Eurovision","ESC-Hits & Sieger:innen"],indie:["Indie / Alternative","80er bis heute"],indie_0313:["Indie 2003–2013","DJ-era time capsule"],alternative:["Alternative / Art Pop","Björk bis Wolf Alice"],metal:["Metal / Heavy","Klassiker bis modern"],favorites:["Meine Favoriten","lokal gespeichert"],eighties:["📼 80s","kuratierter 80er-Pool"],cinema_tv:["🎬 Film & TV","unser eigener Soundtrack-Mix"],party:["🪩 Party","unser eigener Party-Mix"],guitar:["🎸 Gitarren","Rock · Punk · Metal · Indie"],guilty_fun:["😈 Guilty Fun","unser eigener Mitsing-/Trash-/Pop-Mix"]};
+const POOLS={
+mix:["Meine Mischung","kuratiert, generationenübergreifend"],
+guilty_fun:["😈 Guilty Fun","unser eigener Mitsing-/Trash-/Pop-Mix"],
+soundtrack:["Film & TV","Songs & Themes"],
+rock:["Rock","Rock & Alternative"],
+urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],
+fr:["Französisch","Frankreich & Belgien"],
+de:["Deutschsprachig","DACH"],
+eurovision:["Eurovision","ESC-Hits & Sieger:innen"],
+indie:["Indie / Alternative","80er bis heute"],
+indie_0313:["Indie 2003–2013","DJ-era time capsule"],
+alternative:["Alternative / Art Pop","Björk bis Wolf Alice"],
+metal:["Metal / Heavy","Klassiker bis modern"],
+favorites:["Meine Favoriten","lokal gespeichert"],
+eighties:["📼 80s","kuratierter 80er-Pool"],
+cinema_tv:["🎬 Film & TV Plus","unser eigener erweiterter Soundtrack-Mix"],
+party:["🪩 Party","unser eigener Party-Mix"],
+guitar:["🎸 Gitarren","Rock · Punk · Metal · Indie"]
+};
 let songs=[],names=["Spieler:in 1","Spieler:in 2"],playersMeta=[],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
 let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers={},completedRounds=[],gameTracks=[],bonusNow=false;
 let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={},lastStart={songId:null,pos:0};

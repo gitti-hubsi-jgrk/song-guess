@@ -47,4 +47,3 @@ Neu u. a.:
 - Random-30s behält den sanften Fade-in
 
 ## Public Release
-Konkrete Editionen, Kartenreihenfolgen und konkrete Editions-Referenzlisten wurden entfernt. Die Songdatenbank und unsere eigenen kuratierten Pools bleiben erhalten.

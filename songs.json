@@ -175,7 +175,6 @@
     "genre": "R&B",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -390,7 +389,6 @@
     "genre": "Soul",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -432,8 +430,6 @@
     "genre": "Soul",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix"
     ],
@@ -455,7 +451,6 @@
     "genre": "Pop/Rock",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix",
@@ -479,7 +474,6 @@
     "genre": "Rock",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix"
@@ -503,7 +497,6 @@
     "film": "Hair",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -527,7 +520,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -632,7 +624,6 @@
     "genre": "Rock",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix",
@@ -656,7 +647,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -722,7 +712,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -745,8 +734,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -836,7 +823,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -859,7 +845,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -946,7 +931,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -977,7 +961,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1002,7 +985,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix"
@@ -1028,7 +1010,6 @@
     "pools": [
       "alternative",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1053,7 +1034,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -1201,7 +1181,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1226,7 +1205,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1251,7 +1229,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1302,7 +1279,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -1328,7 +1304,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix",
@@ -1358,7 +1333,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1384,7 +1358,6 @@
     "pools": [
       "eighties",
       "fr",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -1408,7 +1381,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1433,7 +1405,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1481,7 +1452,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix",
@@ -1507,7 +1477,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1552,7 +1521,6 @@
     "genre": "Alternative Dance",
     "film": "",
     "pools": [
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -1575,7 +1543,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1620,7 +1587,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -1671,7 +1637,6 @@
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "urban"
@@ -1694,8 +1659,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1718,8 +1681,6 @@
     "genre": "Reggae Fusion",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_fr",
       "guilty_fun",
       "mix"
     ],
@@ -1784,7 +1745,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1807,7 +1767,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -1831,8 +1790,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1855,7 +1812,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -1878,7 +1834,6 @@
     "genre": "Pop/Soul",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1901,7 +1856,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1924,7 +1878,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -1968,7 +1921,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2032,7 +1984,6 @@
     "genre": "Latin Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2078,7 +2029,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -2106,7 +2056,6 @@
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
-      "gp_fr",
       "guilty_fun",
       "mix",
       "urban"
@@ -2200,7 +2149,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2244,7 +2192,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -2267,7 +2214,6 @@
     "genre": "Reggaeton",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "urban"
@@ -2290,7 +2236,6 @@
     "genre": "Latin Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -2354,7 +2299,6 @@
     "genre": "Dance",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2377,7 +2321,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -2506,7 +2449,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2550,7 +2492,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2573,7 +2514,6 @@
     "genre": "K-Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2662,7 +2602,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2750,7 +2689,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -2795,7 +2733,6 @@
     "film": "",
     "pools": [
       "fr",
-      "gp_nl",
       "guilty_fun",
       "mix"
     ],
@@ -2839,7 +2776,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -2862,7 +2798,6 @@
     "genre": "Country Rap",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "urban"
@@ -2933,7 +2868,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -2956,7 +2890,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -2981,7 +2914,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -3025,7 +2957,6 @@
     "genre": "Pop/Funk",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3069,7 +3000,6 @@
     "genre": "Dance",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3136,7 +3066,6 @@
     "film": "",
     "pools": [
       "fr",
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -3348,7 +3277,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3377,7 +3305,6 @@
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "urban"
@@ -3428,7 +3355,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3705,7 +3631,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3728,7 +3653,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3773,7 +3697,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -3843,8 +3766,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "guitar",
       "mix",
@@ -3868,7 +3789,6 @@
     "genre": "Soul Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3891,7 +3811,6 @@
     "genre": "Bubblegum Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -3914,7 +3833,6 @@
     "genre": "Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4004,7 +3922,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4029,7 +3946,6 @@
     "film": "Guardians of the Galaxy",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4055,7 +3971,6 @@
     "film": "",
     "pools": [
       "eurovision",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4083,7 +3998,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4106,7 +4020,6 @@
     "genre": "Funk Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix"
@@ -4129,7 +4042,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4174,7 +4086,6 @@
     "genre": "Pop Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4198,8 +4109,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4243,7 +4152,6 @@
     "genre": "Disco",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4266,7 +4174,6 @@
     "genre": "Synth-Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4314,7 +4221,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -4339,7 +4245,6 @@
     "pools": [
       "alternative",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4368,8 +4273,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4394,7 +4297,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4421,7 +4323,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4448,7 +4349,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4478,7 +4378,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4506,7 +4405,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -4532,7 +4430,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "mix"
     ],
@@ -4556,7 +4453,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4607,7 +4503,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4634,7 +4529,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4660,7 +4554,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4685,7 +4578,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -4735,7 +4627,6 @@
     "film": "",
     "pools": [
       "eighties",
-      "gp_nl",
       "guilty_fun",
       "mix"
     ],
@@ -4779,7 +4670,6 @@
     "genre": "Dance/Funk",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4802,7 +4692,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4825,8 +4714,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4849,7 +4736,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4872,7 +4758,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -4895,8 +4780,6 @@
     "genre": "Dance",
     "film": "",
     "pools": [
-      "gp_fr",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4919,8 +4802,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4943,8 +4824,6 @@
     "genre": "Eurodance",
     "film": "",
     "pools": [
-      "gp_de",
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -4967,7 +4846,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5012,7 +4890,6 @@
     "film": "Shrek",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -5037,7 +4914,6 @@
     "genre": "Alternative Rock",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix",
@@ -5062,7 +4938,6 @@
     "film": "Coyote Ugly",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -5086,7 +4961,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -5198,7 +5072,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5263,7 +5136,6 @@
     "genre": "Synth-Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -5286,7 +5158,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -5309,7 +5180,6 @@
     "genre": "Dance Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5353,7 +5223,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5481,7 +5350,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5612,7 +5480,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_nl",
       "guilty_fun",
       "mix",
       "party"
@@ -5677,7 +5544,6 @@
     "genre": "Pop",
     "film": "",
     "pools": [
-      "gp_de",
       "guilty_fun",
       "mix",
       "party"
@@ -5764,7 +5630,6 @@
     "pools": [
       "de",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "guitar",
       "mix"
@@ -5790,7 +5655,6 @@
     "pools": [
       "de",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -5815,7 +5679,6 @@
     "pools": [
       "de",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -5840,7 +5703,6 @@
     "pools": [
       "de",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -5914,7 +5776,6 @@
     "film": "",
     "pools": [
       "de",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -6006,7 +5867,6 @@
     "film": "",
     "pools": [
       "de",
-      "gp_de",
       "guilty_fun",
       "mix"
     ],
@@ -6030,7 +5890,6 @@
     "pools": [
       "eighties",
       "fr",
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -6056,7 +5915,6 @@
     "pools": [
       "eighties",
       "fr",
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -6105,7 +5963,6 @@
     "film": "",
     "pools": [
       "fr",
-      "gp_fr",
       "guilty_fun",
       "mix",
       "party"
@@ -6244,7 +6101,6 @@
     "film": "Grease",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -6295,7 +6151,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -6322,7 +6177,6 @@
     "pools": [
       "cinema_tv",
       "eighties",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
@@ -6371,7 +6225,6 @@
     "film": "Titanic",
     "pools": [
       "cinema_tv",
-      "gp_de",
       "guilty_fun",
       "mix",
       "party",
