@@ -31,19 +31,5 @@ Neu u. a.:
 - Älter/Jünger: dritte Antwort **GLEICHES JAHR**.
 
 
-## v4.3
-- Zufällige 30-Sekunden-Ausschnitte starten mit sanftem Fade-in (ca. 1,5 s), damit ein lauter Einstieg nicht erschreckt.
-- 80s-Pool um New Wave/Post-Punk/Synthpop/Alternative/Hip-Hop-Deep-Cuts erweitert.
-
-
-## Release candidate – letzte Musikarchäologie
-- Bibliothek: **612 Songs**
-- tiefer Indie-/Club-Pool 2003–2013 ausgebaut
-- persönliche Anker ergänzt: Delays, The Jesus and Mary Chain, Suede, Futureheads, Generationals, Vaccines, Jamie T, Yeah Yeah Yeahs, Long Blondes u. a.
-- `Valentine` von Delays enthalten
-- `Everybody (Backstreet's Back)` enthalten
-- KAMRAD mit mehreren Titeln vertreten
-- Nerdwissen kann jetzt zusätzlich `🔮 Zweites Leben` anzeigen
-- Random-30s behält den sanften Fade-in
 
 ## Public Release
