@@ -1,4 +1,4 @@
-# SONG GUESS v3.2 — Spielanleitung & How-to
+# SONG GUESS v4 — Spielanleitung
 
 ## Was ist Song Guess?
 Song Guess ist ein privates, browserbasiertes Musikquiz, das Spotify als Player nutzt. Es ist für iPhone, iPad und Desktop gestaltet. Die Musik bleibt bis zum Reveal anonym; danach werden Songdaten und optional Nerdwissen angezeigt.
@@ -117,3 +117,10 @@ Danach Nerdwissen aufklappen, wenn ein Song interessant ist. Das Spiel darf ausd
 
 ## Anleitung im Frontend
 Die vollständige Kurz-Spielanleitung ist jetzt direkt über den `?`-Button oben in Song Guess erreichbar.
+
+
+## v4: Antworten und Spielfluss
+Alle Spieler:innen bekommen pro Runde denselben Song und dieselbe(n) Frage(n). „Nacheinander“ und „Alle gleichzeitig“ unterscheiden nur die Art, wie die Antworten abgegeben werden. Vor Reveal kann eingegeben, laut geantwortet oder gepasst werden. Reveal wird erst aktiv, wenn alle fertig sind.
+
+## Soundtrack der Partie
+Am Spielende zeigt Song Guess alle gehörten Songs mit Spotify-Suchlinks. Die Liste kann als Text kopiert und für eine eigene Spotify-Playlist verwendet werden.

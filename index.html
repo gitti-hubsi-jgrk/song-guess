@@ -27,23 +27,38 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .historyItem{background:#202329;border-radius:14px;padding:14px;margin:9px 0}.historyItem .row{align-items:flex-start}.winner{color:var(--gold);font-weight:900}.empty{text-align:center;color:var(--muted);padding:30px}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{background:#22252a;border-radius:13px;padding:14px;text-align:center}.stat b{font-size:25px;display:block}
 .endrank{font-size:18px;padding:10px 0;border-bottom:1px solid #333}.endrank:first-child{font-size:23px;color:var(--gold)}
 @media(min-width:700px){.setupgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.setupgrid .card{margin:0}.chips{grid-template-columns:repeat(3,1fr)}.roundbody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:20px;align-items:start}.scorebar{position:static}.compare{gap:18px}.statgrid{grid-template-columns:repeat(4,1fr)}}
+
+.answerbox{background:#15171b;border:1px solid var(--line);border-radius:14px;padding:12px;margin:9px 0}
+.answerbox .who{display:flex;align-items:center;gap:9px;font-weight:850;margin-bottom:9px}
+.avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:white;font-size:18px}
+.answergrid{display:grid;gap:7px}.answergrid input,.answergrid select{width:100%;background:#0e1013;color:white;border:1px solid #3b3e44;border-radius:10px;padding:11px}
+.answerActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}.answerActions button{padding:8px 10px}
+.pooltags{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.pooltag{font-size:11px;border:1px solid #4a4551;border-radius:999px;padding:5px 8px;color:#cfc8d5}
+.bonus{padding:10px 14px;border-radius:14px;background:linear-gradient(135deg,#7a4313,#bd7721);font-weight:950;text-align:center;margin:10px 0}
+.gameMenu{position:fixed;inset:0;background:#000b;z-index:20;display:grid;place-items:center;padding:20px}.menuPanel{width:min(92vw,480px);background:#191b20;border:1px solid #444;border-radius:22px;padding:20px}
+.playeredit{display:grid;grid-template-columns:1fr 64px 70px auto;gap:7px;align-items:center;margin:7px 0}.playeredit input,.playeredit select{min-width:0}
+.undoBox{background:#211b29;border:1px solid #554168;border-radius:14px;padding:12px;margin:10px 0}
+.soundtrack{max-height:340px;overflow:auto}.trackrow{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #303238;padding:9px 0}.trackrow a{color:#1ed760}
+.decadechips{display:flex;gap:6px;flex-wrap:wrap}.decadechips button{padding:8px 10px}
+@media(min-width:700px){.answergrid{grid-template-columns:1fr 1fr}.playeredit{grid-template-columns:1fr 80px 80px auto}}
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
  <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
- <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
+ <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
 <section id="setup" class="hidden">
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
  <div class="setupgrid">
   <div class="card">
-   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button></div>
+   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name, Figur und Farbe werden nur lokal auf diesem Gerät gespeichert.</p></div>
    <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p></div>
-   <div class="field"><label>3 · Anzahl Songs</label><input id="count" class="input" type="number" min="1" value="15"></div>
+   <div class="field"><label>3 · Jahrzehnte</label><div id="decades" class="decadechips"></div></div>
+<div class="field"><label>4 · Anzahl Songs</label><input id="count" class="input" type="number" min="1" value="15"></div>
   </div>
   <div class="card">
-   <div class="field"><label>4 · Fragenpool</label><div id="cats" class="chips"></div></div>
+   <div class="field"><label>5 · Fragenpool</label><div id="cats" class="chips"></div></div>
    <div class="field"><label>Fragenwahl</label><div class="seg"><button data-g="qm" data-v="game" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
    <div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
    <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Nacheinander</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
@@ -58,24 +73,35 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 </section>
 
 <section id="round" class="hidden">
- <div class="roundtop"><span id="rno"></span><span id="badge" class="badge"></span></div>
+ <div class="roundtop"><span id="rno"></span><div class="row"><button id="undoBtn" class="secondary hidden" onclick="openUndo()">↶ Wertung</button><span id="badge" class="badge"></span><button class="secondary" onclick="openGameMenu()">☰</button></div></div>
+<div id="bonusBanner" class="bonus hidden">🔥 BONUSRunde · DOPPELTE PUNKTE</div>
  <div id="roundSetup" class="roundsetup hidden"><h3>Fragen für diese Runde</h3><div id="roundCats" class="chips"></div><button class="primary" style="margin-top:12px" onclick="confirmRoundCats()">Runde starten</button></div>
  <div id="roundContent">
   <div class="roundbody">
    <div>
     <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div id="record" class="vinyl"></div><button id="play" class="play">▶</button></div>
     <div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
-    <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
+    <div id="answers"></div><div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
     <div class="row" style="margin-top:14px">
 <button class="secondary" style="flex:1" onclick="restartCurrent()">↺ Restart</button>
-<button class="secondary" style="flex:1" onclick="skipSong()">⏭ Überspringen</button>
+<button class="secondary" style="flex:1" onclick="passRound()">⏭ Passen</button>
 </div>
-<button id="revbtn" class="primary" style="margin-top:10px" onclick="reveal()">Reveal & Punkte</button>
+<button id="revbtn" class="primary" style="margin-top:10px" onclick="reveal()" disabled>Reveal</button><button class="secondary" style="width:100%;margin-top:8px" onclick="replaceSong()">🔀 Anderer Song</button>
    </div>
    <div><div id="rev" class="hidden"></div><div id="scores" class="scorebar"></div></div>
   </div>
  </div>
 </section>
+
+
+<section id="menuOverlay" class="gameMenu hidden"><div class="menuPanel">
+ <div class="row"><h2>Spiel-Menü</h2><button class="secondary" onclick="closeGameMenu()">×</button></div>
+ <button class="primary" onclick="closeGameMenu()">▶ Fortsetzen</button>
+ <button class="secondary" style="width:100%;margin-top:8px" onclick="editPlayersInGame()">👥 Spieler:innen ändern</button>
+ <button class="secondary" style="width:100%;margin-top:8px" onclick="showRoundLog()">♫ Bisherige Songs</button>
+ <button class="secondary" style="width:100%;margin-top:8px" onclick="endGameEarly()">🏠 Spiel beenden</button>
+ <div id="menuExtra"></div>
+</div></section>
 
 <section id="history" class="hidden">
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Historie & Scores</h2><button class="secondary" onclick="clearHistory()">Löschen</button></div>
@@ -99,7 +125,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  </div>
  <div class="card">
   <h3>Spielmodi</h3>
-  <p><b>Nacheinander</b> – immer eine Person ist dran.</p>
+  <p><b>Nacheinander</b> – alle bekommen denselben Song und dieselbe Frage, antworten aber nacheinander.</p>
   <p><b>Alle gleichzeitig</b> – alle raten denselben Song; nach dem Reveal wird jede Person einzeln gewertet.</p>
   <p><b>Eine zufällige Frage</b> – pro Song zieht die App eine Kategorie aus eurem Fragenpool.</p>
   <p><b>Alle ausgewählten</b> – zu einem Song dürfen mehrere Dinge gleichzeitig geraten werden.</p>
@@ -117,7 +143,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div class="card">
   <h3>Reveal & Nerdwissen</h3>
   <p>Nach dem Reveal erscheinen Jahr, Titel, Interpret, Herkunft, Genre und – falls vorhanden – Film/Serie, Album oder Sprache.</p>
-  <p>Über <b>🧠 Mehr zum Song</b> findest du Fun Facts, Cover-Originale, Samples und musikalische Verwandtschaft. Bei Cover und Samplequelle gibt es direkt einen Spotify-Link zum Vergleich.</p>
+  <p>Beim Reveal siehst du außerdem, in welchen Song-Guess-Pools der Song steckt. Über <b>🧠 Mehr zum Song</b> findest du Fun Facts, Cover-Originale, Samples und musikalische Verwandtschaft. Bei Cover und Samplequelle gibt es direkt einen Spotify-Link zum Vergleich.</p>
   <p>♡ Favoriten werden nur auf deinem Gerät gespeichert.</p>
  </div>
  <div class="card">
@@ -149,31 +175,35 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 <script>
 const $=id=>document.getElementById(id);
 const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"]};
-const POOLS={mix:["Meine Mischung","Quer durch die Jahrzehnte"],gp_de:["Guilty Pleasures DE","GP-inspirierte Auswahl"],gp_nl:["Guilty Pleasures NL","GP-inspirierte Auswahl"],gp_fr:["Guilty Pleasures FR","Plaisirs coupables"],soundtrack:["Film & TV","Songs & Themes"],rock:["Rock","Rock & Alternative"],urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],fr:["Französisch","Frankreich & Belgien"],de:["Deutschsprachig","DACH"]};
-let songs=[],names=["Spieler:in 1","Spieler:in 2"],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
-let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,total=15,roundIndex=0,turn=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set();
+const POOLS={mix:["Meine Mischung","kuratiert, generationenübergreifend"],gp_de:["Guilty Pleasures DE","kuratierte Auswahl"],gp_nl:["Guilty Pleasures NL","kuratierte Auswahl"],gp_fr:["Guilty Pleasures FR","kuratierte Auswahl"],soundtrack:["Film & TV","Songs & Themes"],rock:["Rock","Rock & Alternative"],urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],fr:["Französisch","Frankreich & Belgien"],de:["Deutschsprachig","DACH"],eurovision:["Eurovision","ESC-Hits & Sieger:innen"],indie:["Indie / Alternative","80er bis heute"],indie_0313:["Indie 2003–2013","DJ-era time capsule"],alternative:["Alternative / Art Pop","Björk bis Wolf Alice"],metal:["Metal / Heavy","Klassiker bis modern"],favorites:["Meine Favoriten","lokal gespeichert"],eighties:["📼 80s","kuratierter 80er-Pool"],cinema_tv:["🎬 Film & TV","unser eigener Soundtrack-Mix"],party:["🪩 Party","unser eigener Party-Mix"],guitar:["🎸 Gitarren","Rock · Punk · Metal · Indie"],guilty_fun:["😈 Guilty Fun","unser eigener Mitsing-/Trash-/Pop-Mix"]};
+let songs=[],names=["Spieler:in 1","Spieler:in 2"],playersMeta=[],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
+let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers={},completedRounds=[],gameTracks=[],bonusNow=false;
 let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={},lastStart={songId:null,pos:0};
 
 function show(id){["home","setup","round","history","help"].forEach(x=>$(x).classList.toggle("hidden",x!==id));stopPlayback()}
-function addPlayer(v=""){let d=document.createElement("div");d.className="prow";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
-names.forEach(addPlayer);
+const AVATARS=["🪩","🎧","🎸","🦊","🐲","👻","🤖","🐙","🐝","⚡","🦄","🐸"];const COLORS=["#ed6cae","#68b7f2","#65d985","#d0a957","#a96bff","#ff805f","#55d6c2","#d58cff"];
+function addPlayer(v="",av="🪩",col="#ed6cae"){let d=document.createElement("div");d.className="playeredit";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><select class="input pavatar">${AVATARS.map(x=>`<option ${x===av?"selected":""}>${x}</option>`).join("")}</select><input class="input pcolor" type="color" value="${col}"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
+let savedProfiles=JSON.parse(localStorage.getItem("sg_profiles")||"[]");if(savedProfiles.length)savedProfiles.forEach(x=>addPlayer(x.name,x.avatar,x.color));else{addPlayer("Spieler:in 1","🪩","#ed6cae");addPlayer("Spieler:in 2","🎧","#68b7f2")}
 
 function setupSelectors(){
+ [1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].forEach(d=>{let b=document.createElement("button");b.className="chip on";b.textContent=d+"er";b.onclick=()=>{b.classList.toggle("on");b.classList.contains("on")?selectedDecades.add(d):selectedDecades.delete(d)};$("decades").appendChild(b)});
+
  Object.entries(CATS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedCats.has(k)?"on":"");b.innerHTML=`${v[0]}`;b.onclick=()=>{selectedCats.has(k)?selectedCats.delete(k):selectedCats.add(k);b.classList.toggle("on")};$("cats").appendChild(b)});
- Object.entries(POOLS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedPools.has(k)?"on":"");let n=songs.filter(s=>s.pools.includes(k)).length;b.innerHTML=`${v[0]}<span class="poolmeta">${n} Songs · ${v[1]}</span>`;b.onclick=()=>{selectedPools.has(k)?selectedPools.delete(k):selectedPools.add(k);b.classList.toggle("on");updatePoolCount()};$("pools").appendChild(b)});
+ Object.entries(POOLS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedPools.has(k)?"on":"");let n=k==="favorites"?JSON.parse(localStorage.getItem("sg_favs")||"[]").length:songs.filter(s=>s.pools.includes(k)).length;b.innerHTML=`${v[0]}<span class="poolmeta">${n} Songs · ${v[1]}</span>`;b.onclick=()=>{selectedPools.has(k)?selectedPools.delete(k):selectedPools.add(k);b.classList.toggle("on");updatePoolCount()};$("pools").appendChild(b)});
  document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x=>x.classList.remove("on"));b.classList.add("on");if(b.dataset.g==="qm")qm=b.dataset.v;if(b.dataset.g==="ps")ps=b.dataset.v;if(b.dataset.g==="am")am=b.dataset.v;if(b.dataset.g==="clip")clipMode=b.dataset.v});
  document.querySelectorAll(".modebtn").forEach(b=>b.onclick=()=>setClip(b.dataset.clip));
 }
 function updatePoolCount(){let ids=new Set(songs.filter(s=>s.pools.some(p=>selectedPools.has(p))).map(s=>s.id));$("poolCount").textContent=`${ids.size} unterschiedliche Songs im kombinierten Pool.`}
-fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>{songs=x;$("songCount").textContent=songs.length;setupSelectors();updatePoolCount()});
+fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>{songs=x;$("songCount").textContent=songs.length;setupSelectors();updatePoolCount();checkResume()});
 
 function setClip(v){clipMode=v;document.querySelectorAll(".modebtn").forEach(b=>b.classList.toggle("on",b.dataset.clip===v));stopPlayback()}
-function poolSongs(){return songs.filter(s=>s.pools.some(p=>selectedPools.has(p)))}
-function randomSong(ex=[]){let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}let s=base[Math.floor(Math.random()*base.length)];if(s)usedIds.add(s.id);return s}
-function gameCats(){let a=[...selectedCats];if(ps==="all")return a.filter(x=>x!=="compare" && !(x==="film" && !song?.film));return [a[Math.floor(Math.random()*a.length)]]}
+function poolSongs(){let fav=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));return songs.filter(s=>(s.pools.some(p=>selectedPools.has(p))||(selectedPools.has("favorites")&&fav.has(s.id)))&&selectedDecades.has(Math.floor(s.year/10)*10))}
+function randomSong(ex=[]){let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}let recent=gameTracks.slice(-2),best=base.map(s=>{let pen=0;for(let r of recent){if(Math.floor(r.year/10)===Math.floor(s.year/10))pen+=3;if(r.genre===s.genre)pen+=2;if(r.artist===s.artist)pen+=5}return [s,pen+Math.random()] }).sort((a,b)=>a[1]-b[1])[0]?.[0];if(best)usedIds.add(best.id);return best}
+function refillBag(){let a=[...selectedCats];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}if(categoryBag.length&&a[0]===categoryBag.at(-1)&&a.length>1)[a[0],a[1]]=[a[1],a[0]];categoryBag=a}
+function gameCats(){let a=[...selectedCats];if(ps==="all")return a.filter(x=>x!=="compare"&&!(x==="film"&&!song?.film));if(!categoryBag.length)refillBag();let c=categoryBag.shift();if(c==="film"&&!song?.film)return gameCats();return [c]}
 
 function startGame(){
- names=[...document.querySelectorAll(".pname")].map(x=>x.value.trim()).filter(Boolean);
+ let rows=[...document.querySelectorAll(".playeredit")];playersMeta=rows.map(r=>({name:r.querySelector(".pname").value.trim(),avatar:r.querySelector(".pavatar").value,color:r.querySelector(".pcolor").value})).filter(x=>x.name);names=playersMeta.map(x=>x.name);localStorage.setItem("sg_profiles",JSON.stringify(playersMeta));
  if(!names.length)return alert("Bitte mindestens eine Person eintragen.");
  if(!selectedPools.size)return alert("Bitte mindestens einen Songpool wählen.");
  if(!selectedCats.size)return alert("Bitte mindestens eine Fragekategorie wählen.");
@@ -181,14 +211,14 @@ function startGame(){
  if(avoidRecent){let h=JSON.parse(localStorage.getItem("sg_history")||"[]").slice(0,3),recent=new Set(h.flatMap(g=>g.songIds||[]));let filtered=roundPool.filter(s=>!recent.has(s.id));if(filtered.length>=Math.min(total,10))roundPool=filtered}
  if(!roundPool.length)return alert("Dieser Pool enthält keine Songs.");
  total=Math.max(1,Math.min(100,+$("count").value||15));saveHistory=$("saveHistory").checked;saveStats=$("saveStats").checked;avoidRecent=$("avoidRecent").checked;bonusRounds=$("bonusRounds").checked;
- scores=names.map(()=>0);roundIndex=0;turn=0;usedIds.clear();show("round");keepAwake();nextRound();
+ scores=names.map(()=>0);roundIndex=0;usedIds.clear();completedRounds=[];gameTracks=[];categoryBag=[];show("round");keepAwake();saveGameState();nextRound();
 }
 function prepareRound(){
  if(roundIndex>=total)return endGame();
- roundIndex++;song=randomSong();pair=[];$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":`${names[turn]} ist dran`;
+ roundIndex++;song=randomSong();pair=[];bonusNow=bonusRounds&&roundIndex%5===0;$("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
  $("rev").classList.add("hidden");$("revbtn").classList.remove("hidden");$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
  if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");return}
- currentCats=gameCats();renderRound();
+ currentCats=bonusNow?["year","artist","title","country"]:gameCats();renderRound();
 }
 function nextRound(){stopPlayback();prepareRound()}
 function buildRoundSelector(){
@@ -202,9 +232,29 @@ function renderRound(){
  let cp=currentCats[0]==="compare";if(cp)pair=[song,randomSong([song.id])];
  $("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);
  if(!cp){$("clabel").textContent=ps==="all"?currentCats.map(x=>CATS[x][0]).join(" · "):CATS[currentCats[0]][0];$("qtext").textContent=ps==="all"?"Was wisst ihr über diesen Song?":CATS[currentCats[0]][1]}
- setClip(clipMode);renderScores();
+ setClip(clipMode);roundAnswers={};renderAnswerForms();renderScores();$("revbtn").disabled=true;saveGameState();
 }
-function renderScores(){$("scores").innerHTML=names.map((n,i)=>`<div class="score">${n}<b>${scores[i]}</b></div>`).join("")}
+
+function fieldFor(cat,i){
+ if(cat==="year")return `<input type="number" data-cat="${cat}" placeholder="Jahr, z. B. 1987">`;
+ if(cat==="decade")return `<select data-cat="${cat}"><option value="">Jahrzehnt wählen</option>${[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].map(d=>`<option value="${d}">${d}er</option>`).join("")}</select>`;
+ if(cat==="compare")return `<select data-cat="${cat}"><option value="">A, B oder gleiches Jahr?</option><option>A</option><option>B</option><option>GLEICHES JAHR</option></select>`;
+ return `<input data-cat="${cat}" placeholder="${CATS[cat][0].replace(/^[^ ]+ /,"")}">`;
+}
+function renderAnswerForms(){
+ let html=playersMeta.map((p,i)=>`<div class="answerbox" data-player="${i}"><div class="who"><span class="avatar" style="background:${p.color}">${p.avatar}</span>${p.name}</div><div class="answergrid">${currentCats.map(c=>fieldFor(c,i)).join("")}</div><div class="answerActions"><button class="secondary" onclick="markAloud(${i})">🗣️ Ich sage es laut</button><button class="secondary" onclick="markPass(${i})">Passen</button></div><div class="tiny statusAnswer">Noch offen</div></div>`).join("");
+ $("answers").innerHTML=html;
+ $("answers").querySelectorAll("input,select").forEach(el=>el.addEventListener("input",checkAnswers));
+ checkAnswers();
+}
+function markAloud(i){roundAnswers[i]={mode:"aloud"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);b.dataset.done="1";b.querySelector(".statusAnswer").textContent="🗣️ Antwort laut gesagt";checkAnswers()}
+function markPass(i){roundAnswers[i]={mode:"pass"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Passt · 0 Punkte";checkAnswers()}
+function checkAnswers(){
+ document.querySelectorAll(".answerbox").forEach((b,i)=>{let vals=[...b.querySelectorAll("input,select")];if(vals.length&&vals.every(x=>x.value!=="")){roundAnswers[i]={mode:"entered",values:Object.fromEntries(vals.map(x=>[x.dataset.cat,x.value]))};b.dataset.done="1";b.querySelector(".statusAnswer").textContent="✓ Antwort gespeichert"}});
+ let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");$("revbtn").disabled=!all;
+}
+
+function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
 
 async function getToken(){return token}
 async function resolveTrack(s){
@@ -217,6 +267,16 @@ async function resolveTrack(s){
  let obj={uri:t.uri,url:t.external_urls.spotify,duration:t.duration_ms};
  resolvedCache[s.id]=obj;localStorage.setItem(key,JSON.stringify(obj));return obj;
 }
+
+async function setSpotifyVolume(percent){
+ if(!token)return;
+ try{await fetch(`https://api.spotify.com/v1/me/player/volume?volume_percent=${Math.max(0,Math.min(100,Math.round(percent)))}&device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`}})}catch(e){}
+}
+async function fadeInRandom(){
+ const steps=[12,22,34,48,64,80,100];
+ for(const v of steps){await new Promise(r=>setTimeout(r,180));await setSpotifyVolume(v)}
+}
+
 async function playSong(s,key){
  if(!token)return alert("Bitte zuerst Spotify verbinden.");
  if(!deviceId)return alert("Spotify-Player ist noch nicht bereit. Kurz warten und nochmals probieren.");
@@ -224,10 +284,11 @@ async function playSong(s,key){
  stopPlayback();
  try{
   let t=await resolveTrack(s),pos=0,duration=null;
-  if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000}
+  if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000;await setSpotifyVolume(8)}
   if(clipMode==="start30")duration=30000;
+  if(clipMode!=="random30")await setSpotifyVolume(100);
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
-  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();
+  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(clipMode==="random30")fadeInRandom();
   if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
  }catch(e){alert("Song konnte über Spotify nicht gestartet werden.")}
 }
@@ -251,11 +312,13 @@ async function restartCurrent(){
  stopPlayback();
  try{
   let t=await resolveTrack(s),pos=(clipMode==="random30"&&lastStart.songId===s.id)?lastStart.pos:0,duration=clipMode==="full"?null:30000;
+  if(clipMode==="random30")await setSpotifyVolume(8);
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
-  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
+  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(clipMode==="random30")fadeInRandom();if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
  }catch(e){alert("Song konnte nicht neu gestartet werden.")}
 }
-function skipSong(){stopPlayback();roundIndex--;nextRound()}
+function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});document.querySelectorAll(".answerbox").forEach(b=>{b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Gepasst · 0 Punkte"});$("revbtn").disabled=false;reveal()}
+function replaceSong(){stopPlayback();usedIds.delete(song?.id);roundIndex--;nextRound()}
 function surpriseGame(){
  selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare"]);
  qm="game";ps="one";am="all";clipMode=["full","start30","random30"][Math.floor(Math.random()*3)];
@@ -266,48 +329,57 @@ function surpriseGame(){
 }
 async function songRevealHTML(s,label=""){
  let t=null;try{t=await resolveTrack(s)}catch(e){}
- return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}</div>
+ return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}${s.releaseNote?`<div><b>Release-Hinweis</b><span>${s.releaseNote}</span></div>`:""}${s.esc?`<div><b>Eurovision</b><span>${s.esc.country} · ${s.esc.year}${s.esc.winner?" · 🏆 Sieger:in":""}</span></div>`:""}</div><div class="pooltags">${(s.pools||[]).filter(p=>POOLS[p]).map(p=>`<span class="pooltag">${POOLS[p][0]}</span>`).join("")}</div>
 ${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}
-<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button>
-<div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px">
-${s.nerd?`<p>${s.nerd}</p>`:`<p class="muted">Für diesen Song ergänzen wir noch Nerdwissen.</p>`}
+${(s.nerd||s.secondLife||s.coverOf||s.samples?.length||s.sampledBy?.length||s.relatesTo)?`<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button><div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px">
+${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife)?`<p class="muted">Für diesen Song ergänzen wir noch Nerdwissen.</p>`:""}
 ${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist} (${s.coverOf.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(s.coverOf.title+" "+s.coverOf.artist)}" target="_blank">▶ Original</a></p>`:""}
 ${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Quelle</a>`).join("<br>")}</p>`:""}
 ${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Song</a>`).join("<br>")}</p>`:""}
 ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — ${s.relatesTo.artist} (${s.relatesTo.year})</p>`:""}
-<button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button>
-</div></div>`;
+<button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button></div>`:""} </div>`;
 }
-async function reveal(){
- stopPlayback();$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
- if(cp){let older=pair[0].year<=pair[1].year?"A":"B";sol=`<div class="reveal"><div class="answer">${older} ist älter</div><p class="muted">${Math.abs(pair[0].year-pair[1].year)} Jahre Unterschied</p></div>`+await songRevealHTML(pair[0],"SONG A")+await songRevealHTML(pair[1],"SONG B")}
+async function reveal(){$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
+ if(cp){let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B"),ta=await resolveTrack(pair[0]).catch(()=>null),tb=await resolveTrack(pair[1]).catch(()=>null);sol=`<div class="reveal"><div class="answer">${older} ist älter · ${Math.abs(pair[0].year-pair[1].year)} Jahre</div><div class="compare"><div class="songbox"><b>A · ${pair[0].year}</b><p>${pair[0].title}<br><span class="muted">${pair[0].artist}</span></p>${ta?`<a class="spotifylink" href="${ta.url}" target="_blank">Spotify</a>`:""}</div><b>VS.</b><div class="songbox"><b>B · ${pair[1].year}</b><p>${pair[1].title}<br><span class="muted">${pair[1].artist}</span></p>${tb?`<a class="spotifylink" href="${tb.url}" target="_blank">Spotify</a>`:""}</div></div><button class="secondary" style="margin-top:12px" onclick="document.getElementById('compareNerd').classList.toggle('hidden')">🧠 Nerdwissen & Details</button><div id="compareNerd" class="hidden">${await songRevealHTML(pair[0],"SONG A")}${await songRevealHTML(pair[1],"SONG B")}</div></div>`}
  else sol=await songRevealHTML(song);
  $("rev").innerHTML=sol+judgeUI(cp);
 }
-function judgeUI(cp){let list=am==="all"?names.map((n,i)=>judgePerson(n,i,cp)).join(""):judgePerson(names[turn],turn,cp);return `<h3>Punkte vergeben</h3>${list}<button class="primary" onclick="finishJudge()">Punkte speichern & weiter</button>`}
+function judgeUI(cp){let list=names.map((n,i)=>judgePerson(n,i,cp)).join("");return `<h3>Punkte vergeben${bonusNow?" · ×2 BONUS":""}</h3>${list}<button id="savePts" class="primary" disabled onclick="finishJudge()">Punkte speichern & weiter</button>`}
 function judgePerson(n,i,cp){
  let year=currentCats.includes("year")&&!cp,buttons="";
  if(ps==="all"&&!cp){
    buttons=currentCats.map(c=>c==="year"?`<div style="width:100%"><span class="tiny">${CATS[c][0]}</span><div class="judgeBtns"><button onclick="catPts(this,${i},'year',0)">0</button><button onclick="catPts(this,${i},'year',1)">±3 +1</button><button onclick="catPts(this,${i},'year',2)">±1 +2</button><button onclick="catPts(this,${i},'year',3)">Exakt +3</button></div></div>`:`<button data-cat="${c}" onclick="toggleCat(this,${i},'${c}')">${CATS[c][0]} 0 / +1</button>`).join("")
  } else if(year)buttons=`<button onclick="setPts(this,${i},0)">Daneben 0</button><button onclick="setPts(this,${i},1)">±3 J. +1</button><button onclick="setPts(this,${i},2)">±1 J. +2</button><button onclick="setPts(this,${i},3)">Exakt +3</button>`;
  else buttons=`<button onclick="setPts(this,${i},0)">✕ 0</button><button onclick="setPts(this,${i},1)">✓ +1</button>`;
- return `<div class="judge" data-i="${i}" data-p="0"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
+ let pass=roundAnswers[i]?.mode==="pass";return `<div class="judge" data-i="${i}" data-p="0" data-rated="${pass?"1":"0"}"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${pass?"<b>Gepasst · 0 Punkte</b>":buttons}</div></div>`;
 }
-function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel")}
+function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");checkRatings()}
 function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.classList.toggle("sel",btn.dataset.on==="1");btn.textContent=`${CATS[c][0]} ${btn.dataset.on==="1"?"+1":"0 / +1"}`;recountJudge(i)}
 function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
-function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P."}
-function finishJudge(){document.querySelectorAll(".judge").forEach(x=>scores[+x.dataset.i]+=+(x.dataset.p||0));if(am==="turns")turn=(turn+1)%names.length;nextRound()}
-function endGame(){
+function checkRatings(){let all=[...document.querySelectorAll(".judge")].every(x=>x.dataset.rated==="1");let b=$("savePts");if(b)b.disabled=!all}
+function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";checkRatings()}
+function finishJudge(){let before=[...scores],awards=[];document.querySelectorAll(".judge").forEach(x=>{let p=+(x.dataset.p||0);if(bonusNow)p*=2;scores[+x.dataset.i]+=p;awards[+x.dataset.i]=p});let ids=currentCats[0]==="compare"?pair.map(x=>x.id):[song.id];completedRounds.push({round:roundIndex,songIds:ids,cats:[...currentCats],awards,before,bonus:bonusNow});(currentCats[0]==="compare"?pair:[song]).forEach(s=>{if(!gameTracks.some(x=>x.id===s.id))gameTracks.push(s)});$("undoBtn").classList.remove("hidden");renderScores();saveGameState();nextRound()}
+function endGame(early=false){
  stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds]};
  if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}
  if(saveStats){let st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let max=Math.max(...scores);names.forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=scores[i];if(scores[i]===max)st[n].wins++});localStorage.setItem("sg_stats",JSON.stringify(st))}
- show("home");document.querySelector("#home .hero").innerHTML=`<h2>🏆 Spiel beendet</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
+ localStorage.removeItem("sg_active");show("home");document.querySelector("#home .hero").innerHTML=`<h2>${early?"Spiel beendet":"🏆 Spiel beendet"}</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><h3>🎧 Soundtrack dieser Partie</h3><div class="soundtrack">${gameTracks.map(s=>`<div class="trackrow"><span>${s.title}<br><small>${s.artist} · ${s.year}</small></span><a href="https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}" target="_blank">Spotify</a></div>`).join("")}</div><button class="secondary" style="width:100%;margin:10px 0" onclick="copyGamePlaylist()">Playlist-Liste kopieren</button><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
 }
 
+function copyGamePlaylist(){let t=gameTracks.map(s=>`${s.artist} – ${s.title}`).join("\n");navigator.clipboard?.writeText(t);alert("Songliste kopiert – du kannst sie z. B. in Spotify weiterverwenden.")}
 function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));if(f.has(id)){f.delete(id);btn.textContent="♡ Favorit"}else{f.add(id);btn.textContent="♥ Favorit"}localStorage.setItem("sg_favs",JSON.stringify([...f]))}
 let wakeLock=null;async function keepAwake(){try{if("wakeLock"in navigator)wakeLock=await navigator.wakeLock.request("screen")}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&$("round")&&!$("round").classList.contains("hidden"))keepAwake()});
+
+function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds]}))}
+function checkResume(){if(localStorage.getItem("sg_active"))$("resumeBtn").classList.remove("hidden")}
+function resumeGame(){let st=JSON.parse(localStorage.getItem("sg_active")||"null");if(!st)return;names=st.names;playersMeta=st.playersMeta||names.map((n,i)=>({name:n,avatar:AVATARS[i%AVATARS.length],color:COLORS[i%COLORS.length]}));scores=st.scores;selectedPools=new Set(st.selectedPools);selectedCats=new Set(st.selectedCats);selectedDecades=new Set(st.selectedDecades||[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]);qm=st.qm;ps=st.ps;am=st.am;clipMode=st.clipMode;total=st.total;roundIndex=st.roundIndex;completedRounds=st.completedRounds||[];usedIds=new Set(st.usedIds||[]);roundPool=poolSongs();gameTracks=(st.gameTracks||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);show("round");nextRound()}
+function openUndo(){let r=completedRounds.at(-1);if(!r)return;let h=`<div class="undoBox"><h3>Runde ${r.round} korrigieren</h3>${playersMeta.map((p,i)=>`<div class="row"><span>${p.avatar} ${p.name}</span><span><button class="secondary" onclick="adjustLast(${i},-1)">−</button> <b id="u${i}">${r.awards[i]||0}</b> <button class="secondary" onclick="adjustLast(${i},1)">+</button></span></div>`).join("")}</div>`;$("menuExtra").innerHTML=h;openGameMenu()}
+function adjustLast(i,d){let r=completedRounds.at(-1);let old=r.awards[i]||0,newv=Math.max(0,old+d);r.awards[i]=newv;scores[i]+=newv-old;$("u"+i).textContent=newv;renderScores();saveGameState()}
+function openGameMenu(){$("menuOverlay").classList.remove("hidden")}function closeGameMenu(){$("menuOverlay").classList.add("hidden");$("menuExtra").innerHTML=""}
+function editPlayersInGame(){$("menuExtra").innerHTML=`<div class="undoBox"><p>Spieler:innen mitten im Spiel ändern: Name/Figur/Farbe kannst du im nächsten Schritt im Setup korrigieren. Der aktuelle Punktestand bleibt nach Position erhalten.</p><button class="primary" onclick="closeGameMenu();show('setup')">Setup öffnen</button></div>`}
+function showRoundLog(){$("menuExtra").innerHTML=`<div class="undoBox soundtrack"><h3>Bisher gehört</h3>${gameTracks.length?gameTracks.map(s=>`<div class="trackrow"><span>${s.year} · ${s.title}<br><small>${s.artist}</small></span></div>`).join(""):"Noch nichts aufgedeckt."}</div>`}
+function endGameEarly(){if(confirm("Spiel wirklich beenden?")){localStorage.removeItem("sg_active");closeGameMenu();endGame(true)}}
 function showHistory(){show("history");let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let entries=Object.entries(st).sort((a,b)=>b[1].wins-a[1].wins||b[1].points-a[1].points);
  $("stats").innerHTML=entries.length?`<div class="statgrid">${entries.map(([n,s])=>`<div class="stat"><b>${s.wins}</b>Siege<br><span class="tiny">${n} · ${s.games} Spiele · ${s.points} P.</span></div>`).join("")}</div>`:`<div class="empty">Noch keine gespeicherten Scores.</div>`;
  $("historyList").innerHTML=h.length?h.map(g=>`<div class="historyItem"><div class="row"><div><b>${new Date(g.date).toLocaleDateString("de-DE")}</b><div class="tiny">${g.rounds} Songs · ${g.pools.map(p=>POOLS[p]?.[0]||p).join(", ")}</div></div><div class="winner">🏆 ${g.ranking[0].name}</div></div><p>${g.ranking.map(x=>`${x.name}: ${x.score}`).join(" · ")}</p></div>`).join(""):`<div class="empty">Noch keine gespeicherten Spiele.</div>`;
