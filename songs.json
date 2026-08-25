@@ -10,7 +10,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "The Wizard of Oz",
+    "language": "Englisch",
+    "nerd": "Der Song wurde für The Wizard of Oz geschrieben und gewann den Oscar für den besten Originalsong.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 2,
@@ -22,7 +29,14 @@
     "film": "Buck Privates",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 3,
@@ -35,7 +49,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 4,
@@ -47,7 +68,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 5,
@@ -60,7 +88,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 6,
@@ -72,7 +107,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 7,
@@ -84,7 +126,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 8,
@@ -96,7 +145,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 9,
@@ -109,7 +165,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 10,
@@ -122,7 +185,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 11,
@@ -135,7 +205,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "Blue Hawaii",
+    "language": "Englisch",
+    "nerd": "Die Melodie geht auf das französische Lied „Plaisir d’amour“ aus dem 18. Jahrhundert zurück.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 12,
@@ -147,7 +224,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 13,
@@ -159,7 +243,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 14,
@@ -171,7 +262,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 15,
@@ -184,7 +282,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 16,
@@ -197,7 +302,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 17,
@@ -209,7 +321,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 18,
@@ -221,7 +340,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 19,
@@ -234,7 +360,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 20,
@@ -246,7 +379,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 21,
@@ -260,7 +400,14 @@
       "mix",
       "gp_nl",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 22,
@@ -273,7 +420,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 23,
@@ -286,7 +440,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 24,
@@ -300,7 +461,14 @@
       "mix",
       "gp_de",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 25,
@@ -313,7 +481,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 26,
@@ -325,7 +500,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 27,
@@ -337,7 +519,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 28,
@@ -349,7 +538,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 29,
@@ -361,7 +557,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "Talking Book",
+    "language": "Englisch",
+    "nerd": "Das markante Clavinet-Riff ist eines der bekanntesten Keyboard-Riffs des Funk.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 30,
@@ -375,7 +578,14 @@
       "mix",
       "rock",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 31,
@@ -388,7 +598,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 32,
@@ -400,7 +617,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 33,
@@ -413,7 +637,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 34,
@@ -426,7 +657,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 35,
@@ -440,7 +678,14 @@
       "mix",
       "gp_de",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 36,
@@ -453,7 +698,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 37,
@@ -466,7 +718,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "Saturday Night Fever",
+    "language": "Englisch",
+    "nerd": "Der Song ist eng mit Saturday Night Fever verbunden und wurde zu einem der bekanntesten Disco-Stücke überhaupt.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 38,
@@ -479,7 +738,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 39,
@@ -492,7 +758,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 40,
@@ -505,7 +778,14 @@
     "pools": [
       "mix",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 41,
@@ -517,7 +797,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 42,
@@ -529,7 +816,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 43,
@@ -542,7 +836,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 44,
@@ -555,7 +856,20 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "Diana",
+    "language": "Englisch",
+    "nerd": "Das Stück wurde später prominent in „Mo Money Mo Problems“ gesampelt.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [
+      {
+        "title": "Mo Money Mo Problems",
+        "artist": "The Notorious B.I.G. feat. Puff Daddy & Mase",
+        "year": 1997
+      }
+    ],
+    "relatesTo": null
   },
   {
     "id": 45,
@@ -568,7 +882,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 46,
@@ -581,7 +902,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 47,
@@ -594,7 +922,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 48,
@@ -607,7 +942,14 @@
     "pools": [
       "mix",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 49,
@@ -619,7 +961,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 50,
@@ -633,7 +982,14 @@
       "mix",
       "rock",
       "soundtrack"
-    ]
+    ],
+    "album": "Eye of the Tiger",
+    "language": "Englisch",
+    "nerd": "Sylvester Stallone wollte Musik für Rocky III; daraus entstand einer der bekanntesten Trainingssongs der Popkultur.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 51,
@@ -646,7 +1002,19 @@
     "pools": [
       "mix",
       "de"
-    ]
+    ],
+    "album": "",
+    "language": "Deutsch",
+    "nerd": "Der Song greift die Figur Major Tom auf, die durch David Bowies „Space Oddity“ bekannt wurde.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": {
+      "title": "Space Oddity",
+      "artist": "David Bowie",
+      "year": 1969,
+      "type": "inspired"
+    }
   },
   {
     "id": 52,
@@ -659,7 +1027,14 @@
     "pools": [
       "mix",
       "de"
-    ]
+    ],
+    "album": "Nena",
+    "language": "Deutsch",
+    "nerd": "Neben der deutschen Aufnahme entstand auch eine englische Version; international war teils gerade das deutsche Original besonders erfolgreich.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 53,
@@ -671,7 +1046,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 54,
@@ -684,7 +1066,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 55,
@@ -697,7 +1086,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 56,
@@ -710,7 +1106,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "Hunting High and Low",
+    "language": "Englisch",
+    "nerd": "Der internationale Durchbruch gelang erst nach mehreren Anläufen; das Bleistift-/Realfilm-Musikvideo wurde selbst zur Pop-Ikone.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 57,
@@ -723,7 +1126,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Der Song wurde für Back to the Future geschrieben und ist stark mit dem Film verbunden.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 58,
@@ -736,7 +1146,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 59,
@@ -750,7 +1167,18 @@
       "mix",
       "gp_nl",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Run-D.M.C. verband den Aerosmith-Song mit Hip-Hop; Steven Tyler und Joe Perry wirkten bei der berühmten Neuaufnahme mit.",
+    "coverOf": {
+      "title": "Walk This Way",
+      "artist": "Aerosmith",
+      "year": 1975
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 60,
@@ -763,7 +1191,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 61,
@@ -777,7 +1212,14 @@
       "mix",
       "gp_de",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 62,
@@ -790,7 +1232,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 63,
@@ -803,7 +1252,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 64,
@@ -815,7 +1271,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 65,
@@ -828,7 +1291,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 66,
@@ -841,7 +1311,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 67,
@@ -853,7 +1330,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 68,
@@ -866,7 +1350,14 @@
     "pools": [
       "mix",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 69,
@@ -879,7 +1370,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 70,
@@ -892,7 +1390,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 71,
@@ -905,7 +1410,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 72,
@@ -918,7 +1430,18 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "The Bodyguard",
+    "language": "Englisch",
+    "nerd": "Whitney Houstons Welthit ist eine Coverversion eines Songs, den Dolly Parton selbst schrieb und 1974 veröffentlichte.",
+    "coverOf": {
+      "title": "I Will Always Love You",
+      "artist": "Dolly Parton",
+      "year": 1974
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 73,
@@ -932,7 +1455,14 @@
       "mix",
       "gp_nl",
       "urban"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 74,
@@ -946,7 +1476,14 @@
       "mix",
       "gp_nl",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 75,
@@ -960,7 +1497,14 @@
       "mix",
       "gp_de",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 76,
@@ -973,7 +1517,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 77,
@@ -985,7 +1536,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 78,
@@ -998,7 +1556,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 79,
@@ -1011,7 +1576,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 80,
@@ -1024,7 +1596,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 81,
@@ -1037,7 +1616,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 82,
@@ -1050,7 +1636,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 83,
@@ -1063,7 +1656,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 84,
@@ -1076,7 +1676,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 85,
@@ -1088,7 +1695,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 86,
@@ -1101,7 +1715,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 87,
@@ -1113,7 +1734,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 88,
@@ -1125,7 +1753,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 89,
@@ -1138,7 +1773,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 90,
@@ -1152,7 +1794,14 @@
       "mix",
       "urban",
       "soundtrack"
-    ]
+    ],
+    "album": "8 Mile",
+    "language": "Englisch",
+    "nerd": "Der Song wurde für 8 Mile geschrieben und gewann als erster Rap-Song den Oscar für den besten Originalsong.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 91,
@@ -1165,7 +1814,19 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "Spanisch",
+    "nerd": "Der Refrain spielt lautmalerisch mit einer Figur, die versucht, den Anfang von „Rapper’s Delight“ mitzusingen.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": {
+      "title": "Rapper's Delight",
+      "artist": "The Sugarhill Gang",
+      "year": 1979,
+      "type": "reference"
+    }
   },
   {
     "id": 92,
@@ -1179,7 +1840,14 @@
       "mix",
       "urban",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 93,
@@ -1192,7 +1860,20 @@
     "pools": [
       "mix",
       "urban"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Die sofort erkennbare Bläserfigur basiert auf einem Sample von The Chi-Lites.",
+    "coverOf": null,
+    "samples": [
+      {
+        "title": "Are You My Woman? (Tell Me So)",
+        "artist": "The Chi-Lites",
+        "year": 1970
+      }
+    ],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 94,
@@ -1205,7 +1886,14 @@
     "pools": [
       "mix",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 95,
@@ -1217,7 +1905,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 96,
@@ -1230,7 +1925,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 97,
@@ -1243,7 +1945,14 @@
     "pools": [
       "mix",
       "urban"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 98,
@@ -1256,7 +1965,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 99,
@@ -1270,7 +1986,14 @@
       "mix",
       "urban",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 100,
@@ -1283,7 +2006,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 101,
@@ -1295,7 +2025,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 102,
@@ -1307,7 +2044,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 103,
@@ -1320,7 +2064,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 104,
@@ -1333,7 +2084,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 105,
@@ -1345,7 +2103,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 106,
@@ -1357,7 +2122,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 107,
@@ -1369,7 +2141,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 108,
@@ -1381,7 +2160,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 109,
@@ -1393,7 +2179,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 110,
@@ -1406,7 +2199,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 111,
@@ -1418,7 +2218,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 112,
@@ -1431,7 +2238,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 113,
@@ -1444,7 +2258,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "Koreanisch",
+    "nerd": "Das Musikvideo wurde zu einem frühen globalen YouTube-Phänomen und war das erste Video, das dort eine Milliarde Aufrufe erreichte.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 114,
@@ -1456,7 +2277,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 115,
@@ -1469,7 +2297,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Der Song entstand für Despicable Me 2 und wurde später mit einem 24-stündigen Musikvideo-Projekt verbunden.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 116,
@@ -1482,7 +2317,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 117,
@@ -1495,7 +2337,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 118,
@@ -1507,7 +2356,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 119,
@@ -1519,7 +2375,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 120,
@@ -1532,7 +2395,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Der Song entstand im Umfeld des Animationsfilms Trolls, in dem Justin Timberlake auch eine Sprechrolle übernahm.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 121,
@@ -1545,7 +2415,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 122,
@@ -1557,7 +2434,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 123,
@@ -1571,7 +2455,14 @@
       "mix",
       "gp_nl",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 124,
@@ -1584,7 +2475,14 @@
     "pools": [
       "mix",
       "soundtrack"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Lady Gaga und Bradley Cooper singen den Song im Film A Star Is Born; er gewann den Oscar für den besten Originalsong.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 125,
@@ -1597,7 +2495,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 126,
@@ -1611,7 +2516,20 @@
       "mix",
       "gp_nl",
       "urban"
-    ]
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Der Beat verwendet ein Sample aus Nine Inch Nails’ Instrumental „34 Ghosts IV“.",
+    "coverOf": null,
+    "samples": [
+      {
+        "title": "34 Ghosts IV",
+        "artist": "Nine Inch Nails",
+        "year": 2008
+      }
+    ],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 127,
@@ -1623,7 +2541,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 128,
@@ -1635,7 +2560,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 129,
@@ -1648,7 +2580,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 130,
@@ -1662,7 +2601,14 @@
       "mix",
       "gp_de",
       "rock"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 131,
@@ -1675,7 +2621,14 @@
     "pools": [
       "mix",
       "gp_nl"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 132,
@@ -1687,7 +2640,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 133,
@@ -1700,7 +2660,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 134,
@@ -1712,7 +2679,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 135,
@@ -1725,7 +2699,14 @@
     "pools": [
       "mix",
       "gp_de"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 136,
@@ -1737,7 +2718,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 137,
@@ -1749,7 +2737,14 @@
     "film": "",
     "pools": [
       "mix"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 138,
@@ -1763,7 +2758,14 @@
       "mix",
       "fr",
       "gp_fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 139,
@@ -1776,7 +2778,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 140,
@@ -1789,7 +2798,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 141,
@@ -1802,7 +2818,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 142,
@@ -1815,7 +2838,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 143,
@@ -1828,7 +2858,14 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   },
   {
     "id": 144,
@@ -1841,6 +2878,2795 @@
     "pools": [
       "mix",
       "fr"
-    ]
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 145,
+    "title": "Under Pressure",
+    "artist": "Queen & David Bowie",
+    "year": 1981,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Die Basslinie wurde durch „Ice Ice Baby“ erneut berühmt und führte zu einer viel diskutierten Sample-/Credit-Geschichte.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [
+      {
+        "title": "Ice Ice Baby",
+        "artist": "Vanilla Ice",
+        "year": 1990
+      }
+    ],
+    "relatesTo": null
+  },
+  {
+    "id": 146,
+    "title": "Rapper's Delight",
+    "artist": "The Sugarhill Gang",
+    "year": 1979,
+    "country": "USA",
+    "genre": "Hip-Hop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban"
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Die Aufnahme nutzt die berühmte Bassfigur von Chics „Good Times“ und gehört zu den frühen großen Rap-Hits.",
+    "coverOf": null,
+    "samples": [
+      {
+        "title": "Good Times",
+        "artist": "Chic",
+        "year": 1979
+      }
+    ],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 147,
+    "title": "Hung Up",
+    "artist": "Madonna",
+    "year": 2005,
+    "country": "USA",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "ABBA erlaubte Madonna die Nutzung des markanten „Gimme! Gimme! Gimme!“-Motivs – eine vergleichsweise seltene Freigabe.",
+    "coverOf": null,
+    "samples": [
+      {
+        "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "artist": "ABBA",
+        "year": 1979
+      }
+    ],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 148,
+    "title": "U Can't Touch This",
+    "artist": "MC Hammer",
+    "year": 1990,
+    "country": "USA",
+    "genre": "Hip-Hop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "Englisch",
+    "nerd": "Der Song baut zentral auf dem Groove von Rick James’ „Super Freak“ auf.",
+    "coverOf": null,
+    "samples": [
+      {
+        "title": "Super Freak",
+        "artist": "Rick James",
+        "year": 1981
+      }
+    ],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 149,
+    "title": "Space Oddity",
+    "artist": "David Bowie",
+    "year": 1969,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 150,
+    "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+    "artist": "ABBA",
+    "year": 1979,
+    "country": "Schweden",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 151,
+    "title": "Good Times",
+    "artist": "Chic",
+    "year": 1979,
+    "country": "USA",
+    "genre": "Disco/Funk",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 152,
+    "title": "Super Freak",
+    "artist": "Rick James",
+    "year": 1981,
+    "country": "USA",
+    "genre": "Funk",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 153,
+    "title": "Sing, Sing, Sing",
+    "artist": "Benny Goodman",
+    "year": 1937,
+    "country": "USA",
+    "genre": "Swing",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "Instrumental",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 154,
+    "title": "In the Mood",
+    "artist": "Glenn Miller",
+    "year": 1939,
+    "country": "USA",
+    "genre": "Big Band",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "Instrumental",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 155,
+    "title": "Dream a Little Dream of Me",
+    "artist": "Ella Fitzgerald & Louis Armstrong",
+    "year": 1950,
+    "country": "USA",
+    "genre": "Jazz",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 156,
+    "title": "Rock Around the Clock",
+    "artist": "Bill Haley & His Comets",
+    "year": 1954,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 157,
+    "title": "Tutti Frutti",
+    "artist": "Little Richard",
+    "year": 1955,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 158,
+    "title": "Great Balls of Fire",
+    "artist": "Jerry Lee Lewis",
+    "year": 1957,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 159,
+    "title": "Jailhouse Rock",
+    "artist": "Elvis Presley",
+    "year": 1957,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "Jailhouse Rock",
+    "pools": [
+      "mix",
+      "rock",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 160,
+    "title": "Only You",
+    "artist": "The Platters",
+    "year": 1955,
+    "country": "USA",
+    "genre": "Doo-Wop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 161,
+    "title": "Dream Lover",
+    "artist": "Bobby Darin",
+    "year": 1959,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 162,
+    "title": "Runaround Sue",
+    "artist": "Dion",
+    "year": 1961,
+    "country": "USA",
+    "genre": "Rock ’n’ Roll",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 163,
+    "title": "The Loco-Motion",
+    "artist": "Little Eva",
+    "year": 1962,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 164,
+    "title": "It's My Party",
+    "artist": "Lesley Gore",
+    "year": 1963,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 165,
+    "title": "House of the Rising Sun",
+    "artist": "The Animals",
+    "year": 1964,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 166,
+    "title": "Downtown",
+    "artist": "Petula Clark",
+    "year": 1964,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 167,
+    "title": "Help!",
+    "artist": "The Beatles",
+    "year": 1965,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Rock",
+    "film": "Help!",
+    "pools": [
+      "mix",
+      "rock",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 168,
+    "title": "Paint It, Black",
+    "artist": "The Rolling Stones",
+    "year": 1966,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 169,
+    "title": "Daydream Believer",
+    "artist": "The Monkees",
+    "year": 1967,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 170,
+    "title": "Build Me Up Buttercup",
+    "artist": "The Foundations",
+    "year": 1968,
+    "country": "Vereinigtes Königreich",
+    "genre": "Soul Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 171,
+    "title": "Sugar, Sugar",
+    "artist": "The Archies",
+    "year": 1969,
+    "country": "USA",
+    "genre": "Bubblegum Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 172,
+    "title": "Spirit in the Sky",
+    "artist": "Norman Greenbaum",
+    "year": 1969,
+    "country": "USA",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 173,
+    "title": "Lola",
+    "artist": "The Kinks",
+    "year": 1970,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 174,
+    "title": "Maggie May",
+    "artist": "Rod Stewart",
+    "year": 1971,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 175,
+    "title": "Starman",
+    "artist": "David Bowie",
+    "year": 1972,
+    "country": "Vereinigtes Königreich",
+    "genre": "Glam Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 176,
+    "title": "Crocodile Rock",
+    "artist": "Elton John",
+    "year": 1972,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 177,
+    "title": "Hooked on a Feeling",
+    "artist": "Blue Swede",
+    "year": 1973,
+    "country": "Schweden",
+    "genre": "Pop Rock",
+    "film": "Guardians of the Galaxy",
+    "pools": [
+      "mix",
+      "gp_de",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 178,
+    "title": "Waterloo",
+    "artist": "ABBA",
+    "year": 1974,
+    "country": "Schweden",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 179,
+    "title": "December, 1963 (Oh, What a Night)",
+    "artist": "The Four Seasons",
+    "year": 1975,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 180,
+    "title": "Play That Funky Music",
+    "artist": "Wild Cherry",
+    "year": 1976,
+    "country": "USA",
+    "genre": "Funk Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 181,
+    "title": "Don't Leave Me This Way",
+    "artist": "Thelma Houston",
+    "year": 1976,
+    "country": "USA",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 182,
+    "title": "Go Your Own Way",
+    "artist": "Fleetwood Mac",
+    "year": 1976,
+    "country": "Vereinigtes Königreich/USA",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 183,
+    "title": "Mr. Blue Sky",
+    "artist": "Electric Light Orchestra",
+    "year": 1977,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 184,
+    "title": "YMCA",
+    "artist": "Village People",
+    "year": 1978,
+    "country": "USA",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 185,
+    "title": "Heart of Glass",
+    "artist": "Blondie",
+    "year": 1978,
+    "country": "USA",
+    "genre": "New Wave/Disco",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 186,
+    "title": "Ring My Bell",
+    "artist": "Anita Ward",
+    "year": 1979,
+    "country": "USA",
+    "genre": "Disco",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 187,
+    "title": "Cars",
+    "artist": "Gary Numan",
+    "year": 1979,
+    "country": "Vereinigtes Königreich",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 188,
+    "title": "Call Me",
+    "artist": "Blondie",
+    "year": 1980,
+    "country": "USA",
+    "genre": "New Wave",
+    "film": "American Gigolo",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 189,
+    "title": "Kids in America",
+    "artist": "Kim Wilde",
+    "year": 1981,
+    "country": "Vereinigtes Königreich",
+    "genre": "New Wave",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 190,
+    "title": "Tainted Love",
+    "artist": "Soft Cell",
+    "year": 1981,
+    "country": "Vereinigtes Königreich",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "Soft Cells Welthit ist eine Neuinterpretation eines Northern-Soul-Songs von Gloria Jones aus den 1960ern.",
+    "coverOf": {
+      "title": "Tainted Love",
+      "artist": "Gloria Jones",
+      "year": 1964
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 191,
+    "title": "Come On Eileen",
+    "artist": "Dexys Midnight Runners",
+    "year": 1982,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 192,
+    "title": "Africa",
+    "artist": "Toto",
+    "year": 1982,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 193,
+    "title": "Maniac",
+    "artist": "Michael Sembello",
+    "year": 1983,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "Flashdance",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 194,
+    "title": "Girls Just Want to Have Fun",
+    "artist": "Cyndi Lauper",
+    "year": 1983,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "Cyndi Laupers Version basiert auf einem Song von Robert Hazard, wurde aber vollständig zu ihrem eigenen Pop-Klassiker.",
+    "coverOf": {
+      "title": "Girls Just Want to Have Fun",
+      "artist": "Robert Hazard",
+      "year": 1979
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 195,
+    "title": "Footloose",
+    "artist": "Kenny Loggins",
+    "year": 1984,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "Footloose",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 196,
+    "title": "Ghostbusters",
+    "artist": "Ray Parker Jr.",
+    "year": 1984,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Ghostbusters",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 197,
+    "title": "You Spin Me Round (Like a Record)",
+    "artist": "Dead or Alive",
+    "year": 1984,
+    "country": "Vereinigtes Königreich",
+    "genre": "Hi-NRG",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 198,
+    "title": "The Final Countdown",
+    "artist": "Europe",
+    "year": 1986,
+    "country": "Schweden",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 199,
+    "title": "Livin' on a Prayer",
+    "artist": "Bon Jovi",
+    "year": 1986,
+    "country": "USA",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 200,
+    "title": "Nothing's Gonna Stop Us Now",
+    "artist": "Starship",
+    "year": 1987,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "Mannequin",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 201,
+    "title": "Heaven Is a Place on Earth",
+    "artist": "Belinda Carlisle",
+    "year": 1987,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 202,
+    "title": "Don't Worry, Be Happy",
+    "artist": "Bobby McFerrin",
+    "year": 1988,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 203,
+    "title": "The Look",
+    "artist": "Roxette",
+    "year": 1988,
+    "country": "Schweden",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 204,
+    "title": "Poison",
+    "artist": "Alice Cooper",
+    "year": 1989,
+    "country": "USA",
+    "genre": "Hard Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 205,
+    "title": "Ride on Time",
+    "artist": "Black Box",
+    "year": 1989,
+    "country": "Italien",
+    "genre": "House",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 206,
+    "title": "Vogue",
+    "artist": "Madonna",
+    "year": 1990,
+    "country": "USA",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 207,
+    "title": "Groove Is in the Heart",
+    "artist": "Deee-Lite",
+    "year": 1990,
+    "country": "USA",
+    "genre": "Dance/Funk",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 208,
+    "title": "Rhythm Is a Dancer",
+    "artist": "Snap!",
+    "year": 1992,
+    "country": "Deutschland",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 209,
+    "title": "What Is Love",
+    "artist": "Haddaway",
+    "year": 1993,
+    "country": "Trinidad/Tobago–Deutschland",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 210,
+    "title": "Saturday Night",
+    "artist": "Whigfield",
+    "year": 1994,
+    "country": "Dänemark",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 211,
+    "title": "Cotton Eye Joe",
+    "artist": "Rednex",
+    "year": 1994,
+    "country": "Schweden",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 212,
+    "title": "Freed from Desire",
+    "artist": "Gala",
+    "year": 1996,
+    "country": "Italien",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_fr",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 213,
+    "title": "Barbie Girl",
+    "artist": "Aqua",
+    "year": 1997,
+    "country": "Dänemark/Norwegen",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 214,
+    "title": "Blue (Da Ba Dee)",
+    "artist": "Eiffel 65",
+    "year": 1998,
+    "country": "Italien",
+    "genre": "Eurodance",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 215,
+    "title": "Believe",
+    "artist": "Cher",
+    "year": 1998,
+    "country": "USA",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "Die stark hörbare Tonhöhenbearbeitung wurde so prägend, dass der Effekt lange als „Cher-Effekt“ bezeichnet wurde.",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 216,
+    "title": "Livin' la Vida Loca",
+    "artist": "Ricky Martin",
+    "year": 1999,
+    "country": "Puerto Rico",
+    "genre": "Latin Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 217,
+    "title": "All Star",
+    "artist": "Smash Mouth",
+    "year": 1999,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "Shrek",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 218,
+    "title": "Teenage Dirtbag",
+    "artist": "Wheatus",
+    "year": 2000,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 219,
+    "title": "Can't Fight the Moonlight",
+    "artist": "LeAnn Rimes",
+    "year": 2000,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Coyote Ugly",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 220,
+    "title": "Murder on the Dancefloor",
+    "artist": "Sophie Ellis-Bextor",
+    "year": 2001,
+    "country": "Vereinigtes Königreich",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 221,
+    "title": "Sk8er Boi",
+    "artist": "Avril Lavigne",
+    "year": 2002,
+    "country": "Kanada",
+    "genre": "Pop Punk",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 222,
+    "title": "Hey Ya!",
+    "artist": "Outkast",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Hip-Hop/Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "urban"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 223,
+    "title": "Since U Been Gone",
+    "artist": "Kelly Clarkson",
+    "year": 2004,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 224,
+    "title": "Crazy",
+    "artist": "Gnarls Barkley",
+    "year": 2006,
+    "country": "USA",
+    "genre": "Soul/Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 225,
+    "title": "Grace Kelly",
+    "artist": "MIKA",
+    "year": 2007,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 226,
+    "title": "Mercy",
+    "artist": "Duffy",
+    "year": 2008,
+    "country": "Vereinigtes Königreich",
+    "genre": "Soul Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 227,
+    "title": "Single Ladies (Put a Ring on It)",
+    "artist": "Beyoncé",
+    "year": 2008,
+    "country": "USA",
+    "genre": "R&B/Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 228,
+    "title": "Fireflies",
+    "artist": "Owl City",
+    "year": 2009,
+    "country": "USA",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 229,
+    "title": "Tik Tok",
+    "artist": "Kesha",
+    "year": 2009,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 230,
+    "title": "Dynamite",
+    "artist": "Taio Cruz",
+    "year": 2010,
+    "country": "Vereinigtes Königreich",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 231,
+    "title": "We Found Love",
+    "artist": "Rihanna feat. Calvin Harris",
+    "year": 2011,
+    "country": "Barbados/Vereinigtes Königreich",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 232,
+    "title": "What Makes You Beautiful",
+    "artist": "One Direction",
+    "year": 2011,
+    "country": "Vereinigtes Königreich/Irland",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 233,
+    "title": "Titanium",
+    "artist": "David Guetta feat. Sia",
+    "year": 2011,
+    "country": "Frankreich/Australien",
+    "genre": "Dance",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 234,
+    "title": "Wake Me Up",
+    "artist": "Avicii",
+    "year": 2013,
+    "country": "Schweden",
+    "genre": "EDM/Folk",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 235,
+    "title": "Royals",
+    "artist": "Lorde",
+    "year": 2013,
+    "country": "Neuseeland",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 236,
+    "title": "Rather Be",
+    "artist": "Clean Bandit feat. Jess Glynne",
+    "year": 2014,
+    "country": "Vereinigtes Königreich",
+    "genre": "Dance Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 237,
+    "title": "Cheap Thrills",
+    "artist": "Sia",
+    "year": 2015,
+    "country": "Australien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 238,
+    "title": "Cake by the Ocean",
+    "artist": "DNCE",
+    "year": 2015,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 239,
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "year": 2017,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 240,
+    "title": "Havana",
+    "artist": "Camila Cabello feat. Young Thug",
+    "year": 2017,
+    "country": "Kuba/USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 241,
+    "title": "High Hopes",
+    "artist": "Panic! at the Disco",
+    "year": 2018,
+    "country": "USA",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 242,
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "year": 2019,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 243,
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "year": 2019,
+    "country": "Vereinigtes Königreich",
+    "genre": "Disco Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 244,
+    "title": "Savage Love",
+    "artist": "Jawsh 685 & Jason Derulo",
+    "year": 2020,
+    "country": "Neuseeland/USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_nl"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 245,
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "year": 2020,
+    "country": "Vereinigtes Königreich",
+    "genre": "Indie Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 246,
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 247,
+    "title": "Made You Look",
+    "artist": "Meghan Trainor",
+    "year": 2022,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 248,
+    "title": "Greedy",
+    "artist": "Tate McRae",
+    "year": 2023,
+    "country": "Kanada",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 249,
+    "title": "Texas Hold 'Em",
+    "artist": "Beyoncé",
+    "year": 2024,
+    "country": "USA",
+    "genre": "Country Pop",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 250,
+    "title": "A Bar Song (Tipsy)",
+    "artist": "Shaboozey",
+    "year": 2024,
+    "country": "USA",
+    "genre": "Country",
+    "film": "",
+    "pools": [
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 251,
+    "title": "Skandal im Sperrbezirk",
+    "artist": "Spider Murphy Gang",
+    "year": 1981,
+    "country": "Deutschland",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 252,
+    "title": "Da Da Da",
+    "artist": "Trio",
+    "year": 1982,
+    "country": "Deutschland",
+    "genre": "Neue Deutsche Welle",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 253,
+    "title": "Sternenhimmel",
+    "artist": "Hubert Kah",
+    "year": 1982,
+    "country": "Deutschland",
+    "genre": "Neue Deutsche Welle",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 254,
+    "title": "Bruttosozialprodukt",
+    "artist": "Geier Sturzflug",
+    "year": 1983,
+    "country": "Deutschland",
+    "genre": "Neue Deutsche Welle",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 255,
+    "title": "Männer",
+    "artist": "Herbert Grönemeyer",
+    "year": 1984,
+    "country": "Deutschland",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 256,
+    "title": "Westerland",
+    "artist": "Die Ärzte",
+    "year": 1988,
+    "country": "Deutschland",
+    "genre": "Punk Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 257,
+    "title": "Verdammt, ich lieb' dich",
+    "artist": "Matthias Reim",
+    "year": 1990,
+    "country": "Deutschland",
+    "genre": "Schlager",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 258,
+    "title": "Du trägst keine Liebe in dir",
+    "artist": "Echt",
+    "year": 1999,
+    "country": "Deutschland",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 259,
+    "title": "Perfekte Welle",
+    "artist": "Juli",
+    "year": 2004,
+    "country": "Deutschland",
+    "genre": "Pop Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 260,
+    "title": "Haus am See",
+    "artist": "Peter Fox",
+    "year": 2008,
+    "country": "Deutschland",
+    "genre": "Hip-Hop/Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "urban"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 261,
+    "title": "Atemlos durch die Nacht",
+    "artist": "Helene Fischer",
+    "year": 2013,
+    "country": "Deutschland",
+    "genre": "Schlager",
+    "film": "",
+    "pools": [
+      "mix",
+      "de",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 262,
+    "title": "Voyage, voyage",
+    "artist": "Desireless",
+    "year": 1986,
+    "country": "Frankreich",
+    "genre": "Synth-Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr",
+      "gp_fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 263,
+    "title": "Joe le taxi",
+    "artist": "Vanessa Paradis",
+    "year": 1987,
+    "country": "Frankreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr",
+      "gp_fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 264,
+    "title": "Ella, elle l'a",
+    "artist": "France Gall",
+    "year": 1987,
+    "country": "Frankreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 265,
+    "title": "Moi... Lolita",
+    "artist": "Alizée",
+    "year": 2000,
+    "country": "Frankreich",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr",
+      "gp_fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 266,
+    "title": "Jeune et con",
+    "artist": "Saez",
+    "year": 1999,
+    "country": "Frankreich",
+    "genre": "Rock",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 267,
+    "title": "Formidable",
+    "artist": "Stromae",
+    "year": 2013,
+    "country": "Belgien",
+    "genre": "Pop",
+    "film": "",
+    "pools": [
+      "mix",
+      "fr"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 268,
+    "title": "Unchained Melody",
+    "artist": "The Righteous Brothers",
+    "year": 1965,
+    "country": "USA",
+    "genre": "Pop/Soul",
+    "film": "Ghost",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 269,
+    "title": "Raindrops Keep Fallin' on My Head",
+    "artist": "B.J. Thomas",
+    "year": 1969,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Butch Cassidy and the Sundance Kid",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 270,
+    "title": "Live and Let Die",
+    "artist": "Paul McCartney & Wings",
+    "year": 1973,
+    "country": "Vereinigtes Königreich",
+    "genre": "Rock",
+    "film": "Live and Let Die",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 271,
+    "title": "You're the One That I Want",
+    "artist": "John Travolta & Olivia Newton-John",
+    "year": 1978,
+    "country": "USA/Australien",
+    "genre": "Musical Pop",
+    "film": "Grease",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 272,
+    "title": "Fame",
+    "artist": "Irene Cara",
+    "year": 1980,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Fame",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 273,
+    "title": "Flashdance... What a Feeling",
+    "artist": "Irene Cara",
+    "year": 1983,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Flashdance",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 274,
+    "title": "I've Had the Time of My Life",
+    "artist": "Bill Medley & Jennifer Warnes",
+    "year": 1987,
+    "country": "USA",
+    "genre": "Pop",
+    "film": "Dirty Dancing",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 275,
+    "title": "Kiss from a Rose",
+    "artist": "Seal",
+    "year": 1994,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop/Soul",
+    "film": "Batman Forever",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 276,
+    "title": "My Heart Will Go On",
+    "artist": "Céline Dion",
+    "year": 1997,
+    "country": "Kanada",
+    "genre": "Pop",
+    "film": "Titanic",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "gp_de"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 277,
+    "title": "I Don't Want to Miss a Thing",
+    "artist": "Aerosmith",
+    "year": 1998,
+    "country": "USA",
+    "genre": "Rock Ballad",
+    "film": "Armageddon",
+    "pools": [
+      "mix",
+      "soundtrack",
+      "rock"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 278,
+    "title": "Skyfall",
+    "artist": "Adele",
+    "year": 2012,
+    "country": "Vereinigtes Königreich",
+    "genre": "Pop",
+    "film": "Skyfall",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 279,
+    "title": "Let It Go",
+    "artist": "Idina Menzel",
+    "year": 2013,
+    "country": "USA",
+    "genre": "Musical",
+    "film": "Frozen",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 280,
+    "title": "This Is Me",
+    "artist": "Keala Settle & The Greatest Showman Ensemble",
+    "year": 2017,
+    "country": "USA",
+    "genre": "Musical",
+    "film": "The Greatest Showman",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
+  },
+  {
+    "id": 281,
+    "title": "Dance the Night",
+    "artist": "Dua Lipa",
+    "year": 2023,
+    "country": "Vereinigtes Königreich",
+    "genre": "Disco Pop",
+    "film": "Barbie",
+    "pools": [
+      "mix",
+      "soundtrack"
+    ],
+    "album": "",
+    "language": "",
+    "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null
   }
 ]

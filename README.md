@@ -1,16 +1,19 @@
-# Song Guess v3
+# Song Guess v3.2
 
-Responsive Online-Musikspiel für iPhone und iPad.
+Responsive Spotify-Musikquiz für iPhone, iPad und Desktop.
 
-Enthalten:
-- 144 kuratierte Songs (Starter-Bibliothek)
+- 281 Songs
+- Spielanleitung direkt im Frontend über `?`
+- neutrale Spielernamen im öffentlichen Code
 - kombinierbare Songpools
-- Fragenpool + pro Spiel / pro Runde
-- nacheinander / gleichzeitig
-- ganze Songs / 30 s ab Start / 30 s zufällig, pro Runde umstellbar
-- Pause bei normalem Song und A/B-Vergleich
-- Spotify-Direktlink nach Reveal
-- optionale lokale Spielhistorie und dauerhafte Scores
-- Spotify-Songs werden zur Laufzeit über die offizielle Spotify Search API aufgelöst
+- Jahr, Jahrzehnt, Interpret, Titel, Herkunft, Film/Serie, Älter/Jünger
+- Ganz / 30 s Start / 30 s Zufall
+- Restart / Skip
+- Nerdwissen, Cover-/Original- und Sample-Beziehungen
+- Favoriten
+- optionale lokale Historie und Scores
+- Songs der letzten drei Spiele optional vermeiden
+- Überraschungsmix
+- Screen Wake Lock, wenn unterstützt
 
-Upload: `index.html`, `config.js`, `songs.json`, `README.md` im GitHub-Repository ersetzen.
+Siehe zusätzlich `SPIELANLEITUNG.md`.

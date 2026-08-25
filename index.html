@@ -29,8 +29,8 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(min-width:700px){.setupgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.setupgrid .card{margin:0}.chips{grid-template-columns:repeat(3,1fr)}.roundbody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:20px;align-items:start}.scorebar{position:static}.compare{gap:18px}.statgrid{grid-template-columns:repeat(4,1fr)}}
 </style></head><body><div class="app">
 <section id="home">
- <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button></div>
+ <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -50,6 +50,8 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
    <div class="field"><label>Standard-Ausschnitt</label><div class="seg three"><button data-g="clip" data-v="full">Ganz</button><button data-g="clip" data-v="start30" class="on">30 s Start</button><button data-g="clip" data-v="random30">30 s Zufall</button></div><p class="tiny">Während jeder Runde jederzeit änderbar.</p></div>
    <div class="toggleline"><span>Spielhistorie speichern</span><input id="saveHistory" type="checkbox" checked></div>
    <div class="toggleline"><span>Dauerhafte Scores speichern</span><input id="saveStats" type="checkbox" checked></div>
+<div class="toggleline"><span>Songs der letzten 3 Spiele vermeiden</span><input id="avoidRecent" type="checkbox" checked></div>
+<div class="toggleline"><span>Bonusrunde alle 5 Songs</span><input id="bonusRounds" type="checkbox"></div>
   </div>
  </div>
  <button class="primary" style="margin-top:18px" onclick="startGame()">▶ Spiel starten</button>
@@ -64,7 +66,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
     <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div id="record" class="vinyl"></div><button id="play" class="play">▶</button></div>
     <div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
     <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
-    <button id="revbtn" class="primary" style="margin-top:14px" onclick="reveal()">Reveal & Punkte</button>
+    <div class="row" style="margin-top:14px">
+<button class="secondary" style="flex:1" onclick="restartCurrent()">↺ Restart</button>
+<button class="secondary" style="flex:1" onclick="skipSong()">⏭ Überspringen</button>
+</div>
+<button id="revbtn" class="primary" style="margin-top:10px" onclick="reveal()">Reveal & Punkte</button>
    </div>
    <div><div id="rev" class="hidden"></div><div id="scores" class="scorebar"></div></div>
   </div>
@@ -76,17 +82,79 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div class="card"><h3>Spielerstatistik</h3><div id="stats"></div></div>
  <div class="card"><h3>Letzte Spiele</h3><div id="historyList"></div></div>
 </section>
+
+<section id="help" class="hidden">
+ <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Spielanleitung</h2><span></span></div>
+ <div class="card">
+  <h2>Song Guess in 60 Sekunden</h2>
+  <p class="muted">Spotify verbinden, Spieler:innen eintragen, Songpools und Fragen wählen – dann Musik hören, laut raten, Reveal drücken und Punkte vergeben.</p>
+  <div class="meta">
+   <div><b>📅 Jahr</b><span>exakt 3 · ±1 Jahr 2 · ±3 Jahre 1</span></div>
+   <div><b>🎤 Interpret</b><span>richtig = 1 Punkt</span></div>
+   <div><b>♫ Titel</b><span>richtig = 1 Punkt</span></div>
+   <div><b>🌍 Herkunft</b><span>richtig = 1 Punkt</span></div>
+   <div><b>🎬 Film / Serie</b><span>nur bei passenden Songs</span></div>
+   <div><b>↕ Älter / jünger</b><span>A oder B vergleichen</span></div>
+  </div>
+ </div>
+ <div class="card">
+  <h3>Spielmodi</h3>
+  <p><b>Nacheinander</b> – immer eine Person ist dran.</p>
+  <p><b>Alle gleichzeitig</b> – alle raten denselben Song; nach dem Reveal wird jede Person einzeln gewertet.</p>
+  <p><b>Eine zufällige Frage</b> – pro Song zieht die App eine Kategorie aus eurem Fragenpool.</p>
+  <p><b>Alle ausgewählten</b> – zu einem Song dürfen mehrere Dinge gleichzeitig geraten werden.</p>
+  <p><b>Pro Runde</b> – ihr entscheidet vor jeder Runde neu, welche Fragen drankommen.</p>
+ </div>
+ <div class="card">
+  <h3>Musiksteuerung</h3>
+  <div class="meta">
+   <div><b>Ganz</b><span>Song ab Anfang</span></div>
+   <div><b>30 s Start</b><span>30 Sekunden ab Beginn</span></div>
+   <div><b>30 s Zufall</b><span>zufälliger 30-Sekunden-Ausschnitt</span></div>
+  </div>
+  <p><b>Restart</b> wiederholt denselben Ausschnitt. <b>Überspringen</b> zieht ohne Wertung einen anderen Song. Im A/B-Vergleich stoppt der andere Song automatisch.</p>
+ </div>
+ <div class="card">
+  <h3>Reveal & Nerdwissen</h3>
+  <p>Nach dem Reveal erscheinen Jahr, Titel, Interpret, Herkunft, Genre und – falls vorhanden – Film/Serie, Album oder Sprache.</p>
+  <p>Über <b>🧠 Mehr zum Song</b> findest du Fun Facts, Cover-Originale, Samples und musikalische Verwandtschaft. Bei Cover und Samplequelle gibt es direkt einen Spotify-Link zum Vergleich.</p>
+  <p>♡ Favoriten werden nur auf deinem Gerät gespeichert.</p>
+ </div>
+ <div class="card">
+  <h3>Songpools</h3>
+  <p>Mehrere Pools lassen sich kombinieren. Ein Song wird dabei nicht doppelt in den Lostopf gelegt.</p>
+  <div class="meta">
+   <div><b>Meine Mischung</b><span>30er bis heute, Schwerpunkt 50er+</span></div>
+   <div><b>Guilty Pleasures</b><span>DE · NL · FR</span></div>
+   <div><b>Film & TV</b><span>Soundtrack-Hits</span></div>
+   <div><b>Rock</b><span>Rock & Alternative</span></div>
+   <div><b>Urban</b><span>Hip-Hop · R&B · Reggaeton</span></div>
+   <div><b>FR / DE</b><span>französisch bzw. deutschsprachig</span></div>
+  </div>
+ </div>
+ <div class="card">
+  <h3>Historie, Scores & Datenschutz</h3>
+  <p>Spielhistorie, dauerhafte Scores und Favoriten werden <b>nur lokal in diesem Browser</b> gespeichert. Sie werden nicht zu GitHub oder Spotify hochgeladen. Im Setup kannst du Historie und Scores abschalten.</p>
+  <p>Die öffentliche Website enthält keine echten Spielernamen. Die Spotify Client-ID ist nur eine öffentliche App-Kennung – kein Passwort.</p>
+ </div>
+ <div class="card">
+  <h3>Guter Start für 3 Personen</h3>
+  <p><b>Pool:</b> Meine Mischung<br><b>Fragen:</b> Jahr + Interpret + Herkunft + Titel + Älter/Jünger<br><b>Antwort:</b> Alle gleichzeitig<br><b>Runden:</b> 15<br><b>Ausschnitt:</b> 30 s Zufall</p>
+  <button class="primary" onclick="show('setup')">Spiel einrichten</button>
+ </div>
+</section>
+
 </div>
 <script src="config.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"]};
 const POOLS={mix:["Meine Mischung","Quer durch die Jahrzehnte"],gp_de:["Guilty Pleasures DE","GP-inspirierte Auswahl"],gp_nl:["Guilty Pleasures NL","GP-inspirierte Auswahl"],gp_fr:["Guilty Pleasures FR","Plaisirs coupables"],soundtrack:["Film & TV","Songs & Themes"],rock:["Rock","Rock & Alternative"],urban:["Urban / Hip-Hop","Rap, R&B, Reggaeton"],fr:["Französisch","Frankreich & Belgien"],de:["Deutschsprachig","DACH"]};
-let songs=[],names=["Vanessa","Niki","Ariane"],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
-let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,total=15,roundIndex=0,turn=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set();
-let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={};
+let songs=[],names=["Spieler:in 1","Spieler:in 2"],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
+let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,total=15,roundIndex=0,turn=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set();
+let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={},lastStart={songId:null,pos:0};
 
-function show(id){["home","setup","round","history"].forEach(x=>$(x).classList.toggle("hidden",x!==id));stopPlayback()}
+function show(id){["home","setup","round","history","help"].forEach(x=>$(x).classList.toggle("hidden",x!==id));stopPlayback()}
 function addPlayer(v=""){let d=document.createElement("div");d.className="prow";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
 names.forEach(addPlayer);
 
@@ -109,9 +177,11 @@ function startGame(){
  if(!names.length)return alert("Bitte mindestens eine Person eintragen.");
  if(!selectedPools.size)return alert("Bitte mindestens einen Songpool wählen.");
  if(!selectedCats.size)return alert("Bitte mindestens eine Fragekategorie wählen.");
- roundPool=poolSongs(); if(!roundPool.length)return alert("Dieser Pool enthält keine Songs.");
- total=Math.max(1,Math.min(100,+$("count").value||15));saveHistory=$("saveHistory").checked;saveStats=$("saveStats").checked;
- scores=names.map(()=>0);roundIndex=0;turn=0;usedIds.clear();show("round");nextRound();
+ roundPool=poolSongs();
+ if(avoidRecent){let h=JSON.parse(localStorage.getItem("sg_history")||"[]").slice(0,3),recent=new Set(h.flatMap(g=>g.songIds||[]));let filtered=roundPool.filter(s=>!recent.has(s.id));if(filtered.length>=Math.min(total,10))roundPool=filtered}
+ if(!roundPool.length)return alert("Dieser Pool enthält keine Songs.");
+ total=Math.max(1,Math.min(100,+$("count").value||15));saveHistory=$("saveHistory").checked;saveStats=$("saveStats").checked;avoidRecent=$("avoidRecent").checked;bonusRounds=$("bonusRounds").checked;
+ scores=names.map(()=>0);roundIndex=0;turn=0;usedIds.clear();show("round");keepAwake();nextRound();
 }
 function prepareRound(){
  if(roundIndex>=total)return endGame();
@@ -157,7 +227,7 @@ async function playSong(s,key){
   if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000}
   if(clipMode==="start30")duration=30000;
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
-  playingKey=key;updatePlayUI();
+  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();
   if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
  }catch(e){alert("Song konnte über Spotify nicht gestartet werden.")}
 }
@@ -173,9 +243,40 @@ function updatePlayUI(){
 $("play").onclick=()=>playSong(song,"main");
 function toggleCompare(i){playSong(pair[i],"cmp"+i)}
 
+
+async function restartCurrent(){
+ let s=currentCats[0]==="compare"?(playingKey==="cmp1"?pair[1]:pair[0]):song;
+ let key=currentCats[0]==="compare"?(playingKey==="cmp1"?"cmp1":"cmp0"):"main";
+ if(!s)return;
+ stopPlayback();
+ try{
+  let t=await resolveTrack(s),pos=(clipMode==="random30"&&lastStart.songId===s.id)?lastStart.pos:0,duration=clipMode==="full"?null:30000;
+  await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
+  playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
+ }catch(e){alert("Song konnte nicht neu gestartet werden.")}
+}
+function skipSong(){stopPlayback();roundIndex--;nextRound()}
+function surpriseGame(){
+ selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare"]);
+ qm="game";ps="one";am="all";clipMode=["full","start30","random30"][Math.floor(Math.random()*3)];
+ show("setup");
+ document.querySelectorAll("#pools .chip").forEach(b=>b.classList.remove("on"));
+ document.querySelectorAll("#cats .chip").forEach(b=>b.classList.add("on"));
+ alert("Überraschungsmix ist vorbereitet: Meine Mischung, alle gleichzeitig, wechselnde Fragen. Namen prüfen und starten!");
+}
 async function songRevealHTML(s,label=""){
  let t=null;try{t=await resolveTrack(s)}catch(e){}
- return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}</div>${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}</div>`;
+ return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}</div>
+${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}
+<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button>
+<div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px">
+${s.nerd?`<p>${s.nerd}</p>`:`<p class="muted">Für diesen Song ergänzen wir noch Nerdwissen.</p>`}
+${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist} (${s.coverOf.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(s.coverOf.title+" "+s.coverOf.artist)}" target="_blank">▶ Original</a></p>`:""}
+${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Quelle</a>`).join("<br>")}</p>`:""}
+${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Song</a>`).join("<br>")}</p>`:""}
+${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — ${s.relatesTo.artist} (${s.relatesTo.year})</p>`:""}
+<button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button>
+</div></div>`;
 }
 async function reveal(){
  stopPlayback();$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
@@ -198,11 +299,15 @@ function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`)
 function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.querySelector(".pts").textContent=n+" P."}
 function finishJudge(){document.querySelectorAll(".judge").forEach(x=>scores[+x.dataset.i]+=+(x.dataset.p||0));if(am==="turns")turn=(turn+1)%names.length;nextRound()}
 function endGame(){
- stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total};
+ stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds]};
  if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}
  if(saveStats){let st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let max=Math.max(...scores);names.forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=scores[i];if(scores[i]===max)st[n].wins++});localStorage.setItem("sg_stats",JSON.stringify(st))}
  show("home");document.querySelector("#home .hero").innerHTML=`<h2>🏆 Spiel beendet</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
 }
+
+function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));if(f.has(id)){f.delete(id);btn.textContent="♡ Favorit"}else{f.add(id);btn.textContent="♥ Favorit"}localStorage.setItem("sg_favs",JSON.stringify([...f]))}
+let wakeLock=null;async function keepAwake(){try{if("wakeLock"in navigator)wakeLock=await navigator.wakeLock.request("screen")}catch(e){}}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&$("round")&&!$("round").classList.contains("hidden"))keepAwake()});
 function showHistory(){show("history");let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let entries=Object.entries(st).sort((a,b)=>b[1].wins-a[1].wins||b[1].points-a[1].points);
  $("stats").innerHTML=entries.length?`<div class="statgrid">${entries.map(([n,s])=>`<div class="stat"><b>${s.wins}</b>Siege<br><span class="tiny">${n} · ${s.games} Spiele · ${s.points} P.</span></div>`).join("")}</div>`:`<div class="empty">Noch keine gespeicherten Scores.</div>`;
  $("historyList").innerHTML=h.length?h.map(g=>`<div class="historyItem"><div class="row"><div><b>${new Date(g.date).toLocaleDateString("de-DE")}</b><div class="tiny">${g.rounds} Songs · ${g.pools.map(p=>POOLS[p]?.[0]||p).join(", ")}</div></div><div class="winner">🏆 ${g.ranking[0].name}</div></div><p>${g.ranking.map(x=>`${x.name}: ${x.score}`).join(" · ")}</p></div>`).join(""):`<div class="empty">Noch keine gespeicherten Spiele.</div>`;
