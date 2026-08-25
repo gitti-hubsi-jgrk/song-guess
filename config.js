@@ -1,5 +1,5 @@
 window.SONG_GUESS_CONFIG = {
-  clientId: "PASTE_YOUR_SPOTIFY_CLIENT_ID_HERE",
-  redirectUri: "https://YOUR-PUBLIC-HTTPS-ADDRESS/",
+  clientId: "0283082dd37045a1b6b9d11552ae3114",
+  redirectUri: "https://gitti-hubsi-jgrk.github.io/song-guess/",
   deviceName: "Song Guess"
 };
