@@ -46,3 +46,5 @@ Neu u. a.:
 - Cover-Metadaten ergänzt und kleine Musikpools erweitert.
 
 - v5 last-test: Nerdwissen ist nach jedem Reveal verfügbar; Best-of-, 50s- und Schlager-Lücken erweitert.
+
+- v5.0.5: automatisch erzeugte Pseudo-Nerdfakten (nur Jahr/Genre/Album-Wiederholungen) entfernt. Nerdwissen zeigt nur noch kuratierte Zusatzinfos; sonst einen klaren Leerhinweis.

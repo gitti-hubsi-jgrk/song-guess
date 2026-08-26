@@ -58,6 +58,229 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  #revbtn{position:sticky;bottom:10px;z-index:4}
  #revbtn.ready{box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680}
 }
+
+#revbtn{
+  background:#2a2d33 !important;
+  color:#777 !important;
+  border:1px solid #3a3d44;
+  box-shadow:none !important;
+  opacity:1;
+  cursor:not-allowed;
+  transform:none !important;
+}
+#revbtn.ready:not(:disabled){
+  background:linear-gradient(135deg,#6c34da,#9b4ff0) !important;
+  color:#fff !important;
+  border-color:#9b4ff0;
+  cursor:pointer;
+  box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680 !important;
+}
+
+/* v5.0.4: strict laptop guessing layout — no page scrolling before Reveal */
+@media (min-width:900px) and (min-height:650px){
+  #round:has(#rev.hidden){
+    height:calc(100dvh - 24px);
+    max-height:calc(100dvh - 24px);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+
+  #round:has(#rev.hidden) .roundtop{
+    flex:0 0 auto;
+    margin-bottom:4px;
+  }
+
+  #round:has(#rev.hidden) #bonusBanner{
+    flex:0 0 auto;
+    margin:4px 0 6px;
+    padding:7px 10px;
+  }
+
+  #round:has(#rev.hidden) #roundContent{
+    flex:1 1 auto;
+    min-height:0;
+    overflow:hidden;
+  }
+
+  #round:has(#rev.hidden) .roundbody{
+    height:100%;
+    min-height:0;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 210px;
+    gap:12px;
+    align-items:stretch;
+  }
+
+  #round:has(#rev.hidden) .roundbody>div:first-child{
+    min-height:0;
+    display:grid;
+    grid-template-columns:minmax(180px,.72fr) minmax(300px,1.28fr);
+    grid-template-rows:auto 1fr auto auto;
+    column-gap:14px;
+    row-gap:6px;
+    align-items:start;
+  }
+
+  #round:has(#rev.hidden) #normal,
+  #round:has(#rev.hidden) #comp{
+    grid-column:1;
+    grid-row:1 / span 2;
+    min-height:0;
+  }
+
+  #round:has(#rev.hidden) .question{
+    margin:0;
+  }
+
+  #round:has(#rev.hidden) #clabel,
+  #round:has(#rev.hidden) .cat{
+    font-size:11px;
+    margin-bottom:2px;
+  }
+
+  #round:has(#rev.hidden) #qtext{
+    font-size:clamp(20px,2vw,29px);
+    line-height:1.05;
+    margin:2px 0 5px;
+  }
+
+  #round:has(#rev.hidden) .vinyl{
+    width:136px;
+    height:136px;
+    margin:4px auto 7px;
+  }
+
+  #round:has(#rev.hidden) #play{
+    padding:9px 14px;
+    min-height:38px;
+  }
+
+  #round:has(#rev.hidden) #answers{
+    grid-column:2;
+    grid-row:1 / span 4;
+    min-height:0;
+    max-height:100%;
+    overflow:auto;
+    padding-right:3px;
+  }
+
+  #round:has(#rev.hidden) .answerbox{
+    margin:0 0 6px;
+    padding:8px 10px;
+    border-radius:11px;
+  }
+
+  #round:has(#rev.hidden) .answerbox .who{
+    margin-bottom:5px;
+    gap:7px;
+    font-size:14px;
+  }
+
+  #round:has(#rev.hidden) .avatar{
+    width:26px;
+    height:26px;
+    font-size:15px;
+  }
+
+  #round:has(#rev.hidden) .answergrid{
+    gap:5px;
+  }
+
+  #round:has(#rev.hidden) .answergrid input,
+  #round:has(#rev.hidden) .answergrid select{
+    padding:7px 9px;
+    min-height:34px;
+  }
+
+  #round:has(#rev.hidden) .answerActions{
+    margin-top:5px;
+    gap:5px;
+  }
+
+  #round:has(#rev.hidden) .answerActions button{
+    padding:6px 8px;
+    font-size:12px;
+  }
+
+  #round:has(#rev.hidden) .statusAnswer{
+    margin-top:3px;
+    font-size:11px;
+  }
+
+  #round:has(#rev.hidden) .clipbar{
+    grid-column:1;
+    grid-row:3;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:4px;
+    margin:0;
+  }
+
+  #round:has(#rev.hidden) .clipbar button{
+    padding:7px 5px;
+    font-size:11px;
+  }
+
+  #round:has(#rev.hidden) .roundbody>div:first-child>.row{
+    grid-column:1;
+    grid-row:4;
+    margin:0 !important;
+    gap:5px;
+  }
+
+  #round:has(#rev.hidden) .roundbody>div:first-child>.row button,
+  #round:has(#rev.hidden) .roundbody>div:first-child>button:last-child{
+    padding:7px 8px;
+    font-size:11px;
+  }
+
+  #round:has(#rev.hidden) #revbtn{
+    position:fixed;
+    left:50%;
+    transform:translateX(-50%) !important;
+    bottom:10px;
+    width:min(420px,42vw);
+    z-index:12;
+    margin:0 !important;
+    padding:10px 14px;
+  }
+
+  #round:has(#rev.hidden) .roundbody>div:nth-child(2){
+    min-height:0;
+    display:flex;
+    align-items:flex-start;
+  }
+
+  #round:has(#rev.hidden) #scores{
+    position:static;
+    width:100%;
+    margin:0;
+    padding:7px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:4px;
+    border-radius:12px;
+  }
+
+  #round:has(#rev.hidden) .score{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-width:0;
+    text-align:left;
+    font-size:11px;
+    padding:3px 5px;
+  }
+
+  #round:has(#rev.hidden) .score b{
+    display:inline;
+    font-size:18px;
+  }
+
+  /* Reveal state intentionally returns to normal document flow and may scroll. */
+}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
@@ -267,7 +490,7 @@ function renderRound(){
  let cp=currentCats[0]==="compare";if(cp)pair=[song,randomSong([song.id])];
  $("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);
  if(!cp){$("clabel").textContent=ps==="all"?currentCats.map(x=>CATS[x][0]).join(" · "):CATS[currentCats[0]][0];$("qtext").textContent=ps==="all"?"Was wisst ihr über diesen Song?":CATS[currentCats[0]][1]}
- setClip(clipMode);roundAnswers={};renderAnswerForms();renderScores();$("revbtn").disabled=true;saveGameState();
+ setClip(clipMode);roundAnswers={};renderAnswerForms();renderScores();$("revbtn").disabled=true;$("revbtn").classList.remove("ready");saveGameState();
 }
 
 function fieldFor(cat,i){
@@ -294,7 +517,7 @@ function checkAnswers(){
   }else{delete roundAnswers[i];delete b.dataset.done;b.querySelector(".statusAnswer").textContent="Noch offen"}
  });
  let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");
- $("revbtn").disabled=!all;$("revbtn").classList.toggle("ready",all);
+ $("revbtn").disabled=!all;if(all)$("revbtn").classList.add("ready");else $("revbtn").classList.remove("ready");
 }
 
 function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
@@ -323,7 +546,7 @@ async function fadeInRandom(){
 async function playSong(s,key){
  if(!token)return alert("Bitte zuerst Spotify verbinden.");
  if(!deviceId)return alert("Spotify-Player ist noch nicht bereit. Kurz warten und nochmals probieren.");
- if(playingKey===key){stopPlayback();return}
+ if(playingKey===key && playingKey!=="carry"){stopPlayback();return}
  stopPlayback();
  try{
   let t=await resolveTrack(s),pos=0,duration=null;
@@ -374,15 +597,16 @@ async function songRevealHTML(s,label=""){
  let t=null;try{t=await resolveTrack(s)}catch(e){}
  return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}${s.releaseNote?`<div><b>Release-Hinweis</b><span>${s.releaseNote}</span></div>`:""}${s.esc?`<div><b>Eurovision</b><span>${s.esc.country} · ${s.esc.year}${s.esc.winner?" · 🏆 Sieger:in":""}</span></div>`:""}</div><div class="pooltags">${(s.pools||[]).filter(p=>POOLS[p]).map(p=>`<span class="pooltag">${POOLS[p][0]}</span>`).join("")}</div>
 ${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}
-${`<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button><div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px">
-${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife)?`<p class="muted">Für diesen Song ergänzen wir noch Nerdwissen.</p>`:""}
+${`<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button><div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px"><div class="tiny" style="margin-bottom:8px">Zusatzwissen – keine Wiederholung der Basisdaten</div>
+${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife)?`<p class="muted">Für diesen Song ist noch kein kuratiertes Nerdwissen hinterlegt.</p>`:""}
 ${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist} (${s.coverOf.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(s.coverOf.title+" "+s.coverOf.artist)}" target="_blank">▶ Original</a></p>`:""}
 ${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Quelle</a>`).join("<br>")}</p>`:""}
 ${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Song</a>`).join("<br>")}</p>`:""}
 ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — ${s.relatesTo.artist} (${s.relatesTo.year})</p>`:""}
 <button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button></div>`} </div>`;
 }
-async function reveal(){$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
+async function reveal(){
+ if(stopTimer){clearTimeout(stopTimer);stopTimer=null}$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
  if(cp){let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B"),ta=await resolveTrack(pair[0]).catch(()=>null),tb=await resolveTrack(pair[1]).catch(()=>null);sol=`<div class="reveal"><div class="answer">${older} ist älter · ${Math.abs(pair[0].year-pair[1].year)} Jahre</div><div class="compare"><div class="songbox"><b>A · ${pair[0].year}</b><p>${pair[0].title}<br><span class="muted">${pair[0].artist}</span></p>${ta?`<a class="spotifylink" href="${ta.url}" target="_blank">Spotify</a>`:""}</div><b>VS.</b><div class="songbox"><b>B · ${pair[1].year}</b><p>${pair[1].title}<br><span class="muted">${pair[1].artist}</span></p>${tb?`<a class="spotifylink" href="${tb.url}" target="_blank">Spotify</a>`:""}</div></div><button class="secondary" style="margin-top:12px" onclick="document.getElementById('compareNerd').classList.toggle('hidden')">🧠 Nerdwissen & Details</button><div id="compareNerd" class="hidden">${await songRevealHTML(pair[0],"SONG A")}${await songRevealHTML(pair[1],"SONG B")}</div></div>`}
  else sol=await songRevealHTML(song);
  $("rev").innerHTML=sol+judgeUI(cp);checkRatings();
@@ -434,7 +658,7 @@ function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.clas
 function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
 function checkRatings(){let all=[...document.querySelectorAll(".judge")].every(x=>x.dataset.rated==="1");let b=$("savePts");if(b)b.disabled=!all}
 function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";checkRatings()}
-function finishJudge(){let before=[...scores],awards=[];document.querySelectorAll(".judge").forEach(x=>{let p=+(x.dataset.p||0);if(bonusNow)p*=2;scores[+x.dataset.i]+=p;awards[+x.dataset.i]=p});let ids=currentCats[0]==="compare"?pair.map(x=>x.id):[song.id];completedRounds.push({round:roundIndex,songIds:ids,cats:[...currentCats],awards,before,bonus:bonusNow});(currentCats[0]==="compare"?pair:[song]).forEach(s=>{if(!gameTracks.some(x=>x.id===s.id))gameTracks.push(s)});$("undoBtn").classList.remove("hidden");renderScores();saveGameState();nextRound()}
+function finishJudge(){let before=[...scores],awards=[];document.querySelectorAll(".judge").forEach(x=>{let p=+(x.dataset.p||0);if(bonusNow)p*=2;scores[+x.dataset.i]+=p;awards[+x.dataset.i]=p});let ids=currentCats[0]==="compare"?pair.map(x=>x.id):[song.id];completedRounds.push({round:roundIndex,songIds:ids,cats:[...currentCats],awards,before,bonus:bonusNow});(currentCats[0]==="compare"?pair:[song]).forEach(s=>{if(!gameTracks.some(x=>x.id===s.id))gameTracks.push(s)});$("undoBtn").classList.remove("hidden");renderScores();saveGameState();if(playingKey){playingKey="carry";updatePlayUI()}nextRound()}
 function endGame(early=false){
  stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds]};
  if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}
