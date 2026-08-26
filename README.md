@@ -50,3 +50,5 @@ Neu u. a.:
 - v5.0.5: automatisch erzeugte Pseudo-Nerdfakten (nur Jahr/Genre/Album-Wiederholungen) entfernt. Nerdwissen zeigt nur noch kuratierte Zusatzinfos; sonst einen klaren Leerhinweis.
 
 - v5.0.6: Versionsnummer wird auf der Startseite sichtbar angezeigt, damit ein erfolgreicher Deployment-Upload sofort erkennbar ist.
+
+- v5.0.12: Versionsschema vereinheitlicht; ZIP-Dateiname und sichtbare Startseitenversion sind identisch.
