@@ -57,8 +57,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.14 — single authoritative desktop play layout */
+
+/* v5.0.15 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
+  width:100%;
+  margin-top:10px;
   background:#2a2d33;
   color:#777;
   border:1px solid #3a3d44;
@@ -73,74 +76,63 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
   box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680;
 }
 #revbtn.hidden,#rev.hidden{display:none!important}
+#otherSongBtn{width:100%;margin-top:8px}
+.transportrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
 
 @media(min-width:900px){
   #roundContent .roundbody{
     display:grid;
-    grid-template-columns:minmax(0,1fr);
-    gap:12px;
-    align-items:start;
-  }
-  #roundContent .roundbody>div:first-child{
-    display:grid;
-    grid-template-columns:minmax(320px,420px) minmax(420px,560px);
-    grid-template-areas:
-      "player answer"
-      "transport reveal"
-      "transport other";
-    gap:10px 28px;
-    align-items:start;
-    align-content:start;
+    grid-template-columns:minmax(320px,440px) minmax(420px,620px);
+    gap:30px;
     justify-content:center;
+    align-items:start;
   }
-  #normal,#comp{grid-area:player}
-  #answers{grid-area:answer}
-  .clipbar{
-    grid-area:transport;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:6px;
-    margin:0;
+  #roundContent .playcol,
+  #roundContent .answercol{
+    min-width:0;
+    align-self:start;
   }
-  #roundContent .roundbody>div:first-child>.row{
-    grid-area:transport;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:6px;
-    margin:48px 0 0!important;
+  #roundContent .answercol{
+    display:flex;
+    flex-direction:column;
+    gap:0;
   }
-  #revbtn{
-    grid-area:reveal;
-    position:static;
-    width:100%;
-    margin:0!important;
-  }
-  #roundContent .roundbody>div:first-child>button:last-child{
-    grid-area:other;
-    width:100%;
-    margin:0!important;
-  }
-  #roundContent .roundbody>div:nth-child(2){
-    width:min(560px,100%);
-    justify-self:end;
-    margin-right:max(0px,calc((100% - 1008px)/2));
-  }
-  #scores{margin-top:8px}
-  #qtext{
+  #roundContent #qtext{
     font-size:clamp(26px,2.6vw,40px);
     line-height:1.08;
     margin:6px 0 12px;
   }
-  .vinyl{width:190px;height:190px;margin:8px auto 14px}
-  #play{width:100px;height:100px;min-height:100px;padding:0;margin:0 auto}
-  .answerbox{margin:0;padding:12px 14px}
-  .answergrid input,.answergrid select{padding:10px 12px}
+  #roundContent .vinyl{
+    width:190px;
+    height:190px;
+    margin:8px auto 14px;
+  }
+  #roundContent #play{
+    width:100px;
+    height:100px;
+    min-height:100px;
+    padding:0;
+    margin:0 auto;
+  }
+  #roundContent .clipbar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+    margin-top:10px;
+  }
+  #roundContent .answerbox{
+    margin:0;
+    padding:12px 14px;
+  }
+  #roundContent .answergrid input,
+  #roundContent .answergrid select{padding:10px 12px}
+  #roundContent #scores{margin-top:10px}
 }
 
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.14</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.15</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -174,17 +166,22 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div id="roundSetup" class="roundsetup hidden"><h3>Fragen für diese Runde</h3><div id="roundCats" class="chips"></div><button class="primary" style="margin-top:12px" onclick="confirmRoundCats()">Runde starten</button></div>
  <div id="roundContent">
   <div class="roundbody">
-   <div>
+   <div class="playcol">
     <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div id="record" class="vinyl"></div><button id="play" class="play">▶</button></div>
     <div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
-    <div id="answers"></div><div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
-    <div class="row" style="margin-top:14px">
-<button class="secondary" style="flex:1" onclick="restartCurrent()">↺ Restart</button>
-<button class="secondary" style="flex:1" onclick="passRound()">⏭ Passen</button>
-</div>
-<button id="revbtn" class="primary" style="margin-top:10px" onclick="reveal()" disabled>Reveal</button><button class="secondary" style="width:100%;margin-top:8px" onclick="replaceSong()">🔀 Anderer Song</button>
+    <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
+    <div class="transportrow">
+      <button class="secondary" onclick="restartCurrent()">↺ Restart</button>
+      <button class="secondary" onclick="passRound()">⏭ Passen</button>
+    </div>
    </div>
-   <div><div id="rev" class="hidden"></div><div id="scores" class="scorebar"></div></div>
+   <div class="answercol">
+    <div id="answers"></div>
+    <button id="revbtn" class="primary" onclick="reveal()" disabled>Reveal</button>
+    <button id="otherSongBtn" class="secondary" onclick="replaceSong()">🔀 Anderer Song</button>
+    <div id="rev" class="hidden"></div>
+    <div id="scores" class="scorebar"></div>
+   </div>
   </div>
  </div>
 </section>
