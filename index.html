@@ -43,7 +43,6 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(min-width:700px){.answergrid{grid-template-columns:1fr 1fr}.playeredit{grid-template-columns:1fr 80px 80px auto}}
 
 
-}
 
 
 
@@ -56,9 +55,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-
-
-/* v5.0.15 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.17 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -129,10 +126,14 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
   #roundContent #scores{margin-top:10px}
 }
 
+
+/* v5.0.17: Reveal visibility is explicit, not inferred from old layout state */
+#revbtn:not(.hidden){display:block}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.15</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.17</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -149,7 +150,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
    <div class="field"><label>5 · Fragenpool</label><div id="cats" class="chips"></div></div>
    <div class="field"><label>Fragenwahl</label><div class="seg"><button data-g="qm" data-v="game" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
    <div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
-   <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Nacheinander</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
+   <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Alle der Reihe nach</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
    <div class="field"><label>Standard-Ausschnitt</label><div class="seg three"><button data-g="clip" data-v="full">Ganz</button><button data-g="clip" data-v="start30" class="on">30 s Start</button><button data-g="clip" data-v="random30">30 s Zufall</button></div><p class="tiny">Während jeder Runde jederzeit änderbar.</p></div>
    <div class="toggleline"><span>Spielhistorie speichern</span><input id="saveHistory" type="checkbox" checked></div>
    <div class="toggleline"><span>Dauerhafte Scores speichern</span><input id="saveStats" type="checkbox" checked></div>
@@ -299,8 +300,8 @@ let savedProfiles=JSON.parse(localStorage.getItem("sg_profiles")||"[]");if(saved
 function setupSelectors(){
  [1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].forEach(d=>{let b=document.createElement("button");b.className="chip on";b.textContent=d+"er";b.onclick=()=>{b.classList.toggle("on");b.classList.contains("on")?selectedDecades.add(d):selectedDecades.delete(d)};$("decades").appendChild(b)});
 
- Object.entries(CATS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedCats.has(k)?"on":"");b.innerHTML=`${v[0]}`;b.onclick=()=>{selectedCats.has(k)?selectedCats.delete(k):selectedCats.add(k);b.classList.toggle("on")};$("cats").appendChild(b)});
- Object.entries(POOLS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedPools.has(k)?"on":"");let n=k==="favorites"?JSON.parse(localStorage.getItem("sg_favs")||"[]").length:songs.filter(s=>s.pools.includes(k)).length;b.innerHTML=`${v[0]}<span class="poolmeta">${n} Songs · ${v[1]}</span>`;b.onclick=()=>{selectedPools.has(k)?selectedPools.delete(k):selectedPools.add(k);b.classList.toggle("on");updatePoolCount()};$("pools").appendChild(b)});
+ Object.entries(CATS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedCats.has(k)?"on":"");b.dataset.key=k;b.innerHTML=`${v[0]}`;b.onclick=()=>{selectedCats.has(k)?selectedCats.delete(k):selectedCats.add(k);b.classList.toggle("on")};$("cats").appendChild(b)});
+ Object.entries(POOLS).forEach(([k,v])=>{let b=document.createElement("button");b.className="chip "+(selectedPools.has(k)?"on":"");b.dataset.key=k;let n=k==="favorites"?JSON.parse(localStorage.getItem("sg_favs")||"[]").length:songs.filter(s=>s.pools.includes(k)).length;b.innerHTML=`${v[0]}<span class="poolmeta">${n} Songs · ${v[1]}</span>`;b.onclick=()=>{selectedPools.has(k)?selectedPools.delete(k):selectedPools.add(k);b.classList.toggle("on");updatePoolCount()};$("pools").appendChild(b)});
  document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x=>x.classList.remove("on"));b.classList.add("on");if(b.dataset.g==="qm")qm=b.dataset.v;if(b.dataset.g==="ps")ps=b.dataset.v;if(b.dataset.g==="am")am=b.dataset.v;if(b.dataset.g==="clip")clipMode=b.dataset.v});
  document.querySelectorAll(".modebtn").forEach(b=>b.onclick=()=>setClip(b.dataset.clip));
 }
@@ -327,8 +328,8 @@ function startGame(){
 function prepareRound(){
  if(roundIndex>=total)return endGame();
  roundIndex++;song=randomSong();pair=[];bonusNow=bonusRounds&&roundIndex%5===0;$("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
- $("rev").classList.add("hidden");$("revbtn").classList.remove("hidden");$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
- if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");return}
+ $("rev").classList.add("hidden");$("rev").style.display="none";resetRevealButton();$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
+ if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");saveGameState();return}
  currentCats=bonusNow?["year","artist","title","country"]:gameCats();renderRound();
 }
 function nextRound(){prepareRound()}
@@ -337,13 +338,29 @@ function buildRoundSelector(){
  [...selectedCats].forEach(k=>{if(k==="film"&&!song.film)return;let b=document.createElement("button");b.className="chip on";b.dataset.cat=k;b.textContent=CATS[k][0];b.onclick=()=>b.classList.toggle("on");$("roundCats").appendChild(b)});
 }
 function confirmRoundCats(){let a=[...$("roundCats").querySelectorAll(".chip.on")].map(b=>b.dataset.cat);if(!a.length)return alert("Bitte mindestens eine Frage wählen.");currentCats=ps==="one"?[a[Math.floor(Math.random()*a.length)]]:a.filter(x=>x!=="compare");$("roundSetup").classList.add("hidden");$("roundContent").classList.remove("hidden");renderRound()}
+
+function resetRevealButton(){
+ let b=$("revbtn");
+ b.classList.remove("hidden","ready");
+ b.disabled=true;
+ b.style.display="block";
+ b.style.visibility="visible";
+}
+function setRevealReady(ready){
+ let b=$("revbtn");
+ b.disabled=!ready;
+ b.classList.toggle("ready",ready);
+ b.style.display="block";
+ b.style.visibility="visible";
+}
+
 function renderRound(){
  if(currentCats.includes("film")&&!song.film)currentCats=currentCats.filter(x=>x!=="film");
  if(!currentCats.length)currentCats=["year"];
- let cp=currentCats[0]==="compare";if(cp)pair=[song,randomSong([song.id])];
+ let cp=currentCats[0]==="compare";if(cp&&pair.length!==2)pair=[song,randomSong([song.id])];
  $("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);
  if(!cp){$("clabel").textContent=ps==="all"?currentCats.map(x=>CATS[x][0]).join(" · "):CATS[currentCats[0]][0];$("qtext").textContent=ps==="all"?"Was wisst ihr über diesen Song?":CATS[currentCats[0]][1]}
- setClip(clipMode);roundAnswers={};renderAnswerForms();renderScores();$("revbtn").disabled=true;$("revbtn").classList.remove("ready");saveGameState();
+ setClip(clipMode);document.querySelector(".clipbar").classList.toggle("hidden",currentCats[0]==="intro3");roundAnswers={};renderAnswerForms();renderScores();resetRevealButton();saveGameState();
 }
 
 function fieldFor(cat,i){
@@ -370,7 +387,7 @@ function checkAnswers(){
   }else{delete roundAnswers[i];delete b.dataset.done;b.querySelector(".statusAnswer").textContent="Noch offen"}
  });
  let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");
- $("revbtn").disabled=!all;if(all)$("revbtn").classList.add("ready");else $("revbtn").classList.remove("ready");
+ setRevealReady(all);
 }
 
 function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
@@ -402,10 +419,11 @@ async function playSong(s,key){
  if(playingKey===key && playingKey!=="carry"){stopPlayback();return}
  stopPlayback();
  try{
-  let t=await resolveTrack(s),pos=0,duration=null;
-  if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000;await setSpotifyVolume(8)}
-  if(clipMode==="start30")duration=30000;
-  if(clipMode!=="random30")await setSpotifyVolume(100);
+  let t=await resolveTrack(s),pos=0,duration=null,intro3=currentCats[0]==="intro3";
+  if(intro3){pos=0;duration=3000}
+  else if(clipMode==="random30"){let max=Math.max(0,t.duration-30000);pos=max>10000?Math.floor(10000+Math.random()*(max-10000)):0;duration=30000;await setSpotifyVolume(8)}
+  else if(clipMode==="start30")duration=30000;
+  if(intro3||clipMode!=="random30")await setSpotifyVolume(100);
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
   playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(clipMode==="random30")fadeInRandom();
   if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
@@ -430,20 +448,21 @@ async function restartCurrent(){
  if(!s)return;
  stopPlayback();
  try{
-  let t=await resolveTrack(s),pos=(clipMode==="random30"&&lastStart.songId===s.id)?lastStart.pos:0,duration=clipMode==="full"?null:30000;
-  if(clipMode==="random30")await setSpotifyVolume(8);
+  let intro3=currentCats[0]==="intro3";
+  let t=await resolveTrack(s),pos=intro3?0:((clipMode==="random30"&&lastStart.songId===s.id)?lastStart.pos:0),duration=intro3?3000:(clipMode==="full"?null:30000);
+  if(!intro3&&clipMode==="random30")await setSpotifyVolume(8);else await setSpotifyVolume(100);
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[t.uri],position_ms:pos})});
   playingKey=key;lastStart={songId:s.id,pos};updatePlayUI();if(clipMode==="random30")fadeInRandom();if(duration)stopTimer=setTimeout(()=>stopPlayback(),duration);
  }catch(e){alert("Song konnte nicht neu gestartet werden.")}
 }
-function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});document.querySelectorAll(".answerbox").forEach(b=>{b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Gepasst · 0 Punkte"});$("revbtn").disabled=false;reveal()}
+function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});document.querySelectorAll(".answerbox").forEach(b=>{b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Gepasst · 0 Punkte"});setRevealReady(true);reveal()}
 function replaceSong(){stopPlayback();usedIds.delete(song?.id);roundIndex--;nextRound()}
 function surpriseGame(){
  selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare"]);
  qm="game";ps="one";am="all";clipMode=["full","start30","random30"][Math.floor(Math.random()*3)];
  show("setup");
- document.querySelectorAll("#pools .chip").forEach(b=>b.classList.remove("on"));
- document.querySelectorAll("#cats .chip").forEach(b=>b.classList.add("on"));
+ document.querySelectorAll("#pools .chip").forEach(b=>b.classList.toggle("on",selectedPools.has(b.dataset.key)));
+ document.querySelectorAll("#cats .chip").forEach(b=>b.classList.toggle("on",selectedCats.has(b.dataset.key)));
  alert("Überraschungsmix ist vorbereitet: Meine Mischung, alle gleichzeitig, wechselnde Fragen. Namen prüfen und starten!");
 }
 function songRevealHTML(s,label=""){
@@ -463,8 +482,10 @@ ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — 
 function reveal(){
  if($("revbtn").disabled)return;
  if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
+ $("revbtn").style.display="none";
  $("revbtn").classList.add("hidden");
  $("rev").classList.remove("hidden");
+ $("rev").style.display="block";
  let cp=currentCats[0]==="compare",sol="";
  if(cp){
    let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B");
@@ -533,9 +554,22 @@ function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("s
 let wakeLock=null;async function keepAwake(){try{if("wakeLock"in navigator)wakeLock=await navigator.wakeLock.request("screen")}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&$("round")&&!$("round").classList.contains("hidden"))keepAwake()});
 
-function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds]}))}
+function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,currentCats:[...currentCats],songId:song?.id||null,pairIds:pair.map(x=>x.id),bonusNow,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds],saveHistory,saveStats,avoidRecent,bonusRounds}))}
 function checkResume(){if(localStorage.getItem("sg_active"))$("resumeBtn").classList.remove("hidden")}
-function resumeGame(){let st=JSON.parse(localStorage.getItem("sg_active")||"null");if(!st)return;names=st.names;playersMeta=st.playersMeta||names.map((n,i)=>({name:n,avatar:AVATARS[i%AVATARS.length],color:COLORS[i%COLORS.length]}));scores=st.scores;selectedPools=new Set(st.selectedPools);selectedCats=new Set(st.selectedCats);selectedDecades=new Set(st.selectedDecades||[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]);qm=st.qm;ps=st.ps;am=st.am;clipMode=st.clipMode;total=st.total;roundIndex=st.roundIndex;completedRounds=st.completedRounds||[];usedIds=new Set(st.usedIds||[]);roundPool=poolSongs();gameTracks=(st.gameTracks||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);show("round");nextRound()}
+function resumeGame(){
+ let st=JSON.parse(localStorage.getItem("sg_active")||"null");if(!st)return;
+ names=st.names;playersMeta=st.playersMeta||names.map((n,i)=>({name:n,avatar:AVATARS[i%AVATARS.length],color:COLORS[i%COLORS.length]}));scores=st.scores;
+ selectedPools=new Set(st.selectedPools);selectedCats=new Set(st.selectedCats);selectedDecades=new Set(st.selectedDecades||[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]);
+ qm=st.qm;ps=st.ps;am=st.am;clipMode=st.clipMode;total=st.total;roundIndex=st.roundIndex;completedRounds=st.completedRounds||[];usedIds=new Set(st.usedIds||[]);
+ saveHistory=st.saveHistory??true;saveStats=st.saveStats??true;avoidRecent=st.avoidRecent??true;bonusRounds=st.bonusRounds??false;
+ roundPool=poolSongs();gameTracks=(st.gameTracks||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);
+ song=songs.find(s=>s.id===st.songId)||null;pair=(st.pairIds||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);currentCats=st.currentCats||[];bonusNow=!!st.bonusNow;
+ show("round");keepAwake();
+ if(song&&currentCats.length){
+   $("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
+   $("rev").classList.add("hidden");$("rev").style.display="none";$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");renderRound();
+ }else nextRound();
+}
 function openUndo(){let r=completedRounds.at(-1);if(!r)return;let h=`<div class="undoBox"><h3>Runde ${r.round} korrigieren</h3>${playersMeta.map((p,i)=>`<div class="row"><span>${p.avatar} ${p.name}</span><span><button class="secondary" onclick="adjustLast(${i},-1)">−</button> <b id="u${i}">${r.awards[i]||0}</b> <button class="secondary" onclick="adjustLast(${i},1)">+</button></span></div>`).join("")}</div>`;$("menuExtra").innerHTML=h;openGameMenu()}
 function adjustLast(i,d){let r=completedRounds.at(-1);let old=r.awards[i]||0,newv=Math.max(0,old+d);r.awards[i]=newv;scores[i]+=newv-old;$("u"+i).textContent=newv;renderScores();saveGameState()}
 function openGameMenu(){$("menuOverlay").classList.remove("hidden")}function closeGameMenu(){$("menuOverlay").classList.add("hidden");$("menuExtra").innerHTML=""}

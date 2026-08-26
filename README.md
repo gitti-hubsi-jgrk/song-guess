@@ -52,3 +52,5 @@ Neu u. a.:
 - v5.0.6: Versionsnummer wird auf der Startseite sichtbar angezeigt, damit ein erfolgreicher Deployment-Upload sofort erkennbar ist.
 
 - v5.0.12: Versionsschema vereinheitlicht; ZIP-Dateiname und sichtbare Startseitenversion sind identisch.
+
+- v5.0.17: Vollaudit: CSS-Klammer bereinigt, echte 3-Sekunden-Challenge, Resume ohne Rundensprung, Spieloptionen beim Resume erhalten und Überraschungsmix-UI synchronisiert.
