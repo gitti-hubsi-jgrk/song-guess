@@ -1236,13 +1236,14 @@
     ],
     "album": "Hunting High and Low",
     "language": "Englisch",
-    "nerd": "Der internationale Durchbruch gelang erst nach mehreren Anläufen; das Bleistift-/Realfilm-Musikvideo wurde selbst zur Pop-Ikone.",
+    "nerd": "Der Song brauchte mehrere Anläufe: Erst die spätere Fassung samt legendärem Rotoskopie-Video brachte den Durchbruch. Für das Video wurden rund 2.000 Zeichnungen angefertigt; Morten Harket sagt, er habe schon beim ersten Hören des frühen Riffs gewusst, dass darin der große Durchbruch steckte.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/culture/2015/sep/15/a-ha-how-we-made-take-on-me"
   },
   {
     "id": 57,
@@ -1572,12 +1573,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Der Titel entstand aus einem Scherz von Bikini-Kill-Sängerin Kathleen Hanna, die „Kurt smells like Teen Spirit“ an Cobains Wand schrieb. Cobain hielt „Teen Spirit“ für eine rebellische Parole – und wusste zunächst nicht, dass es der Name eines Deodorants war.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2007/jul/19/popandrock.nirvana"
   },
   {
     "id": 71,
@@ -2113,12 +2115,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "„Mr. Brightside“ war der erste Song, den The Killers gemeinsam schrieben. Brandon Flowers verarbeitete darin seine erste große Trennung; kurz zuvor hatte ihn ein Oasis-Konzert so beeindruckt, dass er bewusst einen Song schreiben wollte, der ähnlich gemeinschaftlich mitgesungen werden kann.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2019/jun/27/its-universal-why-the-killers-mr-brightside-will-be-this-years-glastonbury-anthem"
   },
   {
     "id": 95,
@@ -4253,7 +4256,7 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "Soft Cells Welthit ist eine Neuinterpretation eines Northern-Soul-Songs von Gloria Jones aus den 1960ern.",
+    "nerd": "Soft Cells Version ist ein radikaler Umbau eines Northern-Soul-Songs von Gloria Jones aus dem Jahr 1964. Das Duo hoffte ursprünglich lediglich auf einen kleinen Indie-Erfolg; die Synthpop-Fassung wurde schließlich in zahlreichen Ländern ein Nummer-eins-Hit.",
     "coverOf": {
       "title": "Tainted Love",
       "artist": "Gloria Jones",
@@ -4263,7 +4266,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/music/2007/apr/06/popandrock2"
   },
   {
     "id": 191,
@@ -5144,12 +5148,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Adam Young begann Owl City während schlafloser Nächte im fensterlosen Keller seiner Eltern in Minnesota, während er tagsüber in einem Lager arbeitete. Er lud die ersten Stücke praktisch ohne Werbung auf MySpace; die Mundpropaganda wurde so groß, dass er wenige Monate später seinen Job kündigte.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2010/jan/28/owl-city-adam-young-fireflies"
   },
   {
     "id": 229,
@@ -6372,12 +6377,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Alex Kapranos hatte am Vorabend den Film „Enemy at the Gates“ über zwei gegnerische Scharfschützen gesehen und machte daraus eine Metapher für zwei Menschen, die sich gegenseitig wollen, aber keiner den ersten Schritt wagt. Der markante Tempowechsel zwischen Intro und Hauptteil war Absicht – Produzent Tore Johansson mochte ausgerechnet den später berühmten Gitarrenriff anfangs nicht besonders.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2022/mar/14/franz-ferdinand-take-me-out-queen-spoof-how-we-made"
   },
   {
     "id": 283,
@@ -6468,12 +6474,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Karen O schrieb „Maps“ nach eigener Aussage in etwa 20 Minuten. Der Refrain geht auf eine E-Mail an ihren damaligen Freund Angus Andrew zurück. Später bestätigte Produzent Dr. Luke, dass die Struktur von „Maps“ „Since U Been Gone“ von Kelly Clarkson beeinflusste; Beyoncé griff den Song ebenfalls in „Hold Up“ auf.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2019/mar/14/all-i-ever-wanted-to-do-was-write-a-love-song-that-stands-the-test-of-time-karen-o-on-her-best-songs"
   },
   {
     "id": 287,
@@ -6492,12 +6499,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Jack White fand das berühmte Riff 2001 bei einem Soundcheck in Melbourne und dachte zunächst, daraus könne einmal ein James-Bond-Thema werden. Stattdessen wanderte der Riff später über Fußballfans von Club Brugge zu Roma und zur italienischen Nationalmannschaft – und wurde zu einem weltweiten Stadiongesang.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/football/blog/2016/may/06/the-joy-of-six-football-chants"
   },
   {
     "id": 288,
@@ -11999,13 +12007,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Die leicht verschobene Synthesizer-Melodie ist ein glücklicher Fehler: Gillian Gilbert programmierte die Sequenz damals Note für Note und ließ versehentlich eine Note aus. Auch das berühmte Cover entstand aus Technikbegeisterung – Peter Saville gestaltete die Hülle wie eine Diskette.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/culture/2013/feb/11/how-we-made-blue-monday"
   },
   {
     "id": 538,
@@ -12119,13 +12128,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Die erste Fassung entstand 1984 mit New Yorker Produzent Bobby Orlando. Neil Tennant sang den Song in dieser Form im Studio tatsächlich zum ersten Mal komplett durch. Nachdem die Version in Großbritannien kaum lief, nahmen die Pet Shop Boys ihn mit Stephen Hague neu auf und wollten ausdrücklich einen filmischen, fast Film-noir-artigen Klang.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/music/2020/jun/05/neil-tennant-west-end-girls-pet-shop-boys-greatest-british-no-1-of-all-time"
   },
   {
     "id": 543,
@@ -12553,12 +12563,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Der Arbeitstitel war zunächst „Dixon“. Brett Anderson hörte später in einem betrunkenen Gespräch die Worte „animal nitrate“, notierte sie und hatte damit plötzlich den Schlüssel zum Text. Mat Osman erinnert sich außerdem, dass Bernard Butler damals viel Nirvana hörte – besonders im Mittelteil ist für ihn der Einfluss von „Smells Like Teen Spirit“ hörbar.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/culture/2023/jul/03/suede-how-we-made-animal-nitrate-brett-anderson"
   },
   {
     "id": 562,
@@ -12620,7 +12631,7 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "A radically angular cover of Kate Bush's song.",
+    "nerd": "Die Futureheads kamen auf Kate Bush, weil auf einer kleinen Deutschlandtour ständig ein Kate-Bush-Tape lief. Eigentlich wollte Barry Hyde zunächst „The Big Sky“ covern, doch das funktionierte nicht; „Hounds of Love“ wurde schließlich ihr großer Durchbruch – und Kate Bush rief die Band später sogar persönlich an.",
     "coverOf": {
       "title": "Hounds of Love",
       "artist": "Kate Bush",
@@ -12629,7 +12640,8 @@
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2004/oct/02/popandrock.futureheads"
   },
   {
     "id": 565,
@@ -15016,12 +15028,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Neil Tennant schrieb den Song als Reaktion auf seine katholische Schulzeit. Zur bewusst übergroßen Dramaturgie gehören ein NASA-Countdown am Anfang und eine eigens aufgenommene katholische Messe im Mittelteil.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/musicblog/2017/mar/29/pet-shop-boys-10-of-the-best-neil-tennant-chris-lowe-pop"
   },
   {
     "id": 671,
@@ -15614,6 +15627,30 @@
     "album": "",
     "language": "",
     "nerd": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 699,
+    "title": "Common People",
+    "artist": "Pulp",
+    "year": 1995,
+    "country": "UK",
+    "genre": "Britpop",
+    "film": "",
+    "pools": [
+      "mix",
+      "indie",
+      "alternative",
+      "guitar"
+    ],
+    "album": "Different Class",
+    "language": "English",
+    "nerd": "Jarvis Cocker stützte den Song auf die Begegnung mit einer Mitstudentin am Central Saint Martins. Später erklärte er, dass „sculpture“ im Text vor allem deshalb auftauchte, weil es besser klang; die genaue Identität der Frau blieb trotz jahrelanger Spekulationen ungeklärt.",
+    "nerdSource": "https://www.theguardian.com/music/2009/apr/19/jarvis-cocker-soundtrack-of-my-life",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],

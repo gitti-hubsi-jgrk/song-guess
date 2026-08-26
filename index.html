@@ -55,7 +55,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.19 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.21 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -127,13 +127,13 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.19: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.21: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
 
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.19</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.21</span> · mehrere Pools</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -438,11 +438,17 @@ function updatePlayUI(){
  $("record")?.classList.toggle("spin",playingKey==="main");if($("play"))$("play").textContent=playingKey==="main"?"Ⅱ":"▶";
  ["A","B"].forEach((x,i)=>{let btn=$("play"+x),box=$("box"+x);if(btn)btn.textContent=playingKey==="cmp"+i?"Ⅱ Pause":`▶ Song ${x}`;if(box)box.classList.toggle("playing",playingKey==="cmp"+i)})
 }
-$("play").onclick=()=>playSong(song,"main");
-function toggleCompare(i){playSong(pair[i],"cmp"+i)}
+function activateSpotifyForMobile(){
+ try{
+   if(spotifyPlayer&&typeof spotifyPlayer.activateElement==="function")spotifyPlayer.activateElement();
+ }catch(e){console.warn("Spotify media activation failed",e)}
+}
+$("play").onclick=()=>{activateSpotifyForMobile();playSong(song,"main")};
+function toggleCompare(i){activateSpotifyForMobile();playSong(pair[i],"cmp"+i)}
 
 
 async function restartCurrent(){
+ activateSpotifyForMobile();
  let s=currentCats[0]==="compare"?(playingKey==="cmp1"?pair[1]:pair[0]):song;
  let key=currentCats[0]==="compare"?(playingKey==="cmp1"?"cmp1":"cmp0"):"main";
  if(!s)return;
@@ -476,6 +482,7 @@ ${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist
 ${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year})`).join("<br>")}</p>`:""}
 ${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year})`).join("<br>")}</p>`:""}
 ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — ${s.relatesTo.artist} (${s.relatesTo.year})</p>`:""}
+${s.nerdSource?`<p class="tiny"><a class="spotifylink" style="background:#34373d;color:#ddd;padding:7px 9px" href="${s.nerdSource}" target="_blank" rel="noopener">Quelle ↗</a></p>`:""}
 <button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button></div></div>`;
 }
 
@@ -610,6 +617,9 @@ function initSpotify(){
  $("spstate").textContent="Verbunden – Player wird vorbereitet …";$("spbtn").textContent="Spotify verbunden ✓";
  let s=document.createElement("script");s.src="https://sdk.scdn.co/spotify-player.js";document.body.appendChild(s)
 }
-window.onSpotifyWebPlaybackSDKReady=()=>{if(!token)return;spotifyPlayer=new Spotify.Player({name:cfg.deviceName,getOAuthToken:cb=>cb(token),volume:.8});spotifyPlayer.addListener("ready",({device_id})=>{deviceId=device_id;$("spstate").textContent="Mit Spotify verbunden ✓"});spotifyPlayer.addListener("authentication_error",async()=>{token=await refresh();if(!token)$("spstate").textContent="Spotify neu verbinden."});spotifyPlayer.connect()};
+window.onSpotifyWebPlaybackSDKReady=()=>{if(!token)return;spotifyPlayer=new Spotify.Player({name:cfg.deviceName,getOAuthToken:cb=>cb(token),volume:.8});spotifyPlayer.addListener("ready",({device_id})=>{deviceId=device_id;$("spstate").textContent="Mit Spotify verbunden ✓"});
+spotifyPlayer.addListener("autoplay_failed",()=>{$("spstate").textContent="Mobil: Play noch einmal direkt antippen 🔊"});
+spotifyPlayer.addListener("playback_error",({message})=>{console.error("Spotify playback error",message);$("spstate").textContent="Spotify-Wiedergabe fehlgeschlagen – Play erneut versuchen."});
+spotifyPlayer.addListener("authentication_error",async()=>{token=await refresh();if(!token)$("spstate").textContent="Spotify neu verbinden."});spotifyPlayer.connect()};
 spotifyAuth();
 </script></body></html>
