@@ -55,7 +55,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.17 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.18-debug — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -127,13 +127,28 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.17: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.18-debug: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
+
+
+/* v5.0.18-debug: temporary Reveal diagnostics */
+.debugpanel{
+  display:block!important;
+  margin:0 0 10px;
+  padding:10px 12px;
+  border:2px dashed #ffcc00;
+  border-radius:10px;
+  background:#211d10;
+  color:#fff4b8;
+  font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
 
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.17</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.18-debug</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -177,6 +192,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
     </div>
    </div>
    <div class="answercol">
+    <div id="revealDebug" class="debugpanel"></div>
     <div id="answers"></div>
     <button id="revbtn" class="primary" onclick="reveal()" disabled>Reveal</button>
     <button id="otherSongBtn" class="secondary" onclick="replaceSong()">🔀 Anderer Song</button>
@@ -265,7 +281,9 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 </section>
 
 </div>
-<script src="config.js"></script>
+<script src="config.js">
+window.addEventListener("resize",()=>updateRevealDebug("resize"));
+</script>
 <script>
 const $=id=>document.getElementById(id);
 const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"],intro3:["⚡ 3 SEKUNDEN","Titel und Interpret nach den ersten drei Sekunden?"]};
@@ -339,12 +357,35 @@ function buildRoundSelector(){
 }
 function confirmRoundCats(){let a=[...$("roundCats").querySelectorAll(".chip.on")].map(b=>b.dataset.cat);if(!a.length)return alert("Bitte mindestens eine Frage wählen.");currentCats=ps==="one"?[a[Math.floor(Math.random()*a.length)]]:a.filter(x=>x!=="compare");$("roundSetup").classList.add("hidden");$("roundContent").classList.remove("hidden");renderRound()}
 
+
+function updateRevealDebug(tag=""){
+ let b=document.getElementById("revbtn"),d=document.getElementById("revealDebug");
+ if(!d)return;
+ if(!b){d.textContent=`REVEAL DEBUG ${tag}\nrevbtn: NICHT IM DOM`;return}
+ let cs=getComputedStyle(b),r=b.getBoundingClientRect(),parent=b.parentElement;
+ let cx=Math.max(0,Math.min(innerWidth-1,r.left+r.width/2));
+ let cy=Math.max(0,Math.min(innerHeight-1,r.top+r.height/2));
+ let top=(r.width>0&&r.height>0)?document.elementFromPoint(cx,cy):null;
+ d.textContent=[
+   `REVEAL DEBUG ${tag}`,
+   `DOM: ja | disabled: ${b.disabled}`,
+   `class: ${b.className||"(keine)"}`,
+   `inline display: ${b.style.display||"(leer)"}`,
+   `computed: display=${cs.display} visibility=${cs.visibility} opacity=${cs.opacity}`,
+   `rect: x=${Math.round(r.x)} y=${Math.round(r.y)} w=${Math.round(r.width)} h=${Math.round(r.height)}`,
+   `parent: ${parent?.className||parent?.id||parent?.tagName}`,
+   `viewport: ${innerWidth}×${innerHeight}`,
+   `element am Mittelpunkt: ${top?.id||top?.className||top?.tagName||"—"}`
+ ].join("\\n");
+}
+
 function resetRevealButton(){
  let b=$("revbtn");
  b.classList.remove("hidden","ready");
  b.disabled=true;
  b.style.display="block";
  b.style.visibility="visible";
+ requestAnimationFrame(()=>updateRevealDebug("reset"));
 }
 function setRevealReady(ready){
  let b=$("revbtn");
@@ -352,6 +393,7 @@ function setRevealReady(ready){
  b.classList.toggle("ready",ready);
  b.style.display="block";
  b.style.visibility="visible";
+ requestAnimationFrame(()=>updateRevealDebug(`ready=${ready}`));
 }
 
 function renderRound(){
@@ -480,7 +522,8 @@ ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — 
 }
 
 function reveal(){
- if($("revbtn").disabled)return;
+ updateRevealDebug("CLICK reveal()");
+ if($("revbtn").disabled){requestAnimationFrame(()=>updateRevealDebug("CLICK ABGEBROCHEN: disabled"));return}
  if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
  $("revbtn").style.display="none";
  $("revbtn").classList.add("hidden");
@@ -493,6 +536,7 @@ function reveal(){
  }else sol=songRevealHTML(song);
  $("rev").innerHTML=sol+judgeUI(cp);
  checkRatings();
+ requestAnimationFrame(()=>updateRevealDebug("nach Reveal"));
 }
 
 function normAns(v){return String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/\b(feat|featuring|ft)\.?\b.*$/,"").replace(/[^a-z0-9]+/g," ").trim()}
