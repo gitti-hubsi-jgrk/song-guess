@@ -33,3 +33,16 @@ Neu u. a.:
 
 
 ## Public Release
+
+
+## v5 Änderungen
+- 3-Sekunden-Challenge: Titel + Interpret nach den ersten drei Sekunden.
+- Reveal wird erst nach Eingabe, Teilantwort, „Ich sage es laut“ oder „Passen“ aktiv.
+- Teilantworten sind erlaubt; besonders Bonusrunden führen nicht mehr in eine Sackgasse.
+- Passen wird automatisch mit 0 Punkten als vollständig gewertet.
+- Bonuswerte werden bei der Punktevergabe sichtbar verdoppelt.
+- Der laufende Song wird beim Speichern der Punkte nicht mehr abrupt gestoppt; er endet erst beim Start eines neuen Songs oder durch Pause.
+- Endscreen-Soundtrack hat ein stabiles zweispaltiges Layout.
+- Cover-Metadaten ergänzt und kleine Musikpools erweitert.
+
+- v5 last-test: Nerdwissen ist nach jedem Reveal verfügbar; Best-of-, 50s- und Schlager-Lücken erweitert.

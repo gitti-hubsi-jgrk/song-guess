@@ -17,7 +17,7 @@ Song Guess ist ein privates, browserbasiertes Musikquiz, das Spotify als Player 
 Pools können kombiniert werden. Ein Song, der in mehreren Pools vorkommt, landet trotzdem nur einmal im Lostopf.
 
 - Meine Mischung — quer durch die Jahrzehnte, Schwerpunkt ab den 1950ern.
-- Guilty Fun
+- Guilty Fun / NL / FR — kuratierte, von regionalen Guilty-Pleasures-Ausgaben inspirierte Auswahl.
 - Film & TV — Songs mit Film-/Serienbezug.
 - Rock.
 - Urban / Hip-Hop.
@@ -124,3 +124,13 @@ Alle Spieler:innen bekommen pro Runde denselben Song und dieselbe(n) Frage(n). �
 
 ## Soundtrack der Partie
 Am Spielende zeigt Song Guess alle gehörten Songs mit Spotify-Suchlinks. Die Liste kann als Text kopiert und für eine eigene Spotify-Playlist verwendet werden.
+
+## v5 Änderungen
+- 3-Sekunden-Challenge: Titel + Interpret nach den ersten drei Sekunden.
+- Reveal wird erst nach Eingabe, Teilantwort, „Ich sage es laut“ oder „Passen“ aktiv.
+- Teilantworten sind erlaubt; besonders Bonusrunden führen nicht mehr in eine Sackgasse.
+- Passen wird automatisch mit 0 Punkten als vollständig gewertet.
+- Bonuswerte werden bei der Punktevergabe sichtbar verdoppelt.
+- Der laufende Song wird beim Speichern der Punkte nicht mehr abrupt gestoppt; er endet erst beim Start eines neuen Songs oder durch Pause.
+- Endscreen-Soundtrack hat ein stabiles zweispaltiges Layout.
+- Cover-Metadaten ergänzt und kleine Musikpools erweitert.
