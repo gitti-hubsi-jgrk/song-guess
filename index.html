@@ -10,7 +10,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .app{width:min(100%,900px);margin:auto;padding:max(20px,env(safe-area-inset-top)) 18px max(40px,env(safe-area-inset-bottom))}
 .top,.row,.roundtop{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand small{font-size:11px;letter-spacing:.28em;color:#aaa59b;font-weight:800}.brand h1{margin:4px 0;font-size:clamp(34px,7vw,48px);letter-spacing:-.04em}.brand h1 span{color:#a96bff}
 .card{background:linear-gradient(145deg,#191b20,#121315);border:1px solid var(--line);border-radius:26px;padding:clamp(17px,4vw,24px);margin:16px 0;box-shadow:0 20px 60px #0008}.hero{text-align:center}
-.vinyl{width:min(48vw,230px);aspect-ratio:1;margin:16px auto 24px;border-radius:50%;background:repeating-radial-gradient(circle,#08090a 0 7px,#17181a 8px 9px);border:1px solid #36383e;display:grid;place-items:center;box-shadow:0 0 42px #8644ce44}.vinyl:after{content:"SG";width:30%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:var(--violet);font-weight:950}.spin{animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.vinyl{width:min(48vw,230px);aspect-ratio:1;margin:16px auto 24px;border-radius:50%;background:repeating-radial-gradient(circle,#08090a 0 7px,#17181a 8px 9px);border:1px solid #36383e;display:grid;place-items:center;box-shadow:0 0 42px #8644ce44}.vinyl:after{content:"";width:30%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:var(--violet);font-weight:950}.spin{animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 .primary,.secondary,.chip,.modebtn{border:0;border-radius:14px;padding:14px 16px;font-weight:780;cursor:pointer}.primary{background:linear-gradient(135deg,#6c34da,#9b4ff0);color:white;width:100%}.secondary{background:#24272c;border:1px solid #3a3d43;color:white}.spotify{background:#1ed760;color:#07190c}.muted{color:var(--muted)}.tiny{font-size:12px;color:var(--muted)}
 .nav{display:flex;gap:8px}.nav button{padding:10px 12px}.field{margin:22px 0}.field>label{display:block;font-weight:850;margin-bottom:10px}.input{width:100%;background:#111216;color:white;border:1px solid #3b3e44;border-radius:12px;padding:13px}.prow{display:flex;gap:8px;margin:8px 0}.prow input{flex:1}
 .chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.chip{background:#23262b;color:#ddd;text-align:left;border:1px solid #393c42}.chip.on{background:#342441;border-color:#a86aff;color:white}.poolmeta{display:block;font-size:11px;color:#9c98a0;margin-top:3px;font-weight:500}
@@ -55,7 +55,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.21 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.22 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -127,13 +127,38 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.21: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.22: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
+
+
+/* v5.0.22 polish */
+.hero{position:relative;overflow:hidden}
+.discoBall{position:absolute;right:18px;top:14px;font-size:34px;filter:drop-shadow(0 0 12px #b77cff88);animation:discosway 4s ease-in-out infinite;transform-origin:50% -20px}
+@keyframes discosway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+.vinyl:after{background:radial-gradient(circle,#111 0 5px,#9b4ff0 6px 38%,#17181a 39% 45%,#9b4ff0 46% 100%)!important;box-shadow:inset 0 0 0 2px #ffffff22}
+.playeredit{grid-template-columns:1fr 82px auto!important}
+.pavatar{font-size:24px;text-align:center}
+.scorebar{position:static!important;bottom:auto!important;margin:14px 14px 0 0!important;max-width:240px;margin-left:auto!important}
+.score{font-size:13px!important}
+.score::first-letter{font-size:22px}
+.soundtrack .trackrow{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:start!important;text-align:left!important;gap:14px!important}
+.soundtrack .trackrow span,.soundtrack .trackrow small{text-align:left!important;display:block!important;margin:0!important;padding:0!important}
+.soundtrack .trackrow a{justify-self:end;white-space:nowrap}
+.transportrow{grid-template-columns:repeat(3,1fr)!important}
+#savePts:disabled{background:#2a2d33!important;color:#777!important;cursor:not-allowed!important;box-shadow:none!important}
+.endActions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.favrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #303238}
+.favrow small{display:block;color:var(--muted);margin-top:3px}
+#setup.surpriseSetup .setupgrid .card:first-child .field:not(:first-child),
+#setup.surpriseSetup .setupgrid .card:nth-child(2){display:none!important}
+#setup.surpriseSetup .setupgrid{grid-template-columns:1fr!important;max-width:650px;margin:auto}
+#setup.surpriseSetup .setupgrid .card:first-child{display:block}
+@media(max-width:700px){.endActions{grid-template-columns:1fr}.discoBall{font-size:28px}.scorebar{max-width:none;margin-right:0!important}}
 
 </style></head><body><div class="app">
 <section id="home">
- <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.21</span> · mehrere Pools</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
+ <div class="card hero"><div class="discoBall" aria-hidden="true">🪩</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.22</span> · mehrere Pools</p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -141,8 +166,8 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
  <div class="setupgrid">
   <div class="card">
-   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name, Figur und Farbe werden nur lokal auf diesem Gerät gespeichert.</p></div>
-   <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p></div>
+   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name und Figur werden nur lokal auf diesem Gerät gespeichert.</p></div>
+   <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p><button class="secondary" style="margin-top:8px" onclick="showFavorites()">♡ Favoriten verwalten</button></div>
    <div class="field"><label>3 · Jahrzehnte</label><div id="decades" class="decadechips"></div></div>
 <div class="field"><label>4 · Anzahl Songs</label><input id="count" class="input" type="number" min="1" value="15"></div>
   </div>
@@ -173,6 +198,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
     <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
     <div class="transportrow">
       <button class="secondary" onclick="restartCurrent()">↺ Restart</button>
+      <button class="secondary" onclick="stopPlayback()">⏹ Stop</button>
       <button class="secondary" onclick="passRound()">⏭ Passen</button>
     </div>
    </div>
@@ -196,6 +222,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <button class="secondary" style="width:100%;margin-top:8px" onclick="endGameEarly()">🏠 Spiel beenden</button>
  <div id="menuExtra"></div>
 </div></section>
+
+<section id="favorites" class="hidden">
+ <div class="top"><button class="secondary" onclick="show('setup')">‹</button><h2>Favoriten</h2><button class="secondary" onclick="clearFavorites()">Alle löschen</button></div>
+ <div class="card"><div id="favoritesList"></div></div>
+</section>
 
 <section id="history" class="hidden">
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Historie & Scores</h2><button class="secondary" onclick="clearHistory()">Löschen</button></div>
@@ -268,7 +299,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 <script src="config.js"></script>
 <script>
 const $=id=>document.getElementById(id);
-const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"],intro3:["⚡ 3 SEKUNDEN","Titel und Interpret nach den ersten drei Sekunden?"]};
+const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"],intro3:["⚡ 3 SEKUNDEN","Titel und Interpret nach den ersten drei Sekunden?"],cover:["🔁 COVER","Von wem ist das Original?"]};
 const POOLS={
 mix:["Meine Mischung","kuratiert, generationenübergreifend"],
 guilty_fun:["😈 Guilty Fun","unser eigener Mitsing-/Trash-/Pop-Mix"],
@@ -289,13 +320,13 @@ party:["🪩 Party","unser eigener Party-Mix"],
 guitar:["🎸 Gitarren","Rock · Punk · Metal · Indie"]
 };
 let songs=[],names=["Spieler:in 1","Spieler:in 2"],playersMeta=[],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
-let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers=[],completedRounds=[],gameTracks=[],bonusNow=false;
+let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,surpriseMode=false,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers=[],completedRounds=[],gameTracks=[],bonusNow=false;
 let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,stopTimer=null,resolvedCache={},lastStart={songId:null,pos:0};
 
-function show(id){["home","setup","round","history","help"].forEach(x=>$(x).classList.toggle("hidden",x!==id));stopPlayback()}
+function show(id,keepAudio=false){["home","setup","round","history","help","favorites"].forEach(x=>$(x)?.classList.toggle("hidden",x!==id));if(!keepAudio)stopPlayback()}
 const AVATARS=["🪩","🎧","🎸","🦊","🐲","👻","🤖","🐙","🐝","⚡","🦄","🐸"];const COLORS=["#ed6cae","#68b7f2","#65d985","#d0a957","#a96bff","#ff805f","#55d6c2","#d58cff"];
-function addPlayer(v="",av="🪩",col="#ed6cae"){let d=document.createElement("div");d.className="playeredit";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><select class="input pavatar">${AVATARS.map(x=>`<option ${x===av?"selected":""}>${x}</option>`).join("")}</select><input class="input pcolor" type="color" value="${col}"><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
-let savedProfiles=JSON.parse(localStorage.getItem("sg_profiles")||"[]");if(savedProfiles.length)savedProfiles.forEach(x=>addPlayer(x.name,x.avatar,x.color));else{addPlayer("Spieler:in 1","🪩","#ed6cae");addPlayer("Spieler:in 2","🎧","#68b7f2")}
+function addPlayer(v="",av="🪩"){let d=document.createElement("div");d.className="playeredit";d.innerHTML=`<input class="input pname" value="${v}" placeholder="Name"><select class="input pavatar">${AVATARS.map(x=>`<option ${x===av?"selected":""}>${x}</option>`).join("")}</select><button class="secondary" onclick="this.parentElement.remove()">×</button>`;$("players").appendChild(d)}
+let savedProfiles=JSON.parse(localStorage.getItem("sg_profiles")||"[]");if(savedProfiles.length)savedProfiles.forEach(x=>addPlayer(x.name,x.avatar));else{addPlayer("Spieler:in 1","🪩");addPlayer("Spieler:in 2","🎧")}
 
 function setupSelectors(){
  [1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].forEach(d=>{let b=document.createElement("button");b.className="chip on";b.textContent=d+"er";b.onclick=()=>{b.classList.toggle("on");b.classList.contains("on")?selectedDecades.add(d):selectedDecades.delete(d)};$("decades").appendChild(b)});
@@ -315,7 +346,7 @@ function refillBag(){let a=[...selectedCats];for(let i=a.length-1;i>0;i--){let j
 function gameCats(){let a=[...selectedCats];if(ps==="all")return a.filter(x=>x!=="compare"&&!(x==="film"&&!song?.film));if(!categoryBag.length)refillBag();let c=categoryBag.shift();if(c==="film"&&!song?.film)return gameCats();return [c]}
 
 function startGame(){
- let rows=[...document.querySelectorAll(".playeredit")];playersMeta=rows.map(r=>({name:r.querySelector(".pname").value.trim(),avatar:r.querySelector(".pavatar").value,color:r.querySelector(".pcolor").value})).filter(x=>x.name);names=playersMeta.map(x=>x.name);localStorage.setItem("sg_profiles",JSON.stringify(playersMeta));
+ let rows=[...document.querySelectorAll(".playeredit")];playersMeta=rows.map((r,i)=>({name:r.querySelector(".pname").value.trim(),avatar:r.querySelector(".pavatar").value,color:COLORS[i%COLORS.length]})).filter(x=>x.name);names=playersMeta.map(x=>x.name);localStorage.setItem("sg_profiles",JSON.stringify(playersMeta));
  if(!names.length)return alert("Bitte mindestens eine Person eintragen.");
  if(!selectedPools.size)return alert("Bitte mindestens einen Songpool wählen.");
  if(!selectedCats.size)return alert("Bitte mindestens eine Fragekategorie wählen.");
@@ -330,7 +361,10 @@ function prepareRound(){
  roundIndex++;song=randomSong();pair=[];bonusNow=bonusRounds&&roundIndex%5===0;$("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
  $("rev").classList.add("hidden");$("rev").style.display="none";resetRevealButton();$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
  if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");saveGameState();return}
- currentCats=bonusNow?["year","artist","title","country"]:gameCats();renderRound();
+ currentCats=bonusNow?["year","artist","title","country"]:gameCats();
+ if(currentCats.includes("cover")&&!song?.coverOf){let covers=roundPool.filter(s=>s.coverOf&&!usedIds.has(s.id));if(!covers.length)covers=roundPool.filter(s=>s.coverOf);if(covers.length){song=covers[Math.floor(Math.random()*covers.length)];usedIds.add(song.id)}else currentCats=currentCats.filter(c=>c!=="cover")}
+ if(!currentCats.length)currentCats=["year"];
+ renderRound();
 }
 function nextRound(){prepareRound()}
 function buildRoundSelector(){
@@ -366,7 +400,7 @@ function renderRound(){
 function fieldFor(cat,i){
  if(cat==="year")return `<input type="number" data-cat="${cat}" placeholder="Jahr, z. B. 1987">`;
  if(cat==="decade")return `<select data-cat="${cat}"><option value="">Jahrzehnt wählen</option>${[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].map(d=>`<option value="${d}">${d}er</option>`).join("")}</select>`;
- if(cat==="compare")return `<select data-cat="${cat}"><option value="">A, B oder gleiches Jahr?</option><option>A</option><option>B</option><option>GLEICHES JAHR</option></select>`; if(cat==="intro3")return `<input data-cat="title" placeholder="Titel"><input data-cat="artist" placeholder="Interpret">`;
+ if(cat==="compare")return `<select data-cat="${cat}"><option value="">A, B oder gleiches Jahr?</option><option>A</option><option>B</option><option>GLEICHES JAHR</option></select>`; if(cat==="intro3")return `<input data-cat="title" placeholder="Titel"><input data-cat="artist" placeholder="Interpret">`; if(cat==="cover")return `<input data-cat="cover" placeholder="Originalinterpret:in">`;
  return `<input data-cat="${cat}" placeholder="${CATS[cat][0].replace(/^[^ ]+ /,"")}">`;
 }
 function renderAnswerForms(){
@@ -416,8 +450,8 @@ async function fadeInRandom(){
 async function playSong(s,key){
  if(!token)return alert("Bitte zuerst Spotify verbinden.");
  if(!deviceId)return alert("Spotify-Player ist noch nicht bereit. Kurz warten und nochmals probieren.");
- if(playingKey===key && playingKey!=="carry"){stopPlayback();return}
- stopPlayback();
+ if(playingKey===key && playingKey!=="carry"){await stopPlayback();return}
+ await stopPlayback();
  try{
   let t=await resolveTrack(s),pos=0,duration=null,intro3=currentCats[0]==="intro3";
   if(intro3){pos=0;duration=3000}
@@ -452,7 +486,7 @@ async function restartCurrent(){
  let s=currentCats[0]==="compare"?(playingKey==="cmp1"?pair[1]:pair[0]):song;
  let key=currentCats[0]==="compare"?(playingKey==="cmp1"?"cmp1":"cmp0"):"main";
  if(!s)return;
- stopPlayback();
+ await stopPlayback();
  try{
   let intro3=currentCats[0]==="intro3";
   let t=await resolveTrack(s),pos=intro3?0:((clipMode==="random30"&&lastStart.songId===s.id)?lastStart.pos:0),duration=intro3?3000:(clipMode==="full"?null:30000);
@@ -464,12 +498,9 @@ async function restartCurrent(){
 function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});document.querySelectorAll(".answerbox").forEach(b=>{b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Gepasst · 0 Punkte"});setRevealReady(true);reveal()}
 function replaceSong(){stopPlayback();usedIds.delete(song?.id);roundIndex--;nextRound()}
 function surpriseGame(){
- selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare"]);
+ surpriseMode=true;selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare","intro3","cover"]);
  qm="game";ps="one";am="all";clipMode=["full","start30","random30"][Math.floor(Math.random()*3)];
- show("setup");
- document.querySelectorAll("#pools .chip").forEach(b=>b.classList.toggle("on",selectedPools.has(b.dataset.key)));
- document.querySelectorAll("#cats .chip").forEach(b=>b.classList.toggle("on",selectedCats.has(b.dataset.key)));
- alert("Überraschungsmix ist vorbereitet: Meine Mischung, alle gleichzeitig, wechselnde Fragen. Namen prüfen und starten!");
+ show("setup");$("setup").classList.add("surpriseSetup");$("setup").querySelector(".top h2").textContent="Überraschungsmix";
 }
 function songRevealHTML(s,label=""){
  let cached=resolvedCache[s.id]||null;
@@ -531,8 +562,18 @@ function autoPoints(i,cp){
   else if(c==="country"&&v.country){let q=textMatch(v.country,target.country)?1:0;pts+=q;detail.push(`Herkunft +${q}`)}
   else if(c==="genre"&&v.genre){let q=textMatch(v.genre,target.genre)?1:0;pts+=q;detail.push(`Genre +${q}`)}
   else if(c==="film"&&v.film){let q=textMatch(v.film,target.film)?1:0;pts+=q;detail.push(`Film/Serie +${q}`)}
+  else if(c==="cover"&&v.cover){let q=target.coverOf&&textMatch(v.cover,target.coverOf.artist)?1:0;pts+=q;detail.push(`Original +${q}`)}
  }
  return {points:pts,detail:detail.join(" · ")||"0 Punkte"};
+}
+function roundMaxPoints(cp=false){
+ let max=0;
+ for(const c of currentCats){
+   if(c==="year")max+=3;
+   else if(c==="intro3")max+=2;
+   else max+=1;
+ }
+ return max*(bonusNow?2:1);
 }
 function judgeUI(cp){
  let list=names.map((n,i)=>judgePerson(n,i,cp)).join("");
@@ -543,35 +584,42 @@ function judgePerson(n,i,cp){
  let auto=autoPoints(i,cp),mult=bonusNow?2:1;
  if(auto){
   let shown=auto.points*mult;
-  return `<div class="judge" data-i="${i}" data-p="${auto.points}" data-rated="1"><header><b>${n}</b><span class="pts">${shown} P.</span></header><div class="tiny">${auto.detail}${bonusNow?" · Bonus ×2":""}</div><button class="secondary" onclick="manualOverride(${i})">Wertung korrigieren</button></div>`;
+  return `<div class="judge" data-i="${i}" data-p="${auto.points}" data-rated="1"><header><b>${n}</b><span class="pts">${shown}${names.length===1?` von ${roundMaxPoints(cp)}`:""} P.</span></header><div class="tiny">${auto.detail}${bonusNow?" · Bonus ×2":""}</div><button class="secondary" onclick="manualOverride(${i})">Wertung korrigieren</button></div>`;
  }
  let year=currentCats.includes("year")&&!cp,buttons="";
  if(ps==="all"&&!cp)buttons=currentCats.map(c=>c==="year"?`<div style="width:100%"><span class="tiny">${CATS[c][0]}</span><div class="judgeBtns"><button onclick="catPts(this,${i},'year',0)">0</button><button onclick="catPts(this,${i},'year',1)">±3 +${1*mult}</button><button onclick="catPts(this,${i},'year',2)">±1 +${2*mult}</button><button onclick="catPts(this,${i},'year',3)">Exakt +${3*mult}</button></div></div>`:`<button data-cat="${c}" onclick="toggleCat(this,${i},'${c}')">${CATS[c][0]} 0 / +${1*mult}</button>`).join("");
  else if(year)buttons=`<button onclick="setPts(this,${i},0)">Daneben 0</button><button onclick="setPts(this,${i},1)">±3 J. +${1*mult}</button><button onclick="setPts(this,${i},2)">±1 J. +${2*mult}</button><button onclick="setPts(this,${i},3)">Exakt +${3*mult}</button>`;
  else buttons=`<button onclick="setPts(this,${i},0)">✕ 0</button><button onclick="setPts(this,${i},1)">✓ +${1*mult}</button>`;
- return `<div class="judge" data-i="${i}" data-p="0" data-rated="0"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
+ return `<div class="judge" data-i="${i}" data-p="0" data-rated="0"><header><b>${n}</b><span class="pts">0${names.length===1?` von ${roundMaxPoints(cp)}`:""} P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
 }
 function manualOverride(i){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.rated="0";x.dataset.p="0";x.querySelector(".pts").textContent="0 P.";x.querySelector(".tiny")?.remove();let max=currentCats.includes("year")?3:Math.max(1,currentCats.length);x.insertAdjacentHTML("beforeend",`<div class="judgeBtns">${Array.from({length:max+1},(_,n)=>`<button onclick="setPts(this,${i},${n})">${n}</button>`).join("")}</div>`);checkRatings()}
-function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");checkRatings()}
+function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=(names.length===1?`${n*(bonusNow?2:1)} von ${roundMaxPoints(currentCats[0]==="compare")}`:`${n*(bonusNow?2:1)}`)+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");checkRatings()}
 function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.classList.toggle("sel",btn.dataset.on==="1");btn.textContent=`${CATS[c][0]} ${btn.dataset.on==="1"?"+1":"0 / +1"}`;recountJudge(i)}
 function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
 function checkRatings(){let all=[...document.querySelectorAll(".judge")].every(x=>x.dataset.rated==="1");let b=$("savePts");if(b)b.disabled=!all}
-function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";checkRatings()}
-function finishJudge(){let before=[...scores],awards=[];document.querySelectorAll(".judge").forEach(x=>{let p=+(x.dataset.p||0);if(bonusNow)p*=2;scores[+x.dataset.i]+=p;awards[+x.dataset.i]=p});let ids=currentCats[0]==="compare"?pair.map(x=>x.id):[song.id];completedRounds.push({round:roundIndex,songIds:ids,cats:[...currentCats],awards,before,bonus:bonusNow});(currentCats[0]==="compare"?pair:[song]).forEach(s=>{if(!gameTracks.some(x=>x.id===s.id))gameTracks.push(s)});$("undoBtn").classList.remove("hidden");renderScores();saveGameState();if(playingKey){playingKey="carry";updatePlayUI()}nextRound()}
+function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(()=>n++);n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=(names.length===1?`${n*(bonusNow?2:1)} von ${roundMaxPoints(currentCats[0]==="compare")}`:`${n*(bonusNow?2:1)}`)+" P.";checkRatings()}
+function finishJudge(){
+ if(![...document.querySelectorAll(".judge")].every(x=>x.dataset.rated==="1")){checkRatings();return}
+ let before=[...scores],awards=[];document.querySelectorAll(".judge").forEach(x=>{let p=+(x.dataset.p||0);if(bonusNow)p*=2;scores[+x.dataset.i]+=p;awards[+x.dataset.i]=p});let ids=currentCats[0]==="compare"?pair.map(x=>x.id):[song.id];completedRounds.push({round:roundIndex,songIds:ids,cats:[...currentCats],awards,before,bonus:bonusNow});(currentCats[0]==="compare"?pair:[song]).forEach(s=>{if(!gameTracks.some(x=>x.id===s.id))gameTracks.push(s)});$("undoBtn").classList.remove("hidden");renderScores();saveGameState();if(playingKey){playingKey="carry";updatePlayUI()}if(roundIndex>=total)endGame(false);else nextRound()}
 function endGame(early=false){
- stopPlayback();let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds]};
+ if(early)stopPlayback();else if(playingKey){playingKey="carry";updatePlayUI()}let ranking=names.map((n,i)=>({name:n,score:scores[i]})).sort((a,b)=>b.score-a.score),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds]};
  if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}
  if(saveStats){let st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let max=Math.max(...scores);names.forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=scores[i];if(scores[i]===max)st[n].wins++});localStorage.setItem("sg_stats",JSON.stringify(st))}
- localStorage.removeItem("sg_active");show("home");document.querySelector("#home .hero").innerHTML=`<h2>${early?"Spiel beendet":"🏆 Spiel beendet"}</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><h3>🎧 Soundtrack dieser Partie</h3><div class="soundtrack">${gameTracks.map(s=>`<div class="trackrow"><span>${s.title}<br><small>${s.artist} · ${s.year}</small></span><a href="https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}" target="_blank">Spotify</a></div>`).join("")}</div><button class="secondary" style="width:100%;margin:10px 0" onclick="copyGamePlaylist()">Playlist-Liste kopieren</button><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
+ localStorage.removeItem("sg_active");$("resumeBtn").classList.add("hidden");show("home",!early);document.querySelector("#home .hero").innerHTML=`<h2>${early?"Spiel beendet":"🏆 Spiel beendet"}</h2><div class="reveal">${ranking.map((x,i)=>`<div class="endrank">${i+1}. <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div><h3>🎧 Soundtrack dieser Partie</h3><div class="soundtrack">${gameTracks.map(s=>`<div class="trackrow"><span>${s.title}<br><small>${s.artist} · ${s.year}</small></span><a href="https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}" target="_blank">Spotify</a></div>`).join("")}</div><div class="endActions"><button class="secondary" onclick="copyGamePlaylist()">📋 Liste kopieren</button><button class="secondary" onclick="downloadGameCSV()">⬇ CSV</button><button class="secondary" onclick="stopPlayback()">⏹ Musik stoppen</button></div><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
 }
 
-function copyGamePlaylist(){let t=gameTracks.map(s=>`${s.artist} – ${s.title}`).join("\n");navigator.clipboard?.writeText(t);alert("Songliste kopiert – du kannst sie z. B. in Spotify weiterverwenden.")}
-function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));if(f.has(id)){f.delete(id);btn.textContent="♡ Favorit"}else{f.add(id);btn.textContent="♥ Favorit"}localStorage.setItem("sg_favs",JSON.stringify([...f]))}
+function copyGamePlaylist(){let t=gameTracks.map(s=>`${s.artist} – ${s.title}`).join("\n");navigator.clipboard?.writeText(t);alert("Songliste als Text kopiert.")}
+function downloadGameCSV(){let esc=v=>`"${String(v??"").replaceAll('"','""')}"`,rows=[["Interpret","Titel","Jahr"],...gameTracks.map(s=>[s.artist,s.title,s.year])],csv=rows.map(r=>r.map(esc).join(",")).join("\n"),blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="song-guess-spiel.csv";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));if(f.has(id)){f.delete(id);btn.textContent="♡ Favorit"}else{f.add(id);btn.textContent="♥ Favorit"}localStorage.setItem("sg_favs",JSON.stringify([...f]));updateFavoritePoolBadge()}
+function showFavorites(){let fav=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]")),list=songs.filter(s=>fav.has(s.id)).sort((a,b)=>a.artist.localeCompare(b.artist));$("favoritesList").innerHTML=list.length?list.map(s=>`<div class="favrow"><span><b>${s.title}</b><small>${s.artist} · ${s.year}</small></span><button class="secondary" onclick="removeFavorite(${s.id})">Entfernen</button></div>`).join(""):'<p class="muted">Noch keine Favoriten gespeichert.</p>';show("favorites")}
+function removeFavorite(id){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));f.delete(id);localStorage.setItem("sg_favs",JSON.stringify([...f]));showFavorites();updateFavoritePoolBadge()}
+function clearFavorites(){if(!confirm("Alle Favoriten löschen?"))return;localStorage.setItem("sg_favs","[]");showFavorites();updateFavoritePoolBadge()}
+function updateFavoritePoolBadge(){let b=[...document.querySelectorAll("#pools .chip")].find(x=>x.dataset.key==="favorites");if(!b)return;let n=JSON.parse(localStorage.getItem("sg_favs")||"[]").length;b.querySelector(".poolmeta").textContent=`${n} Songs · ${POOLS.favorites[1]}`}
 let wakeLock=null;async function keepAwake(){try{if("wakeLock"in navigator)wakeLock=await navigator.wakeLock.request("screen")}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&$("round")&&!$("round").classList.contains("hidden"))keepAwake()});
 
 function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,currentCats:[...currentCats],songId:song?.id||null,pairIds:pair.map(x=>x.id),bonusNow,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds],saveHistory,saveStats,avoidRecent,bonusRounds}))}
-function checkResume(){if(localStorage.getItem("sg_active"))$("resumeBtn").classList.remove("hidden")}
+function checkResume(){$("resumeBtn").classList.toggle("hidden",!localStorage.getItem("sg_active"))}
 function resumeGame(){
  let st=JSON.parse(localStorage.getItem("sg_active")||"null");if(!st)return;
  names=st.names;playersMeta=st.playersMeta||names.map((n,i)=>({name:n,avatar:AVATARS[i%AVATARS.length],color:COLORS[i%COLORS.length]}));scores=st.scores;

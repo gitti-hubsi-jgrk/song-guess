@@ -78,7 +78,11 @@
     "album": "",
     "language": "",
     "nerd": "",
-    "coverOf": null,
+    "coverOf": {
+      "title": "Blue Suede Shoes",
+      "artist": "Carl Perkins",
+      "year": 1956
+    },
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
@@ -159,12 +163,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "„At Last“ war bei Etta James’ Aufnahme bereits fast 20 Jahre alt: Glenn Millers Orchester hatte den Song 1942 in die Charts gebracht. James’ Version von 1961 wurde erst später zu ihrem Signatursong und wurde 2008 in das US National Recording Registry aufgenommen.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/At-Last_Gulla.pdf"
   },
   {
     "id": 9,
@@ -415,7 +420,11 @@
     "album": "",
     "language": "",
     "nerd": "",
-    "coverOf": null,
+    "coverOf": {
+      "title": "Respect",
+      "artist": "Otis Redding",
+      "year": 1965
+    },
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
@@ -696,12 +705,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Die Plattenfirma hielt eine fast sechs Minuten lange Single für kaum radiotauglich; Queen weigerte sich zu kürzen. DJ Kenny Everett spielte vor Veröffentlichung wiederholt eine Vorabfassung, und das schnell produzierte Video half dem Song zusätzlich, weil Queen nicht für jede TV-Show auftreten wollte.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/music/2022/nov/15/brian-may-sugababes-and-more-on-hitting-no-1-singles"
   },
   {
     "id": 34,
@@ -1389,13 +1399,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Rick Astley arbeitete zunächst im Studio von Stock Aitken Waterman mit und machte dort unter anderem Tee. Beim Entstehen von „Never Gonna Give You Up“ half er sogar, den neuen Fairlight-Sampler auszupacken; kurz darauf sang er den Song ein und wurde mit 21 zum Popstar.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/music/2020/mar/23/rick-astley-how-we-made-never-gonna-give-you-up"
   },
   {
     "id": 63,
@@ -4054,7 +4065,11 @@
     "album": "",
     "language": "",
     "nerd": "",
-    "coverOf": null,
+    "coverOf": {
+      "title": "Don't Leave Me This Way",
+      "artist": "Harold Melvin & the Blue Notes",
+      "year": 1975
+    },
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
@@ -4231,13 +4246,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Die Melodie entstand auf einem kleinen Wasp-Synthesizer; Kim Wilde fand dessen Geräusch damals vor allem nervig. Nach der Aufnahme lag der Song fast ein Jahr, bevor er veröffentlicht wurde – dann verkaufte er sich so schnell, dass die Chart-Ermittler zunächst einen Fehler vermuteten.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/music/2017/jan/30/kim-wilde-how-we-made-kids-in-america"
   },
   {
     "id": 190,
@@ -4466,13 +4482,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Joey Tempest hatte den berühmten Keyboard-Riff schon Jahre vor dem Hit auf einem Korg Polysix aufgenommen und das Tape rund sechs Jahre lang in einer Schublade liegen. Gitarrist John Norum fand den Synth-Riff anfangs sogar furchtbar; sein später ikonisches Solo nahm er in ungefähr 15 Minuten auf.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/culture/2023/sep/25/spandex-big-hair-europe-final-countdown-guitar-solo"
   },
   {
     "id": 199,
@@ -4748,12 +4765,13 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Whigfield brauchte für den Gesang nach eigener Erinnerung mehr als 20 Takes; die besten Stellen wurden zusammengeschnitten. Der Song entwickelte sich nur langsam zum Hit, stieg in Großbritannien dann aber direkt auf Platz 1 ein und beendete Wet Wet Wets 15-wöchige Spitzenserie.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
-    "esc": null
+    "esc": null,
+    "nerdSource": "https://www.theguardian.com/culture/2016/oct/24/whigfield-interview-saturday-night-dance"
   },
   {
     "id": 211,
@@ -7544,13 +7562,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "„Master of Puppets“ entstand während monatelanger Sessions in Kopenhagen. Produzent Flemming Rasmussen erinnerte sich, dass die Band inzwischen technisch viel weiter war und dadurch deutlich mehr feine Details ausarbeiten konnte; Cliff Burtons Harmonie- und Melodieverständnis prägte den damaligen Schreibstil stark.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.loudersound.com/features/metallica-flemming-rasmussen-interview"
   },
   {
     "id": 333,
@@ -9761,13 +9780,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "Songwriter Ian Lewis betont, dass „Bad Boys“ ursprünglich nicht über Polizei geschrieben wurde, sondern über einen Jugendlichen, der sich von seiner Familie entfernt. Erst die TV-Serie „Cops“ machte den Refrain weltweit zum Polizeithema.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://au.rollingstone.com/music/music-features/cops-theme-bad-boys-inner-circle-interview-12563/"
   },
   {
     "id": 431,
@@ -12055,13 +12075,14 @@
     ],
     "album": "",
     "language": "",
-    "nerd": "",
+    "nerd": "„Smalltown Boy“ entstand für das Filmprojekt „Framed Youth – Revenge of the Teenage Perverts“. Jimmy Somerville beschrieb den Song später als emotionalen Aufschrei; die Band war von Anfang an ebenso politisch wie musikalisch motiviert.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "eighties_curated": true
+    "eighties_curated": true,
+    "nerdSource": "https://www.theguardian.com/music/2006/nov/12/popandrock27"
   },
   {
     "id": 540,
