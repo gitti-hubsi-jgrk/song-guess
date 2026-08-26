@@ -48,3 +48,5 @@ Neu u. a.:
 - v5 last-test: Nerdwissen ist nach jedem Reveal verfügbar; Best-of-, 50s- und Schlager-Lücken erweitert.
 
 - v5.0.5: automatisch erzeugte Pseudo-Nerdfakten (nur Jahr/Genre/Album-Wiederholungen) entfernt. Nerdwissen zeigt nur noch kuratierte Zusatzinfos; sonst einen klaren Leerhinweis.
+
+- v5.0.6: Versionsnummer wird auf der Startseite sichtbar angezeigt, damit ein erfolgreicher Deployment-Upload sofort erkennbar ist.
