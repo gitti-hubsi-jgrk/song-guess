@@ -73,7 +73,8 @@
     "film": "",
     "pools": [
       "guitar",
-      "mix"
+      "mix",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -415,7 +416,8 @@
     "genre": "Soul",
     "film": "",
     "pools": [
-      "mix"
+      "mix",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -1319,7 +1321,8 @@
       "guilty_fun",
       "guitar",
       "mix",
-      "rock"
+      "rock",
+      "cover"
     ],
     "album": "",
     "language": "Englisch",
@@ -1627,7 +1630,8 @@
       "cinema_tv",
       "mix",
       "party",
-      "soundtrack"
+      "soundtrack",
+      "cover"
     ],
     "album": "The Bodyguard",
     "language": "Englisch",
@@ -4060,7 +4064,8 @@
     "pools": [
       "guilty_fun",
       "mix",
-      "party"
+      "party",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -4268,7 +4273,8 @@
       "eighties",
       "guilty_fun",
       "mix",
-      "party"
+      "party",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -4373,7 +4379,8 @@
       "eighties",
       "guilty_fun",
       "mix",
-      "party"
+      "party",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -8106,9 +8113,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
-      "year": 2017,
       "country": "Portugal",
-      "place": 1,
+      "year": 2017,
       "winner": true
     }
   },
@@ -8133,9 +8139,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
-      "year": 2018,
       "country": "Israel",
-      "place": 1,
+      "year": 2018,
       "winner": true
     }
   },
@@ -8160,9 +8165,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
+      "country": "Netherlands",
       "year": 2019,
-      "country": "Niederlande",
-      "place": 1,
       "winner": true
     }
   },
@@ -8187,9 +8191,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
+      "country": "Italy",
       "year": 2021,
-      "country": "Italien",
-      "place": 1,
       "winner": true
     }
   },
@@ -8213,9 +8216,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
-      "year": 2022,
       "country": "Ukraine",
-      "place": 1,
+      "year": 2022,
       "winner": true
     }
   },
@@ -8240,9 +8242,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
+      "country": "Sweden",
       "year": 2023,
-      "country": "Schweden",
-      "place": 1,
       "winner": true
     }
   },
@@ -8267,9 +8268,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
+      "country": "Switzerland",
       "year": 2024,
-      "country": "Schweiz",
-      "place": 1,
       "winner": true
     }
   },
@@ -8294,9 +8294,8 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": {
+      "country": "Austria",
       "year": 2025,
-      "country": "Österreich",
-      "place": 1,
       "winner": true
     }
   },
@@ -12648,7 +12647,8 @@
       "guitar",
       "indie",
       "indie_0313",
-      "mix"
+      "mix",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -15089,7 +15089,8 @@
     "film": "",
     "pools": [
       "mix",
-      "party"
+      "party",
+      "cover"
     ],
     "album": "",
     "language": "",
@@ -15677,5 +15678,341 @@
     "sampledBy": [],
     "relatesTo": null,
     "esc": null
+  },
+  {
+    "id": 700,
+    "title": "Rim Tim Tagi Dim",
+    "artist": "Baby Lasagna",
+    "year": 2024,
+    "country": "Croatia",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Croatia",
+      "year": 2024,
+      "winner": false
+    }
+  },
+  {
+    "id": 701,
+    "title": "Who the Hell Is Edgar?",
+    "artist": "Teya & Salena",
+    "year": 2023,
+    "country": "Austria",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Austria",
+      "year": 2023,
+      "winner": false
+    }
+  },
+  {
+    "id": 702,
+    "title": "Space Man",
+    "artist": "Sam Ryder",
+    "year": 2022,
+    "country": "United Kingdom",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "United Kingdom",
+      "year": 2022,
+      "winner": false
+    }
+  },
+  {
+    "id": 703,
+    "title": "SloMo",
+    "artist": "Chanel",
+    "year": 2022,
+    "country": "Spain",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Spain",
+      "year": 2022,
+      "winner": false
+    }
+  },
+  {
+    "id": 704,
+    "title": "Shum",
+    "artist": "Go_A",
+    "year": 2021,
+    "country": "Ukraine",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Ukraine",
+      "year": 2021,
+      "winner": false
+    }
+  },
+  {
+    "id": 705,
+    "title": "Soldi",
+    "artist": "Mahmood",
+    "year": 2019,
+    "country": "Italy",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Italy",
+      "year": 2019,
+      "winner": false
+    }
+  },
+  {
+    "id": 706,
+    "title": "Spirit in the Sky",
+    "artist": "KEiiNO",
+    "year": 2019,
+    "country": "Norway",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Norway",
+      "year": 2019,
+      "winner": false
+    }
+  },
+  {
+    "id": 707,
+    "title": "Nobody But You",
+    "artist": "Cesár Sampson",
+    "year": 2018,
+    "country": "Austria",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Austria",
+      "year": 2018,
+      "winner": false
+    }
+  },
+  {
+    "id": 708,
+    "title": "Beautiful Mess",
+    "artist": "Kristian Kostov",
+    "year": 2017,
+    "country": "Bulgaria",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Bulgaria",
+      "year": 2017,
+      "winner": false
+    }
+  },
+  {
+    "id": 709,
+    "title": "Hey Mamma",
+    "artist": "Sunstroke Project",
+    "year": 2017,
+    "country": "Moldova",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Moldova",
+      "year": 2017,
+      "winner": false
+    }
+  },
+  {
+    "id": 710,
+    "title": "City Lights",
+    "artist": "Blanche",
+    "year": 2017,
+    "country": "Belgium",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Belgium",
+      "year": 2017,
+      "winner": false
+    }
+  },
+  {
+    "id": 711,
+    "title": "1944",
+    "artist": "Jamala",
+    "year": 2016,
+    "country": "Ukraine",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Ukraine",
+      "year": 2016,
+      "winner": true
+    }
+  },
+  {
+    "id": 712,
+    "title": "Sound of Silence",
+    "artist": "Dami Im",
+    "year": 2016,
+    "country": "Australia",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Australia",
+      "year": 2016,
+      "winner": false
+    }
+  },
+  {
+    "id": 713,
+    "title": "You Are the Only One",
+    "artist": "Sergey Lazarev",
+    "year": 2016,
+    "country": "Russia",
+    "genre": "Eurovision / Pop",
+    "film": "",
+    "pools": [
+      "eurovision",
+      "mix"
+    ],
+    "album": "",
+    "language": "",
+    "coverOf": null,
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": {
+      "country": "Russia",
+      "year": 2016,
+      "winner": false
+    }
   }
 ]
