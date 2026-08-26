@@ -76,215 +76,141 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
   box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680 !important;
 }
 
-/* v5.0.4: strict laptop guessing layout — no page scrolling before Reveal */
-@media (min-width:900px) and (min-height:650px){
-  #round:has(#rev.hidden){
-    height:calc(100dvh - 24px);
-    max-height:calc(100dvh - 24px);
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-  }
 
-  #round:has(#rev.hidden) .roundtop{
-    flex:0 0 auto;
-    margin-bottom:4px;
-  }
 
-  #round:has(#rev.hidden) #bonusBanner{
-    flex:0 0 auto;
-    margin:4px 0 6px;
-    padding:7px 10px;
-  }
 
-  #round:has(#rev.hidden) #roundContent{
-    flex:1 1 auto;
+/* v5.0.8: balanced compact desktop round layout */
+@media (min-width:900px){
+  #round{
     min-height:0;
-    overflow:hidden;
   }
 
-  #round:has(#rev.hidden) .roundbody{
-    height:100%;
-    min-height:0;
+  #roundContent .roundbody{
     display:grid;
-    grid-template-columns:minmax(0,1fr) 210px;
-    gap:12px;
-    align-items:stretch;
-  }
-
-  #round:has(#rev.hidden) .roundbody>div:first-child{
-    min-height:0;
-    display:grid;
-    grid-template-columns:minmax(180px,.72fr) minmax(300px,1.28fr);
-    grid-template-rows:auto 1fr auto auto;
-    column-gap:14px;
-    row-gap:6px;
+    grid-template-columns:minmax(0,1fr) 190px;
+    gap:16px;
     align-items:start;
   }
 
-  #round:has(#rev.hidden) #normal,
-  #round:has(#rev.hidden) #comp{
+  #roundContent .roundbody>div:first-child{
+    display:grid;
+    grid-template-columns:minmax(260px,.9fr) minmax(360px,1.1fr);
+    grid-template-rows:auto auto auto auto;
+    column-gap:18px;
+    row-gap:10px;
+    align-items:start;
+    align-content:start;
+  }
+
+  #roundContent #normal,
+  #roundContent #comp{
     grid-column:1;
-    grid-row:1 / span 2;
-    min-height:0;
+    grid-row:1;
   }
 
-  #round:has(#rev.hidden) .question{
-    margin:0;
-  }
-
-  #round:has(#rev.hidden) #clabel,
-  #round:has(#rev.hidden) .cat{
-    font-size:11px;
-    margin-bottom:2px;
-  }
-
-  #round:has(#rev.hidden) #qtext{
-    font-size:clamp(20px,2vw,29px);
-    line-height:1.05;
-    margin:2px 0 5px;
-  }
-
-  #round:has(#rev.hidden) .vinyl{
-    width:136px;
-    height:136px;
-    margin:4px auto 7px;
-  }
-
-  #round:has(#rev.hidden) #play{
-    padding:9px 14px;
-    min-height:38px;
-  }
-
-  #round:has(#rev.hidden) #answers{
+  #roundContent #answers{
     grid-column:2;
-    grid-row:1 / span 4;
-    min-height:0;
-    max-height:100%;
-    overflow:auto;
-    padding-right:3px;
+    grid-row:1;
+    min-width:0;
   }
 
-  #round:has(#rev.hidden) .answerbox{
-    margin:0 0 6px;
-    padding:8px 10px;
-    border-radius:11px;
+  #roundContent .clipbar{
+    grid-column:1;
+    grid-row:2;
+    margin-top:0;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
   }
 
-  #round:has(#rev.hidden) .answerbox .who{
-    margin-bottom:5px;
-    gap:7px;
-    font-size:14px;
-  }
-
-  #round:has(#rev.hidden) .avatar{
-    width:26px;
-    height:26px;
-    font-size:15px;
-  }
-
-  #round:has(#rev.hidden) .answergrid{
-    gap:5px;
-  }
-
-  #round:has(#rev.hidden) .answergrid input,
-  #round:has(#rev.hidden) .answergrid select{
-    padding:7px 9px;
-    min-height:34px;
-  }
-
-  #round:has(#rev.hidden) .answerActions{
-    margin-top:5px;
-    gap:5px;
-  }
-
-  #round:has(#rev.hidden) .answerActions button{
-    padding:6px 8px;
-    font-size:12px;
-  }
-
-  #round:has(#rev.hidden) .statusAnswer{
-    margin-top:3px;
-    font-size:11px;
-  }
-
-  #round:has(#rev.hidden) .clipbar{
+  #roundContent .roundbody>div:first-child>.row{
     grid-column:1;
     grid-row:3;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:4px;
-    margin:0;
+    margin-top:0 !important;
+    gap:6px;
   }
 
-  #round:has(#rev.hidden) .clipbar button{
-    padding:7px 5px;
-    font-size:11px;
-  }
-
-  #round:has(#rev.hidden) .roundbody>div:first-child>.row{
-    grid-column:1;
-    grid-row:4;
+  #roundContent #revbtn{
+    grid-column:2;
+    grid-row:2;
+    position:static !important;
+    width:100% !important;
     margin:0 !important;
-    gap:5px;
+    transform:none !important;
   }
 
-  #round:has(#rev.hidden) .roundbody>div:first-child>.row button,
-  #round:has(#rev.hidden) .roundbody>div:first-child>button:last-child{
-    padding:7px 8px;
-    font-size:11px;
-  }
-
-  #round:has(#rev.hidden) #revbtn{
-    position:fixed;
-    left:50%;
-    transform:translateX(-50%) !important;
-    bottom:10px;
-    width:min(420px,42vw);
-    z-index:12;
-    margin:0 !important;
-    padding:10px 14px;
-  }
-
-  #round:has(#rev.hidden) .roundbody>div:nth-child(2){
-    min-height:0;
-    display:flex;
-    align-items:flex-start;
-  }
-
-  #round:has(#rev.hidden) #scores{
-    position:static;
+  #roundContent .roundbody>div:first-child>button:last-child{
+    grid-column:2;
+    grid-row:3;
     width:100%;
-    margin:0;
-    padding:7px;
-    display:grid;
-    grid-template-columns:1fr;
-    gap:4px;
-    border-radius:12px;
+    margin:0 !important;
   }
 
-  #round:has(#rev.hidden) .score{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+  #roundContent .roundbody>div:nth-child(2){
     min-width:0;
-    text-align:left;
-    font-size:11px;
-    padding:3px 5px;
   }
 
-  #round:has(#rev.hidden) .score b{
-    display:inline;
-    font-size:18px;
+  #roundContent #scores{
+    margin-top:0;
   }
 
-  /* Reveal state intentionally returns to normal document flow and may scroll. */
+  /* Compact, but not tiny. */
+  #roundContent #qtext{
+    font-size:clamp(24px,2.5vw,38px);
+    line-height:1.08;
+    margin:6px 0 12px;
+  }
+
+  #roundContent .vinyl{
+    width:180px;
+    height:180px;
+    margin:8px auto 14px;
+  }
+
+  #roundContent #play{
+    width:96px;
+    height:96px;
+    min-height:0;
+    padding:0;
+  }
+
+  #roundContent .answerbox{
+    padding:11px 13px;
+    margin:0 0 8px;
+  }
+
+  #roundContent .answerbox .who{
+    margin-bottom:7px;
+  }
+
+  #roundContent .answergrid{
+    gap:7px;
+  }
+
+  #roundContent .answergrid input,
+  #roundContent .answergrid select{
+    padding:9px 11px;
+  }
+
+  #roundContent .answerActions{
+    margin-top:7px;
+  }
+
+  #roundContent .clipbar button,
+  #roundContent .roundbody>div:first-child>.row button,
+  #roundContent .roundbody>div:first-child>button:last-child{
+    padding:8px 10px;
+  }
+
+  /* The question state should fit a normal laptop viewport without
+     stretching controls to the bottom. If space is unusually short,
+     normal page scrolling is preferable to broken geometry. */
 }
 
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.7</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.8</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
