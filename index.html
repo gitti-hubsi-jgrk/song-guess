@@ -41,6 +41,23 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .soundtrack{max-height:340px;overflow:auto}.trackrow{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #303238;padding:9px 0}.trackrow a{color:#1ed760}
 .decadechips{display:flex;gap:6px;flex-wrap:wrap}.decadechips button{padding:8px 10px}
 @media(min-width:700px){.answergrid{grid-template-columns:1fr 1fr}.playeredit{grid-template-columns:1fr 80px 80px auto}}
+
+@media(min-width:900px){
+ #roundContent .roundbody{grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:18px;align-items:start}
+ #roundContent .roundbody>div:first-child{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(300px,1.15fr);gap:14px;align-items:start}
+ #roundContent #normal,#roundContent #comp{grid-column:1}
+ #roundContent #answers{grid-column:2;grid-row:1 / span 3}
+ #roundContent .clipbar,#roundContent .roundbody>div:first-child>.row,#roundContent #revbtn,#roundContent .roundbody>div:first-child>button:last-child{grid-column:1}
+ #roundContent #qtext{font-size:clamp(22px,2.4vw,34px);margin:5px 0 8px}
+ #roundContent .vinyl{width:190px;height:190px;margin:6px auto}
+ #roundContent .answerbox{padding:10px;margin-bottom:8px}
+ #roundContent .answergrid{gap:7px}
+ #roundContent input,#roundContent select{padding:9px 10px}
+ #roundContent .answerActions{margin-top:7px}
+ #roundContent .clipbar{margin-top:8px}
+ #revbtn{position:sticky;bottom:10px;z-index:4}
+ #revbtn.ready{box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680}
+}
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
@@ -174,7 +191,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 <script src="config.js"></script>
 <script>
 const $=id=>document.getElementById(id);
-const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"]};
+const CATS={year:["📅 JAHR","In welchem Jahr erschien dieser Song?"],decade:["◷ JAHRZEHNT","Aus welchem Jahrzehnt stammt der Song?"],artist:["🎤 INTERPRET","Wer ist der Interpret / Act?"],title:["♫ TITEL","Wie heißt dieser Song?"],country:["🌍 HERKUNFT","Aus welchem Land kommt der Act?"],film:["🎬 FILM / SERIE","Mit welchem Film / welcher Serie ist der Song verbunden?"],compare:["↕ ÄLTER / JÜNGER","Welcher Song ist älter?"],intro3:["⚡ 3 SEKUNDEN","Titel und Interpret nach den ersten drei Sekunden?"]};
 const POOLS={
 mix:["Meine Mischung","kuratiert, generationenübergreifend"],
 guilty_fun:["😈 Guilty Fun","unser eigener Mitsing-/Trash-/Pop-Mix"],
@@ -214,7 +231,7 @@ function setupSelectors(){
 function updatePoolCount(){let ids=new Set(songs.filter(s=>s.pools.some(p=>selectedPools.has(p))).map(s=>s.id));$("poolCount").textContent=`${ids.size} unterschiedliche Songs im kombinierten Pool.`}
 fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>{songs=x;$("songCount").textContent=songs.length;setupSelectors();updatePoolCount();checkResume()});
 
-function setClip(v){clipMode=v;document.querySelectorAll(".modebtn").forEach(b=>b.classList.toggle("on",b.dataset.clip===v));stopPlayback()}
+function setClip(v){let changed=clipMode!==v;clipMode=v;document.querySelectorAll(".modebtn").forEach(b=>b.classList.toggle("on",b.dataset.clip===v));if(changed)stopPlayback()}
 function poolSongs(){let fav=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));return songs.filter(s=>(s.pools.some(p=>selectedPools.has(p))||(selectedPools.has("favorites")&&fav.has(s.id)))&&selectedDecades.has(Math.floor(s.year/10)*10))}
 function randomSong(ex=[]){let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}let recent=gameTracks.slice(-2),best=base.map(s=>{let pen=0;for(let r of recent){if(Math.floor(r.year/10)===Math.floor(s.year/10))pen+=3;if(r.genre===s.genre)pen+=2;if(r.artist===s.artist)pen+=5}return [s,pen+Math.random()] }).sort((a,b)=>a[1]-b[1])[0]?.[0];if(best)usedIds.add(best.id);return best}
 function refillBag(){let a=[...selectedCats];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}if(categoryBag.length&&a[0]===categoryBag.at(-1)&&a.length>1)[a[0],a[1]]=[a[1],a[0]];categoryBag=a}
@@ -238,7 +255,7 @@ function prepareRound(){
  if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");return}
  currentCats=bonusNow?["year","artist","title","country"]:gameCats();renderRound();
 }
-function nextRound(){stopPlayback();prepareRound()}
+function nextRound(){prepareRound()}
 function buildRoundSelector(){
  $("roundCats").innerHTML="";let chosen=new Set([...selectedCats].filter(c=>c!=="film"||song.film));
  [...selectedCats].forEach(k=>{if(k==="film"&&!song.film)return;let b=document.createElement("button");b.className="chip on";b.dataset.cat=k;b.textContent=CATS[k][0];b.onclick=()=>b.classList.toggle("on");$("roundCats").appendChild(b)});
@@ -256,7 +273,7 @@ function renderRound(){
 function fieldFor(cat,i){
  if(cat==="year")return `<input type="number" data-cat="${cat}" placeholder="Jahr, z. B. 1987">`;
  if(cat==="decade")return `<select data-cat="${cat}"><option value="">Jahrzehnt wählen</option>${[1930,1940,1950,1960,1970,1980,1990,2000,2010,2020].map(d=>`<option value="${d}">${d}er</option>`).join("")}</select>`;
- if(cat==="compare")return `<select data-cat="${cat}"><option value="">A, B oder gleiches Jahr?</option><option>A</option><option>B</option><option>GLEICHES JAHR</option></select>`;
+ if(cat==="compare")return `<select data-cat="${cat}"><option value="">A, B oder gleiches Jahr?</option><option>A</option><option>B</option><option>GLEICHES JAHR</option></select>`; if(cat==="intro3")return `<input data-cat="title" placeholder="Titel"><input data-cat="artist" placeholder="Interpret">`;
  return `<input data-cat="${cat}" placeholder="${CATS[cat][0].replace(/^[^ ]+ /,"")}">`;
 }
 function renderAnswerForms(){
@@ -268,8 +285,16 @@ function renderAnswerForms(){
 function markAloud(i){roundAnswers[i]={mode:"aloud"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);b.dataset.done="1";b.querySelector(".statusAnswer").textContent="🗣️ Antwort laut gesagt";checkAnswers()}
 function markPass(i){roundAnswers[i]={mode:"pass"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);b.dataset.done="1";b.querySelector(".statusAnswer").textContent="Passt · 0 Punkte";checkAnswers()}
 function checkAnswers(){
- document.querySelectorAll(".answerbox").forEach((b,i)=>{let vals=[...b.querySelectorAll("input,select")];if(vals.length&&vals.every(x=>x.value!=="")){roundAnswers[i]={mode:"entered",values:Object.fromEntries(vals.map(x=>[x.dataset.cat,x.value]))};b.dataset.done="1";b.querySelector(".statusAnswer").textContent="✓ Antwort gespeichert"}});
- let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");$("revbtn").disabled=!all;
+ document.querySelectorAll(".answerbox").forEach((b,i)=>{
+  if(roundAnswers[i]?.mode==="aloud"||roundAnswers[i]?.mode==="pass")return;
+  let vals=[...b.querySelectorAll("input,select")],filled=vals.filter(x=>x.value!=="");
+  if(filled.length){
+   roundAnswers[i]={mode:"entered",values:Object.fromEntries(filled.map(x=>[x.dataset.cat,x.value]))};
+   b.dataset.done="1";b.querySelector(".statusAnswer").textContent=filled.length===vals.length?"✓ Antwort gespeichert":"✓ Teilantwort · Rest = weiß ich nicht";
+  }else{delete roundAnswers[i];delete b.dataset.done;b.querySelector(".statusAnswer").textContent="Noch offen"}
+ });
+ let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");
+ $("revbtn").disabled=!all;$("revbtn").classList.toggle("ready",all);
 }
 
 function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
@@ -360,17 +385,50 @@ ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — 
 async function reveal(){$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
  if(cp){let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B"),ta=await resolveTrack(pair[0]).catch(()=>null),tb=await resolveTrack(pair[1]).catch(()=>null);sol=`<div class="reveal"><div class="answer">${older} ist älter · ${Math.abs(pair[0].year-pair[1].year)} Jahre</div><div class="compare"><div class="songbox"><b>A · ${pair[0].year}</b><p>${pair[0].title}<br><span class="muted">${pair[0].artist}</span></p>${ta?`<a class="spotifylink" href="${ta.url}" target="_blank">Spotify</a>`:""}</div><b>VS.</b><div class="songbox"><b>B · ${pair[1].year}</b><p>${pair[1].title}<br><span class="muted">${pair[1].artist}</span></p>${tb?`<a class="spotifylink" href="${tb.url}" target="_blank">Spotify</a>`:""}</div></div><button class="secondary" style="margin-top:12px" onclick="document.getElementById('compareNerd').classList.toggle('hidden')">🧠 Nerdwissen & Details</button><div id="compareNerd" class="hidden">${await songRevealHTML(pair[0],"SONG A")}${await songRevealHTML(pair[1],"SONG B")}</div></div>`}
  else sol=await songRevealHTML(song);
- $("rev").innerHTML=sol+judgeUI(cp);
+ $("rev").innerHTML=sol+judgeUI(cp);checkRatings();
 }
-function judgeUI(cp){let list=names.map((n,i)=>judgePerson(n,i,cp)).join("");return `<h3>Punkte vergeben${bonusNow?" · ×2 BONUS":""}</h3>${list}<button id="savePts" class="primary" disabled onclick="finishJudge()">Punkte speichern & weiter</button>`}
+
+function normAns(v){return String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/\b(feat|featuring|ft)\.?\b.*$/,"").replace(/[^a-z0-9]+/g," ").trim()}
+function editDist(a,b){a=normAns(a);b=normAns(b);let d=Array(b.length+1).fill(0).map((_,j)=>j);for(let i=1;i<=a.length;i++){let n=[i];for(let j=1;j<=b.length;j++)n[j]=Math.min(n[j-1]+1,d[j]+1,d[j-1]+(a[i-1]===b[j-1]?0:1));d=n}return d[b.length]}
+function textMatch(a,b){a=normAns(a);b=normAns(b);if(!a||!b)return false;if(a===b)return true;if(a.length>=5&&b.length>=5&&(a.includes(b)||b.includes(a)))return true;let m=Math.max(a.length,b.length);return editDist(a,b)<=Math.max(1,Math.floor(m*.16))}
+function autoPoints(i,cp){
+ let r=roundAnswers[i];if(!r||r.mode==="pass")return {points:0,detail:"Gepasst"};
+ if(r.mode==="aloud")return null;
+ let v=r.values||{},pts=0,detail=[];
+ let target=cp?null:song;
+ for(let c of currentCats){
+  if(c==="intro3"){
+   let t=textMatch(v.title,target.title),a=textMatch(v.artist,target.artist);pts+=(t?1:0)+(a?1:0);detail.push(`Titel ${t?"✓":"✕"} · Interpret ${a?"✓":"✕"}`);continue;
+  }
+  if(c==="year"&&v.year){let diff=Math.abs(+v.year-target.year),q=diff===0?3:diff<=1?2:diff<=3?1:0;pts+=q;detail.push(`Jahr +${q}`)}
+  else if(c==="decade"&&v.decade){let q=Math.floor(target.year/10)*10===+v.decade?1:0;pts+=q;detail.push(`Jahrzehnt +${q}`)}
+  else if(c==="compare"&&v.compare){let ans=pair[0].year===pair[1].year?"GLEICHES JAHR":pair[0].year<pair[1].year?"A":"B",q=v.compare===ans?1:0;pts+=q;detail.push(`Vergleich +${q}`)}
+  else if(c==="title"&&v.title){let q=textMatch(v.title,target.title)?1:0;pts+=q;detail.push(`Titel +${q}`)}
+  else if(c==="artist"&&v.artist){let q=textMatch(v.artist,target.artist)?1:0;pts+=q;detail.push(`Interpret +${q}`)}
+  else if(c==="country"&&v.country){let q=textMatch(v.country,target.country)?1:0;pts+=q;detail.push(`Herkunft +${q}`)}
+  else if(c==="genre"&&v.genre){let q=textMatch(v.genre,target.genre)?1:0;pts+=q;detail.push(`Genre +${q}`)}
+  else if(c==="film"&&v.film){let q=textMatch(v.film,target.film)?1:0;pts+=q;detail.push(`Film/Serie +${q}`)}
+ }
+ return {points:pts,detail:detail.join(" · ")||"0 Punkte"};
+}
+function judgeUI(cp){
+ let list=names.map((n,i)=>judgePerson(n,i,cp)).join("");
+ let needsManual=roundAnswers.some(x=>x?.mode==="aloud");
+ return `<h3>${needsManual?"Punkte prüfen":"Wertung"}${bonusNow?" · ×2 BONUS":""}</h3>${list}<button id="savePts" class="primary" ${needsManual?"disabled":""} onclick="finishJudge()">Weiter</button>`;
+}
 function judgePerson(n,i,cp){
+ let auto=autoPoints(i,cp),mult=bonusNow?2:1;
+ if(auto){
+  let shown=auto.points*mult;
+  return `<div class="judge" data-i="${i}" data-p="${auto.points}" data-rated="1"><header><b>${n}</b><span class="pts">${shown} P.</span></header><div class="tiny">${auto.detail}${bonusNow?" · Bonus ×2":""}</div><button class="secondary" onclick="manualOverride(${i})">Wertung korrigieren</button></div>`;
+ }
  let year=currentCats.includes("year")&&!cp,buttons="";
- if(ps==="all"&&!cp){
-   buttons=currentCats.map(c=>c==="year"?`<div style="width:100%"><span class="tiny">${CATS[c][0]}</span><div class="judgeBtns"><button onclick="catPts(this,${i},'year',0)">0</button><button onclick="catPts(this,${i},'year',1)">±3 +1</button><button onclick="catPts(this,${i},'year',2)">±1 +2</button><button onclick="catPts(this,${i},'year',3)">Exakt +3</button></div></div>`:`<button data-cat="${c}" onclick="toggleCat(this,${i},'${c}')">${CATS[c][0]} 0 / +1</button>`).join("")
- } else if(year)buttons=`<button onclick="setPts(this,${i},0)">Daneben 0</button><button onclick="setPts(this,${i},1)">±3 J. +1</button><button onclick="setPts(this,${i},2)">±1 J. +2</button><button onclick="setPts(this,${i},3)">Exakt +3</button>`;
- else buttons=`<button onclick="setPts(this,${i},0)">✕ 0</button><button onclick="setPts(this,${i},1)">✓ +1</button>`;
- let pass=roundAnswers[i]?.mode==="pass";return `<div class="judge" data-i="${i}" data-p="0" data-rated="${pass?"1":"0"}"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${pass?"<b>Gepasst · 0 Punkte</b>":buttons}</div></div>`;
+ if(ps==="all"&&!cp)buttons=currentCats.map(c=>c==="year"?`<div style="width:100%"><span class="tiny">${CATS[c][0]}</span><div class="judgeBtns"><button onclick="catPts(this,${i},'year',0)">0</button><button onclick="catPts(this,${i},'year',1)">±3 +${1*mult}</button><button onclick="catPts(this,${i},'year',2)">±1 +${2*mult}</button><button onclick="catPts(this,${i},'year',3)">Exakt +${3*mult}</button></div></div>`:`<button data-cat="${c}" onclick="toggleCat(this,${i},'${c}')">${CATS[c][0]} 0 / +${1*mult}</button>`).join("");
+ else if(year)buttons=`<button onclick="setPts(this,${i},0)">Daneben 0</button><button onclick="setPts(this,${i},1)">±3 J. +${1*mult}</button><button onclick="setPts(this,${i},2)">±1 J. +${2*mult}</button><button onclick="setPts(this,${i},3)">Exakt +${3*mult}</button>`;
+ else buttons=`<button onclick="setPts(this,${i},0)">✕ 0</button><button onclick="setPts(this,${i},1)">✓ +${1*mult}</button>`;
+ return `<div class="judge" data-i="${i}" data-p="0" data-rated="0"><header><b>${n}</b><span class="pts">0 P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
 }
+function manualOverride(i){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.rated="0";x.dataset.p="0";x.querySelector(".pts").textContent="0 P.";x.querySelector(".tiny")?.remove();let max=currentCats.includes("year")?3:Math.max(1,currentCats.length);x.insertAdjacentHTML("beforeend",`<div class="judgeBtns">${Array.from({length:max+1},(_,n)=>`<button onclick="setPts(this,${i},${n})">${n}</button>`).join("")}</div>`);checkRatings()}
 function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=n+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");checkRatings()}
 function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.classList.toggle("sel",btn.dataset.on==="1");btn.textContent=`${CATS[c][0]} ${btn.dataset.on==="1"?"+1":"0 / +1"}`;recountJudge(i)}
 function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
