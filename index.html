@@ -42,314 +42,105 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .decadechips{display:flex;gap:6px;flex-wrap:wrap}.decadechips button{padding:8px 10px}
 @media(min-width:700px){.answergrid{grid-template-columns:1fr 1fr}.playeredit{grid-template-columns:1fr 80px 80px auto}}
 
-@media(min-width:900px){
- #roundContent .roundbody{grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:18px;align-items:start}
- #roundContent .roundbody>div:first-child{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(300px,1.15fr);gap:14px;align-items:start}
- #roundContent #normal,#roundContent #comp{grid-column:1}
- #roundContent #answers{grid-column:2;grid-row:1 / span 3}
- #roundContent .clipbar,#roundContent .roundbody>div:first-child>.row,#roundContent #revbtn,#roundContent .roundbody>div:first-child>button:last-child{grid-column:1}
- #roundContent #qtext{font-size:clamp(22px,2.4vw,34px);margin:5px 0 8px}
- #roundContent .vinyl{width:190px;height:190px;margin:6px auto}
- #roundContent .answerbox{padding:10px;margin-bottom:8px}
- #roundContent .answergrid{gap:7px}
- #roundContent input,#roundContent select{padding:9px 10px}
- #roundContent .answerActions{margin-top:7px}
- #roundContent .clipbar{margin-top:8px}
- #revbtn{position:sticky;bottom:10px;z-index:4}
- #revbtn.ready{box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680}
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* v5.0.14 — single authoritative desktop play layout */
 #revbtn{
-  background:#2a2d33 !important;
-  color:#777 !important;
+  background:#2a2d33;
+  color:#777;
   border:1px solid #3a3d44;
-  box-shadow:none !important;
-  opacity:1;
+  box-shadow:none;
   cursor:not-allowed;
-  transform:none !important;
 }
 #revbtn.ready:not(:disabled){
-  background:linear-gradient(135deg,#6c34da,#9b4ff0) !important;
-  color:#fff !important;
+  background:linear-gradient(135deg,#6c34da,#9b4ff0);
+  color:#fff;
   border-color:#9b4ff0;
   cursor:pointer;
-  box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680 !important;
+  box-shadow:0 0 0 2px #a855f7,0 0 22px #8b5cf680;
 }
+#revbtn.hidden,#rev.hidden{display:none!important}
 
-
-
-
-
-
-
-/* v5.0.13 desktop round: controls stay with the question, no bottom anchoring */
-@media (min-width:900px){
+@media(min-width:900px){
   #roundContent .roundbody{
-    display:grid !important;
-    grid-template-columns:minmax(0,1fr) 190px !important;
-    gap:16px !important;
-    align-items:start !important;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:12px;
+    align-items:start;
   }
   #roundContent .roundbody>div:first-child{
-    display:grid !important;
-    grid-template-columns:minmax(300px,360px) minmax(360px,1fr) !important;
-    grid-template-rows:auto auto auto auto !important;
-    gap:10px 18px !important;
-    align-content:start !important;
-    min-height:0 !important;
-    height:auto !important;
-  }
-  #roundContent #normal,
-  #roundContent #comp{
-    grid-column:1 !important;
-    grid-row:1 !important;
-    align-self:start !important;
-  }
-  #roundContent #answers{
-    grid-column:2 !important;
-    grid-row:1 !important;
-    align-self:start !important;
-    max-height:none !important;
-    overflow:visible !important;
-  }
-  #roundContent .clipbar{
-    grid-column:1 !important;
-    grid-row:2 !important;
-    align-self:start !important;
-    margin:0 !important;
-    display:flex !important;
-    gap:6px !important;
-  }
-  #roundContent .roundbody>div:first-child>.row{
-    grid-column:1 !important;
-    grid-row:3 !important;
-    align-self:start !important;
-    margin:0 !important;
-    display:flex !important;
-    gap:6px !important;
-  }
-  #roundContent .roundbody>div:first-child>button:last-child{
-    grid-column:2 !important;
-    grid-row:3 !important;
-    align-self:start !important;
-    width:100% !important;
-    margin:0 !important;
-  }
-  #roundContent #revbtn{
-    grid-column:2 !important;
-    grid-row:2 !important;
-    position:static !important;
-    align-self:start !important;
-    width:100% !important;
-    margin:0 !important;
-    transform:none !important;
-    z-index:2 !important;
-  }
-  #roundContent #qtext{
-    font-size:clamp(25px,2.6vw,38px) !important;
-    line-height:1.08 !important;
-    margin:6px 0 10px !important;
-  }
-  #roundContent .vinyl{
-    width:180px !important;
-    height:180px !important;
-    margin:6px auto 12px !important;
-  }
-  #roundContent #play{
-    width:96px !important;
-    height:96px !important;
-    min-height:96px !important;
-    margin:0 auto !important;
-    padding:0 !important;
-  }
-  #roundContent .answerbox{
-    padding:11px 13px !important;
-    margin:0 0 8px !important;
-  }
-  #roundContent .answergrid input,
-  #roundContent .answergrid select{padding:9px 11px !important}
-  #roundContent .answerActions{margin-top:7px !important}
-  #roundContent .clipbar button,
-  #roundContent .roundbody>div:first-child>.row button,
-  #roundContent .roundbody>div:first-child>button:last-child{
-    padding:8px 10px !important;
-  }
-  #roundContent #scores{margin-top:0 !important}
-}
-
-
-/* v5.0.13 final reveal placement override */
-@media (min-width:900px){
-  #roundContent #answers{
-    grid-column:2 !important;
-    grid-row:1 !important;
-    max-height:none !important;
-    overflow:visible !important;
-  }
-  #roundContent #revbtn{
-    grid-column:2 !important;
-    grid-row:2 !important;
-    position:static !important;
-    width:100% !important;
-    margin:0 !important;
-    transform:none !important;
-    z-index:10 !important;
-  }
-  #roundContent .roundbody>div:first-child>button:last-child{
-    grid-column:2 !important;
-    grid-row:3 !important;
-    width:100% !important;
-    margin:0 !important;
-  }
-}
-
-
-/* v5.0.13: coherent two-column desktop play screen */
-@media (min-width:900px){
-  #roundContent .roundbody{
-    display:grid !important;
-    grid-template-columns:minmax(0,1fr) !important;
-    gap:0 !important;
-    align-items:start !important;
-  }
-
-  #roundContent .roundbody>div:first-child{
-    display:grid !important;
-    grid-template-columns:minmax(320px,420px) minmax(420px,560px) !important;
+    display:grid;
+    grid-template-columns:minmax(320px,420px) minmax(420px,560px);
     grid-template-areas:
       "player answer"
       "transport reveal"
-      "transport other"
-      "transport score";
-    column-gap:28px !important;
-    row-gap:10px !important;
-    align-items:start !important;
-    align-content:start !important;
-    justify-content:center !important;
-    min-height:0 !important;
-    height:auto !important;
+      "transport other";
+    gap:10px 28px;
+    align-items:start;
+    align-content:start;
+    justify-content:center;
   }
-
-  #roundContent #normal,
-  #roundContent #comp{
-    grid-area:player !important;
-    align-self:start !important;
+  #normal,#comp{grid-area:player}
+  #answers{grid-area:answer}
+  .clipbar{
+    grid-area:transport;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+    margin:0;
   }
-
-  #roundContent #answers{
-    grid-area:answer !important;
-    align-self:start !important;
-    max-height:none !important;
-    overflow:visible !important;
-  }
-
-  #roundContent .clipbar{
-    grid-area:transport !important;
-    align-self:start !important;
-    display:grid !important;
-    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-    gap:6px !important;
-    margin:0 !important;
-  }
-
   #roundContent .roundbody>div:first-child>.row{
-    grid-area:transport !important;
-    align-self:start !important;
-    margin:48px 0 0 !important;
-    display:grid !important;
-    grid-template-columns:1fr 1fr !important;
-    gap:6px !important;
+    grid-area:transport;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6px;
+    margin:48px 0 0!important;
   }
-
-  #roundContent #revbtn{
-    grid-area:reveal !important;
-    position:static !important;
-    width:100% !important;
-    margin:0 !important;
-    transform:none !important;
-    align-self:start !important;
+  #revbtn{
+    grid-area:reveal;
+    position:static;
+    width:100%;
+    margin:0!important;
   }
-
   #roundContent .roundbody>div:first-child>button:last-child{
-    grid-area:other !important;
-    width:100% !important;
-    margin:0 !important;
-    align-self:start !important;
+    grid-area:other;
+    width:100%;
+    margin:0!important;
   }
-
-  /* Pull the score into the right-hand stack instead of a separate third island. */
   #roundContent .roundbody>div:nth-child(2){
-    grid-column:1 !important;
-    width:100% !important;
-    display:grid !important;
-    grid-template-columns:minmax(320px,420px) minmax(420px,560px) !important;
-    column-gap:28px !important;
-    justify-content:center !important;
-    margin-top:-2px !important;
+    width:min(560px,100%);
+    justify-self:end;
+    margin-right:max(0px,calc((100% - 1008px)/2));
   }
-
-  #roundContent #rev{
-    grid-column:2 !important;
+  #scores{margin-top:8px}
+  #qtext{
+    font-size:clamp(26px,2.6vw,40px);
+    line-height:1.08;
+    margin:6px 0 12px;
   }
-
-  #roundContent #scores{
-    grid-column:2 !important;
-    margin:0 !important;
-    width:100% !important;
-  }
-
-  #roundContent #qtext{
-    font-size:clamp(26px,2.6vw,40px) !important;
-    line-height:1.08 !important;
-    margin:6px 0 12px !important;
-  }
-
-  #roundContent .vinyl{
-    width:190px !important;
-    height:190px !important;
-    margin:8px auto 14px !important;
-  }
-
-  #roundContent #play{
-    width:100px !important;
-    height:100px !important;
-    min-height:100px !important;
-    padding:0 !important;
-    margin:0 auto !important;
-  }
-
-  #roundContent .answerbox{
-    margin:0 !important;
-    padding:12px 14px !important;
-  }
-
-  #roundContent .answergrid input,
-  #roundContent .answergrid select{
-    padding:10px 12px !important;
-  }
-
-  #roundContent .answerActions{
-    margin-top:8px !important;
-  }
-
-  #roundContent .clipbar button,
-  #roundContent .roundbody>div:first-child>.row button,
-  #roundContent .roundbody>div:first-child>button:last-child{
-    padding:9px 11px !important;
-  }
-}
-
-
-/* v5.0.13: hidden state must always win over layout rules */
-#revbtn.hidden,
-#rev.hidden{
-  display:none !important;
+  .vinyl{width:190px;height:190px;margin:8px auto 14px}
+  #play{width:100px;height:100px;min-height:100px;padding:0;margin:0 auto}
+  .answerbox{margin:0;padding:12px 14px}
+  .answergrid input,.answergrid select{padding:10px 12px}
 }
 
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.13</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> <span id="versionBadge">· v5.0.14</span> Songs · mehrere Pools · ohne Karten spielbar</p><button class="primary" onclick="show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -658,23 +449,32 @@ function surpriseGame(){
  document.querySelectorAll("#cats .chip").forEach(b=>b.classList.add("on"));
  alert("Überraschungsmix ist vorbereitet: Meine Mischung, alle gleichzeitig, wechselnde Fragen. Namen prüfen und starten!");
 }
-async function songRevealHTML(s,label=""){
- let t=null;try{t=await resolveTrack(s)}catch(e){}
- return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}${s.releaseNote?`<div><b>Release-Hinweis</b><span>${s.releaseNote}</span></div>`:""}${s.esc?`<div><b>Eurovision</b><span>${s.esc.country} · ${s.esc.year}${s.esc.winner?" · 🏆 Sieger:in":""}</span></div>`:""}</div><div class="pooltags">${(s.pools||[]).filter(p=>POOLS[p]).map(p=>`<span class="pooltag">${POOLS[p][0]}</span>`).join("")}</div>
-${t?`<a class="spotifylink" href="${t.url}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>`:""}
-${`<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button><div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px"><div class="tiny" style="margin-bottom:8px">Zusatzwissen – keine Wiederholung der Basisdaten</div>
-${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife)?`<p class="muted">Für diesen Song ist noch kein kuratiertes Nerdwissen hinterlegt.</p>`:""}
+function songRevealHTML(s,label=""){
+ let cached=resolvedCache[s.id]||null;
+ let spotifyUrl=cached?.url||`https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}`;
+ return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3><div class="meta"><div><b>Herkunft</b><span>${s.country||"—"}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre||"—"}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>Album</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}${s.releaseNote?`<div><b>Release-Hinweis</b><span>${s.releaseNote}</span></div>`:""}${s.esc?`<div><b>Eurovision</b><span>${s.esc.country} · ${s.esc.year}${s.esc.winner?" · 🏆 Sieger:in":""}</span></div>`:""}</div><div class="pooltags">${(s.pools||[]).filter(p=>POOLS[p]).map(p=>`<span class="pooltag">${POOLS[p][0]}</span>`).join("")}</div>
+<a class="spotifylink" href="${spotifyUrl}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>
+<button class="secondary" style="margin-top:12px" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Mehr zum Song</button><div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px"><div class="tiny" style="margin-bottom:8px">Zusatzwissen – keine Wiederholung der Basisdaten</div>
+${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife&&!s.coverOf&&!s.samples?.length&&!s.sampledBy?.length&&!s.relatesTo)?`<p class="muted">Für diesen Song ist noch kein kuratiertes Nerdwissen hinterlegt.</p>`:""}
 ${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist} (${s.coverOf.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(s.coverOf.title+" "+s.coverOf.artist)}" target="_blank">▶ Original</a></p>`:""}
-${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Quelle</a>`).join("<br>")}</p>`:""}
-${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(x.title+" "+x.artist)}" target="_blank">▶ Song</a>`).join("<br>")}</p>`:""}
+${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year})`).join("<br>")}</p>`:""}
+${s.sampledBy?.length?`<p><b>🎛️ Wurde gesampelt in:</b> ${s.sampledBy.map(x=>`${x.title} — ${x.artist} (${x.year})`).join("<br>")}</p>`:""}
 ${s.relatesTo?`<p><b>🔗 Musikalische Verbindung:</b> ${s.relatesTo.title} — ${s.relatesTo.artist} (${s.relatesTo.year})</p>`:""}
-<button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button></div>`} </div>`;
+<button class="secondary" onclick="toggleFavorite(${s.id},this)">♡ Favorit</button></div></div>`;
 }
-async function reveal(){
- if(stopTimer){clearTimeout(stopTimer);stopTimer=null}$("revbtn").classList.add("hidden");$("rev").classList.remove("hidden");let cp=currentCats[0]==="compare",sol="";
- if(cp){let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B"),ta=await resolveTrack(pair[0]).catch(()=>null),tb=await resolveTrack(pair[1]).catch(()=>null);sol=`<div class="reveal"><div class="answer">${older} ist älter · ${Math.abs(pair[0].year-pair[1].year)} Jahre</div><div class="compare"><div class="songbox"><b>A · ${pair[0].year}</b><p>${pair[0].title}<br><span class="muted">${pair[0].artist}</span></p>${ta?`<a class="spotifylink" href="${ta.url}" target="_blank">Spotify</a>`:""}</div><b>VS.</b><div class="songbox"><b>B · ${pair[1].year}</b><p>${pair[1].title}<br><span class="muted">${pair[1].artist}</span></p>${tb?`<a class="spotifylink" href="${tb.url}" target="_blank">Spotify</a>`:""}</div></div><button class="secondary" style="margin-top:12px" onclick="document.getElementById('compareNerd').classList.toggle('hidden')">🧠 Nerdwissen & Details</button><div id="compareNerd" class="hidden">${await songRevealHTML(pair[0],"SONG A")}${await songRevealHTML(pair[1],"SONG B")}</div></div>`}
- else sol=await songRevealHTML(song);
- $("rev").innerHTML=sol+judgeUI(cp);checkRatings();
+
+function reveal(){
+ if($("revbtn").disabled)return;
+ if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
+ $("revbtn").classList.add("hidden");
+ $("rev").classList.remove("hidden");
+ let cp=currentCats[0]==="compare",sol="";
+ if(cp){
+   let older=pair[0].year===pair[1].year?"GLEICHES JAHR":(pair[0].year<pair[1].year?"A":"B");
+   sol=`<div class="reveal"><div class="answer">${older} ist älter · ${Math.abs(pair[0].year-pair[1].year)} Jahre</div><div class="compare"><div class="songbox"><b>A · ${pair[0].year}</b><p>${pair[0].title}<br><span class="muted">${pair[0].artist}</span></p></div><b>VS.</b><div class="songbox"><b>B · ${pair[1].year}</b><p>${pair[1].title}<br><span class="muted">${pair[1].artist}</span></p></div></div><button class="secondary" style="margin-top:12px" onclick="document.getElementById('compareNerd').classList.toggle('hidden')">🧠 Nerdwissen & Details</button><div id="compareNerd" class="hidden">${songRevealHTML(pair[0],"SONG A")}${songRevealHTML(pair[1],"SONG B")}</div></div>`;
+ }else sol=songRevealHTML(song);
+ $("rev").innerHTML=sol+judgeUI(cp);
+ checkRatings();
 }
 
 function normAns(v){return String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/\b(feat|featuring|ft)\.?\b.*$/,"").replace(/[^a-z0-9]+/g," ").trim()}
