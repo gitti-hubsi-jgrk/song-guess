@@ -55,7 +55,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.23 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.24 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -127,11 +127,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.23: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.24: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
 
 
-/* v5.0.23 polish */
+/* v5.0.24 polish */
 .hero{position:relative;overflow:hidden}
 .discoBall{position:absolute;right:18px;top:14px;font-size:34px;filter:drop-shadow(0 0 12px #b77cff88);animation:discosway 4s ease-in-out infinite;transform-origin:50% -20px}
 @keyframes discosway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
@@ -144,7 +144,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .soundtrack .trackrow{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:start!important;text-align:left!important;gap:14px!important}
 .soundtrack .trackrow span,.soundtrack .trackrow small{text-align:left!important;display:block!important;margin:0!important;padding:0!important}
 .soundtrack .trackrow a{justify-self:end;white-space:nowrap}
-.transportrow{grid-template-columns:repeat(3,1fr)!important}
+.transportrow{grid-template-columns:repeat(2,1fr)!important}
 #savePts:disabled{background:#2a2d33!important;color:#777!important;cursor:not-allowed!important;box-shadow:none!important}
 .endActions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
 .favrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #303238}
@@ -156,13 +156,26 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.endActions{grid-template-columns:1fr}.discoBall{font-size:28px}.scorebar{max-width:none;margin-right:0!important}}
 
 
-/* v5.0.23 polish */
+/* v5.0.24 polish */
 @media(min-width:901px){#round{padding:24px 42px 38px!important}.roundbody{grid-template-columns:minmax(390px,.9fr) minmax(480px,1.1fr)!important;gap:72px!important;align-items:start!important}.playcol{padding-left:18px!important}.answercol{padding:0 32px 28px 0!important}.answercol>#answers,.answercol>#rev,.answercol>#revbtn,.answercol>#otherSongBtn{max-width:720px!important;margin-left:auto!important;margin-right:auto!important}.scorebar{margin:26px auto 0!important;max-width:720px!important;width:100%!important}}
 .recordWrap{position:relative;width:max-content;margin:18px auto 10px}.vinyl{position:relative!important}.vinylMark{position:absolute;display:block;width:11px;height:11px;border-radius:50%;background:#f5f5f5;left:22%;top:27%;box-shadow:0 0 9px #fff;z-index:5}.vinyl.spin{animation:vinylspin 1.55s linear infinite!important}@keyframes vinylspin{to{transform:rotate(360deg)}}.playGlyph{display:inline-block;font-size:.82em;letter-spacing:-4px}.timerDisplay{position:absolute;right:-52px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#24262c;border:2px solid #8d5cff;font-weight:800}.timerDisplay.timeup{font-size:10px;border-color:#ffcf54}.score{font-size:14px!important}.score b{font-size:18px}.score:first-letter{font-size:28px}.roundDetail{background:#22252a;border-radius:12px;padding:10px 13px;margin:8px 0;text-align:left}.roundDetail summary{cursor:pointer;font-weight:700}.roundPlayer{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid #33373d;margin-top:7px}.roundPlayer span{color:var(--muted);font-size:12px;text-align:right}.medal{font-size:25px;vertical-align:middle}
+
+/* v5.0.24 final polish */
+.vinylMark{display:none!important}
+.vinylRPM{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;font-size:12px;line-height:.9;font-weight:800;letter-spacing:.5px;color:#f4eafa;text-align:center;pointer-events:none}
+.vinylRPM small{font-size:6px;letter-spacing:1.5px}
+#round .answercol{box-sizing:border-box!important}
+#round .scorebar{position:relative!important;right:auto!important;top:auto!important;margin:30px 28px 0 auto!important;width:calc(100% - 56px)!important;max-width:660px!important}
+.historyActions{display:flex;align-items:center;gap:10px}.deleteOne{padding:6px 9px!important;min-width:auto!important}
+#home .hero .discoBall{font-size:46px!important;right:30px!important;top:18px!important;filter:drop-shadow(0 0 14px rgba(190,130,255,.6)) drop-shadow(-24px 28px 20px rgba(255,255,255,.12))!important}
+#home .hero:before,#home .hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none;background:#ffffff;opacity:.28}
+#home .hero:before{width:5px;height:5px;right:92px;top:33px;box-shadow:-35px 24px 0 #b77cff,18px 48px 0 #fff,-12px 75px 0 #8bdcff}
+#home .hero:after{width:4px;height:4px;right:44px;top:88px;box-shadow:30px 22px 0 #fff,-50px 18px 0 #e7b5ff,10px 55px 0 #8bdcff}
+@media(max-width:900px){#round .scorebar{margin:22px 14px 0!important;width:calc(100% - 28px)!important}.vinylRPM{font-size:11px}#home .hero .discoBall{font-size:38px!important;right:18px!important}}
 </style></head><body><div class="app">
 <section id="home">
- <div class="top"><div class="brand"><small>MUSIC TIMELINE</small><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="discoBall" aria-hidden="true">🪩</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.23</span> · mehrere Pools</p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
+ <div class="card hero"><div class="discoBall" aria-hidden="true">🪩</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.24</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <button id="resumeBtn" class="primary hidden" style="margin-bottom:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -197,12 +210,12 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div id="roundContent">
   <div class="roundbody">
    <div class="playcol">
-    <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div class="recordWrap"><div id="record" class="vinyl"><span class="vinylMark"></span></div><div id="timerDisplay" class="timerDisplay hidden">30</div></div><button id="play" class="play" aria-label="Play/Pause"><span class="playGlyph">▶</span></button></div>
+    <div id="normal"><div class="question"><div id="clabel" class="cat"></div><h2 id="qtext"></h2></div><div class="recordWrap"><div id="record" class="vinyl"><span class="vinylRPM">33⅓<br><small>RPM</small></span></div><div id="timerDisplay" class="timerDisplay hidden">30</div></div><button id="play" class="play" aria-label="Play/Pause"><span class="playGlyph">▶</span></button></div>
     <div id="comp" class="hidden"><div class="question"><div class="cat">↕ ÄLTER ODER JÜNGER?</div><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
     <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
     <div class="transportrow">
       <button class="secondary" onclick="restartCurrent()">↺ Restart</button>
-      <button id="stopResumeBtn" class="secondary" onclick="toggleStopResume()">⏹ Stop</button>
+      
       <button class="secondary" onclick="passRound()">⏭ Passen</button>
     </div>
    </div>
@@ -472,7 +485,7 @@ async function stopPlayback(preserve=false){if(stopTimer){clearTimeout(stopTimer
 function updatePlayUI(){
  let active=playingKey==="main"||playingKey==="carry";$("record")?.classList.toggle("spin",active);let glyph=$("play")?.querySelector(".playGlyph");if(glyph)glyph.textContent=active?"❚❚":"▶";
  ["A","B"].forEach((x,i)=>{let btn=$("play"+x),box=$("box"+x);if(btn)btn.textContent=playingKey==="cmp"+i?"❚❚ Pause":`▶ Song ${x}`;if(box)box.classList.toggle("playing",playingKey==="cmp"+i)});
- let sr=$("stopResumeBtn");if(sr)sr.textContent=pausedTrack?"▶ Weiter":"⏹ Stop";
+
 }
 function clearGuessTimer(){if(guessTimerHandle){clearInterval(guessTimerHandle);guessTimerHandle=null}let d=$("timerDisplay");if(d)d.classList.add("hidden")}
 function startGuessTimer(){clearGuessTimer();if(!guessTimerSeconds||currentCats[0]==="compare")return;guessTimerLeft=guessTimerSeconds;let d=$("timerDisplay");if(!d)return;d.textContent=guessTimerLeft;d.classList.remove("hidden","timeup");guessTimerHandle=setInterval(()=>{guessTimerLeft--;d.textContent=Math.max(0,guessTimerLeft);if(guessTimerLeft<=0){clearInterval(guessTimerHandle);guessTimerHandle=null;d.textContent="ZEIT!";d.classList.add("timeup");stopPlayback(true)}},1000)}
@@ -482,7 +495,7 @@ function activateSpotifyForMobile(){
    if(spotifyPlayer&&typeof spotifyPlayer.activateElement==="function")spotifyPlayer.activateElement();
  }catch(e){console.warn("Spotify media activation failed",e)}
 }
-$("play").onclick=()=>{activateSpotifyForMobile();playSong(song,"main")};
+$("play").onclick=()=>{activateSpotifyForMobile();if(pausedTrack)toggleStopResume();else if(playingKey==="main"||playingKey==="carry")stopPlayback(true);else playSong(song,"main")};
 function toggleCompare(i){activateSpotifyForMobile();playSong(pair[i],"cmp"+i)}
 
 
@@ -654,11 +667,17 @@ function addInGamePlayer(){let d=document.createElement("div");d.className="play
 function applyInGamePlayers(){let rows=[...document.querySelectorAll("#inGamePlayers .igp")],nm=[],pm=[],sc=[];rows.forEach((r,i)=>{let name=r.querySelector(".pname").value.trim();if(!name)return;let old=+r.dataset.old;nm.push(name);pm.push({name,avatar:r.querySelector(".pavatar").value,color:old>=0?(playersMeta[old]?.color||COLORS[i%COLORS.length]):COLORS[i%COLORS.length]});sc.push(old>=0?(scores[old]||0):0)});if(!nm.length)return alert("Mindestens eine Person muss im Spiel bleiben.");names=nm;playersMeta=pm;scores=sc;localStorage.setItem("sg_profiles",JSON.stringify(playersMeta));renderScores();saveGameState();closeGameMenu();renderAnswerForms()}
 function showRoundLog(){$("menuExtra").innerHTML=`<div class="undoBox soundtrack"><h3>Bisher gehört</h3>${gameTracks.length?gameTracks.map(s=>`<div class="trackrow"><span>${s.year} · ${s.title}<br><small>${s.artist}</small></span></div>`).join(""):"Noch nichts aufgedeckt."}</div>`}
 function endGameEarly(){if(confirm("Spiel wirklich beenden?")){localStorage.removeItem("sg_active");closeGameMenu();endGame(true)}}
-function showHistory(){show("history");let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let entries=Object.entries(st).sort((a,b)=>b[1].wins-a[1].wins||b[1].points-a[1].points);
- $("stats").innerHTML=entries.length?`<div class="statgrid">${entries.map(([n,s])=>`<div class="stat"><b>${s.wins}</b>Siege<br><span class="tiny">${n} · ${s.games} Spiele · ${s.points} P.</span></div>`).join("")}</div>`:`<div class="empty">Noch keine gespeicherten Scores.</div>`;
- $("historyList").innerHTML=h.length?h.map(g=>`<div class="historyItem"><div class="row"><div><b>${new Date(g.date).toLocaleDateString("de-DE")}</b><div class="tiny">${g.rounds} Songs · ${g.pools.map(p=>POOLS[p]?.[0]||p).join(", ")}</div></div><div class="winner">🏆 ${g.ranking[0].name}</div></div><p>${g.ranking.map(x=>`${x.name}: ${x.score}`).join(" · ")}</p></div>`).join(""):`<div class="empty">Noch keine gespeicherten Spiele.</div>`;
+function rebuildStatsFromHistory(){
+ let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st={};
+ h.forEach(g=>{let max=Math.max(...(g.scores||[]));(g.players||[]).forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=(g.scores?.[i]||0);if((g.scores?.[i]||0)===max)st[n].wins++})});
+ localStorage.setItem("sg_stats",JSON.stringify(st));return st
 }
-function clearHistory(){if(confirm("Historie und dauerhafte Scores auf diesem Gerät löschen?")){localStorage.removeItem("sg_history");localStorage.removeItem("sg_stats");showHistory()}}
+function deleteHistoryGame(i){if(!confirm("Dieses Spiel aus der Statistik löschen?"))return;let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.splice(i,1);localStorage.setItem("sg_history",JSON.stringify(h));rebuildStatsFromHistory();showHistory()}
+function showHistory(){show("history",true);let h=JSON.parse(localStorage.getItem("sg_history")||"[]"),st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let entries=Object.entries(st).sort((a,b)=>b[1].wins-a[1].wins||b[1].points-a[1].points);
+ $("stats").innerHTML=entries.length?`<div class="statgrid">${entries.map(([n,s])=>`<div class="stat"><b>${s.wins}</b>Siege<br><span class="tiny">${n} · ${s.games} Spiele · ${s.points} P.</span></div>`).join("")}</div>`:`<div class="empty">Noch keine gespeicherten Scores.</div>`;
+ $("historyList").innerHTML=h.length?h.map((g,i)=>`<div class="historyItem"><div class="row"><div><b>${new Date(g.date).toLocaleDateString("de-DE")}</b><div class="tiny">${g.rounds} Songs · ${g.pools.map(p=>POOLS[p]?.[0]||p).join(", ")}</div></div><div class="historyActions"><div class="winner">🏆 ${g.ranking[0].name}</div><button class="secondary deleteOne" onclick="deleteHistoryGame(${i})" title="Dieses Spiel löschen">🗑</button></div></div><p>${g.ranking.map(x=>`${x.name}: ${x.score}`).join(" · ")}</p></div>`).join(""):`<div class="empty">Noch keine gespeicherten Spiele.</div>`;
+}
+function clearHistory(){if(confirm("Alle Spiele und dauerhaften Scores auf diesem Gerät löschen?")){localStorage.removeItem("sg_history");localStorage.removeItem("sg_stats");showHistory()}}
 
 /* Spotify PKCE */
 const cfg=window.SONG_GUESS_CONFIG;

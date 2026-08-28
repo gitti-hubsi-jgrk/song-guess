@@ -8304,7 +8304,7 @@
     "title": "American Beauty",
     "artist": "Thomas Newman",
     "year": 2000,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8346,7 +8346,7 @@
     "title": "The Avengers",
     "artist": "Alan Silvestri",
     "year": 2012,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8474,7 +8474,7 @@
     "title": "Axel F - From \"Beverly Hills Cop\" Soundtrack",
     "artist": "Harold Faltermeyer",
     "year": 1984,
-    "country": "",
+    "country": "Deutschland",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8497,7 +8497,7 @@
     "title": "La vita è bella",
     "artist": "Nicola Piovani",
     "year": 2011,
-    "country": "",
+    "country": "Italy",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8518,7 +8518,7 @@
     "title": "Where Everybody Knows Your Name (Cheers Theme)",
     "artist": "Gary Portnoy",
     "year": 2004,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8539,7 +8539,7 @@
     "title": "Always Remember Us This Way",
     "artist": "Lady Gaga",
     "year": 2018,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8625,7 +8625,7 @@
     "title": "The Fresh Prince of Bel-Air",
     "artist": "DJ Jazzy Jeff & The Fresh Prince",
     "year": 1992,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8667,7 +8667,7 @@
     "title": "Big Bang Theory Theme",
     "artist": "Barenaked Ladies",
     "year": 2007,
-    "country": "",
+    "country": "Canada",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -8709,7 +8709,7 @@
     "title": "Goldeneye",
     "artist": "Tina Turner",
     "year": 1995,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -9662,7 +9662,7 @@
     "title": "Forrest Gump Suite",
     "artist": "Alan Silvestri",
     "year": 1994,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -9877,7 +9877,7 @@
     "title": "Princes Of The Universe",
     "artist": "Queen",
     "year": 1986,
-    "country": "",
+    "country": "United Kingdom",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -10173,7 +10173,7 @@
     "title": "We Don't Need Another Hero (Thunderdome)",
     "artist": "Tina Turner",
     "year": 1985,
-    "country": "",
+    "country": "United States",
     "genre": "Soundtrack",
     "film": "",
     "pools": [
@@ -11000,8 +11000,8 @@
     "title": "Wann wird's mal wieder richtig Sommer",
     "artist": "Rudi Carrell",
     "year": 1975,
-    "country": "",
-    "genre": "",
+    "country": "Deutschland",
+    "genre": "Schlager",
     "film": "",
     "pools": [
       "mix"
@@ -11020,8 +11020,8 @@
     "title": "You Can Call Me Al",
     "artist": "Paul Simon",
     "year": 1986,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Pop / Rock",
     "film": "",
     "pools": [
       "eighties"
@@ -11041,8 +11041,8 @@
     "title": "Start Me Up",
     "artist": "The Rolling Stones",
     "year": 1981,
-    "country": "",
-    "genre": "",
+    "country": "United Kingdom",
+    "genre": "Rock",
     "film": "",
     "pools": [
       "eighties"
@@ -11062,8 +11062,8 @@
     "title": "The Twist",
     "artist": "Chubby Checker",
     "year": 1960,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Rock ’n’ Roll",
     "film": "",
     "pools": [
       "mix"
@@ -11082,8 +11082,8 @@
     "title": "Blurred Lines",
     "artist": "Robin Thicke, T.I., Pharrell Williams",
     "year": 2013,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Pop / R&B",
     "film": "",
     "pools": [
       "mix"
@@ -11102,8 +11102,8 @@
     "title": "Hangover",
     "artist": "Taio Cruz, Flo Rida",
     "year": 2011,
-    "country": "",
-    "genre": "",
+    "country": "United Kingdom",
+    "genre": "Dance-Pop",
     "film": "",
     "pools": [
       "mix"
@@ -11122,8 +11122,8 @@
     "title": "One More Time",
     "artist": "Daft Punk",
     "year": 2000,
-    "country": "",
-    "genre": "",
+    "country": "France",
+    "genre": "French House / Dance",
     "film": "",
     "pools": [
       "mix"
@@ -11142,8 +11142,8 @@
     "title": "China In Your Hand",
     "artist": "T'Pau",
     "year": 1987,
-    "country": "",
-    "genre": "",
+    "country": "United Kingdom",
+    "genre": "Pop Rock",
     "film": "",
     "pools": [
       "eighties"
@@ -11163,8 +11163,8 @@
     "title": "The Best",
     "artist": "Tina Turner",
     "year": 1989,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Pop Rock",
     "film": "",
     "pools": [
       "eighties"
@@ -11184,8 +11184,8 @@
     "title": "The Hustle",
     "artist": "Van McCoy & The Soul City Symphony",
     "year": 1975,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Disco",
     "film": "",
     "pools": [
       "mix"
@@ -11204,8 +11204,8 @@
     "title": "Piece of My Heart",
     "artist": "Erma Franklin",
     "year": 1967,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Soul / Rock",
     "film": "",
     "pools": [
       "mix"
@@ -11224,8 +11224,8 @@
     "title": "Hungry Eyes",
     "artist": "Eric Carmen",
     "year": 1987,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Pop Rock",
     "film": "",
     "pools": [
       "eighties"
@@ -11245,8 +11245,8 @@
     "title": "Karma Chameleon",
     "artist": "Culture Club",
     "year": 1983,
-    "country": "",
-    "genre": "",
+    "country": "United Kingdom",
+    "genre": "Pop",
     "film": "",
     "pools": [
       "eighties"
@@ -11266,8 +11266,8 @@
     "title": "Beinhart",
     "artist": "Torfrock",
     "year": 1990,
-    "country": "",
-    "genre": "",
+    "country": "Deutschland",
+    "genre": "Rock / Comedy",
     "film": "",
     "pools": [
       "mix"
@@ -11286,8 +11286,8 @@
     "title": "In Da Club",
     "artist": "50 Cent",
     "year": 2003,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Hip-Hop",
     "film": "",
     "pools": [
       "mix"
@@ -11306,8 +11306,8 @@
     "title": "Don't Go",
     "artist": "Yazoo",
     "year": 1982,
-    "country": "",
-    "genre": "",
+    "country": "United Kingdom",
+    "genre": "Synth-Pop",
     "film": "",
     "pools": [
       "eighties"
@@ -11327,8 +11327,8 @@
     "title": "I Wanna Dance with Somebody (Who Loves Me)",
     "artist": "Whitney Houston",
     "year": 1987,
-    "country": "",
-    "genre": "",
+    "country": "United States",
+    "genre": "Pop",
     "film": "",
     "pools": [
       "eighties"
@@ -11348,8 +11348,8 @@
     "title": "7 Years",
     "artist": "Lukas Graham",
     "year": 2015,
-    "country": "",
-    "genre": "",
+    "country": "Denmark",
+    "genre": "Pop / Soul",
     "film": "",
     "pools": [
       "mix"
@@ -11368,8 +11368,8 @@
     "title": "Sugar-Baby",
     "artist": "Peter Kraus",
     "year": 1958,
-    "country": "",
-    "genre": "",
+    "country": "Austria",
+    "genre": "Rock ’n’ Roll",
     "film": "",
     "pools": [
       "mix"
@@ -11388,8 +11388,8 @@
     "title": "Einmal um die Welt",
     "artist": "CRO",
     "year": 2012,
-    "country": "",
-    "genre": "",
+    "country": "Deutschland",
+    "genre": "Pop / Hip-Hop",
     "film": "",
     "pools": [
       "mix"
@@ -13709,7 +13709,7 @@
     "title": "I Believe",
     "artist": "KAMRAD",
     "year": 2022,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Pop",
     "film": "",
     "pools": [
@@ -13730,7 +13730,7 @@
     "title": "Feel Alive",
     "artist": "KAMRAD",
     "year": 2023,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Pop",
     "film": "",
     "pools": [
@@ -13751,7 +13751,7 @@
     "title": "So Good",
     "artist": "KAMRAD",
     "year": 2024,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Pop",
     "film": "",
     "pools": [
@@ -13867,7 +13867,7 @@
     "title": "Schrei nach Liebe",
     "artist": "Die Ärzte",
     "year": 1993,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Punk Rock",
     "film": "",
     "pools": [
@@ -13889,7 +13889,7 @@
     "title": "Tage wie diese",
     "artist": "Die Toten Hosen",
     "year": 2012,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Rock",
     "film": "",
     "pools": [
@@ -13911,7 +13911,7 @@
     "title": "Nur ein Wort",
     "artist": "Wir sind Helden",
     "year": 2005,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Pop",
     "film": "",
     "pools": [
@@ -13934,7 +13934,7 @@
     "title": "Denkmal",
     "artist": "Wir sind Helden",
     "year": 2003,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Pop",
     "film": "",
     "pools": [
@@ -13956,7 +13956,7 @@
     "title": "Ein Kompliment",
     "artist": "Sportfreunde Stiller",
     "year": 2002,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Rock",
     "film": "",
     "pools": [
@@ -14291,7 +14291,7 @@
     "title": "Emanuela",
     "artist": "Fettes Brot",
     "year": 2005,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
@@ -14858,7 +14858,7 @@
     "title": "Songs für Liam",
     "artist": "Kraftklub",
     "year": 2012,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Rock",
     "film": "",
     "pools": [
@@ -14881,7 +14881,7 @@
     "title": "Ich will nicht nach Berlin",
     "artist": "Kraftklub",
     "year": 2011,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Rock",
     "film": "",
     "pools": [
@@ -14905,7 +14905,7 @@
     "title": "Schüsse in die Luft",
     "artist": "Kraftklub",
     "year": 2014,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Indie Rock",
     "film": "",
     "pools": [
@@ -14995,7 +14995,7 @@
     "title": "Alles neu",
     "artist": "Peter Fox",
     "year": 2008,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
@@ -15017,7 +15017,7 @@
     "title": "Schwarz zu blau",
     "artist": "Peter Fox",
     "year": 2008,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Hip-Hop",
     "film": "",
     "pools": [
@@ -15551,7 +15551,7 @@
     "title": "Fiesta Mexicana",
     "artist": "Rex Gildo",
     "year": 1972,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Schlager",
     "film": "",
     "pools": [
@@ -15594,7 +15594,7 @@
     "title": "Dschinghis Khan",
     "artist": "Dschinghis Khan",
     "year": 1979,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Schlager/Disco",
     "film": "",
     "pools": [
@@ -15617,7 +15617,7 @@
     "title": "Marmor, Stein und Eisen bricht",
     "artist": "Drafi Deutscher",
     "year": 1965,
-    "country": "Germany",
+    "country": "Deutschland",
     "genre": "Schlager",
     "film": "",
     "pools": [
