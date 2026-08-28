@@ -1,4 +1,4 @@
-# Song Guess v5.0.27
+# Song Guess v5.0.28
 762 Songs. UI-, Wiedergabe- und Spielfluss-Update mit 762 Songs.
 
 Neu u. a.:
@@ -55,14 +55,17 @@ Neu u. a.:
 - v5.0.17: Vollaudit: CSS-Klammer bereinigt, echte 3-Sekunden-Challenge, Resume ohne Rundensprung, Spieloptionen beim Resume erhalten und Überraschungsmix-UI synchronisiert.
 
 
-## v5.0.27
+## v5.0.28
 - Setup: Songanzahl und Ratetimer als kompakte Auswahlfelder statt Dropdown/Freifeld.
 - Rundenkopf und Typografie ruhiger; Kategorienlabel über der Frage entfernt.
-- Play/Pause als normaler Button statt zweitem Kreis.
+- Play/Pause direkt über die Schallplatte; im A/B-Vergleich über die jeweilige Songkarte.
 - Spielerkarte mit klarerem Header, Status und besseren Abständen.
 - Mehr kuratierte Musik-Avatare; Fuchs bleibt enthalten.
 - Reveal ist an den tatsächlich gestarteten Song der Runde gebunden.
 - Nach der Wertung kann ein laufender Song gestoppt und derselbe Song weitergehört werden; bei beendetem Song verschwindet die Transportaktion.
 - Cover-Fragen zeigen das Original sofort in der Lösung.
 - High Hopes: Album auf Pray for the Wicked korrigiert.
-- Startseite: zwei große Discokugeln und mehrfarbige Lichtreflexe.
+- Startseite: zwei exakt gespiegelte große Discokugeln und mehrfarbige Lichtreflexe.
+- Debug: Restart merkt sich im A/B-Vergleich den zuletzt aktiven Song.
+- Manuelle Punktewahl zeigt nur tatsächlich mögliche Werte je Fragetyp (z. B. Interpret 0/2).
+- Vergleichsrunden zeigen bei gesperrtem Reveal konkret, welcher Song noch gehört werden muss.

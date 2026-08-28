@@ -51,7 +51,7 @@ Bei jeder Runde kann spontan gewechselt werden:
 - 30 s Start — 30 Sekunden ab Beginn.
 - 30 s Zufall — zufälliger 30-Sekunden-Ausschnitt.
 
-Play/Pause funktioniert auch im A/B-Vergleich. Wird B gestartet, stoppt A. „Restart“ spielt denselben Ausschnitt erneut; „Überspringen“ zieht ohne Wertung einen anderen Song.
+Play/Pause erfolgt direkt durch Klick auf die Schallplatte. Im A/B-Vergleich werden die Karten A und B angeklickt; wird B gestartet, stoppt A. „Restart“ startet den zuletzt aktiven Song erneut am Beginn desselben Ausschnitts. „Anderer Song“ zieht ohne Wertung einen anderen Song.
 
 ## Reveal
 Der Reveal zeigt Titel, Interpret, Jahr, Herkunft, Jahrzehnt, Genre und — sofern vorhanden — Album, Sprache und Film-/Serienbezug.

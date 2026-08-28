@@ -59,7 +59,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.27 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.28 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -131,11 +131,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.27: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.28: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
 
 
-/* v5.0.27 polish */
+/* v5.0.28 polish */
 .hero{position:relative;overflow:hidden}
 .discoBall{position:absolute;right:18px;top:14px;font-size:34px;filter:drop-shadow(0 0 12px #b77cff88);animation:discosway 4s ease-in-out infinite;transform-origin:50% -20px}
 @keyframes discosway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
@@ -160,11 +160,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.endActions{grid-template-columns:1fr}.discoBall{font-size:28px}.scorebar{max-width:none;margin-right:0!important}}
 
 
-/* v5.0.27 polish */
+/* v5.0.28 polish */
 @media(min-width:901px){#round{padding:24px 42px 38px!important}.roundbody{grid-template-columns:minmax(390px,.9fr) minmax(480px,1.1fr)!important;gap:72px!important;align-items:start!important}.playcol{padding-left:18px!important}.answercol{padding:0 32px 28px 0!important}.answercol>#answers,.answercol>#rev,.answercol>#revbtn,.answercol>#otherSongBtn{max-width:720px!important;margin-left:auto!important;margin-right:auto!important}.scorebar{margin:26px auto 0!important;max-width:720px!important;width:100%!important}}
 .recordWrap{position:relative;width:max-content;margin:18px auto 10px}.vinyl{position:relative!important}.vinylMark{position:absolute;display:block;width:11px;height:11px;border-radius:50%;background:#f5f5f5;left:22%;top:27%;box-shadow:0 0 9px #fff;z-index:5}.vinyl.spin{animation:vinylspin 1.55s linear infinite!important}@keyframes vinylspin{to{transform:rotate(360deg)}}.playGlyph{display:inline-block;font-size:.82em;letter-spacing:-4px}.timerDisplay{position:absolute;right:-52px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#24262c;border:2px solid #8d5cff;font-weight:800}.timerDisplay.timeup{font-size:10px;border-color:#ffcf54}.score{font-size:14px!important}.score b{font-size:18px}.score:first-letter{font-size:28px}.roundDetail{background:#22252a;border-radius:12px;padding:10px 13px;margin:8px 0;text-align:left}.roundDetail summary{cursor:pointer;font-weight:700}.roundPlayer{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid #33373d;margin-top:7px}.roundPlayer span{color:var(--muted);font-size:12px;text-align:right}.medal{font-size:25px;vertical-align:middle}
 
-/* v5.0.27 final polish */
+/* v5.0.28 final polish */
 .vinylMark{display:none!important}
 .vinylRPM{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;font-size:12px;line-height:.9;font-weight:800;letter-spacing:.5px;color:#f4eafa;text-align:center;pointer-events:none}
 .vinylRPM small{font-size:6px;letter-spacing:1.5px}
@@ -177,7 +177,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 #home .hero:after{width:4px;height:4px;right:44px;top:88px;box-shadow:30px 22px 0 #fff,-50px 18px 0 #e7b5ff,10px 55px 0 #8bdcff}
 @media(max-width:900px){#round .scorebar{margin:22px 14px 0!important;width:calc(100% - 28px)!important}.vinylRPM{font-size:11px}#home .hero .discoBall{font-size:38px!important;right:18px!important}}
 
-/* v5.0.27 */
+/* v5.0.28 */
 #home .tagline{margin:-4px 0 12px;color:#d9c4ed;font-size:14px;letter-spacing:.04em}
 #home .hero{overflow:hidden;isolation:isolate}#home .hero>*:not(.discoField){position:relative;z-index:2}
 .discoField{position:absolute;inset:0;pointer-events:none;z-index:1}.discoField span{position:absolute;filter:drop-shadow(0 0 18px rgba(190,110,255,.8));animation:discoFloat 6s ease-in-out infinite}.discoField span:nth-child(1){font-size:48px;right:28px;top:16px}.discoField span:nth-child(2){font-size:25px;left:28px;top:28px;animation-delay:-2s;opacity:.78}.discoField span:nth-child(3){font-size:19px;right:16%;bottom:24px;animation-delay:-4s;opacity:.7}
@@ -186,7 +186,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .play{width:76px!important;height:76px!important;margin:15px auto!important;background:radial-gradient(circle at 50% 42%,#30253c,#17191e 70%)!important;color:#f6edff!important;border:1px solid #8f55dc!important;font-size:29px!important;box-shadow:0 0 0 5px rgba(142,77,219,.08),0 0 26px rgba(157,82,235,.38),0 14px 28px #0008!important}.play:hover{box-shadow:0 0 0 6px rgba(142,77,219,.12),0 0 34px rgba(184,103,255,.55),0 14px 28px #0008!important}.playGlyph{letter-spacing:0!important;transform:translateX(1px)}.transportrow{grid-template-columns:1fr!important;max-width:250px;margin-left:auto;margin-right:auto}
 @media(max-width:700px){.discoField span:nth-child(2){display:none}.discoField span:nth-child(3){right:10px;bottom:12px}#cats.chips{grid-template-columns:repeat(3,minmax(0,1fr))}#cats .chip{min-height:78px;padding:9px 5px}#cats .catText{font-size:11px}#cats .catIcon{font-size:16px;margin-bottom:6px}}
 
-/* v5.0.27 */
+/* v5.0.28 */
 .roundControls{margin:0 0 14px;padding:0 4px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
 .roundControls .row{margin-left:auto}.menuRoundBtn{flex:none}
 @media(min-width:901px){.roundControls{width:100%;max-width:720px;margin:0 auto 16px!important}.answercol{padding-top:0!important}}
@@ -206,17 +206,28 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @keyframes clubGlow{0%{transform:translate(-5px,3px) scale(.75);opacity:.22}50%{opacity:.8}100%{transform:translate(8px,-5px) scale(1.35);opacity:.4}}
 @media(max-width:700px){.discoField .ball{font-size:31px!important}.discoField .b1{right:14px}.discoField .b2{left:14px}.discoField .l4,.discoField .l6,.discoField .l10{display:none}.discoField .light{filter:blur(7px);opacity:.42}.lyricslink{margin-left:0!important;margin-top:8px!important}}
 
-/* v5.0.27 setup choices + transport + hierarchy */
+/* v5.0.28 setup choices + transport + hierarchy */
 .playeredit{grid-template-columns:minmax(0,1fr) 78px auto}.playeredit .pname{font-size:15px;font-weight:650}.playeredit .pavatar{font-size:24px;text-align:center;padding-left:8px;padding-right:8px}
 .setupChoices{display:flex;gap:7px;flex-wrap:wrap}.setupChoice{border:1px solid #3a3d43;background:#23262b;color:#bbb;border-radius:999px;padding:9px 13px;font-weight:720;cursor:pointer}.setupChoice.on{background:#342441;color:#fff;border-color:#a86aff;box-shadow:0 0 0 1px #a86aff55}.customCount{margin-top:9px;max-width:180px}
 .roundControls{display:flex;align-items:center;justify-content:space-between;gap:12px}.roundStatus{display:flex;align-items:center;gap:7px;min-width:0;white-space:nowrap;color:#a4a1a8;font-weight:600}.roundStatus #rno{white-space:nowrap;color:#c4c1c7}.roundStatus #badge:before{content:"·";margin-right:7px;color:#5f6066}.roundControls .row{flex-wrap:nowrap!important}.roundControls .secondary{font-weight:700}
 .play{display:block;width:auto!important;height:auto!important;min-height:0!important;border:1px solid #8950d8!important;border-radius:13px!important;margin:12px auto!important;padding:11px 18px!important;background:#2b2036!important;color:#fff!important;font-size:14px!important;font-weight:850!important;letter-spacing:.04em!important;box-shadow:0 8px 22px #0006!important;aspect-ratio:auto!important}.play.playing{box-shadow:0 0 0 2px #9c58ef66,0 8px 22px #0006!important;animation:none!important}.playGlyph{display:inline-block;min-width:76px}.transportrow{display:grid;grid-template-columns:1fr;max-width:240px;margin:10px auto 0}.postTransport:empty{display:none}.postTransport button{width:100%}.coverSolution{margin:13px 0 2px;padding:13px 14px;border:1px solid #514064;border-radius:12px;background:#221a2b}.coverSolution b{display:block;color:#caa7ff;margin-bottom:5px}.coverSolution .spotifylink{margin-top:9px}
 @media(max-width:700px){.roundControls{align-items:flex-start}.roundStatus{flex-direction:column;align-items:flex-start;gap:2px;white-space:normal}.roundStatus #badge:before{content:"";margin:0}.roundStatus #badge{font-size:11px}.setupChoice{padding:8px 11px}.answerbox{padding:14px}.answerActions button{font-size:13px}.playeredit{grid-template-columns:minmax(0,1fr) 70px auto!important}}
 
+
+/* v5.0.28 — debug/polish */
+.question h2{font-family:"Avenir Next","Trebuchet MS",system-ui,sans-serif!important;font-weight:650!important;letter-spacing:-.015em!important}
+.primary,.secondary,.chip,.modebtn{font-weight:680}.answerActions button{font-weight:620}.roundControls .secondary{font-weight:650}
+.vinylControl{cursor:pointer;transition:filter .18s ease,box-shadow .18s ease,transform .18s ease}.vinylControl:hover{filter:brightness(1.08);box-shadow:0 0 52px #9450ef66}.vinylControl:focus-visible,.songboxControl:focus-visible{outline:2px solid #b77aff;outline-offset:4px}
+.recordPlayHint{text-align:center;color:#8f8b94;font-size:12px;margin:-11px auto 10px;min-height:18px}.revealHint{text-align:center;margin:7px 0 0;color:#9b9890}.vinylControl.spin+.timerDisplay{}
+.songboxControl{cursor:pointer;user-select:none;min-height:142px;display:flex;flex-direction:column;justify-content:center;transition:border-color .18s ease,background .18s ease,transform .18s ease;border:1px solid transparent}.songboxControl:hover{background:#26292f;border-color:#4a3b5b}.songboxControl:active{transform:scale(.985)}.playHint{font-size:12px;color:#aaa;margin-top:18px}.songboxControl.playing .playHint{color:#d6b8ff}.songboxControl.playing{outline:2px solid var(--violet);box-shadow:0 0 26px #9450ef2e}
+/* exact mirrored disco pair: same size/position logic, no 2D rotation */
+.discoField .b1,.discoField .b2{font-size:43px!important;top:15px!important;opacity:1!important;transform-origin:center!important}.discoField .b1{right:28px!important;animation:discoBobRight 5.6s ease-in-out infinite!important}.discoField .b2{left:28px!important;animation:discoBobLeft 5.6s ease-in-out infinite!important}
+@keyframes discoBobRight{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}@keyframes discoBobLeft{0%,100%{transform:scaleX(-1) translateY(0)}50%{transform:scaleX(-1) translateY(5px)}}
+@media(max-width:700px){.discoField .b1,.discoField .b2{font-size:31px!important}.discoField .b1{right:14px!important}.discoField .b2{left:14px!important}}
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="discoField" aria-hidden="true"><span class="ball b1">🪩</span><span class="ball b2">🪩</span><i class="light l1"></i><i class="light l2"></i><i class="light l3"></i><i class="light l4"></i><i class="light l5"></i><i class="light l6"></i><i class="light l7"></i><i class="light l8"></i><i class="light l9"></i><i class="light l10"></i><i class="light l11"></i><i class="light l12"></i></div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.27</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+ <div class="card hero"><div class="discoField" aria-hidden="true"><span class="ball b1">🪩</span><span class="ball b2">🪩</span><i class="light l1"></i><i class="light l2"></i><i class="light l3"></i><i class="light l4"></i><i class="light l5"></i><i class="light l6"></i><i class="light l7"></i><i class="light l8"></i><i class="light l9"></i><i class="light l10"></i><i class="light l11"></i><i class="light l12"></i></div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.28</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -250,8 +261,8 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div id="roundContent">
   <div class="roundbody">
    <div class="playcol">
-    <div id="normal"><div class="question"><h2 id="qtext"></h2></div><div class="recordWrap"><div id="record" class="vinyl"><span class="vinylRPM">33⅓<br><small>RPM</small></span></div><div id="timerDisplay" class="timerDisplay hidden">30</div></div><button id="play" class="play" aria-label="Play/Pause"><span class="playGlyph">▶ PLAY</span></button></div>
-    <div id="comp" class="hidden"><div class="question"><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox"><h2>A</h2><button id="playA" class="secondary playab" onclick="toggleCompare(0)">▶ Song A</button></div><b>VS.</b><div id="boxB" class="songbox"><h2>B</h2><button id="playB" class="secondary playab" onclick="toggleCompare(1)">▶ Song B</button></div></div></div>
+    <div id="normal"><div class="question"><h2 id="qtext"></h2></div><div class="recordWrap"><div id="record" class="vinyl vinylControl" role="button" tabindex="0" aria-label="Song abspielen oder pausieren" onclick="toggleMainRecord()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMainRecord()}"><span class="vinylRPM">33⅓<br><small>RPM</small></span></div><div id="timerDisplay" class="timerDisplay hidden">30</div></div><div id="recordPlayHint" class="recordPlayHint">▶ Platte anklicken</div></div>
+    <div id="comp" class="hidden"><div class="question"><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox songboxControl" role="button" tabindex="0" aria-label="Song A abspielen oder pausieren" onclick="toggleCompare(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCompare(0)}"><h2>A</h2><div id="stateA" class="playHint">▶ Abspielen</div></div><b>VS.</b><div id="boxB" class="songbox songboxControl" role="button" tabindex="0" aria-label="Song B abspielen oder pausieren" onclick="toggleCompare(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCompare(1)}"><h2>B</h2><div id="stateB" class="playHint">▶ Abspielen</div></div></div></div>
     <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
     <div class="transportrow">
       <button class="secondary" onclick="restartCurrent()">↺ Restart</button>
@@ -261,7 +272,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
    <div class="answercol">
     <div class="roundtop roundControls"><div class="roundStatus"><span id="rno"></span><span id="badge" class="badge"></span></div><div class="row"><button id="undoBtn" class="secondary hidden" onclick="openUndo()">↶ Wertung</button><button class="secondary menuRoundBtn" onclick="openGameMenu()">☰</button></div></div>
     <div id="answers"></div>
-    <button id="revbtn" class="primary" onclick="reveal()" disabled>Reveal</button>
+    <button id="revbtn" class="primary" onclick="reveal()" disabled>Reveal</button><div id="revealHint" class="tiny revealHint hidden"></div>
     <button id="otherSongBtn" class="secondary" onclick="replaceSong()">🔀 Anderer Song</button>
     <div id="rev" class="hidden"></div>
     <div id="scores" class="scorebar"></div>
@@ -378,7 +389,7 @@ guitar:["🎸 Gitarren","Rock · Punk · Metal · Indie"],
 cover:["🔁 Cover","Coverversionen & Neuinterpretationen"]
 };
 let songs=[],names=["Spieler:in 1","Spieler:in 2"],playersMeta=[],scores=[],selectedPools=new Set(["mix"]),selectedCats=new Set(["year","artist","country","title","compare"]);
-let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,surpriseMode=false,guessTimerSeconds=0,guessTimerHandle=null,guessTimerLeft=0,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers=[],completedRounds=[],gameTracks=[],bonusNow=false,roundPhase="answering",roundScored=false,roundHasPlayed=false,roundPlayedKeys=new Set();
+let qm="game",ps="one",am="turns",clipMode="start30",saveHistory=true,saveStats=true,avoidRecent=true,bonusRounds=false,surpriseMode=false,guessTimerSeconds=0,guessTimerHandle=null,guessTimerLeft=0,total=15,roundIndex=0,currentCats=[],song=null,pair=[],roundPool=[],usedIds=new Set(),selectedDecades=new Set([1930,1940,1950,1960,1970,1980,1990,2000,2010,2020]),categoryBag=[],roundAnswers=[],completedRounds=[],gameTracks=[],bonusNow=false,roundPhase="answering",roundScored=false,roundHasPlayed=false,roundPlayedKeys=new Set(),lastPlayedKey=null;
 let token=null,deviceId=null,spotifyPlayer=null,playingKey=null,playingSongId=null,stopTimer=null,resolvedCache={},lastStart={songId:null,pos:0};let pausedTrack=null,playbackNonce=0,clipEnding=false;
 
 function show(id,keepAudio=false){["home","setup","round","history","help","favorites"].forEach(x=>$(x)?.classList.toggle("hidden",x!==id));if(!keepAudio)stopPlayback()}
@@ -421,7 +432,7 @@ function startGame(){
 function prepareRound(){
  if(roundIndex>=total)return endGame();
  playbackNonce++; pausedTrack=null; clearGuessTimer();
- if(playingKey)stopPlayback(false,{invalidate:false}); roundPhase="answering";roundScored=false;roundHasPlayed=false;roundPlayedKeys=new Set();
+ if(playingKey)stopPlayback(false,{invalidate:false}); roundPhase="answering";roundScored=false;roundHasPlayed=false;roundPlayedKeys=new Set();lastPlayedKey=null;
  roundIndex++;song=randomSong();pair=[];bonusNow=bonusRounds&&roundIndex%5===0;$("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
  $("rev").classList.add("hidden");$("rev").style.display="none";resetRevealButton();$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
  if(qm==="round"){buildRoundSelector();$("roundSetup").classList.remove("hidden");$("roundContent").classList.add("hidden");saveGameState();return}
@@ -495,8 +506,9 @@ function checkAnswers(){
   }else{delete roundAnswers[i];setAnswerStatus(b,"Noch keine Antwort gespeichert",false)}
  });
  let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");
- let heard=currentCats[0]==="compare"?(roundPlayedKeys.has("cmp0")&&roundPlayedKeys.has("cmp1")):roundHasPlayed;
+ let isCompare=currentCats[0]==="compare",heard=isCompare?(roundPlayedKeys.has("cmp0")&&roundPlayedKeys.has("cmp1")):roundHasPlayed;
  setRevealReady(all&&heard);
+ let hint=$("revealHint");if(hint){let msg="";if(isCompare&&!heard){let missing=[];if(!roundPlayedKeys.has("cmp0"))missing.push("A");if(!roundPlayedKeys.has("cmp1"))missing.push("B");msg=`Für Reveal noch Song ${missing.join(" und ")} anhören.`}else if(!all)msg="Für Reveal noch die Antwort bestätigen.";hint.textContent=msg;hint.classList.toggle("hidden",!msg)}
 }
 
 function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
@@ -538,7 +550,7 @@ async function playSong(s,key,opts={}){
   if(myNonce!==playbackNonce)return;
   await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({uris:[tr.uri],position_ms:pos})});
   if(myNonce!==playbackNonce)return;
-  playingKey=key;playingSongId=s.id;pausedTrack=null;lastStart={songId:s.id,pos};roundHasPlayed=true;roundPlayedKeys.add(key);clipEnding=false;updatePlayUI();checkAnswers();saveGameState();if(clipMode==="random30")fadeInRandom();
+  playingKey=key;playingSongId=s.id;pausedTrack=null;lastPlayedKey=key;lastStart={songId:s.id,pos};roundHasPlayed=true;roundPlayedKeys.add(key);clipEnding=false;updatePlayUI();checkAnswers();saveGameState();if(clipMode==="random30")fadeInRandom();
   if(duration)stopTimer=setTimeout(()=>finishListening(myNonce,s.id),duration);
  }catch(e){if(myNonce===playbackNonce)alert("Song konnte über Spotify nicht gestartet werden.")}
 }
@@ -548,32 +560,46 @@ async function stopPlayback(preserve=false,opts={invalidate:true,startTimer:fals
  if(opts.startTimer!==true)clearGuessTimer();
  let oldKey=playingKey,oldSongId=playingSongId;
  if(playingKey&&token){try{await fetch("https://api.spotify.com/v1/me/player/pause",{method:"PUT",headers:{Authorization:`Bearer ${token}`}})}catch(e){}}
- pausedTrack=preserve&&oldKey&&oldSongId===song?.id?{key:oldKey,songId:oldSongId}:null;playingKey=null;playingSongId=null;updatePlayUI();
+ pausedTrack=preserve&&oldKey&&isCurrentRoundSong(oldSongId)?{key:oldKey,songId:oldSongId}:null;playingKey=null;playingSongId=null;updatePlayUI();
  if(opts.startTimer)startGuessTimer();
 }
 async function finishListening(nonce,songId){
  if(nonce!==playbackNonce||playingSongId!==songId)return;
  clipEnding=true;await stopPlayback(false,{invalidate:false,startTimer:true});clipEnding=false;
 }
+function currentSongForKey(key){
+ if(key==="cmp0")return pair[0]||null;if(key==="cmp1")return pair[1]||null;return song||null;
+}
+function isCurrentRoundSong(id){return currentCats[0]==="compare"?pair.some(x=>x?.id===id):song?.id===id}
 function updatePlayUI(){
- let active=(playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id;$("record")?.classList.toggle("spin",active);$("play")?.classList.toggle("playing",active);let glyph=$("play")?.querySelector(".playGlyph");if(glyph)glyph.textContent=active?"Ⅱ PAUSE":"▶ PLAY";
- ["A","B"].forEach((x,i)=>{let btn=$("play"+x),box=$("box"+x);if(btn)btn.textContent=playingKey==="cmp"+i?"Ⅱ Pause":`▶ Song ${x}`;if(box)box.classList.toggle("playing",playingKey==="cmp"+i)});
+ let mainActive=(playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id;
+ $("record")?.classList.toggle("spin",mainActive);
+ let rh=$("recordPlayHint");if(rh)rh.textContent=mainActive?"Ⅱ Anklicken zum Pausieren":(pausedTrack?.songId===song?.id?"▶ Anklicken zum Weiterhören":"▶ Platte anklicken");
+ ["A","B"].forEach((x,i)=>{let box=$("box"+x),hint=$("state"+x),key="cmp"+i,active=playingKey===key&&playingSongId===pair[i]?.id,paused=pausedTrack?.key===key&&pausedTrack?.songId===pair[i]?.id;if(box)box.classList.toggle("playing",active);if(hint)hint.textContent=active?"Ⅱ Pause":paused?"▶ Weiterhören":"▶ Abspielen"});
  refreshPostRoundActions();
 }
 function clearGuessTimer(){if(guessTimerHandle){clearInterval(guessTimerHandle);guessTimerHandle=null}let d=$("timerDisplay");if(d)d.classList.add("hidden")}
 function startGuessTimer(){clearGuessTimer();if(!guessTimerSeconds||currentCats[0]==="compare")return;guessTimerLeft=guessTimerSeconds;let d=$("timerDisplay");if(!d)return;d.textContent=guessTimerLeft;d.classList.remove("hidden","timeup");guessTimerHandle=setInterval(()=>{guessTimerLeft--;d.textContent=Math.max(0,guessTimerLeft);if(guessTimerLeft<=0){clearInterval(guessTimerHandle);guessTimerHandle=null;d.textContent="ZEIT!";d.classList.add("timeup")}},1000)}
+async function resumePausedTrack(){
+ if(!pausedTrack||!token||!deviceId)return false;activateSpotifyForMobile();clearGuessTimer();let p={...pausedTrack};
+ try{await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`}});playingKey=p.key;playingSongId=p.songId;lastPlayedKey=p.key;pausedTrack=null;updatePlayUI();return true}catch(e){alert("Musik konnte nicht fortgesetzt werden.");return false}
+}
 async function toggleStopResume(){
  activateSpotifyForMobile();
- if(pausedTrack&&pausedTrack.songId===song?.id){clearGuessTimer();try{await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${encodeURIComponent(deviceId)}`,{method:"PUT",headers:{Authorization:`Bearer ${token}`}});playingKey=pausedTrack.key||"main";playingSongId=pausedTrack.songId;pausedTrack=null;updatePlayUI()}catch(e){alert("Musik konnte nicht fortgesetzt werden.")}}
- else if((playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id)await stopPlayback(true,{startTimer:roundPhase==="answering"});
+ if(pausedTrack&&isCurrentRoundSong(pausedTrack.songId)){await resumePausedTrack();return}
+ if(playingKey&&isCurrentRoundSong(playingSongId))await stopPlayback(true,{startTimer:roundPhase==="answering"&&currentCats[0]!=="compare"});
 }
 function activateSpotifyForMobile(){try{if(spotifyPlayer&&typeof spotifyPlayer.activateElement==="function")spotifyPlayer.activateElement()}catch(e){console.warn("Spotify media activation failed",e)}}
-$("play").onclick=()=>{activateSpotifyForMobile();if(pausedTrack?.songId===song?.id)toggleStopResume();else if((playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id)stopPlayback(true,{startTimer:roundPhase==="answering"});else playSong(song,"main")};
-function toggleCompare(i){activateSpotifyForMobile();playSong(pair[i],"cmp"+i)}
+async function toggleMainRecord(){activateSpotifyForMobile();if(pausedTrack?.songId===song?.id){await resumePausedTrack()}else if((playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id){await stopPlayback(true,{startTimer:roundPhase==="answering"})}else await playSong(song,"main")}
+async function toggleCompare(i){
+ activateSpotifyForMobile();let key="cmp"+i,s=pair[i];if(!s)return;
+ if(playingKey===key&&playingSongId===s.id){await stopPlayback(true,{startTimer:false});return}
+ if(pausedTrack?.key===key&&pausedTrack?.songId===s.id){await resumePausedTrack();return}
+ await playSong(s,key);
+}
 async function restartCurrent(){
  activateSpotifyForMobile();clearGuessTimer();
- let s=currentCats[0]==="compare"?(playingKey==="cmp1"?pair[1]:pair[0]):song;
- let key=currentCats[0]==="compare"?(playingKey==="cmp1"?"cmp1":"cmp0"):"main";
+ let key=currentCats[0]==="compare"?(lastPlayedKey==="cmp1"?"cmp1":"cmp0"):"main",s=currentSongForKey(key);
  if(!s)return;await playSong(s,key,{restart:true});
 }
 function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});document.querySelectorAll(".answerbox").forEach(b=>setAnswerStatus(b,"Gepasst · 0 Punkte",true));checkAnswers();if($("revbtn").disabled)return alert("Bitte den Song zuerst starten.");reveal()}
@@ -588,7 +614,7 @@ async function replaceSong(){
    if(covers.length){usedIds.delete(song?.id);song=covers[Math.floor(Math.random()*covers.length)];usedIds.add(song.id)}
   }
  }
- roundPhase="answering";roundScored=false;roundHasPlayed=false;roundPlayedKeys=new Set();roundAnswers=[];$("rev").classList.add("hidden");$("rev").style.display="none";renderRound();
+ roundPhase="answering";roundScored=false;roundHasPlayed=false;roundPlayedKeys=new Set();lastPlayedKey=null;roundAnswers=[];$("rev").classList.add("hidden");$("rev").style.display="none";renderRound();
 }
 function surpriseGame(){
  surpriseMode=true;selectedPools=new Set(["mix"]);selectedCats=new Set(["year","decade","artist","title","country","compare","intro3","cover"]);
@@ -669,20 +695,22 @@ function judgeUI(cp){
  let needsManual=Array.isArray(roundAnswers)&&roundAnswers.some(x=>x?.mode==="aloud");
  return `<h3>${needsManual?"Punkte prüfen":"Wertung"}${bonusNow?" · +3 bei perfekt":""}</h3>${list}<button id="savePts" class="primary" ${needsManual?"disabled":""} onclick="finishJudge()">Punkte speichern</button><div id="postRoundActions" class="postRoundActions hidden"></div>`;
 }
+function scoreOptionsForCat(c){return c==="year"?[0,1,2,3]:c==="decade"||c==="compare"?[0,1]:c==="intro3"?[0,1,2,3]:[0,2]}
+function manualScoreValues(){let vals=new Set([0]);for(const c of currentCats){let next=new Set();for(const a of vals)for(const b of scoreOptionsForCat(c))next.add(a+b);vals=next}return [...vals].sort((a,b)=>a-b)}
+function manualButtonsHTML(i){return manualScoreValues().map(v=>`<button onclick="setPts(this,${i},${v})">${v}</button>`).join("")}
 function judgePerson(n,i,cp){
  let auto=autoPoints(i,cp);
  if(auto){let perfect=bonusNow&&auto.points===normalRoundMax(),shown=auto.points+(perfect?3:0);return `<div class="judge" data-i="${i}" data-p="${auto.points}" data-rated="1"><header><b>${n}</b><span class="pts">${shown}${names.length===1?` von ${roundMaxPoints()}`:""} P.</span></header><div class="tiny">${auto.detail}${perfect?" · ✨ PERFEKT! +3 BONUS":""}</div><button class="secondary" onclick="manualOverride(${i})">Wertung korrigieren</button></div>`}
- let max=normalRoundMax(),buttons=Array.from({length:max+1},(_,v)=>`<button onclick="setPts(this,${i},${v})">${v}</button>`).join("");
- return `<div class="judge" data-i="${i}" data-p="0" data-rated="0"><header><b>${n}</b><span class="pts">0${names.length===1?` von ${roundMaxPoints()}`:""} P.</span></header><div class="judgeBtns">${buttons}</div></div>`;
+ return `<div class="judge" data-i="${i}" data-p="0" data-rated="0"><header><b>${n}</b><span class="pts">0${names.length===1?` von ${roundMaxPoints()}`:""} P.</span></header><div class="judgeBtns">${manualButtonsHTML(i)}</div></div>`;
 }
-function manualOverride(i){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.rated="0";x.dataset.p="0";x.querySelector(".pts").textContent="0 P.";x.querySelector(".tiny")?.remove();let max=normalRoundMax();x.querySelector(".judgeBtns")?.remove();x.insertAdjacentHTML("beforeend",`<div class="judgeBtns">${Array.from({length:max+1},(_,v)=>`<button onclick="setPts(this,${i},${v})">${v}</button>`).join("")}</div>`);checkRatings()}
+function manualOverride(i){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset.rated="0";x.dataset.p="0";x.querySelector(".pts").textContent="0 P.";x.querySelector(".tiny")?.remove();x.querySelector(".judgeBtns")?.remove();x.insertAdjacentHTML("beforeend",`<div class="judgeBtns">${manualButtonsHTML(i)}</div>`);checkRatings()}
 function setPts(btn,i,n){let x=document.querySelector(`.judge[data-i="${i}"]`),bonus=bonusNow&&n===normalRoundMax()?3:0;x.dataset.p=n;x.dataset.rated="1";x.querySelector(".pts").textContent=(names.length===1?`${n+bonus} von ${roundMaxPoints()}`:`${n+bonus}`)+" P.";x.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");checkRatings()}
 function toggleCat(btn,i,c){btn.dataset.on=btn.dataset.on==="1"?"0":"1";btn.classList.toggle("sel",btn.dataset.on==="1");recountJudge(i)}
 function catPts(btn,i,c,n){let x=document.querySelector(`.judge[data-i="${i}"]`);x.dataset["cat_"+c]=n;btn.parentElement.querySelectorAll("button").forEach(z=>z.classList.remove("sel"));btn.classList.add("sel");recountJudge(i)}
 function checkRatings(){let all=[...document.querySelectorAll(".judge")].every(x=>x.dataset.rated==="1");let b=$("savePts");if(b)b.disabled=!all}
 function recountJudge(i){let x=document.querySelector(`.judge[data-i="${i}"]`),n=0;x.querySelectorAll("button[data-on='1']").forEach(z=>n+=+(z.dataset.weight||1));n+=+(x.dataset.cat_year||0);x.dataset.p=n;x.dataset.rated="1";let bonus=bonusNow&&n===normalRoundMax()?3:0;x.querySelector(".pts").textContent=(names.length===1?`${n+bonus} von ${roundMaxPoints()}`:`${n+bonus}`)+" P.";checkRatings()}
 function refreshPostRoundActions(){
- let host=$("postTransport");if(!host)return;let active=(playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id,paused=pausedTrack?.songId===song?.id;
+ let host=$("postTransport");if(!host)return;let active=playingKey&&isCurrentRoundSong(playingSongId),paused=pausedTrack&&isCurrentRoundSong(pausedTrack.songId);
  host.innerHTML=active?`<button class="secondary" onclick="postRoundTogglePlayback()">Ⅱ Song stoppen</button>`:paused?`<button class="secondary" onclick="postRoundTogglePlayback()">▶ Song weiterhören</button>`:"";
 }
 function showPostRoundActions(){
@@ -691,7 +719,7 @@ function showPostRoundActions(){
  else box.innerHTML=`<div class="postRoundButtons"><div id="postTransport" class="postTransport"></div><button class="primary" onclick="advanceAfterScore()">→ Nächste Runde</button></div>`;
  box.classList.remove("hidden");refreshPostRoundActions();
 }
-async function postRoundTogglePlayback(){activateSpotifyForMobile();if(pausedTrack?.songId===song?.id)await toggleStopResume();else if((playingKey==="main"||playingKey==="carry")&&playingSongId===song?.id)await stopPlayback(true,{startTimer:false});refreshPostRoundActions()}
+async function postRoundTogglePlayback(){activateSpotifyForMobile();if(pausedTrack&&isCurrentRoundSong(pausedTrack.songId))await resumePausedTrack();else if(playingKey&&isCurrentRoundSong(playingSongId))await stopPlayback(true,{startTimer:false});refreshPostRoundActions()}
 async function stopCurrentSong(){await stopPlayback(false,{startTimer:false})}
 async function advanceAfterScore(){if(!roundScored)return;await stopCurrentSong();nextRound()}
 async function extendGame(n){if(!roundScored)return;total+=n;$("rno").textContent=`Runde ${roundIndex} / ${total}`;saveGameState();await advanceAfterScore()}
@@ -725,7 +753,7 @@ function updateFavoritePoolBadge(){let b=[...document.querySelectorAll("#pools .
 let wakeLock=null;async function keepAwake(){try{if("wakeLock"in navigator)wakeLock=await navigator.wakeLock.request("screen")}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&$("round")&&!$("round").classList.contains("hidden"))keepAwake()});
 
-function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,currentCats:[...currentCats],songId:song?.id||null,pairIds:pair.map(x=>x.id),bonusNow,roundPhase,roundScored,roundHasPlayed,roundPlayedKeys:[...roundPlayedKeys],roundAnswers,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds],saveHistory,saveStats,avoidRecent,bonusRounds,guessTimerSeconds}))}
+function saveGameState(){if(!$("round").classList.contains("hidden"))localStorage.setItem("sg_active",JSON.stringify({names,playersMeta,scores,selectedPools:[...selectedPools],selectedCats:[...selectedCats],selectedDecades:[...selectedDecades],qm,ps,am,clipMode,total,roundIndex,currentCats:[...currentCats],songId:song?.id||null,pairIds:pair.map(x=>x.id),bonusNow,roundPhase,roundScored,roundHasPlayed,roundPlayedKeys:[...roundPlayedKeys],lastPlayedKey,roundAnswers,completedRounds,gameTracks:gameTracks.map(x=>x.id),usedIds:[...usedIds],saveHistory,saveStats,avoidRecent,bonusRounds,guessTimerSeconds}))}
 function checkResume(){let ok=false;try{let st=JSON.parse(localStorage.getItem("sg_active")||"null");ok=!!(st&&Array.isArray(st.names)&&st.names.length&&st.roundIndex>=1&&st.total>=st.roundIndex&&st.songId)}catch(e){localStorage.removeItem("sg_active")}$("resumeBtn").classList.toggle("hidden",!ok)}
 function resumeGame(){
  let st;try{st=JSON.parse(localStorage.getItem("sg_active")||"null")}catch(e){st=null}if(!st||!st.songId){localStorage.removeItem("sg_active");checkResume();return}
@@ -734,7 +762,7 @@ function resumeGame(){
  qm=st.qm||"game";ps=st.ps||"one";am=st.am||"turns";clipMode=st.clipMode||"start30";total=st.total||15;roundIndex=st.roundIndex;completedRounds=st.completedRounds||[];usedIds=new Set(st.usedIds||[]);
  saveHistory=st.saveHistory??true;saveStats=st.saveStats??true;avoidRecent=st.avoidRecent??true;bonusRounds=st.bonusRounds??false;guessTimerSeconds=st.guessTimerSeconds??0;
  roundPool=poolSongs();gameTracks=(st.gameTracks||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);
- song=songs.find(s=>s.id===st.songId)||null;pair=(st.pairIds||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);currentCats=st.currentCats||["year"];bonusNow=!!st.bonusNow;roundAnswers=st.roundAnswers||[];roundPhase=st.roundPhase||"answering";roundScored=!!st.roundScored;roundHasPlayed=!!st.roundHasPlayed;roundPlayedKeys=new Set(st.roundPlayedKeys||[]);
+ song=songs.find(s=>s.id===st.songId)||null;pair=(st.pairIds||[]).map(id=>songs.find(s=>s.id===id)).filter(Boolean);currentCats=st.currentCats||["year"];bonusNow=!!st.bonusNow;roundAnswers=st.roundAnswers||[];roundPhase=st.roundPhase||"answering";roundScored=!!st.roundScored;roundHasPlayed=!!st.roundHasPlayed;roundPlayedKeys=new Set(st.roundPlayedKeys||[]);lastPlayedKey=st.lastPlayedKey||null;
  show("round");keepAwake();$("bonusBanner").classList.toggle("hidden",!bonusNow);$("rno").textContent=`Runde ${roundIndex} / ${total}`;$("badge").textContent=am==="all"?"Alle gleichzeitig":"Nacheinander · gleicher Song";
  $("rev").classList.add("hidden");$("rev").style.display="none";$("roundContent").classList.remove("hidden");$("roundSetup").classList.add("hidden");
  let phase=roundPhase;renderRound(true);roundPhase=phase;
