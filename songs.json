@@ -16014,5 +16014,1030 @@
       "year": 2016,
       "winner": false
     }
+  },
+  {
+    "id": 714,
+    "title": "All Along the Watchtower",
+    "artist": "Jimi Hendrix",
+    "year": 1968,
+    "country": "USA",
+    "genre": "Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Hendrix machte aus Dylans Folk-Song eine elektrische Rock-Neuinterpretation; Dylan übernahm später selbst Elemente dieser Fassung live.",
+    "coverOf": {
+      "title": "All Along the Watchtower",
+      "artist": "Bob Dylan",
+      "year": 1967
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 715,
+    "title": "Hurt",
+    "artist": "Johnny Cash",
+    "year": 2002,
+    "country": "USA",
+    "genre": "Alternative Country",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Cash verwandelte den Nine-Inch-Nails-Song in eine karge Spätwerk-Ballade; das Video wurde zu einem seiner bekanntesten.",
+    "coverOf": {
+      "title": "Hurt",
+      "artist": "Nine Inch Nails",
+      "year": 1994
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 716,
+    "title": "Nothing Compares 2 U",
+    "artist": "Sinéad O’Connor",
+    "year": 1990,
+    "country": "Irland",
+    "genre": "Pop",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Prince schrieb den Song; zuerst erschien er 1985 auf einem Album seiner Band The Family.",
+    "coverOf": {
+      "title": "Nothing Compares 2 U",
+      "artist": "The Family / Prince",
+      "year": 1985
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 717,
+    "title": "Valerie",
+    "artist": "Amy Winehouse",
+    "year": 2007,
+    "country": "UK",
+    "genre": "Soul",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die bekannte Winehouse-Fassung entstand mit Mark Ronson; das Original stammt von der Liverpooler Band The Zutons.",
+    "coverOf": {
+      "title": "Valerie",
+      "artist": "The Zutons",
+      "year": 2006
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 718,
+    "title": "The Man Who Sold the World",
+    "artist": "Nirvana",
+    "year": 1994,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Nirvana spielten Bowies Song bei MTV Unplugged; viele jüngere Hörer hielten ihn danach zunächst für einen Nirvana-Song.",
+    "coverOf": {
+      "title": "The Man Who Sold the World",
+      "artist": "David Bowie",
+      "year": 1970
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 719,
+    "title": "Hallelujah",
+    "artist": "Jeff Buckley",
+    "year": 1994,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Buckleys intime Fassung basiert stark auf John Cales früherer Neuinterpretation von Cohens Original.",
+    "coverOf": {
+      "title": "Hallelujah",
+      "artist": "Leonard Cohen",
+      "year": 1984
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 720,
+    "title": "Mad World",
+    "artist": "Gary Jules",
+    "year": 2001,
+    "country": "USA",
+    "genre": "Alternative",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die verlangsamte Fassung wurde für Donnie Darko aufgenommen und erreichte später Weihnachten 2003 Platz 1 in Großbritannien.",
+    "coverOf": {
+      "title": "Mad World",
+      "artist": "Tears for Fears",
+      "year": 1982
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 721,
+    "title": "Smooth Criminal",
+    "artist": "Alien Ant Farm",
+    "year": 2001,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die Nu-Metal/Alternative-Rock-Version wurde zum größten internationalen Hit der Band.",
+    "coverOf": {
+      "title": "Smooth Criminal",
+      "artist": "Michael Jackson",
+      "year": 1987
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 722,
+    "title": "Personal Jesus",
+    "artist": "Marilyn Manson",
+    "year": 2004,
+    "country": "USA",
+    "genre": "Industrial Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Manson nahm den Depeche-Mode-Klassiker für seine Best-of-Phase neu auf.",
+    "coverOf": {
+      "title": "Personal Jesus",
+      "artist": "Depeche Mode",
+      "year": 1989
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 723,
+    "title": "I Just Don’t Know What to Do with Myself",
+    "artist": "The White Stripes",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Garage Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Der Bacharach/David-Song wurde schon in den 60ern mehrfach aufgenommen; die White Stripes machten daraus Garage Rock.",
+    "coverOf": {
+      "title": "I Just Don’t Know What to Do with Myself",
+      "artist": "Tommy Hunt",
+      "year": 1962
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 724,
+    "title": "Running Up That Hill",
+    "artist": "Placebo",
+    "year": 2003,
+    "country": "UK",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Placebo machten aus Kate Bushs Synth-Pop-Klassiker eine dunkle, verlangsamte Alternative-Version.",
+    "coverOf": {
+      "title": "Running Up That Hill",
+      "artist": "Kate Bush",
+      "year": 1985
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 725,
+    "title": "Love Will Tear Us Apart",
+    "artist": "Nouvelle Vague",
+    "year": 2004,
+    "country": "Frankreich",
+    "genre": "Bossa Nova",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Nouvelle Vague bauten ihr Konzept darauf auf, Post-Punk/New-Wave-Songs als Bossa-Nova-artige Covers neu zu denken.",
+    "coverOf": {
+      "title": "Love Will Tear Us Apart",
+      "artist": "Joy Division",
+      "year": 1980
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 726,
+    "title": "Too Drunk to Fuck",
+    "artist": "Nouvelle Vague",
+    "year": 2004,
+    "country": "Frankreich",
+    "genre": "Bossa Nova",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Ein Hardcore-Punk-Song der Dead Kennedys wird hier bewusst in eine sanfte Lounge/Bossa-Fassung gedreht.",
+    "coverOf": {
+      "title": "Too Drunk to Fuck",
+      "artist": "Dead Kennedys",
+      "year": 1981
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 727,
+    "title": "Creep",
+    "artist": "Scala & Kolacny Brothers",
+    "year": 2002,
+    "country": "Belgien",
+    "genre": "Choral",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Der belgische Mädchenchor machte Radioheads Creep zu einer reduzierten Chorversion.",
+    "coverOf": {
+      "title": "Creep",
+      "artist": "Radiohead",
+      "year": 1992
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 728,
+    "title": "Heartbeats",
+    "artist": "José González",
+    "year": 2003,
+    "country": "Schweden",
+    "genre": "Indie Folk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "González reduzierte den elektronischen The-Knife-Song auf Stimme und Akustikgitarre.",
+    "coverOf": {
+      "title": "Heartbeats",
+      "artist": "The Knife",
+      "year": 2002
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 729,
+    "title": "Somewhere Only We Know",
+    "artist": "Lily Allen",
+    "year": 2013,
+    "country": "UK",
+    "genre": "Pop",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Allens Keane-Cover wurde für eine Weihnachtskampagne aufgenommen und erreichte Platz 1 in Großbritannien.",
+    "coverOf": {
+      "title": "Somewhere Only We Know",
+      "artist": "Keane",
+      "year": 2004
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 730,
+    "title": "The Sound of Silence",
+    "artist": "Disturbed",
+    "year": 2015,
+    "country": "USA",
+    "genre": "Metal",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Disturbed machten aus dem Folk-Klassiker eine dramatische Rock/Metal-Ballade mit orchestralem Aufbau.",
+    "coverOf": {
+      "title": "The Sound of Silence",
+      "artist": "Simon & Garfunkel",
+      "year": 1964
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 731,
+    "title": "Feeling Good",
+    "artist": "Muse",
+    "year": 2001,
+    "country": "UK",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Der Song stammt aus dem Musical The Roar of the Greasepaint; Nina Simones Version von 1965 wurde zur berühmten Vorlage.",
+    "coverOf": {
+      "title": "Feeling Good",
+      "artist": "Cy Grant / Nina Simone",
+      "year": 1964
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 732,
+    "title": "I Will Survive",
+    "artist": "Cake",
+    "year": 1996,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Cake ersetzten den Disco-Glanz des Originals durch trockenen Alternative Rock und Trompete.",
+    "coverOf": {
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "year": 1978
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 733,
+    "title": "I Fought the Law",
+    "artist": "The Clash",
+    "year": 1979,
+    "country": "UK",
+    "genre": "Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Der Song wurde von Sonny Curtis geschrieben; vor The Clash war bereits die Bobby-Fuller-Fassung ein Hit.",
+    "coverOf": {
+      "title": "I Fought the Law",
+      "artist": "The Crickets",
+      "year": 1960
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 734,
+    "title": "Red Red Wine",
+    "artist": "UB40",
+    "year": 1983,
+    "country": "UK",
+    "genre": "Reggae",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "UB40 orientierten sich stärker an Tony Tribes Reggae-Cover als an Neil Diamonds Original.",
+    "coverOf": {
+      "title": "Red Red Wine",
+      "artist": "Neil Diamond",
+      "year": 1967
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 735,
+    "title": "The Tide Is High",
+    "artist": "Blondie",
+    "year": 1980,
+    "country": "USA",
+    "genre": "New Wave",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Blondie verwandelten den jamaikanischen Rocksteady-Song der Paragons in einen New-Wave/Reggae-Pop-Hit.",
+    "coverOf": {
+      "title": "The Tide Is High",
+      "artist": "The Paragons",
+      "year": 1967
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 736,
+    "title": "I Love Rock ’n’ Roll",
+    "artist": "Joan Jett & the Blackhearts",
+    "year": 1981,
+    "country": "USA",
+    "genre": "Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Joan Jett hörte das Original der Arrows im britischen Fernsehen und machte ihre spätere Aufnahme zum Welthit.",
+    "coverOf": {
+      "title": "I Love Rock ’n’ Roll",
+      "artist": "The Arrows",
+      "year": 1975
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 737,
+    "title": "1985",
+    "artist": "Bowling for Soup",
+    "year": 2004,
+    "country": "USA",
+    "genre": "Pop Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "SR-71 nahmen den Song zuerst auf; Bowling for Soup änderten Teile des Texts und machten ihn zum großen Hit.",
+    "coverOf": {
+      "title": "1985",
+      "artist": "SR-71",
+      "year": 2004
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 738,
+    "title": "The Boys of Summer",
+    "artist": "The Ataris",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Pop Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die Ataris machten aus Don Henleys 80er-Hit eine Pop-Punk-Version und änderten dabei sogar eine Referenz im Text.",
+    "coverOf": {
+      "title": "The Boys of Summer",
+      "artist": "Don Henley",
+      "year": 1984
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 739,
+    "title": "Bizarre Love Triangle",
+    "artist": "Frente!",
+    "year": 1992,
+    "country": "Australien",
+    "genre": "Indie Pop",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Frente! reduzierten New Orders Synth-Pop-Klassiker auf eine fast nackte Akustikfassung.",
+    "coverOf": {
+      "title": "Bizarre Love Triangle",
+      "artist": "New Order",
+      "year": 1986
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 740,
+    "title": "Blue Monday",
+    "artist": "Orgy",
+    "year": 1998,
+    "country": "USA",
+    "genre": "Industrial Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Orgy übersetzten New Orders elektronischen Klassiker in den Industrial-/Nu-Metal-Sound der späten 90er.",
+    "coverOf": {
+      "title": "Blue Monday",
+      "artist": "New Order",
+      "year": 1983
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 741,
+    "title": "Comfortably Numb",
+    "artist": "Scissor Sisters",
+    "year": 2004,
+    "country": "USA",
+    "genre": "Disco",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die Scissor Sisters machten aus Pink Floyds Rock-Klassiker eine falsettlastige Disco-Version.",
+    "coverOf": {
+      "title": "Comfortably Numb",
+      "artist": "Pink Floyd",
+      "year": 1979
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 742,
+    "title": "Personal Jesus",
+    "artist": "Johnny Cash",
+    "year": 2002,
+    "country": "USA",
+    "genre": "Country",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Cash nahm Depeche Modes Song für American IV auf und machte daraus eine reduzierte Country-/Gospel-Fassung.",
+    "coverOf": {
+      "title": "Personal Jesus",
+      "artist": "Depeche Mode",
+      "year": 1989
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 743,
+    "title": "Beggin’",
+    "artist": "Måneskin",
+    "year": 2017,
+    "country": "Italien",
+    "genre": "Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Der Song stammt von den Four Seasons; Måneskins Version wurde Jahre nach ihrer Aufnahme durch Streaming weltweit zum Hit.",
+    "coverOf": {
+      "title": "Beggin’",
+      "artist": "The Four Seasons",
+      "year": 1967
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 744,
+    "title": "Skinny Love",
+    "artist": "Birdy",
+    "year": 2011,
+    "country": "UK",
+    "genre": "Indie Pop",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Birdys Piano-Cover von Bon Iver wurde veröffentlicht, als sie erst 14 Jahre alt war.",
+    "coverOf": {
+      "title": "Skinny Love",
+      "artist": "Bon Iver",
+      "year": 2007
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 745,
+    "title": "Boyz-n-the-Hood",
+    "artist": "Dynamite Hack",
+    "year": 2000,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Das Gangsta-Rap-Stück wurde als betont sanfte Gitarrenballade neu interpretiert.",
+    "coverOf": {
+      "title": "Boyz-n-the-Hood",
+      "artist": "Eazy-E",
+      "year": 1987
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 746,
+    "title": "Come on Eileen",
+    "artist": "Save Ferris",
+    "year": 1997,
+    "country": "USA",
+    "genre": "Ska Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Save Ferris verwandelten den 80er-Pop-Hit in schnellen Ska-Punk.",
+    "coverOf": {
+      "title": "Come on Eileen",
+      "artist": "Dexys Midnight Runners",
+      "year": 1982
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 747,
+    "title": "Take on Me",
+    "artist": "Reel Big Fish",
+    "year": 1998,
+    "country": "USA",
+    "genre": "Ska Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die Ska-Punk-Fassung tauchte im Film BASEketball auf und wurde zu einem beliebten Live-Cover.",
+    "coverOf": {
+      "title": "Take on Me",
+      "artist": "a-ha",
+      "year": 1985
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 748,
+    "title": "Behind Blue Eyes",
+    "artist": "Limp Bizkit",
+    "year": 2003,
+    "country": "USA",
+    "genre": "Nu Metal",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Limp Bizkit nahmen den Who-Klassiker für Results May Vary auf und ergänzten eine elektronische Passage.",
+    "coverOf": {
+      "title": "Behind Blue Eyes",
+      "artist": "The Who",
+      "year": 1971
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 749,
+    "title": "Killing Me Softly",
+    "artist": "Fugees",
+    "year": 1996,
+    "country": "USA",
+    "genre": "Hip-Hop / Soul",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Vor den Fugees war vor allem Roberta Flacks 1973er Fassung berühmt; der Song wurde zuerst von Lori Lieberman veröffentlicht.",
+    "coverOf": {
+      "title": "Killing Me Softly",
+      "artist": "Lori Lieberman",
+      "year": 1972
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 750,
+    "title": "Torn",
+    "artist": "Natalie Imbruglia",
+    "year": 1997,
+    "country": "Australien",
+    "genre": "Pop Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Torn war kein Imbruglia-Original: Ednaswap veröffentlichten den Song zuvor; auch eine dänische Fassung erschien vor ihrem Welthit.",
+    "coverOf": {
+      "title": "Torn",
+      "artist": "Ednaswap",
+      "year": 1995
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 751,
+    "title": "While My Guitar Gently Weeps",
+    "artist": "Santana feat. India.Arie & Yo-Yo Ma",
+    "year": 2010,
+    "country": "USA",
+    "genre": "Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Santana nahm George Harrisons Beatles-Song mit India.Arie und Yo-Yo Ma neu auf.",
+    "coverOf": {
+      "title": "While My Guitar Gently Weeps",
+      "artist": "The Beatles",
+      "year": 1968
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 752,
+    "title": "Dear Prudence",
+    "artist": "Siouxsie and the Banshees",
+    "year": 1983,
+    "country": "UK",
+    "genre": "Post-Punk",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Die Banshees machten den Beatles-Song zu einem ihrer größten britischen Hits.",
+    "coverOf": {
+      "title": "Dear Prudence",
+      "artist": "The Beatles",
+      "year": 1968
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 753,
+    "title": "Easy",
+    "artist": "Faith No More",
+    "year": 1992,
+    "country": "USA",
+    "genre": "Alternative Rock",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Faith No More coverten die Commodores-Ballade zunächst als überraschenden Kontrast zu ihrem härteren Repertoire.",
+    "coverOf": {
+      "title": "Easy",
+      "artist": "Commodores",
+      "year": 1977
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
+  },
+  {
+    "id": 754,
+    "title": "Renegades of Funk",
+    "artist": "Rage Against the Machine",
+    "year": 2000,
+    "country": "USA",
+    "genre": "Rap Metal",
+    "film": null,
+    "pools": [
+      "cover",
+      "mix"
+    ],
+    "album": null,
+    "language": "Englisch",
+    "nerd": "Das Album Renegades bestand vollständig aus Covers; dieser Track stammt aus der frühen Hip-Hop-/Electro-Ära.",
+    "coverOf": {
+      "title": "Renegades of Funk",
+      "artist": "Afrika Bambaataa & Soulsonic Force",
+      "year": 1983
+    },
+    "samples": [],
+    "sampledBy": [],
+    "relatesTo": null,
+    "esc": null
   }
 ]
