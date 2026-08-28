@@ -98,7 +98,7 @@ Das Layout ist touchfreundlich und responsive:
 Wenn der Browser es unterstützt, versucht Song Guess während einer Partie den Bildschirm wach zu halten.
 
 ## Songbibliothek
-Version 3.2 enthält 281 Songs. Der Schwerpunkt liegt von den 1950ern bis heute, mit einigen älteren Klassikern. Die Bibliothek ist als kuratierter Start gedacht und kann auf mehrere hundert Songs wachsen.
+Version 5.0.26 enthält 762 Songs. Der Schwerpunkt reicht von Klassikern bis zu aktuellen Titeln aus 2026.
 
 ## Wichtig zu Spotify
 Song Guess nutzt Spotify für die Wiedergabe. Die App steht derzeit im Spotify Development Mode. Daher können nicht automatisch beliebige Spotify-Accounts die App autorisieren; freigegebene Testnutzer:innen funktionieren.
@@ -131,6 +131,6 @@ Am Spielende zeigt Song Guess alle gehörten Songs mit Spotify-Suchlinks. Die Li
 - Teilantworten sind erlaubt; besonders Bonusrunden führen nicht mehr in eine Sackgasse.
 - Passen wird automatisch mit 0 Punkten als vollständig gewertet.
 - Bonuswerte werden bei der Punktevergabe sichtbar verdoppelt.
-- Der laufende Song wird beim Speichern der Punkte nicht mehr abrupt gestoppt; er endet erst beim Start eines neuen Songs oder durch Pause.
+- Nach Reveal und Punktevergabe bleibt die aktuelle Runde sichtbar. Erst „Nächste Runde“ wechselt Song und Frage.
 - Endscreen-Soundtrack hat ein stabiles zweispaltiges Layout.
 - Cover-Metadaten ergänzt und kleine Musikpools erweitert.

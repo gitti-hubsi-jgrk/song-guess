@@ -1,6 +1,5 @@
 # Song Guess v4.1 — Playlist-/Referenzbuild
-
-360 Songs. Große UX-/Spielfluss-Version aus dem ersten echten Spieltest.
+762 Songs. Stabilitäts-, Daten- und Spielfluss-Update mit explizitem Rundenwechsel.
 
 Neu u. a.:
 - gleiche Frage + gleicher Song für alle, nacheinander oder gleichzeitig
@@ -23,7 +22,7 @@ Neu u. a.:
 
 
 ## Referenzpool-Update
-- Bibliothek gesamt: **487 Songs**.
+- Bibliothek gesamt: **762 Songs**.
 
 
 ## v4.2 Pool work
@@ -41,7 +40,7 @@ Neu u. a.:
 - Teilantworten sind erlaubt; besonders Bonusrunden führen nicht mehr in eine Sackgasse.
 - Passen wird automatisch mit 0 Punkten als vollständig gewertet.
 - Bonuswerte werden bei der Punktevergabe sichtbar verdoppelt.
-- Der laufende Song wird beim Speichern der Punkte nicht mehr abrupt gestoppt; er endet erst beim Start eines neuen Songs oder durch Pause.
+- Nach Reveal und Punktevergabe bleibt die Runde stehen. Erst „Nächste Runde“ stoppt den alten Song und erzeugt die nächste Runde.
 - Endscreen-Soundtrack hat ein stabiles zweispaltiges Layout.
 - Cover-Metadaten ergänzt und kleine Musikpools erweitert.
 
