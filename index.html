@@ -59,7 +59,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.31 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.32 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -131,11 +131,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.31: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.32: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
 
 
-/* v5.0.31 polish */
+/* v5.0.32 polish */
 .hero{position:relative;overflow:hidden}
 .discoBall{position:absolute;right:18px;top:14px;font-size:34px;filter:drop-shadow(0 0 12px #b77cff88);animation:discosway 4s ease-in-out infinite;transform-origin:50% -20px}
 @keyframes discosway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
@@ -160,11 +160,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.endActions{grid-template-columns:1fr}.discoBall{font-size:28px}.scorebar{max-width:none;margin-right:0!important}}
 
 
-/* v5.0.31 polish */
+/* v5.0.32 polish */
 @media(min-width:901px){#round{padding:24px 42px 38px!important}.roundbody{grid-template-columns:minmax(390px,.9fr) minmax(480px,1.1fr)!important;gap:72px!important;align-items:start!important}.playcol{padding-left:18px!important}.answercol{padding:0 32px 28px 0!important}.answercol>#answers,.answercol>#rev,.answercol>#revbtn,.answercol>#otherSongBtn{max-width:720px!important;margin-left:auto!important;margin-right:auto!important}.scorebar{margin:26px auto 0!important;max-width:720px!important;width:100%!important}}
 .recordWrap{position:relative;width:max-content;margin:18px auto 10px}.vinyl{position:relative!important}.vinylMark{position:absolute;display:block;width:11px;height:11px;border-radius:50%;background:#f5f5f5;left:22%;top:27%;box-shadow:0 0 9px #fff;z-index:5}.vinyl.spin{animation:vinylspin 1.55s linear infinite!important}@keyframes vinylspin{to{transform:rotate(360deg)}}.playGlyph{display:inline-block;font-size:.82em;letter-spacing:-4px}.timerDisplay{position:absolute;right:-52px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#24262c;border:2px solid #8d5cff;font-weight:800}.timerDisplay.timeup{font-size:10px;border-color:#ffcf54}.score{font-size:14px!important}.score b{font-size:18px}.score:first-letter{font-size:28px}.roundDetail{background:#22252a;border-radius:12px;padding:10px 13px;margin:8px 0;text-align:left}.roundDetail summary{cursor:pointer;font-weight:700}.roundPlayer{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid #33373d;margin-top:7px}.roundPlayer span{color:var(--muted);font-size:12px;text-align:right}.medal{font-size:25px;vertical-align:middle}
 
-/* v5.0.31 final polish */
+/* v5.0.32 final polish */
 .vinylMark{display:none!important}
 .vinylRPM{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;font-size:12px;line-height:.9;font-weight:800;letter-spacing:.5px;color:#f4eafa;text-align:center;pointer-events:none}
 .vinylRPM small{font-size:6px;letter-spacing:1.5px}
@@ -177,7 +177,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 #home .hero:after{width:4px;height:4px;right:44px;top:88px;box-shadow:30px 22px 0 #fff,-50px 18px 0 #e7b5ff,10px 55px 0 #8bdcff}
 @media(max-width:900px){#round .scorebar{margin:22px 14px 0!important;width:calc(100% - 28px)!important}.vinylRPM{font-size:11px}#home .hero .discoBall{font-size:38px!important;right:18px!important}}
 
-/* v5.0.31 */
+/* v5.0.32 */
 #home .tagline{margin:-4px 0 12px;color:#d9c4ed;font-size:14px;letter-spacing:.04em}
 #home .hero{overflow:hidden;isolation:isolate}#home .hero>*:not(.discoField){position:relative;z-index:2}
 .discoField{position:absolute;inset:0;pointer-events:none;z-index:1}.discoField span{position:absolute;filter:drop-shadow(0 0 18px rgba(190,110,255,.8));animation:discoFloat 6s ease-in-out infinite}.discoField span:nth-child(1){font-size:48px;right:28px;top:16px}.discoField span:nth-child(2){font-size:25px;left:28px;top:28px;animation-delay:-2s;opacity:.78}.discoField span:nth-child(3){font-size:19px;right:16%;bottom:24px;animation-delay:-4s;opacity:.7}
@@ -186,7 +186,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .play{width:76px!important;height:76px!important;margin:15px auto!important;background:radial-gradient(circle at 50% 42%,#30253c,#17191e 70%)!important;color:#f6edff!important;border:1px solid #8f55dc!important;font-size:29px!important;box-shadow:0 0 0 5px rgba(142,77,219,.08),0 0 26px rgba(157,82,235,.38),0 14px 28px #0008!important}.play:hover{box-shadow:0 0 0 6px rgba(142,77,219,.12),0 0 34px rgba(184,103,255,.55),0 14px 28px #0008!important}.playGlyph{letter-spacing:0!important;transform:translateX(1px)}.transportrow{grid-template-columns:1fr!important;max-width:250px;margin-left:auto;margin-right:auto}
 @media(max-width:700px){.discoField span:nth-child(2){display:none}.discoField span:nth-child(3){right:10px;bottom:12px}#cats.chips{grid-template-columns:repeat(3,minmax(0,1fr))}#cats .chip{min-height:78px;padding:9px 5px}#cats .catText{font-size:11px}#cats .catIcon{font-size:16px;margin-bottom:6px}}
 
-/* v5.0.31 */
+/* v5.0.32 */
 .roundControls{margin:0 0 14px;padding:0 4px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
 .roundControls .row{margin-left:auto}.menuRoundBtn{flex:none}
 @media(min-width:901px){.roundControls{width:100%;max-width:720px;margin:0 auto 16px!important}.answercol{padding-top:0!important}}
@@ -206,7 +206,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @keyframes clubGlow{0%{transform:translate(-5px,3px) scale(.75);opacity:.22}50%{opacity:.8}100%{transform:translate(8px,-5px) scale(1.35);opacity:.4}}
 @media(max-width:700px){.discoField .ball{font-size:31px!important}.discoField .b1{right:14px}.discoField .b2{left:14px}.discoField .l4,.discoField .l6,.discoField .l10{display:none}.discoField .light{filter:blur(7px);opacity:.42}.lyricslink{margin-left:0!important;margin-top:8px!important}}
 
-/* v5.0.31 setup choices + transport + hierarchy */
+/* v5.0.32 setup choices + transport + hierarchy */
 .playeredit{grid-template-columns:minmax(0,1fr) 78px auto}.playeredit .pname{font-size:15px;font-weight:650}.playeredit .pavatar{font-size:24px;text-align:center;padding-left:8px;padding-right:8px}
 .setupChoices{display:flex;gap:7px;flex-wrap:wrap}.setupChoice{border:1px solid #3a3d43;background:#23262b;color:#bbb;border-radius:999px;padding:9px 13px;font-weight:720;cursor:pointer}.setupChoice.on{background:#342441;color:#fff;border-color:#a86aff;box-shadow:0 0 0 1px #a86aff55}.customCount{margin-top:9px;max-width:180px}
 .roundControls{display:flex;align-items:center;justify-content:space-between;gap:12px}.roundStatus{display:flex;align-items:center;gap:7px;min-width:0;white-space:nowrap;color:#a4a1a8;font-weight:600}.roundStatus #rno{white-space:nowrap;color:#c4c1c7}.roundStatus #badge:before{content:"·";margin-right:7px;color:#5f6066}.roundControls .row{flex-wrap:nowrap!important}.roundControls .secondary{font-weight:700}
@@ -214,7 +214,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.roundControls{align-items:flex-start}.roundStatus{flex-direction:column;align-items:flex-start;gap:2px;white-space:normal}.roundStatus #badge:before{content:"";margin:0}.roundStatus #badge{font-size:11px}.setupChoice{padding:8px 11px}.answerbox{padding:14px}.answerActions button{font-size:13px}.playeredit{grid-template-columns:minmax(0,1fr) 70px auto!important}}
 
 
-/* v5.0.31 — debug/polish */
+/* v5.0.32 — debug/polish */
 .question h2{font-family:"Avenir Next","Trebuchet MS",system-ui,sans-serif!important;font-weight:650!important;letter-spacing:-.015em!important}
 .primary,.secondary,.chip,.modebtn{font-weight:680}.answerActions button{font-weight:620}.roundControls .secondary{font-weight:650}
 .vinylControl{cursor:pointer;transition:filter .18s ease,box-shadow .18s ease,transform .18s ease}.vinylControl:hover{filter:brightness(1.08);box-shadow:0 0 52px #9450ef66}.vinylControl:focus-visible,.songboxControl:focus-visible{outline:2px solid #b77aff;outline-offset:4px}
@@ -225,7 +225,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @keyframes discoBobRight{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}@keyframes discoBobLeft{0%,100%{transform:scaleX(-1) translateY(0)}50%{transform:scaleX(-1) translateY(5px)}}
 @media(max-width:700px){.discoField .b1,.discoField .b2{font-size:31px!important}.discoField .b1{right:14px!important}.discoField .b2{left:14px!important}}
 
-/* v5.0.31 — layout polish + clearer hierarchy */
+/* v5.0.32 — layout polish + clearer hierarchy */
 .question h2{font-weight:610!important;letter-spacing:-.018em!important}
 .primary,.secondary,.chip,.modebtn{font-weight:620!important}
 .playerName{font-weight:650!important}
@@ -281,7 +281,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.31 — Startseite: Hero bleibt unverändert, nur Disco-Deko */
+/* v5.0.32 — Startseite: Hero bleibt unverändert, nur Disco-Deko */
 #home .hero{position:relative;overflow:hidden}
 #home .discoField{
   position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
@@ -341,19 +341,75 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
   #home .beamGlow{width:64px!important;height:64px!important;filter:blur(15px)!important}
 }
 
+
+/* v5.0.32 — setup unification + reliable CSS disco balls */
+#setup .field>label{font-size:18px;font-weight:760;letter-spacing:-.01em;margin-bottom:12px}
+#setup .setupChoices,#setup .decadechips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#setup .setupChoice,#setup .decadechips button{
+ min-height:44px;box-sizing:border-box;padding:9px 16px;border:1px solid #41444b;border-radius:14px;
+ background:#25282e;color:#c9c9cc;font-size:16px;font-weight:680;line-height:1;box-shadow:none
+}
+#setup .setupChoice:hover,#setup .decadechips button:hover{border-color:#71637f;color:#fff}
+#setup .setupChoice.on,#setup .decadechips button.on{
+ background:#352441;color:#fff;border-color:#a86aff;box-shadow:0 0 0 1px rgba(168,106,255,.24),0 6px 18px rgba(105,56,155,.12)
+}
+#setup #countChoices .setupChoice[data-count]:not([data-count="custom"]){min-width:58px}
+#setup #countChoices .setupChoice[data-count="custom"]{padding-inline:17px}
+#setup #timerChoices .setupChoice{min-width:74px}
+#setup .toggleline{min-height:58px;padding:12px 0;gap:18px}
+#setup .toggleline span{font-size:15px;line-height:1.3}
+#setup .toggleline input[type="checkbox"]{
+ appearance:none;-webkit-appearance:none;width:44px;height:25px;min-width:44px;border-radius:999px;
+ background:#30333a;border:1px solid #4a4e56;position:relative;cursor:pointer;transition:.18s ease
+}
+#setup .toggleline input[type="checkbox"]:after{
+ content:"";position:absolute;width:19px;height:19px;left:2px;top:2px;border-radius:50%;background:#d7d7da;transition:.18s ease
+}
+#setup .toggleline input[type="checkbox"]:checked{background:#6f35c9;border-color:#a86aff}
+#setup .toggleline input[type="checkbox"]:checked:after{transform:translateX(19px);background:#fff}
+#setup>.primary{min-height:54px;margin-top:20px!important;border-radius:15px;font-size:18px}
+#setup .setupgrid>.card{padding:28px 30px}
+#setup .field{margin:24px 0}
+#setup #cats.chips{gap:9px}
+#setup #cats .chip{min-height:96px;padding:12px 7px;border-radius:16px;overflow:hidden}
+#setup #cats .catIcon{font-size:20px;margin-bottom:7px}
+#setup #cats .catText{font-size:12.5px!important;font-weight:730!important;line-height:1.08!important;letter-spacing:-.015em;white-space:normal!important;overflow-wrap:normal;word-break:normal}
+#setup #cats .chip[data-key="decade"] .catText,#setup #cats .chip[data-key="artist"] .catText{font-size:11.5px!important;white-space:nowrap!important}
+#setup #cats .chip[data-key="compare"] .catText{font-size:11.5px!important}
+
+/* two actual CSS-drawn mirror-symmetric disco balls: no emoji rendering */
+#home .discoField .ball{
+ display:block!important;width:78px!important;height:78px!important;top:24px!important;border-radius:50%!important;
+ background:
+  linear-gradient(90deg,transparent 22%,rgba(45,48,55,.7) 23% 25%,transparent 26% 48%,rgba(45,48,55,.7) 49% 51%,transparent 52% 74%,rgba(45,48,55,.7) 75% 77%,transparent 78%),
+  linear-gradient(0deg,transparent 22%,rgba(45,48,55,.7) 23% 25%,transparent 26% 48%,rgba(45,48,55,.7) 49% 51%,transparent 52% 74%,rgba(45,48,55,.7) 75% 77%,transparent 78%),
+  radial-gradient(circle at 34% 28%,#fff 0 7%,#e7e9ed 8% 24%,#aeb3bc 45%,#727985 72%,#3e434c 100%)!important;
+ border:1px solid rgba(255,255,255,.45)!important;
+ box-shadow:inset -10px -12px 18px rgba(0,0,0,.28),inset 8px 8px 13px rgba(255,255,255,.22),0 0 22px rgba(178,113,255,.30)!important;
+ filter:none!important;opacity:.96!important;animation:sgBallBob 6.5s ease-in-out infinite!important
+}
+#home .discoField .bLeft{left:34px!important;right:auto!important;transform:none!important;animation-delay:-3.25s!important}
+#home .discoField .bRight{right:34px!important;left:auto!important;transform:none!important}
+@keyframes sgBallBob{0%,100%{translate:0 0}50%{translate:0 -4px}}
+@media(max-width:700px){
+ #setup .setupgrid>.card{padding:20px 18px}#setup .setupChoice,#setup .decadechips button{min-height:40px;padding:8px 12px;font-size:14px}
+ #setup #cats .chip{min-height:82px;padding:9px 5px}#setup #cats .catText{font-size:10.5px!important}#setup #cats .chip[data-key="decade"] .catText,#setup #cats .chip[data-key="artist"] .catText,#setup #cats .chip[data-key="compare"] .catText{font-size:9.5px!important}
+ #home .discoField .ball{width:58px!important;height:58px!important;top:18px!important}#home .discoField .bLeft{left:12px!important}#home .discoField .bRight{right:12px!important}
+}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
  <div class="card hero"><div class="discoField" aria-hidden="true">
-      <span class="ball bLeft">🪩</span>
-      <span class="ball bRight">🪩</span>
+      <span class="ball bLeft" aria-hidden="true"></span>
+      <span class="ball bRight" aria-hidden="true"></span>
       <i class="beamGlow g1"></i><i class="beamGlow g2"></i><i class="beamGlow g3"></i><i class="beamGlow g4"></i>
       <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
       <i class="spark s5"></i><i class="spark s6"></i><i class="spark s7"></i><i class="spark s8"></i>
       <i class="spark s9"></i><i class="spark s10"></i><i class="spark s11"></i><i class="spark s12"></i>
       <i class="spark s13"></i><i class="spark s14"></i><i class="spark s15"></i><i class="spark s16"></i>
       <i class="spark s17"></i><i class="spark s18"></i>
-</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.31</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.32</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
@@ -361,13 +417,13 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
  <div class="setupgrid">
   <div class="card">
-   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name und Figur werden nur lokal auf diesem Gerät gespeichert.</p></div>
-   <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p><button class="secondary" style="margin-top:8px" onclick="showFavorites()">♡ Favoriten verwalten</button></div>
-   <div class="field"><label>3 · Jahrzehnte</label><div id="decades" class="decadechips"></div></div>
-<div class="field"><label>4 · Anzahl Songs</label><input id="count" type="hidden" value="15"><div id="countChoices" class="setupChoices"><button class="setupChoice" data-count="5">5</button><button class="setupChoice" data-count="10">10</button><button class="setupChoice on" data-count="15">15</button><button class="setupChoice" data-count="20">20</button><button class="setupChoice" data-count="30">30</button><button class="setupChoice" data-count="custom">✏️ Selbst definieren</button></div><div id="customCountWrap" class="customCount hidden"><input id="customCount" class="input" type="number" min="1" max="100" value="15" aria-label="Eigene Songanzahl"></div></div>
+   <div class="field"><label>Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name und Figur werden nur lokal auf diesem Gerät gespeichert.</p></div>
+   <div class="field"><label>Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p><button class="secondary" style="margin-top:8px" onclick="showFavorites()">♡ Favoriten verwalten</button></div>
+   <div class="field"><label>Jahrzehnte</label><div id="decades" class="decadechips"></div></div>
+<div class="field"><label>Anzahl Songs</label><input id="count" type="hidden" value="15"><div id="countChoices" class="setupChoices"><button class="setupChoice" data-count="5">5</button><button class="setupChoice" data-count="10">10</button><button class="setupChoice on" data-count="15">15</button><button class="setupChoice" data-count="20">20</button><button class="setupChoice" data-count="30">30</button><button class="setupChoice" data-count="custom">✏️ Selbst definieren</button></div><div id="customCountWrap" class="customCount hidden"><input id="customCount" class="input" type="number" min="1" max="100" value="15" aria-label="Eigene Songanzahl"></div></div>
   </div>
   <div class="card">
-   <div class="field"><label>5 · Fragenpool</label><div id="cats" class="chips"></div></div>
+   <div class="field"><label>Fragenpool</label><div id="cats" class="chips"></div></div>
    <div class="field"><label>Fragenwahl</label><div class="seg"><button data-g="qm" data-v="game" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
    <div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
    <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Alle der Reihe nach</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
@@ -881,8 +937,9 @@ function endGame(early=false){
  clearGuessTimer();if(early)stopPlayback();else if(playingKey){playingKey="carry";updatePlayUI()}let ranking=rankWithPlaces(),game={date:new Date().toISOString(),players:names,scores:[...scores],ranking,pools:[...selectedPools],categories:[...selectedCats],rounds:total,songIds:[...usedIds],details:completedRounds};
  if(saveHistory){let h=JSON.parse(localStorage.getItem("sg_history")||"[]");h.unshift(game);localStorage.setItem("sg_history",JSON.stringify(h.slice(0,50)))}if(saveStats){let st=JSON.parse(localStorage.getItem("sg_stats")||"{}");let max=Math.max(...scores);names.forEach((n,i)=>{st[n]??={games:0,wins:0,points:0};st[n].games++;st[n].points+=scores[i];if(scores[i]===max)st[n].wins++});localStorage.setItem("sg_stats",JSON.stringify(st))}
  localStorage.removeItem("sg_active");$("resumeBtn").classList.add("hidden");show("home",!early);let tiedFirst=ranking.filter(x=>x.place===1).length>1;
- document.querySelector("#home .hero").innerHTML=`<h2>${early?"Spiel beendet":"🏆 Spiel beendet"}</h2><div class="reveal">${ranking.map(x=>`<div class="endrank"><span class="medal">${medalFor(x.place)}</span> <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div>${tiedFirst?`<button class="secondary" onclick="startTiebreak()">🎵 Stechen spielen</button>`:""}<h3>📊 Runden & Punkte</h3><div class="roundDetails">${roundDetailHTML()}</div><h3>🎧 Soundtrack dieser Partie</h3><div class="soundtrack">${gameTracks.map(s=>`<div class="trackrow"><span>${s.title}<br><small>${s.artist} · ${s.year}</small></span><a href="https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}" target="_blank">Spotify</a></div>`).join("")}</div><div class="endActions"><button class="secondary" onclick="copyGamePlaylist()">📋 Liste kopieren</button><button class="secondary" onclick="downloadGameCSV()">⬇ CSV</button><button class="secondary" onclick="toggleStopResume()">⏹ / ▶ Musik</button></div><button class="primary" onclick="location.reload()">Neues Spiel</button>`;
+ document.querySelector("#home .hero").innerHTML=`<h2>${early?"Spiel beendet":"🏆 Spiel beendet"}</h2><div class="reveal">${ranking.map(x=>`<div class="endrank"><span class="medal">${medalFor(x.place)}</span> <b>${x.name}</b> — ${x.score} Punkte</div>`).join("")}</div>${tiedFirst?`<button class="secondary" onclick="startTiebreak()">🎵 Stechen spielen</button>`:""}<h3>📊 Runden & Punkte</h3><div class="roundDetails">${roundDetailHTML()}</div><h3>🎧 Soundtrack dieser Partie</h3><div class="soundtrack">${gameTracks.map(s=>`<div class="trackrow"><span>${s.title}<br><small>${s.artist} · ${s.year}</small></span><a href="https://open.spotify.com/search/${encodeURIComponent(s.title+" "+s.artist)}" target="_blank">Spotify</a></div>`).join("")}</div><div class="endActions"><button class="secondary" onclick="copyGamePlaylist()">📋 Liste kopieren</button><button class="secondary" onclick="downloadGameCSV()">⬇ CSV</button><button class="secondary" onclick="toggleStopResume()">⏹ / ▶ Musik</button></div><button class="primary" onclick="returnToHome()">⌂ Zum Startbildschirm</button>`;
 }
+function returnToHome(){location.reload()}
 function copyGamePlaylist(){let t=gameTracks.map(s=>`${s.artist} – ${s.title}`).join("\n");navigator.clipboard?.writeText(t);alert("Songliste als Text kopiert.")}
 function downloadGameCSV(){let esc=v=>`"${String(v??"").replaceAll('"','""')}"`,rows=[["Interpret","Titel","Jahr"],...gameTracks.map(s=>[s.artist,s.title,s.year])],csv=rows.map(r=>r.map(esc).join(",")).join("\n"),blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="song-guess-spiel.csv";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 function toggleFavorite(id,btn){let f=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));if(f.has(id)){f.delete(id);btn.textContent="♡ Favorit"}else{f.add(id);btn.textContent="♥ Favorit"}localStorage.setItem("sg_favs",JSON.stringify([...f]));updateFavoritePoolBadge()}
