@@ -59,7 +59,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.28 — explicit two-column round DOM; no grid-area indirection */
+/* v5.0.30 — explicit two-column round DOM; no grid-area indirection */
 #revbtn{
   width:100%;
   margin-top:10px;
@@ -131,11 +131,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 
 
-/* v5.0.28: Reveal visibility is explicit, not inferred from old layout state */
+/* v5.0.30: Reveal visibility is explicit, not inferred from old layout state */
 #revbtn:not(.hidden){display:block}
 
 
-/* v5.0.28 polish */
+/* v5.0.30 polish */
 .hero{position:relative;overflow:hidden}
 .discoBall{position:absolute;right:18px;top:14px;font-size:34px;filter:drop-shadow(0 0 12px #b77cff88);animation:discosway 4s ease-in-out infinite;transform-origin:50% -20px}
 @keyframes discosway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
@@ -160,11 +160,11 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.endActions{grid-template-columns:1fr}.discoBall{font-size:28px}.scorebar{max-width:none;margin-right:0!important}}
 
 
-/* v5.0.28 polish */
+/* v5.0.30 polish */
 @media(min-width:901px){#round{padding:24px 42px 38px!important}.roundbody{grid-template-columns:minmax(390px,.9fr) minmax(480px,1.1fr)!important;gap:72px!important;align-items:start!important}.playcol{padding-left:18px!important}.answercol{padding:0 32px 28px 0!important}.answercol>#answers,.answercol>#rev,.answercol>#revbtn,.answercol>#otherSongBtn{max-width:720px!important;margin-left:auto!important;margin-right:auto!important}.scorebar{margin:26px auto 0!important;max-width:720px!important;width:100%!important}}
 .recordWrap{position:relative;width:max-content;margin:18px auto 10px}.vinyl{position:relative!important}.vinylMark{position:absolute;display:block;width:11px;height:11px;border-radius:50%;background:#f5f5f5;left:22%;top:27%;box-shadow:0 0 9px #fff;z-index:5}.vinyl.spin{animation:vinylspin 1.55s linear infinite!important}@keyframes vinylspin{to{transform:rotate(360deg)}}.playGlyph{display:inline-block;font-size:.82em;letter-spacing:-4px}.timerDisplay{position:absolute;right:-52px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#24262c;border:2px solid #8d5cff;font-weight:800}.timerDisplay.timeup{font-size:10px;border-color:#ffcf54}.score{font-size:14px!important}.score b{font-size:18px}.score:first-letter{font-size:28px}.roundDetail{background:#22252a;border-radius:12px;padding:10px 13px;margin:8px 0;text-align:left}.roundDetail summary{cursor:pointer;font-weight:700}.roundPlayer{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid #33373d;margin-top:7px}.roundPlayer span{color:var(--muted);font-size:12px;text-align:right}.medal{font-size:25px;vertical-align:middle}
 
-/* v5.0.28 final polish */
+/* v5.0.30 final polish */
 .vinylMark{display:none!important}
 .vinylRPM{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;font-size:12px;line-height:.9;font-weight:800;letter-spacing:.5px;color:#f4eafa;text-align:center;pointer-events:none}
 .vinylRPM small{font-size:6px;letter-spacing:1.5px}
@@ -177,7 +177,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 #home .hero:after{width:4px;height:4px;right:44px;top:88px;box-shadow:30px 22px 0 #fff,-50px 18px 0 #e7b5ff,10px 55px 0 #8bdcff}
 @media(max-width:900px){#round .scorebar{margin:22px 14px 0!important;width:calc(100% - 28px)!important}.vinylRPM{font-size:11px}#home .hero .discoBall{font-size:38px!important;right:18px!important}}
 
-/* v5.0.28 */
+/* v5.0.30 */
 #home .tagline{margin:-4px 0 12px;color:#d9c4ed;font-size:14px;letter-spacing:.04em}
 #home .hero{overflow:hidden;isolation:isolate}#home .hero>*:not(.discoField){position:relative;z-index:2}
 .discoField{position:absolute;inset:0;pointer-events:none;z-index:1}.discoField span{position:absolute;filter:drop-shadow(0 0 18px rgba(190,110,255,.8));animation:discoFloat 6s ease-in-out infinite}.discoField span:nth-child(1){font-size:48px;right:28px;top:16px}.discoField span:nth-child(2){font-size:25px;left:28px;top:28px;animation-delay:-2s;opacity:.78}.discoField span:nth-child(3){font-size:19px;right:16%;bottom:24px;animation-delay:-4s;opacity:.7}
@@ -186,7 +186,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .play{width:76px!important;height:76px!important;margin:15px auto!important;background:radial-gradient(circle at 50% 42%,#30253c,#17191e 70%)!important;color:#f6edff!important;border:1px solid #8f55dc!important;font-size:29px!important;box-shadow:0 0 0 5px rgba(142,77,219,.08),0 0 26px rgba(157,82,235,.38),0 14px 28px #0008!important}.play:hover{box-shadow:0 0 0 6px rgba(142,77,219,.12),0 0 34px rgba(184,103,255,.55),0 14px 28px #0008!important}.playGlyph{letter-spacing:0!important;transform:translateX(1px)}.transportrow{grid-template-columns:1fr!important;max-width:250px;margin-left:auto;margin-right:auto}
 @media(max-width:700px){.discoField span:nth-child(2){display:none}.discoField span:nth-child(3){right:10px;bottom:12px}#cats.chips{grid-template-columns:repeat(3,minmax(0,1fr))}#cats .chip{min-height:78px;padding:9px 5px}#cats .catText{font-size:11px}#cats .catIcon{font-size:16px;margin-bottom:6px}}
 
-/* v5.0.28 */
+/* v5.0.30 */
 .roundControls{margin:0 0 14px;padding:0 4px 12px;border-bottom:1px solid rgba(255,255,255,.06)}
 .roundControls .row{margin-left:auto}.menuRoundBtn{flex:none}
 @media(min-width:901px){.roundControls{width:100%;max-width:720px;margin:0 auto 16px!important}.answercol{padding-top:0!important}}
@@ -206,7 +206,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @keyframes clubGlow{0%{transform:translate(-5px,3px) scale(.75);opacity:.22}50%{opacity:.8}100%{transform:translate(8px,-5px) scale(1.35);opacity:.4}}
 @media(max-width:700px){.discoField .ball{font-size:31px!important}.discoField .b1{right:14px}.discoField .b2{left:14px}.discoField .l4,.discoField .l6,.discoField .l10{display:none}.discoField .light{filter:blur(7px);opacity:.42}.lyricslink{margin-left:0!important;margin-top:8px!important}}
 
-/* v5.0.28 setup choices + transport + hierarchy */
+/* v5.0.30 setup choices + transport + hierarchy */
 .playeredit{grid-template-columns:minmax(0,1fr) 78px auto}.playeredit .pname{font-size:15px;font-weight:650}.playeredit .pavatar{font-size:24px;text-align:center;padding-left:8px;padding-right:8px}
 .setupChoices{display:flex;gap:7px;flex-wrap:wrap}.setupChoice{border:1px solid #3a3d43;background:#23262b;color:#bbb;border-radius:999px;padding:9px 13px;font-weight:720;cursor:pointer}.setupChoice.on{background:#342441;color:#fff;border-color:#a86aff;box-shadow:0 0 0 1px #a86aff55}.customCount{margin-top:9px;max-width:180px}
 .roundControls{display:flex;align-items:center;justify-content:space-between;gap:12px}.roundStatus{display:flex;align-items:center;gap:7px;min-width:0;white-space:nowrap;color:#a4a1a8;font-weight:600}.roundStatus #rno{white-space:nowrap;color:#c4c1c7}.roundStatus #badge:before{content:"·";margin-right:7px;color:#5f6066}.roundControls .row{flex-wrap:nowrap!important}.roundControls .secondary{font-weight:700}
@@ -214,7 +214,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){.roundControls{align-items:flex-start}.roundStatus{flex-direction:column;align-items:flex-start;gap:2px;white-space:normal}.roundStatus #badge:before{content:"";margin:0}.roundStatus #badge{font-size:11px}.setupChoice{padding:8px 11px}.answerbox{padding:14px}.answerActions button{font-size:13px}.playeredit{grid-template-columns:minmax(0,1fr) 70px auto!important}}
 
 
-/* v5.0.28 — debug/polish */
+/* v5.0.30 — debug/polish */
 .question h2{font-family:"Avenir Next","Trebuchet MS",system-ui,sans-serif!important;font-weight:650!important;letter-spacing:-.015em!important}
 .primary,.secondary,.chip,.modebtn{font-weight:680}.answerActions button{font-weight:620}.roundControls .secondary{font-weight:650}
 .vinylControl{cursor:pointer;transition:filter .18s ease,box-shadow .18s ease,transform .18s ease}.vinylControl:hover{filter:brightness(1.08);box-shadow:0 0 52px #9450ef66}.vinylControl:focus-visible,.songboxControl:focus-visible{outline:2px solid #b77aff;outline-offset:4px}
@@ -224,61 +224,162 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 .discoField .b1,.discoField .b2{font-size:43px!important;top:15px!important;opacity:1!important;transform-origin:center!important}.discoField .b1{right:28px!important;animation:discoBobRight 5.6s ease-in-out infinite!important}.discoField .b2{left:28px!important;animation:discoBobLeft 5.6s ease-in-out infinite!important}
 @keyframes discoBobRight{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}@keyframes discoBobLeft{0%,100%{transform:scaleX(-1) translateY(0)}50%{transform:scaleX(-1) translateY(5px)}}
 @media(max-width:700px){.discoField .b1,.discoField .b2{font-size:31px!important}.discoField .b1{right:14px!important}.discoField .b2{left:14px!important}}
+
+/* v5.0.30 — layout polish + clearer hierarchy */
+.question h2{font-weight:610!important;letter-spacing:-.018em!important}
+.primary,.secondary,.chip,.modebtn{font-weight:620!important}
+.playerName{font-weight:650!important}
+.answerbox{padding:18px 20px!important}
+.answerActions{margin-top:13px!important}
+.statusAnswer{margin-top:12px!important;padding-top:1px!important;color:#85828a!important}
+.reveal .answer{font-weight:720!important}
+
+.timerDisplay{right:-72px!important;width:40px!important;height:40px!important;border-width:1px!important;font-size:13px!important;background:#202228e8!important;color:#eee!important;box-shadow:0 5px 18px #0007!important}
+
+.roundControls{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;column-gap:28px!important;padding-bottom:14px!important}
+.roundControls .row{justify-self:end!important;flex-shrink:0!important}
+.roundStatus{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;min-width:0!important}
+.roundStatus #rno{font-size:13px!important;font-weight:650!important}
+.roundStatus #badge{font-size:11px!important;font-weight:500!important;color:#7f7c84!important;white-space:nowrap!important}
+.roundStatus #badge:before{content:""!important;margin:0!important}
+
+#round .scorebar{position:static!important;width:auto!important;max-width:720px!important;margin:0 auto 12px!important;padding:7px 11px!important;border-radius:13px!important;justify-content:flex-start!important;gap:10px!important;background:#111216b8!important}
+#round .score{display:flex!important;align-items:center!important;gap:5px!important;min-width:0!important;text-align:left!important;font-size:12px!important;white-space:nowrap}
+#round .score b{display:inline!important;font-size:14px!important;margin-left:2px!important}
+#round .score b:after{content:" P.";font-size:10px;font-weight:500;color:#8f8b94}
+
+#revbtn{margin-top:14px!important;font-size:16px!important}
+#otherSongBtn{display:block!important;width:auto!important;margin:10px auto 16px!important;padding:9px 14px!important;border-color:#303239!important;background:#1d1f24!important;color:#aaa!important;font-size:12px!important;opacity:.9!important}
+
+.compare{grid-template-columns:1fr 48px 1fr!important;gap:18px!important}
+.songboxControl{background:transparent!important;border:0!important;min-height:190px!important;padding:12px!important}
+.compareVinyl{width:128px;height:128px;border-radius:50%;margin:0 auto;display:grid;place-items:center;background:radial-gradient(circle at center,#111 0 8px,#9b4ff0 9px 24px,#15161a 25px 31px,transparent 32px),repeating-radial-gradient(circle at center,#090a0c 0 8px,#181a1e 9px 10px);border:2px solid #363941;box-shadow:0 16px 34px #0008,0 0 22px #9450ef1f;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.compareVinyl span{font-size:22px;font-weight:700;color:#fff}
+.songboxControl:hover .compareVinyl{border-color:#8d5cff;box-shadow:0 16px 34px #0008,0 0 30px #9450ef55}
+.songboxControl.playing .compareVinyl{animation:compareSpin 2.5s linear infinite;border-color:#a56bff}
+@keyframes compareSpin{to{transform:rotate(360deg)}}
+.versus{color:#777!important;font-size:12px!important;text-align:center}
+.playHint{margin-top:10px!important;text-align:center!important}
+
+.scoreGuide{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:0 0 10px;padding:10px 12px;border:1px solid #353840;border-radius:12px;background:#17191e;color:#aaa;font-size:11px}
+.scoreGuide>b{color:#ddd;margin-right:3px}
+.scoreGuide span{background:#24272d;border-radius:999px;padding:5px 8px}
+.scoreGuide strong{color:#fff}
+
+.postRoundButtons{gap:10px!important}
+.postRoundButtons .primary{font-size:15px!important}
+.postTransport button{font-size:12px!important;color:#aaa!important}
+
+@media(max-width:700px){
+  .timerDisplay{right:-52px!important;width:36px!important;height:36px!important;font-size:12px!important}
+  .roundControls{column-gap:12px!important}
+  .roundStatus #badge{white-space:normal!important;max-width:170px}
+  #round .scorebar{overflow-x:auto!important;margin-bottom:10px!important}
+  .compare{grid-template-columns:1fr 28px 1fr!important;gap:6px!important}
+  .compareVinyl{width:96px;height:96px}
+  .songboxControl{min-height:150px!important;padding:6px!important}
+}
+
+
+/* v5.0.30 — Startseite: echte Spiegelung + deutlich mehr Licht */
+.discoField{
+  position:absolute!important;
+  inset:0!important;
+  pointer-events:none!important;
+  overflow:hidden!important;
+}
+.discoField .ball{
+  position:absolute!important;
+  top:18%!important;
+  width:92px!important;
+  height:92px!important;
+  display:grid!important;
+  place-items:center!important;
+  font-size:78px!important;
+  line-height:1!important;
+  filter:drop-shadow(0 0 18px rgba(190,120,255,.28)) drop-shadow(0 0 28px rgba(90,210,255,.16))!important;
+  opacity:.94!important;
+  transform:none!important;
+  animation:discoFloat 5.8s ease-in-out infinite!important;
+}
+.discoField .bLeft{
+  left:5.5%!important;
+  transform:scaleX(-1)!important;
+  transform-origin:center!important;
+  animation-delay:-2.9s!important;
+}
+.discoField .bRight{
+  right:5.5%!important;
+  transform:none!important;
+}
+@keyframes discoFloat{
+  0%,100%{translate:0 0}
+  50%{translate:0 -5px}
+}
+
+.discoField .light{
+  position:absolute!important;
+  display:block!important;
+  border-radius:50%!important;
+  opacity:.72!important;
+  filter:blur(.2px) drop-shadow(0 0 10px currentColor)!important;
+  animation:lightDrift 6s ease-in-out infinite alternate!important;
+}
+.discoField .light:nth-of-type(3n){animation-duration:7.8s!important}
+.discoField .light:nth-of-type(4n){animation-duration:5.2s!important}
+@keyframes lightDrift{
+  0%{transform:translate3d(0,0,0) scale(.9);opacity:.38}
+  50%{opacity:.85}
+  100%{transform:translate3d(8px,-7px,0) scale(1.12);opacity:.58}
+}
+
+/* violet / pink / cyan / blue / warm light reflections */
+.l1{left:13%;top:20%;width:9px;height:9px;background:#b66cff;color:#b66cff}
+.l2{left:18%;top:34%;width:5px;height:5px;background:#ff6fb5;color:#ff6fb5}
+.l3{left:23%;top:16%;width:7px;height:7px;background:#67e7ff;color:#67e7ff}
+.l4{left:28%;top:39%;width:4px;height:4px;background:#7aa5ff;color:#7aa5ff}
+.l5{left:32%;top:25%;width:10px;height:10px;background:#ffd26f;color:#ffd26f}
+.l6{left:37%;top:47%;width:6px;height:6px;background:#d56bff;color:#d56bff}
+.l7{left:42%;top:14%;width:4px;height:4px;background:#5fe1ff;color:#5fe1ff}
+.l8{left:46%;top:35%;width:8px;height:8px;background:#ff77b9;color:#ff77b9}
+.l9{left:50%;top:19%;width:6px;height:6px;background:#907cff;color:#907cff}
+.l10{left:54%;top:45%;width:5px;height:5px;background:#ffd36d;color:#ffd36d}
+.l11{left:58%;top:12%;width:9px;height:9px;background:#64dcff;color:#64dcff}
+.l12{left:62%;top:31%;width:4px;height:4px;background:#f46bc4;color:#f46bc4}
+.l13{left:66%;top:50%;width:7px;height:7px;background:#8d74ff;color:#8d74ff}
+.l14{left:70%;top:22%;width:5px;height:5px;background:#ffd074;color:#ffd074}
+.l15{left:74%;top:40%;width:10px;height:10px;background:#5cdfff;color:#5cdfff}
+.l16{left:79%;top:17%;width:6px;height:6px;background:#ff70b5;color:#ff70b5}
+.l17{left:84%;top:34%;width:4px;height:4px;background:#9d74ff;color:#9d74ff}
+.l18{left:20%;top:52%;width:4px;height:4px;background:#ffd574;color:#ffd574}
+.l19{left:40%;top:57%;width:5px;height:5px;background:#6adfff;color:#6adfff}
+.l20{left:72%;top:56%;width:4px;height:4px;background:#f676c5;color:#f676c5}
+
+@media(max-width:700px){
+  .discoField .ball{
+    width:66px!important;
+    height:66px!important;
+    font-size:56px!important;
+    top:20%!important;
+  }
+  .discoField .bLeft{left:2.5%!important}
+  .discoField .bRight{right:2.5%!important}
+  .discoField .light{opacity:.62!important}
+}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="discoField" aria-hidden="true"><span class="ball b1">🪩</span><span class="ball b2">🪩</span><i class="light l1"></i><i class="light l2"></i><i class="light l3"></i><i class="light l4"></i><i class="light l5"></i><i class="light l6"></i><i class="light l7"></i><i class="light l8"></i><i class="light l9"></i><i class="light l10"></i><i class="light l11"></i><i class="light l12"></i></div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.28</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
- <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
-</section>
-
-<section id="setup" class="hidden">
- <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
- <div class="setupgrid">
-  <div class="card">
-   <div class="field"><label>1 · Spieler:innen</label><div id="players"></div><button class="secondary" onclick="addPlayer()">+ Spieler:in</button><p class="tiny">Name und Figur werden nur lokal auf diesem Gerät gespeichert.</p></div>
-   <div class="field"><label>2 · Songpools</label><div id="pools" class="chips"></div><p id="poolCount" class="tiny"></p><button class="secondary" style="margin-top:8px" onclick="showFavorites()">♡ Favoriten verwalten</button></div>
-   <div class="field"><label>3 · Jahrzehnte</label><div id="decades" class="decadechips"></div></div>
-<div class="field"><label>4 · Anzahl Songs</label><input id="count" type="hidden" value="15"><div id="countChoices" class="setupChoices"><button class="setupChoice" data-count="5">5</button><button class="setupChoice" data-count="10">10</button><button class="setupChoice on" data-count="15">15</button><button class="setupChoice" data-count="20">20</button><button class="setupChoice" data-count="30">30</button><button class="setupChoice" data-count="custom">✏️ Selbst definieren</button></div><div id="customCountWrap" class="customCount hidden"><input id="customCount" class="input" type="number" min="1" max="100" value="15" aria-label="Eigene Songanzahl"></div></div>
-  </div>
-  <div class="card">
-   <div class="field"><label>5 · Fragenpool</label><div id="cats" class="chips"></div></div>
-   <div class="field"><label>Fragenwahl</label><div class="seg"><button data-g="qm" data-v="game" class="on">Ganzes Spiel</button><button data-g="qm" data-v="round">Pro Runde</button></div></div>
-   <div class="field"><label>Fragen je Song</label><div class="seg"><button data-g="ps" data-v="one" class="on">Eine zufällige</button><button data-g="ps" data-v="all">Alle ausgewählten</button></div></div>
-   <div class="field"><label>Antwortmodus</label><div class="seg"><button data-g="am" data-v="turns" class="on">Alle der Reihe nach</button><button data-g="am" data-v="all">Alle gleichzeitig</button></div></div>
-   <div class="field"><label>Standard-Ausschnitt</label><div class="seg three"><button data-g="clip" data-v="full">Ganz</button><button data-g="clip" data-v="start30" class="on">30 s Start</button><button data-g="clip" data-v="random30">30 s Zufall</button></div><p class="tiny">Während jeder Runde jederzeit änderbar.</p></div>
-   <div class="toggleline"><span>Spielhistorie speichern</span><input id="saveHistory" type="checkbox" checked></div>
-   <div class="toggleline"><span>Dauerhafte Scores speichern</span><input id="saveStats" type="checkbox" checked></div>
-<div class="toggleline"><span>Songs der letzten 3 Spiele vermeiden</span><input id="avoidRecent" type="checkbox" checked></div>
-<div class="toggleline"><span>Bonusrunde alle 5 Songs</span><input id="bonusRounds" type="checkbox"></div><div class="field"><label>⏱ Ratetimer</label><input id="guessTimer" type="hidden" value="0"><div id="timerChoices" class="setupChoices"><button class="setupChoice on" data-timer="0">Aus</button><button class="setupChoice" data-timer="10">10 s</button><button class="setupChoice" data-timer="15">15 s</button><button class="setupChoice" data-timer="30">30 s</button><button class="setupChoice" data-timer="60">60 s</button></div></div>
-  </div>
- </div>
- <button class="primary" style="margin-top:18px" onclick="startGame()">▶ Spiel starten</button>
-</section>
-
-<section id="round" class="hidden">
- <div id="bonusBanner" class="bonus hidden">🔥 BONUSRunde · +3 BEI PERFEKT</div>
- <div id="roundSetup" class="roundsetup hidden"><h3>Fragen für diese Runde</h3><div id="roundCats" class="chips"></div><button class="primary" style="margin-top:12px" onclick="confirmRoundCats()">Runde starten</button></div>
- <div id="roundContent">
-  <div class="roundbody">
-   <div class="playcol">
-    <div id="normal"><div class="question"><h2 id="qtext"></h2></div><div class="recordWrap"><div id="record" class="vinyl vinylControl" role="button" tabindex="0" aria-label="Song abspielen oder pausieren" onclick="toggleMainRecord()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMainRecord()}"><span class="vinylRPM">33⅓<br><small>RPM</small></span></div><div id="timerDisplay" class="timerDisplay hidden">30</div></div><div id="recordPlayHint" class="recordPlayHint">▶ Platte anklicken</div></div>
-    <div id="comp" class="hidden"><div class="question"><h2>Welcher Song ist älter?</h2></div><div class="compare"><div id="boxA" class="songbox songboxControl" role="button" tabindex="0" aria-label="Song A abspielen oder pausieren" onclick="toggleCompare(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCompare(0)}"><h2>A</h2><div id="stateA" class="playHint">▶ Abspielen</div></div><b>VS.</b><div id="boxB" class="songbox songboxControl" role="button" tabindex="0" aria-label="Song B abspielen oder pausieren" onclick="toggleCompare(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCompare(1)}"><h2>B</h2><div id="stateB" class="playHint">▶ Abspielen</div></div></div></div>
-    <div class="clipbar"><button class="modebtn" data-clip="full">Ganz</button><button class="modebtn" data-clip="start30">30 s Start</button><button class="modebtn" data-clip="random30">30 s Zufall</button></div>
-    <div class="transportrow">
-      <button class="secondary" onclick="restartCurrent()">↺ Restart</button>
-      
+ <div class="card hero"><div class="discoField" aria-hidden="true">
+      <span class="ball bLeft">🪩</span>
+      <span class="ball bRight">🪩</span>
+      <i class="light l1"></i><i class="light l2"></i><i class="light l3"></i><i class="light l4"></i>
+      <i class="light l5"></i><i class="light l6"></i><i class="light l7"></i><i class="light l8"></i>
+      <i class="light l9"></i><i class="light l10"></i><i class="light l11"></i><i class="light l12"></i>
+      <i class="light l13"></i><i class="light l14"></i><i class="light l15"></i><i class="light l16"></i>
+      <i class="light l17"></i><i class="light l18"></i><i class="light l19"></i><i class="light l20"></i>
     </div>
-   </div>
-   <div class="answercol">
-    <div class="roundtop roundControls"><div class="roundStatus"><span id="rno"></span><span id="badge" class="badge"></span></div><div class="row"><button id="undoBtn" class="secondary hidden" onclick="openUndo()">↶ Wertung</button><button class="secondary menuRoundBtn" onclick="openGameMenu()">☰</button></div></div>
-    <div id="answers"></div>
-    <button id="revbtn" class="primary" onclick="reveal()" disabled>Reveal</button><div id="revealHint" class="tiny revealHint hidden"></div>
-    <button id="otherSongBtn" class="secondary" onclick="replaceSong()">🔀 Anderer Song</button>
-    <div id="rev" class="hidden"></div>
-    <div id="scores" class="scorebar"></div>
-   </div>
   </div>
- </div>
 </section>
 
 
@@ -414,7 +515,16 @@ fetch("songs.json?"+Date.now()).then(r=>r.json()).then(x=>{songs=x;$("songCount"
 
 function setClip(v){let changed=clipMode!==v;clipMode=v;document.querySelectorAll(".modebtn").forEach(b=>b.classList.toggle("on",b.dataset.clip===v));if(changed)stopPlayback()}
 function poolSongs(){let fav=new Set(JSON.parse(localStorage.getItem("sg_favs")||"[]"));return songs.filter(s=>(s.pools.some(p=>selectedPools.has(p))||(selectedPools.has("favorites")&&fav.has(s.id)))&&selectedDecades.has(Math.floor(s.year/10)*10))}
-function randomSong(ex=[]){let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}let recent=gameTracks.slice(-2),best=base.map(s=>{let pen=0;for(let r of recent){if(Math.floor(r.year/10)===Math.floor(s.year/10))pen+=3;if(r.genre===s.genre)pen+=2;if(r.artist===s.artist)pen+=5}return [s,pen+Math.random()] }).sort((a,b)=>a[1]-b[1])[0]?.[0];if(best)usedIds.add(best.id);return best}
+function randomSong(ex=[]){
+ let base=roundPool.filter(s=>!ex.includes(s.id)&&!usedIds.has(s.id));
+ if(!base.length){usedIds.clear();base=roundPool.filter(s=>!ex.includes(s.id))}
+ let recentDraws=JSON.parse(localStorage.getItem("sg_recent_draws")||"[]").slice(-40),recentSet=new Set(recentDraws);
+ let fresh=base.filter(s=>!recentSet.has(s.id));
+ if(base.length>=12&&fresh.length>=Math.min(8,Math.ceil(base.length/3)))base=fresh;
+ let recent=gameTracks.slice(-2),best=base.map(s=>{let pen=0;for(let r of recent){if(Math.floor(r.year/10)===Math.floor(s.year/10))pen+=3;if(r.genre===s.genre)pen+=2;if(r.artist===s.artist)pen+=5}return [s,pen+Math.random()] }).sort((a,b)=>a[1]-b[1])[0]?.[0];
+ if(best){usedIds.add(best.id);recentDraws.push(best.id);localStorage.setItem("sg_recent_draws",JSON.stringify(recentDraws.slice(-40)))}
+ return best
+}
 function refillBag(){let a=[...selectedCats];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}if(categoryBag.length&&a[0]===categoryBag.at(-1)&&a.length>1)[a[0],a[1]]=[a[1],a[0]];categoryBag=a}
 function gameCats(){let a=[...selectedCats];if(ps==="all")return a.filter(x=>x!=="compare"&&!(x==="film"&&!song?.film));if(!categoryBag.length)refillBag();let c=categoryBag.shift();if(c==="film"&&!song?.film)return gameCats();return [c]}
 
@@ -468,6 +578,7 @@ function renderRound(preserveAnswers=false){
  if(!currentCats.length)currentCats=["year"];
  let cp=currentCats[0]==="compare";if(cp&&pair.length!==2)pair=[song,randomSong([song.id])];
  $("normal").classList.toggle("hidden",cp);$("comp").classList.toggle("hidden",!cp);
+ let rpm=$("record")?.querySelector(".vinylRPM");if(rpm&&!cp){let single=String(song?.album||"").startsWith("Single:");rpm.innerHTML=`${single?"45":"33⅓"}<br><small>RPM</small>`}
  if(!cp){$("qtext").textContent=bonusNow?"Trag alles ein, was du weißt.":(ps==="all"?"Was wisst ihr über diesen Song?":CATS[currentCats[0]][1])}
  setClip(clipMode);document.querySelector(".clipbar").classList.toggle("hidden",currentCats[0]==="intro3");if(!preserveAnswers)roundAnswers=[];renderAnswerForms();renderScores();resetRevealButton();if(preserveAnswers)restoreAnswerForms();saveGameState();
 }
@@ -495,7 +606,7 @@ function restoreAnswerForms(){
  checkAnswers();
 }
 function markAloud(i){roundAnswers[i]={mode:"aloud"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);setAnswerStatus(b,"🗣️ Antwort laut gesagt",true);checkAnswers()}
-function markPass(i){roundAnswers[i]={mode:"pass"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);setAnswerStatus(b,"Passt · 0 Punkte",true);checkAnswers()}
+function markPass(i){roundAnswers[i]={mode:"pass"};let b=document.querySelector(`.answerbox[data-player="${i}"]`);setAnswerStatus(b,"Passt · 0 Punkte",true);checkAnswers();saveGameState()}
 function checkAnswers(){
  document.querySelectorAll(".answerbox").forEach((b,i)=>{
   if(roundAnswers[i]?.mode==="aloud"||roundAnswers[i]?.mode==="pass")return;
@@ -506,9 +617,12 @@ function checkAnswers(){
   }else{delete roundAnswers[i];setAnswerStatus(b,"Noch keine Antwort gespeichert",false)}
  });
  let all=[...document.querySelectorAll(".answerbox")].every(b=>b.dataset.done==="1");
- let isCompare=currentCats[0]==="compare",heard=isCompare?(roundPlayedKeys.has("cmp0")&&roundPlayedKeys.has("cmp1")):roundHasPlayed;
- setRevealReady(all&&heard);
- let hint=$("revealHint");if(hint){let msg="";if(isCompare&&!heard){let missing=[];if(!roundPlayedKeys.has("cmp0"))missing.push("A");if(!roundPlayedKeys.has("cmp1"))missing.push("B");msg=`Für Reveal noch Song ${missing.join(" und ")} anhören.`}else if(!all)msg="Für Reveal noch die Antwort bestätigen.";hint.textContent=msg;hint.classList.toggle("hidden",!msg)}
+ let isCompare=currentCats[0]==="compare";
+ let everyonePassed=all&&roundAnswers.length>=playersMeta.length&&roundAnswers.every(r=>r?.mode==="pass");
+ let heard=isCompare?(roundPlayedKeys.has("cmp0")&&roundPlayedKeys.has("cmp1")):roundHasPlayed;
+ let listeningSatisfied=everyonePassed||heard;
+ setRevealReady(all&&listeningSatisfied);
+ let hint=$("revealHint");if(hint){let msg="";if(!everyonePassed&&isCompare&&!heard){let missing=[];if(!roundPlayedKeys.has("cmp0"))missing.push("A");if(!roundPlayedKeys.has("cmp1"))missing.push("B");msg=`Für Reveal noch Song ${missing.join(" und ")} anhören.`}else if(!everyonePassed&&!isCompare&&!heard)msg="Für Reveal zuerst den Song starten.";else if(!all)msg="Für Reveal noch die Antwort bestätigen.";hint.textContent=msg;hint.classList.toggle("hidden",!msg)}
 }
 
 function renderScores(){$("scores").innerHTML=playersMeta.map((p,i)=>`<div class="score" style="color:${p.color}">${p.avatar} ${p.name}<b>${scores[i]}</b></div>` ).join("")}
@@ -606,12 +720,12 @@ function passRound(){playersMeta.forEach((_,i)=>roundAnswers[i]={mode:"pass"});d
 async function replaceSong(){
  await stopPlayback();pausedTrack=null;clearGuessTimer();
  let cp=currentCats[0]==="compare";
- if(cp){pair.forEach(x=>usedIds.delete(x?.id));song=randomSong();pair=[song,randomSong([song.id])]}
+ if(cp){song=randomSong();pair=[song,randomSong([song.id])]}
  else{
-  usedIds.delete(song?.id);song=randomSong();
+  song=randomSong();
   if(currentCats.includes("cover")&&!song?.coverOf){
    let covers=roundPool.filter(s=>s.coverOf&&!usedIds.has(s.id));if(!covers.length)covers=roundPool.filter(s=>s.coverOf);
-   if(covers.length){usedIds.delete(song?.id);song=covers[Math.floor(Math.random()*covers.length)];usedIds.add(song.id)}
+   if(covers.length){song=covers[Math.floor(Math.random()*covers.length)];usedIds.add(song.id)}
   }
  }
  roundPhase="answering";roundScored=false;roundHasPlayed=false;roundPlayedKeys=new Set();lastPlayedKey=null;roundAnswers=[];$("rev").classList.add("hidden");$("rev").style.display="none";renderRound();
@@ -628,7 +742,7 @@ function songRevealHTML(s,label=""){
  return `<div class="reveal">${label?`<div class="tiny">${label}</div>`:""}<div class="answer">${s.year} · ${s.title}</div><h3>${s.artist}</h3>${coverAnswer}<div class="meta"><div><b>Herkunft</b><span>${s.country||"—"}</span></div><div><b>Jahrzehnt</b><span>${Math.floor(s.year/10)*10}er</span></div><div><b>Genre</b><span>${s.genre||"—"}</span></div>${s.film?`<div><b>Film / Serie</b><span>${s.film}</span></div>`:""}${s.album?`<div><b>${String(s.album).startsWith("Single:")?"Veröffentlichung":"Album"}</b><span>${s.album}</span></div>`:""}${s.language?`<div><b>Sprache</b><span>${s.language}</span></div>`:""}${s.releaseNote?`<div><b>Release-Hinweis</b><span>${s.releaseNote}</span></div>`:""}${s.esc?`<div><b>Eurovision</b><span>${s.esc.country} · ${s.esc.year}${s.esc.winner?" · 🏆 Sieger:in":""}</span></div>`:""}</div><div class="pooltags">${(s.pools||[]).filter(p=>POOLS[p]).map(p=>`<span class="pooltag">${POOLS[p][0]}</span>`).join("")}</div>
 <a class="spotifylink" href="${spotifyUrl}" target="_blank" rel="noopener">▶ In Spotify öffnen</a>
 <a class="spotifylink lyricslink" href="https://genius.com/search?q=${encodeURIComponent(s.title+" "+s.artist)}" target="_blank" rel="noopener">🎤 Songtext</a>
-${(s.nerd||s.secondLife||s.coverOf||s.samples?.length||s.sampledBy?.length||s.relatesTo)?`<button class="secondary nerdToggle" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Nerdwissen</button>`:""}<div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px"><div class="tiny" style="margin-bottom:8px">Zusatzwissen – keine Wiederholung der Basisdaten</div>
+${(s.nerd||s.secondLife||s.coverOf||s.samples?.length||s.sampledBy?.length||s.relatesTo)?`<button class="secondary nerdToggle" onclick="this.nextElementSibling.classList.toggle('hidden')">🧠 Nerdwissen</button>`:""}<div class="nerd hidden" style="margin-top:12px;padding:13px;background:#25282e;border-radius:12px"><div class="tiny" style="margin-bottom:8px"></div>
 ${s.nerd?`<p>${s.nerd}</p>`:""}${s.secondLife?`<p><b>🔮 Zweites Leben:</b> ${s.secondLife}</p>`:""}${(!s.nerd&&!s.secondLife&&!s.coverOf&&!s.samples?.length&&!s.sampledBy?.length&&!s.relatesTo)?`<p class="muted">Für diesen Song ist noch kein kuratiertes Nerdwissen hinterlegt.</p>`:""}
 ${s.coverOf?`<p><b>🔁 Cover von:</b> ${s.coverOf.title} — ${s.coverOf.artist} (${s.coverOf.year}) <a class="spotifylink" style="margin-left:6px" href="https://open.spotify.com/search/${encodeURIComponent(s.coverOf.title+" "+s.coverOf.artist)}" target="_blank">▶ Original</a></p>`:""}
 ${s.samples?.length?`<p><b>🎛️ Sampelt:</b> ${s.samples.map(x=>`${x.title} — ${x.artist} (${x.year})`).join("<br>")}</p>`:""}
@@ -693,7 +807,8 @@ function roundMaxPoints(){return normalRoundMax()+(bonusNow?3:0)}
 function judgeUI(cp){
  let list=names.map((n,i)=>judgePerson(n,i,cp)).join("");
  let needsManual=Array.isArray(roundAnswers)&&roundAnswers.some(x=>x?.mode==="aloud");
- return `<h3>${needsManual?"Punkte prüfen":"Wertung"}${bonusNow?" · +3 bei perfekt":""}</h3>${list}<button id="savePts" class="primary" ${needsManual?"disabled":""} onclick="finishJudge()">Punkte speichern</button><div id="postRoundActions" class="postRoundActions hidden"></div>`;
+ let scoreGuide=currentCats.includes("year")?`<div class="scoreGuide"><b>Jahreswertung</b><span><strong>3 P.</strong> exakt</span><span><strong>2 P.</strong> ±1 Jahr</span><span><strong>1 P.</strong> ±2 Jahre</span><span><strong>0 P.</strong> weiter daneben</span></div>`:"";
+ return `<h3>${needsManual?"Punkte prüfen":"Wertung"}${bonusNow?" · +3 bei perfekt":""}</h3>${scoreGuide}${list}<button id="savePts" class="primary" ${needsManual?"disabled":""} onclick="finishJudge()">Punkte speichern</button><div id="postRoundActions" class="postRoundActions hidden"></div>`;
 }
 function scoreOptionsForCat(c){return c==="year"?[0,1,2,3]:c==="decade"||c==="compare"?[0,1]:c==="intro3"?[0,1,2,3]:[0,2]}
 function manualScoreValues(){let vals=new Set([0]);for(const c of currentCats){let next=new Set();for(const a of vals)for(const b of scoreOptionsForCat(c))next.add(a+b);vals=next}return [...vals].sort((a,b)=>a-b)}

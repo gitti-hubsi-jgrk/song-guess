@@ -1,4 +1,4 @@
-# Song Guess v5.0.28
+# Song Guess v5.0.30
 762 Songs. UI-, Wiedergabe- und Spielfluss-Update mit 762 Songs.
 
 Neu u. a.:
@@ -55,7 +55,7 @@ Neu u. a.:
 - v5.0.17: Vollaudit: CSS-Klammer bereinigt, echte 3-Sekunden-Challenge, Resume ohne Rundensprung, Spieloptionen beim Resume erhalten und Überraschungsmix-UI synchronisiert.
 
 
-## v5.0.28
+## v5.0.30
 - Setup: Songanzahl und Ratetimer als kompakte Auswahlfelder statt Dropdown/Freifeld.
 - Rundenkopf und Typografie ruhiger; Kategorienlabel über der Frage entfernt.
 - Play/Pause direkt über die Schallplatte; im A/B-Vergleich über die jeweilige Songkarte.
@@ -69,3 +69,13 @@ Neu u. a.:
 - Debug: Restart merkt sich im A/B-Vergleich den zuletzt aktiven Song.
 - Manuelle Punktewahl zeigt nur tatsächlich mögliche Werte je Fragetyp (z. B. Interpret 0/2).
 - Vergleichsrunden zeigen bei gesperrtem Reveal konkret, welcher Song noch gehört werden muss.
+
+
+## v5.0.30
+- Layout-Hierarchie überarbeitet: kompakter Score, klare Kopfzeile, Reveal als Hauptaktion.
+- Vergleichsmodus mit zwei anklickbaren Mini-Vinyls.
+- Passen funktioniert auch in Vergleichsfragen sauber; wenn alle passen, ist Anhören keine Voraussetzung.
+- Jahreswertung zeigt die Punktestufen direkt an.
+- Vinyl-Label: als Single markierte Releases 45 RPM, Albumtracks 33⅓ RPM; Animation bleibt bewusst langsam.
+- Zusätzliche lokale Anti-Wiederholungs-Historie; übersprungene Songs werden im laufenden Spiel nicht wieder freigegeben.
+- Datenkorrekturen und Konsistenzprüfung, u. a. Uptown Funk, Djadja, Royals und Sprachangaben.

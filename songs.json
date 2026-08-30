@@ -34,7 +34,7 @@
       "mix"
     ],
     "album": "",
-    "language": "",
+    "language": "Englisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -55,7 +55,7 @@
       "mix"
     ],
     "album": "",
-    "language": "",
+    "language": "Französisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -2474,7 +2474,7 @@
       "mix",
       "party"
     ],
-    "album": "Teenage Dream",
+    "album": "21",
     "language": "Englisch",
     "nerd": "„California Gurls“ war Katy Perrys musikalische Antwort auf Jay-Z und Alicia Keys’ „Empire State of Mind“ – nur eben aus kalifornischer Perspektive.",
     "coverOf": null,
@@ -2496,7 +2496,7 @@
       "mix",
       "party"
     ],
-    "album": "Doo-Wops & Hooligans",
+    "album": "Teenage Dream",
     "language": "Englisch",
     "nerd": "Bruno Mars und sein Team bauten „Just the Way You Are“ bewusst um eine sehr direkte, einfache Liebeserklärung. Der Song wurde Mars’ erste Nummer 1 als Solokünstler in den USA.",
     "coverOf": null,
@@ -2519,7 +2519,7 @@
       "mix",
       "party"
     ],
-    "album": "21",
+    "album": "Sorry for Party Rocking",
     "language": "Englisch",
     "nerd": "Adele schrieb „Rolling in the Deep“ gemeinsam mit Paul Epworth. Aus einer zunächst eher bluesigen Idee entwickelte Epworth den stampfenden Rhythmus der veröffentlichten Version.",
     "coverOf": null,
@@ -2541,7 +2541,7 @@
       "mix",
       "party"
     ],
-    "album": "Born This Way",
+    "album": "Making Mirrors",
     "language": "Englisch",
     "nerd": "Lady Gaga erklärte „Born This Way“ ausdrücklich als Song über Selbstakzeptanz. Der Titeltrack wurde zugleich die 1000. Nummer 1 der Billboard Hot 100.",
     "coverOf": null,
@@ -2564,7 +2564,7 @@
       "mix",
       "party"
     ],
-    "album": "Sorry for Party Rocking",
+    "album": "Kiss",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -2586,7 +2586,7 @@
       "mix",
       "party"
     ],
-    "album": "Somebody That I Used to Know",
+    "album": "Psy 6 (Six Rules), Part 1",
     "language": "Koreanisch",
     "nerd": "Gotye baute „Somebody That I Used to Know“ um ein Sample aus Luiz Bonfás Aufnahme „Seville“ auf. Kimbra kam erst später als zweite Perspektive des Trennungsgesprächs hinzu.",
     "coverOf": null,
@@ -2608,7 +2608,7 @@
       "mix",
       "party"
     ],
-    "album": "Night Visions",
+    "album": "Unapologetic",
     "language": "Englisch",
     "nerd": "Der ungewöhnliche Stampf-Klatsch-Rhythmus von „Radioactive“ verbindet Rockinstrumente mit stark elektronischer Produktion – ein Sound, der Imagine Dragons' frühen Stil prägte.",
     "coverOf": null,
@@ -2632,7 +2632,7 @@
       "party",
       "soundtrack"
     ],
-    "album": "The Heist",
+    "album": "G I R L",
     "language": "Englisch",
     "nerd": "Der Song entstand für Despicable Me 2 und wurde später mit einem 24-stündigen Musikvideo-Projekt verbunden.",
     "coverOf": null,
@@ -2677,7 +2677,7 @@
       "mix",
       "party"
     ],
-    "album": "Prism",
+    "album": "1989",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -2698,15 +2698,15 @@
       "mix",
       "party"
     ],
-    "album": "Pure Heroine",
+    "album": "Uptown Special",
     "language": "Englisch",
-    "nerd": "Lorde schrieb den Text zu „Royals“ als Teenagerin. Der Titel wurde von einem Foto des Baseballspielers George Brett inspiriert, auf dessen Trikot „Royals“ stand.",
+    "nerd": "„Uptown Funk“ gewann 2016 den Grammy für Record of the Year und außerdem Best Pop Duo/Group Performance.",
     "coverOf": null,
     "samples": [],
     "sampledBy": [],
     "relatesTo": null,
     "esc": null,
-    "nerdSource": "https://www.theguardian.com/music/2013/nov/07/lorde-royals-song-george-brett"
+    "nerdSource": "https://www.grammy.com/awards/58th-annual-grammy-awards/"
   },
   {
     "id": 119,
@@ -2720,7 +2720,7 @@
       "mix",
       "party"
     ],
-    "album": "In the Lonely Hour",
+    "album": "Peace Is the Mission",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -2743,7 +2743,7 @@
       "party",
       "soundtrack"
     ],
-    "album": "1989",
+    "album": "Trolls (Original Motion Picture Soundtrack)",
     "language": "Englisch",
     "nerd": "Der Refrain von „Shake It Off“ entstand mit Max Martin und Shellback. Taylor Swift setzte damit für „1989“ bewusst auf reinen Pop statt ihres bisherigen Country-Pop-Schwerpunkts.",
     "coverOf": null,
@@ -2766,7 +2766,7 @@
       "mix",
       "party"
     ],
-    "album": "Uptown Special",
+    "album": "Nine Track Mind",
     "language": "Englisch",
     "nerd": "„Uptown Funk“ wurde über Monate immer wieder umgebaut. Mark Ronson erzählte, dass allein der Gitarrenpart so schwierig festzuhalten war, dass die Arbeit zeitweise äußerst frustrierend wurde.",
     "coverOf": null,
@@ -2788,7 +2788,7 @@
       "mix",
       "party"
     ],
-    "album": "Beauty Behind the Madness",
+    "album": "Vida",
     "language": "Spanisch",
     "nerd": "",
     "coverOf": null,
@@ -2810,8 +2810,8 @@
       "guilty_fun",
       "mix"
     ],
-    "album": "Purpose",
-    "language": "Englisch",
+    "album": "Vibras",
+    "language": "Spanisch",
     "nerd": "„Sorry“ wurde von Skrillex und BloodPop mitproduziert. Der markante hohe Vocal-Sound im Intro ist keine normale Flöte, sondern stark bearbeiteter Gesang.",
     "coverOf": null,
     "samples": [],
@@ -2833,7 +2833,7 @@
       "mix",
       "soundtrack"
     ],
-    "album": "25",
+    "album": "A Star Is Born (Soundtrack)",
     "language": "Englisch",
     "nerd": "Adele schrieb „Hello“ mit Greg Kurstin. Für das Video benutzte Regisseur Xavier Dolan bewusst ein altmodisches Klapphandy – Smartphones wirkten ihm im Bild zu modern.",
     "coverOf": null,
@@ -2856,7 +2856,7 @@
       "mix",
       "party"
     ],
-    "album": "This Is Acting",
+    "album": "Toast to Our Differences",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -2878,7 +2878,7 @@
       "mix",
       "urban"
     ],
-    "album": "÷",
+    "album": "7",
     "language": "Englisch",
     "nerd": "Ed Sheeran entwickelte „Shape of You“ ursprünglich mit der Idee, der Song könne für Rihanna sein. Während der Session entschied sein Team, dass er besser zu Sheeran selbst passt.",
     "coverOf": null,
@@ -2906,7 +2906,7 @@
       "mix",
       "party"
     ],
-    "album": "DAMN.",
+    "album": "After Hours",
     "language": "Englisch",
     "nerd": "„HUMBLE.“ wurde von Mike WiLL Made-It produziert. Der Beat war ursprünglich nicht speziell für Kendrick Lamar gedacht, passte aber so gut, dass daraus die Lead-Single von „DAMN.“ wurde.",
     "coverOf": null,
@@ -2928,7 +2928,7 @@
       "mix",
       "party"
     ],
-    "album": "Camila",
+    "album": "The Kids Are Coming",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -3173,8 +3173,8 @@
       "mix",
       "party"
     ],
-    "album": "Single: Je veux",
-    "language": "Englisch",
+    "album": "Zaz",
+    "language": "Französisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -3195,7 +3195,7 @@
       "mix",
       "party"
     ],
-    "album": "Single: Dernière danse",
+    "album": "Mini World",
     "language": "Französisch",
     "nerd": "",
     "coverOf": null,
@@ -3217,7 +3217,7 @@
       "mix",
       "party"
     ],
-    "album": "Single: Papaoutai",
+    "album": "Racine carrée",
     "language": "Französisch",
     "nerd": "",
     "coverOf": null,
@@ -3239,8 +3239,8 @@
       "mix",
       "party"
     ],
-    "album": "Single: Balance ton quoi",
-    "language": "Englisch",
+    "album": "Brol",
+    "language": "Französisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -3261,8 +3261,8 @@
       "mix",
       "party"
     ],
-    "album": "Single: Tout oublier",
-    "language": "Englisch",
+    "album": "Brol",
+    "language": "Französisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -3283,8 +3283,8 @@
       "mix",
       "party"
     ],
-    "album": "Single: Djadja",
-    "language": "Englisch",
+    "album": "Nakamura",
+    "language": "Französisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -5415,7 +5415,7 @@
       "mix",
       "party"
     ],
-    "album": "Single: Royals",
+    "album": "Pure Heroine",
     "language": "Englisch",
     "nerd": "",
     "coverOf": null,
@@ -5999,8 +5999,8 @@
       "guilty_fun",
       "mix"
     ],
-    "album": "Single: Atemlos durch die Nacht",
-    "language": "Englisch",
+    "album": "Farbenspiel",
+    "language": "Deutsch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -6035,21 +6035,18 @@
   },
   {
     "id": 263,
-    "title": "Joe le taxi",
-    "artist": " Paradis",
-    "year": 1987,
+    "title": "Be My Baby",
+    "artist": "Vanessa Paradis",
+    "year": 1992,
     "country": "Frankreich",
     "genre": "Pop",
     "film": "",
     "pools": [
-      "eighties",
       "fr",
-      "guilty_fun",
-      "mix",
-      "party"
+      "mix"
     ],
-    "album": "M&J",
-    "language": "Französisch",
+    "album": "Vanessa Paradis",
+    "language": "Englisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -8890,7 +8887,7 @@
       "soundtrack"
     ],
     "album": "",
-    "language": "",
+    "language": "Englisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -9382,7 +9379,7 @@
       "soundtrack"
     ],
     "album": "",
-    "language": "",
+    "language": "Englisch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -11023,7 +11020,7 @@
       "soundtrack"
     ],
     "album": "",
-    "language": "",
+    "language": "Instrumental",
     "nerd": "",
     "coverOf": null,
     "samples": [],
@@ -14062,8 +14059,8 @@
       "guitar",
       "mix"
     ],
-    "album": "Single: Tage wie diese",
-    "language": "Englisch",
+    "album": "Ballast der Republik",
+    "language": "Deutsch",
     "nerd": "",
     "coverOf": null,
     "samples": [],
