@@ -1,4 +1,4 @@
-# Song Guess v5.0.32
+# Song Guess v5.0.33
 762 Songs. UI-, Wiedergabe- und Spielfluss-Update mit 762 Songs.
 
 Neu u. a.:
@@ -55,7 +55,7 @@ Neu u. a.:
 - v5.0.17: Vollaudit: CSS-Klammer bereinigt, echte 3-Sekunden-Challenge, Resume ohne Rundensprung, Spieloptionen beim Resume erhalten und Überraschungsmix-UI synchronisiert.
 
 
-## v5.0.32
+## v5.0.33
 - Setup: Songanzahl und Ratetimer als kompakte Auswahlfelder statt Dropdown/Freifeld.
 - Rundenkopf und Typografie ruhiger; Kategorienlabel über der Frage entfernt.
 - Play/Pause direkt über die Schallplatte; im A/B-Vergleich über die jeweilige Songkarte.
@@ -71,7 +71,7 @@ Neu u. a.:
 - Vergleichsrunden zeigen bei gesperrtem Reveal konkret, welcher Song noch gehört werden muss.
 
 
-## v5.0.32
+## v5.0.33
 - Layout-Hierarchie überarbeitet: kompakter Score, klare Kopfzeile, Reveal als Hauptaktion.
 - Vergleichsmodus mit zwei anklickbaren Mini-Vinyls.
 - Passen funktioniert auch in Vergleichsfragen sauber; wenn alle passen, ist Anhören keine Voraussetzung.
