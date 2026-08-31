@@ -426,7 +426,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){#home .discoField .ball{width:66px!important;height:66px!important}}
 
 
-/* v5.0.34 — 70s glam disco balls */
+/* v5.0.35 — 70s glam disco balls */
 #home .discoField .glamBall{position:absolute!important;top:-14px!important;width:112px!important;height:132px!important;display:block!important;opacity:.96!important;transform-origin:50% 0!important;animation:sgGlamSwing 5.8s ease-in-out infinite!important;filter:drop-shadow(0 0 12px rgba(255,190,90,.20)) drop-shadow(0 0 20px rgba(210,90,255,.18))!important}
 #home .discoField .glamBall img{width:100%!important;height:100%!important;display:block!important;object-fit:contain!important;pointer-events:none!important}
 #home .discoField .glamBall.bLeft{left:18px!important;animation-delay:-2.9s!important}
@@ -434,20 +434,71 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @keyframes sgGlamSwing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 @media(max-width:700px){#home .discoField .glamBall{top:-10px!important;width:84px!important;height:100px!important}#home .discoField .glamBall.bLeft{left:4px!important}#home .discoField .glamBall.bRight{right:4px!important}}
 
+
+
+/* v5.0.35 — ON THE RECORD home refresh */
+#home .homeTop{min-height:54px;margin-bottom:-6px}
+#home .hero{min-height:610px;padding:30px 30px 24px;background:radial-gradient(circle at 50% 22%,rgba(112,49,150,.16),transparent 34%),linear-gradient(145deg,#17191e,#101114);border-color:#39343f}
+#home .otrLogo{position:relative;z-index:3;margin:0 auto;text-align:center;width:min(620px,72%);color:#f5dfb0;text-shadow:0 0 8px rgba(255,191,91,.26),0 0 26px rgba(255,174,67,.12)}
+#home .otrSmall{font-family:"Avenir Next Condensed","Arial Narrow","Trebuchet MS",system-ui,sans-serif;font-size:clamp(25px,3.2vw,42px);font-weight:500;letter-spacing:.22em;line-height:1;margin-bottom:4px}
+#home .otrRecord{display:flex;align-items:center;justify-content:center;font-family:"Avenir Next Condensed","Arial Narrow","Trebuchet MS",system-ui,sans-serif;font-size:clamp(54px,7.5vw,92px);font-weight:400;letter-spacing:.035em;line-height:.9;color:#f5e5bd;-webkit-text-stroke:1px rgba(255,213,139,.58)}
+#home .recordO{position:relative;display:inline-block;width:.82em;height:.82em;margin:0 .025em;border:2px solid #e5ad35;border-radius:50%;background:repeating-radial-gradient(circle at center,#0a0b0d 0 3px,#242126 4px 5px,#0a0b0d 6px 9px);box-shadow:0 0 18px rgba(238,171,53,.22);vertical-align:-.06em}
+#home .recordO:before{content:"";position:absolute;inset:35%;border-radius:50%;background:#e8ad31;box-shadow:0 0 0 2px #15120d}
+#home .recordO i{position:absolute;left:50%;top:50%;width:6%;height:6%;transform:translate(-50%,-50%);border-radius:50%;background:#17130e;z-index:2}
+#home .otrTagline{margin:13px 0 0;color:#cdb8e8;font-size:clamp(16px,2vw,21px);letter-spacing:.02em}
+#home .homePrompt{margin:42px 0 24px;font-size:clamp(25px,3vw,35px);font-weight:760}
+#home .homeActions{width:min(520px,72%);margin:0 auto;display:grid;gap:12px}
+#home .homeActions button{width:100%;min-height:58px;font-size:17px;border-radius:15px}
+#home .homeActions .primary{box-shadow:0 0 0 1px rgba(194,111,255,.42),0 10px 30px rgba(117,49,217,.22)}
+#home .homeActions .secondary{background:rgba(17,17,21,.72);border-color:#5a3766}
+#home .homeVersion{position:absolute;right:16px;bottom:10px;font-size:10px;color:#5e5c63;z-index:3}
+#home .discoField .glamBall{top:-30px!important;width:138px!important;height:164px!important;transform-origin:50% 0!important;will-change:transform;animation-name:otrSwing!important;animation-timing-function:ease-in-out!important;animation-iteration-count:infinite!important}
+#home .discoField .glamBall.bLeft{left:8px!important;animation-duration:6.8s!important;animation-delay:-2.1s!important}
+#home .discoField .glamBall.bRight{right:8px!important;animation-duration:7.4s!important;animation-delay:-4.6s!important}
+@keyframes otrSwing{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+#home .discoField .beamGlow{opacity:.32!important;filter:blur(24px)!important}
+#home .discoField .spark{opacity:.72}
+#home .spotifyCompact{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-radius:20px;margin-top:14px}
+#home .spotifyState{display:flex;align-items:center;gap:10px;min-width:0}
+#home .spotifyMark{font-size:25px;line-height:1;color:#1ed760;text-shadow:0 0 12px rgba(30,215,96,.25)}
+#home .spotifyCompact #spstate{margin:0;color:#c8c5c0;white-space:normal}
+#home .spotifyCompact #spbtn{width:auto;min-width:150px;padding:10px 14px;background:#1c1e22;color:#dedbd6;border:1px solid #393b42;box-shadow:none}
+@media(max-width:700px){
+ #home .hero{min-height:540px;padding:24px 14px 20px}
+ #home .otrLogo{width:78%;margin-top:12px}
+ #home .otrSmall{font-size:22px}
+ #home .otrRecord{font-size:48px}
+ #home .otrTagline{font-size:14px}
+ #home .homePrompt{margin:36px 0 20px;font-size:24px}
+ #home .homeActions{width:92%}
+ #home .homeActions button{min-height:54px}
+ #home .discoField .glamBall{top:-18px!important;width:92px!important;height:110px!important}
+ #home .discoField .glamBall.bLeft{left:-8px!important}
+ #home .discoField .glamBall.bRight{right:-8px!important}
+ #home .spotifyCompact{align-items:flex-start;flex-direction:column}
+ #home .spotifyCompact #spbtn{width:100%}
+}
+
 </style></head><body><div class="app">
 <section id="home">
- <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
+ <div class="top homeTop"><div></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
  <div class="card hero"><div class="discoField" aria-hidden="true">
-      <span class="glamBall bLeft" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></span>
-      <span class="glamBall bRight" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></span>
+      <div class="glamBall bLeft" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></div>
+      <div class="glamBall bRight" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></div>
       <i class="beamGlow g1"></i><i class="beamGlow g2"></i><i class="beamGlow g3"></i><i class="beamGlow g4"></i>
       <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
       <i class="spark s5"></i><i class="spark s6"></i><i class="spark s7"></i><i class="spark s8"></i>
       <i class="spark s9"></i><i class="spark s10"></i><i class="spark s11"></i><i class="spark s12"></i>
       <i class="spark s13"></i><i class="spark s14"></i><i class="spark s15"></i><i class="spark s16"></i>
       <i class="spark s17"></i><i class="spark s18"></i>
-</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.34</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
- <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
+</div>
+   <div class="otrLogo" aria-label="On the Record"><div class="otrSmall">ON THE</div><div class="otrRecord">REC<span class="recordO"><i></i></span>RD</div></div>
+   <p class="tagline otrTagline">How well do you know your music?</p>
+   <h2 class="homePrompt">Bereit für den nächsten Hit?</h2>
+   <div class="homeActions"><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" onclick="resumeGame()">Unterbrochenes Spiel fortsetzen</button><button class="secondary" onclick="surpriseGame()">Überraschungsmix</button></div>
+   <span id="versionBadge" class="homeVersion">v5.0.35</span>
+ </div>
+ <div class="card spotifyCompact"><div class="spotifyState"><b class="spotifyMark">●</b><span id="spstate" class="muted">Verbindung wird geprüft …</span></div><button id="spbtn" class="secondary spotify">Mit Spotify verbinden</button></div>
 </section>
 
 <section id="setup" class="hidden">
