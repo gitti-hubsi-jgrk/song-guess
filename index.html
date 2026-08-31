@@ -426,7 +426,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 @media(max-width:700px){#home .discoField .ball{width:66px!important;height:66px!important}}
 
 
-/* v5.0.35 — 70s glam disco balls */
+/* v5.0.36 — 70s glam disco balls */
 #home .discoField .glamBall{position:absolute!important;top:-14px!important;width:112px!important;height:132px!important;display:block!important;opacity:.96!important;transform-origin:50% 0!important;animation:sgGlamSwing 5.8s ease-in-out infinite!important;filter:drop-shadow(0 0 12px rgba(255,190,90,.20)) drop-shadow(0 0 20px rgba(210,90,255,.18))!important}
 #home .discoField .glamBall img{width:100%!important;height:100%!important;display:block!important;object-fit:contain!important;pointer-events:none!important}
 #home .discoField .glamBall.bLeft{left:18px!important;animation-delay:-2.9s!important}
@@ -436,7 +436,7 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 
 
 
-/* v5.0.35 — ON THE RECORD home refresh */
+/* v5.0.36 — ON THE RECORD home refresh */
 #home .homeTop{min-height:54px;margin-bottom:-6px}
 #home .hero{min-height:610px;padding:30px 30px 24px;background:radial-gradient(circle at 50% 22%,rgba(112,49,150,.16),transparent 34%),linear-gradient(145deg,#17191e,#101114);border-color:#39343f}
 #home .otrLogo{position:relative;z-index:3;margin:0 auto;text-align:center;width:min(620px,72%);color:#f5dfb0;text-shadow:0 0 8px rgba(255,191,91,.26),0 0 26px rgba(255,174,67,.12)}
@@ -479,28 +479,96 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  #home .spotifyCompact #spbtn{width:100%}
 }
 
+
+/* v5.0.36 — approved ON THE RECORD home composition */
+#home{position:relative;padding-top:0}
+#home .homeTop{position:absolute;z-index:20;top:18px;right:20px;left:auto;width:auto;min-height:0;margin:0;background:transparent}
+#home .homeTop .nav{gap:9px}
+#home .homeTop .nav button{width:48px;height:48px;padding:0;border-radius:15px;background:rgba(23,24,29,.88);border:1px solid #3a3941;backdrop-filter:blur(8px)}
+#home .hero{height:min(760px,calc(100vh - 36px));min-height:650px;margin:0;padding:38px 34px 94px;display:flex;flex-direction:column;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 18%,rgba(111,43,147,.19),transparent 38%),radial-gradient(ellipse at 16% 42%,rgba(255,165,51,.055),transparent 26%),radial-gradient(ellipse at 84% 43%,rgba(149,61,226,.075),transparent 28%),linear-gradient(145deg,#17191e,#0e0f12 72%);border-color:#3a3540}
+#home .otrLogo{width:min(660px,64%);margin:6px auto 0;z-index:5;color:#f6dfaa;text-shadow:0 0 9px rgba(255,192,87,.34),0 0 30px rgba(255,168,51,.13)}
+#home .otrSmall{font-size:clamp(30px,3.15vw,48px);font-weight:420;letter-spacing:.25em;margin-bottom:7px}
+#home .otrRecord{font-size:clamp(66px,7.25vw,108px);font-weight:350;letter-spacing:.025em;line-height:.88;-webkit-text-stroke:1.25px rgba(255,217,145,.62)}
+#home .recordO{width:.82em;height:.82em;border-width:2.5px;box-shadow:0 0 20px rgba(238,171,53,.28)}
+#home .otrTagline{margin:18px 0 0;font-size:clamp(18px,1.9vw,25px);font-weight:450;color:#cdb5eb}
+#home .homePrompt{margin:54px 0 26px;font-size:clamp(28px,3vw,40px);font-weight:720;letter-spacing:-.02em}
+#home .homeActions{width:min(500px,50%);gap:14px;margin:0 auto;z-index:5}
+#home .homeActions button{min-height:62px;border-radius:15px;font-size:18px;font-weight:650}
+#home .homeActions .primary{background:linear-gradient(115deg,#6c27dc,#a64bf0);border:1px solid #c26cff;box-shadow:0 0 22px rgba(155,67,238,.24)}
+#home .homeActions .secondary{background:rgba(12,12,16,.66);border:1px solid #653b70;color:#f1eef2}
+#home .spotifyCompact{position:absolute;left:24px;right:24px;bottom:20px;z-index:7;margin:0;padding:11px 14px 11px 16px;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,14,17,.78);border:1px solid #2d2e34;box-shadow:none;backdrop-filter:blur(9px)}
+#home .spotifyState{display:flex;align-items:center;gap:10px}
+#home .spotifyMark{font-size:25px;color:#1ed760;line-height:1;text-shadow:0 0 12px rgba(30,215,96,.22)}
+#home .spotifyCompact #spstate{font-size:15px;color:#d0ccc8}
+#home .spotifyCompact #spbtn{min-width:0;width:auto;padding:9px 13px;min-height:38px;border-radius:11px;background:#17191d;color:#c9c5c2;border:1px solid #34363d;font-size:14px;font-weight:600}
+#home .homeVersion{display:none!important}
+#home .discoField{overflow:hidden;z-index:2}
+#home .discoField .glamBall{top:-40px!important;width:178px!important;height:212px!important;opacity:1!important;animation:none!important;transform-origin:50% 0!important;filter:drop-shadow(0 0 14px rgba(255,188,76,.20)) drop-shadow(0 0 26px rgba(206,76,255,.22))!important;will-change:transform}
+#home .discoField .glamBall.bLeft{left:-2px!important}
+#home .discoField .glamBall.bRight{right:-2px!important}
+#home .discoField .glamBall img{width:100%!important;height:100%!important;object-fit:contain!important}
+#home .stageBeam{position:absolute;top:116px;width:280px;height:410px;opacity:.23;filter:blur(12px);mix-blend-mode:screen;clip-path:polygon(42% 0,58% 0,100% 100%,0 100%);transform-origin:50% 0}
+#home .beamLeft{left:-34px;background:linear-gradient(90deg,rgba(255,185,62,.54),rgba(238,80,188,.40),rgba(128,63,222,.08));transform:rotate(-8deg)}
+#home .beamRight{right:-34px;background:linear-gradient(90deg,rgba(109,63,219,.10),rgba(184,66,238,.44),rgba(255,179,55,.45));transform:rotate(8deg)}
+#home .discoField .spark{opacity:.62}
+@media(max-width:900px){
+ #home .hero{height:auto;min-height:640px;padding:34px 20px 90px}
+ #home .otrLogo{width:68%}
+ #home .homeActions{width:min(500px,62%)}
+ #home .discoField .glamBall{width:150px!important;height:180px!important;top:-32px!important}
+ #home .stageBeam{top:96px;width:230px;height:370px;opacity:.19}
+}
+@media(max-width:700px){
+ #home .homeTop{top:10px;right:10px}
+ #home .homeTop .nav button{width:40px;height:40px;border-radius:12px}
+ #home .hero{min-height:610px;padding:58px 12px 88px}
+ #home .otrLogo{width:78%;margin-top:6px}
+ #home .otrSmall{font-size:22px;letter-spacing:.20em}
+ #home .otrRecord{font-size:49px}
+ #home .otrTagline{font-size:14px;margin-top:12px}
+ #home .homePrompt{font-size:24px;margin:44px 0 20px}
+ #home .homeActions{width:88%}
+ #home .homeActions button{min-height:54px;font-size:16px}
+ #home .discoField .glamBall{width:102px!important;height:122px!important;top:-18px!important}
+ #home .discoField .glamBall.bLeft{left:-18px!important}
+ #home .discoField .glamBall.bRight{right:-18px!important}
+ #home .stageBeam{top:66px;width:160px;height:300px;opacity:.15}
+ #home .spotifyCompact{left:10px;right:10px;bottom:10px;min-height:54px;padding:9px 10px}
+ #home .spotifyCompact #spstate{font-size:13px}
+ #home .spotifyCompact #spbtn{font-size:12px;padding:8px 9px}
+}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top homeTop"><div></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
- <div class="card hero"><div class="discoField" aria-hidden="true">
-      <div class="glamBall bLeft" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></div>
-      <div class="glamBall bRight" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></div>
-      <i class="beamGlow g1"></i><i class="beamGlow g2"></i><i class="beamGlow g3"></i><i class="beamGlow g4"></i>
+ <div class="card hero">
+   <div class="discoField" aria-hidden="true">
+      <div class="glamBall bLeft"><img src="disco-ball-70s.png" alt=""></div>
+      <div class="glamBall bRight"><img src="disco-ball-70s.png" alt=""></div>
+      <i class="stageBeam beamLeft"></i><i class="stageBeam beamRight"></i>
       <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
       <i class="spark s5"></i><i class="spark s6"></i><i class="spark s7"></i><i class="spark s8"></i>
       <i class="spark s9"></i><i class="spark s10"></i><i class="spark s11"></i><i class="spark s12"></i>
       <i class="spark s13"></i><i class="spark s14"></i><i class="spark s15"></i><i class="spark s16"></i>
       <i class="spark s17"></i><i class="spark s18"></i>
-</div>
-   <div class="otrLogo" aria-label="On the Record"><div class="otrSmall">ON THE</div><div class="otrRecord">REC<span class="recordO"><i></i></span>RD</div></div>
+   </div>
+   <div class="otrLogo" aria-label="On the Record">
+      <div class="otrSmall">ON THE</div>
+      <div class="otrRecord">REC<span class="recordO"><i></i></span>RD</div>
+   </div>
    <p class="tagline otrTagline">How well do you know your music?</p>
    <h2 class="homePrompt">Bereit für den nächsten Hit?</h2>
-   <div class="homeActions"><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" onclick="resumeGame()">Unterbrochenes Spiel fortsetzen</button><button class="secondary" onclick="surpriseGame()">Überraschungsmix</button></div>
-   <span id="versionBadge" class="homeVersion">v5.0.35</span>
+   <div class="homeActions">
+      <button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">Neues Spiel starten</button>
+      <button id="resumeBtn" class="secondary hidden" onclick="resumeGame()">Unterbrochenes Spiel fortsetzen</button>
+      <button class="secondary" onclick="surpriseGame()">Überraschungsmix</button>
+   </div>
+   <div class="spotifyCompact">
+      <div class="spotifyState"><b class="spotifyMark">●</b><span id="spstate" class="muted">Verbindung wird geprüft …</span></div>
+      <button id="spbtn" class="secondary spotify">Mit Spotify verbinden</button>
+   </div>
  </div>
- <div class="card spotifyCompact"><div class="spotifyState"><b class="spotifyMark">●</b><span id="spstate" class="muted">Verbindung wird geprüft …</span></div><button id="spbtn" class="secondary spotify">Mit Spotify verbinden</button></div>
 </section>
-
 <section id="setup" class="hidden">
  <div class="top"><button class="secondary" onclick="show('home')">‹</button><h2>Neues Spiel</h2><span></span></div>
  <div class="setupgrid">
@@ -1089,7 +1157,7 @@ async function spotifyAuth(){
  }catch(e){$("spstate").textContent="Spotify-Verbindung erneuern."}
 }
 function initSpotify(){
- $("spstate").textContent="Verbunden – Player wird vorbereitet …";$("spbtn").textContent="Spotify verbunden ✓";
+ $("spstate").textContent="Verbunden – Player wird vorbereitet …";$("spbtn").textContent="Konto wechseln";
  let s=document.createElement("script");s.src="https://sdk.scdn.co/spotify-player.js";document.body.appendChild(s)
 }
 window.onSpotifyWebPlaybackSDKReady=()=>{if(!token)return;spotifyPlayer=new Spotify.Player({name:cfg.deviceName,getOAuthToken:cb=>cb(token),volume:.8});spotifyPlayer.addListener("ready",({device_id})=>{deviceId=device_id;$("spstate").textContent="Mit Spotify verbunden ✓"});
@@ -1097,5 +1165,15 @@ spotifyPlayer.addListener("player_state_changed",state=>{if(!state||clipEnding||
 spotifyPlayer.addListener("autoplay_failed",()=>{$("spstate").textContent="Mobil: Play noch einmal direkt antippen 🔊"});
 spotifyPlayer.addListener("playback_error",({message})=>{console.error("Spotify playback error",message);$("spstate").textContent="Spotify-Wiedergabe fehlgeschlagen – Play erneut versuchen."});
 spotifyPlayer.addListener("authentication_error",async()=>{token=await refresh();if(!token)$("spstate").textContent="Spotify neu verbinden."});spotifyPlayer.connect()};
+
+function startHomeDiscoSwing(){
+ const left=document.querySelector('#home .glamBall.bLeft');
+ const right=document.querySelector('#home .glamBall.bRight');
+ if(!left||!right||typeof left.animate!=="function")return;
+ left.getAnimations().forEach(a=>a.cancel()); right.getAnimations().forEach(a=>a.cancel());
+ left.animate([{transform:'rotate(-6deg)'},{transform:'rotate(6deg)'},{transform:'rotate(-6deg)'}],{duration:6200,iterations:Infinity,easing:'ease-in-out'});
+ right.animate([{transform:'rotate(5deg)'},{transform:'rotate(-5deg)'},{transform:'rotate(5deg)'}],{duration:7100,iterations:Infinity,easing:'ease-in-out',delay:-2400});
+}
+startHomeDiscoSwing();
 spotifyAuth();
 </script></body></html>
