@@ -1,4 +1,4 @@
-# Song Guess v5.0.33
+# Song Guess v5.0.34
 762 Songs. UI-, Wiedergabe- und Spielfluss-Update mit 762 Songs.
 
 Neu u. a.:
@@ -79,3 +79,8 @@ Neu u. a.:
 - Vinyl-Label: als Single markierte Releases 45 RPM, Albumtracks 33⅓ RPM; Animation bleibt bewusst langsam.
 - Zusätzliche lokale Anti-Wiederholungs-Historie; übersprungene Songs werden im laufenden Spiel nicht wieder freigegeben.
 - Datenkorrekturen und Konsistenzprüfung, u. a. Uptown Funk, Djadja, Royals und Sprachangaben.
+
+
+## v5.0.34
+- Startseite: neue 70s-Glam-Discokugeln als Grafik, links/rechts identisch.
+- Kugeln schwingen dezent an ihrer Aufhängung.

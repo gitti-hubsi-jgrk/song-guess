@@ -425,19 +425,28 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
 }
 @media(max-width:700px){#home .discoField .ball{width:66px!important;height:66px!important}}
 
+
+/* v5.0.34 — 70s glam disco balls */
+#home .discoField .glamBall{position:absolute!important;top:-14px!important;width:112px!important;height:132px!important;display:block!important;opacity:.96!important;transform-origin:50% 0!important;animation:sgGlamSwing 5.8s ease-in-out infinite!important;filter:drop-shadow(0 0 12px rgba(255,190,90,.20)) drop-shadow(0 0 20px rgba(210,90,255,.18))!important}
+#home .discoField .glamBall img{width:100%!important;height:100%!important;display:block!important;object-fit:contain!important;pointer-events:none!important}
+#home .discoField .glamBall.bLeft{left:18px!important;animation-delay:-2.9s!important}
+#home .discoField .glamBall.bRight{right:18px!important;animation-delay:0s!important}
+@keyframes sgGlamSwing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@media(max-width:700px){#home .discoField .glamBall{top:-10px!important;width:84px!important;height:100px!important}#home .discoField .glamBall.bLeft{left:4px!important}#home .discoField .glamBall.bRight{right:4px!important}}
+
 </style></head><body><div class="app">
 <section id="home">
  <div class="top"><div class="brand"><h1>SONG <span>GUESS</span></h1></div><div class="nav"><button class="secondary" onclick="show('help')">?</button><button class="secondary" onclick="showHistory()">▤</button><button class="secondary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">⚙</button></div></div>
  <div class="card hero"><div class="discoField" aria-hidden="true">
-      <span class="ball bLeft" aria-hidden="true"></span>
-      <span class="ball bRight" aria-hidden="true"></span>
+      <span class="glamBall bLeft" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></span>
+      <span class="glamBall bRight" aria-hidden="true"><img src="disco-ball-70s.png" alt=""></span>
       <i class="beamGlow g1"></i><i class="beamGlow g2"></i><i class="beamGlow g3"></i><i class="beamGlow g4"></i>
       <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
       <i class="spark s5"></i><i class="spark s6"></i><i class="spark s7"></i><i class="spark s8"></i>
       <i class="spark s9"></i><i class="spark s10"></i><i class="spark s11"></i><i class="spark s12"></i>
       <i class="spark s13"></i><i class="spark s14"></i><i class="spark s15"></i><i class="spark s16"></i>
       <i class="spark s17"></i><i class="spark s18"></i>
-</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.33</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
+</div><div class="vinyl"></div><h2>Bereit für den nächsten Hit?</h2><p class="tagline">How well do you know your music?</p><p class="muted"><span id="songCount"></span> Songs · <span id="versionBadge">v5.0.34</span></p><button class="primary" onclick="surpriseMode=false;$('setup').classList.remove('surpriseSetup');$('setup').querySelector('.top h2').textContent='Neues Spiel';show('setup')">🎮 Neues Spiel starten</button><button id="resumeBtn" class="secondary hidden" style="width:100%;margin-top:10px" onclick="resumeGame()">▶ Unterbrochenes Spiel fortsetzen</button><button class="secondary" style="width:100%;margin-top:10px" onclick="surpriseGame()">🎲 Überraschungsmix</button></div>
  <div class="card"><b>Spotify</b><p id="spstate" class="muted">Verbindung wird geprüft …</p><button id="spbtn" class="primary spotify">Mit Spotify verbinden</button></div>
 </section>
 
