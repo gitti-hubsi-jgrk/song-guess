@@ -1,5 +1,5 @@
-# Song Guess v5.0.34
-762 Songs. UI-, Wiedergabe- und Spielfluss-Update mit 762 Songs.
+# On The Record v5.0.37
+762 Songs. Startscreen-Redesign, Wiedergabe- und Spielfluss-Update.
 
 Neu u. a.:
 - gleiche Frage + gleicher Song für alle, nacheinander oder gleichzeitig

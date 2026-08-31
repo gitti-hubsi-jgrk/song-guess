@@ -1,7 +1,7 @@
-# SONG GUESS v4 — Spielanleitung
+# ON THE RECORD — Spielanleitung
 
-## Was ist Song Guess?
-Song Guess ist ein privates, browserbasiertes Musikquiz, das Spotify als Player nutzt. Es ist für iPhone, iPad und Desktop gestaltet. Die Musik bleibt bis zum Reveal anonym; danach werden Songdaten und optional Nerdwissen angezeigt.
+## Was ist On The Record?
+On The Record ist ein privates, browserbasiertes Musikquiz, das Spotify als Player nutzt. Es ist für iPhone, iPad und Desktop gestaltet. Die Musik bleibt bis zum Reveal anonym; danach werden Songdaten und optional Nerdwissen angezeigt.
 
 ## Schnellstart
 1. Song Guess im Browser öffnen.
