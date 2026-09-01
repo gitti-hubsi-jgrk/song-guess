@@ -597,6 +597,53 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
  #home .otr37Spotify #spbtn{font-size:12px;padding:7px 9px}
 }
 
+/* v5.0.38 — coupled pendulum beams + responsive home polish */
+#home .otr37Swing{position:relative;overflow:visible}
+#home .otr38Beam{position:absolute;left:50%;top:72%;width:175%;height:330%;transform:translateX(-50%);pointer-events:none;z-index:1;overflow:visible;opacity:.72}
+#home .otr38BeamRight{opacity:.66}
+#home .otr37Ball img{position:relative;z-index:2}
+#home .otr37Hero{padding-bottom:16px!important}
+#home .otr37Prompt{margin-top:48px}
+#home .otr37Spotify{margin-top:38px}
+@media(max-width:900px){
+ #home .otr37Main{padding:44px 118px 0}
+ #home .otr37Prompt{margin-top:44px}
+ #home .otr37Actions{width:min(430px,58vw)}
+ #home .otr37Spotify{margin-top:36px}
+}
+@media(max-width:700px){
+ #home{padding:0 6px!important}
+ #home .otr37Hero{border-radius:20px;padding-bottom:12px!important}
+ #home .otr37Nav{top:10px;right:10px;gap:5px}
+ #home .otr37Nav button{width:34px;height:34px;border-radius:10px;font-size:15px}
+ #home .otr37Ball{top:-6px;width:76px;height:82px}
+ #home .otr37BallLeft{left:3px!important}
+ #home .otr37BallRight{right:5px!important;top:49px!important;width:66px!important;height:72px!important}
+ #home .otr38Beam{top:69%;width:145%;height:285%;opacity:.46}
+ #home .otr38BeamRight{opacity:.40}
+ #home .otr37Main{padding:66px 12px 0}
+ #home .otr37OnThe{font-size:20px;letter-spacing:.16em;margin-left:.16em;margin-bottom:6px}
+ #home .otr37RecordWord{font-size:45px;-webkit-text-stroke:1px #f2d69b}
+ #home .otr37Tagline{font-size:13.5px;margin-top:11px}
+ #home .otr37Prompt{font-size:23px;margin:38px 0 18px;line-height:1.16}
+ #home .otr37Actions{width:82vw;max-width:360px;gap:11px}
+ #home .otr37Actions button{min-height:49px;font-size:15px;border-radius:13px}
+ #home .otr37Spotify{margin:34px 9px 0;min-height:48px;padding:7px 8px 7px 10px;border-radius:14px;gap:8px}
+ #home .otr37SpotifyState{gap:8px}
+ #home .otr37SpotifyDot{width:15px;height:15px}
+ #home .otr37Spotify #spstate{font-size:11.5px}
+ #home .otr37Spotify #spbtn{min-height:33px!important;font-size:11px;padding:6px 8px;border-radius:9px}
+}
+@media(max-width:420px){
+ #home .otr37BallLeft{left:-2px!important;width:72px;height:78px}
+ #home .otr37BallRight{right:2px!important;top:48px!important;width:62px!important;height:68px!important}
+ #home .otr37Main{padding-top:64px}
+ #home .otr37RecordWord{font-size:42px}
+ #home .otr37Prompt{font-size:22px;margin-top:34px}
+ #home .otr37Actions{width:86vw}
+ #home .otr37Spotify{margin-top:30px}
+}
+
 </style></head><body><div class="app">
 <section id="home">
   <div class="otr37Hero card">
@@ -625,10 +672,6 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
         <filter id="otr37Blur"><feGaussianBlur stdDeviation="18"/></filter>
       </defs>
       <ellipse cx="600" cy="320" rx="430" ry="250" fill="url(#otr37VioletGlow)"/>
-      <path d="M122 106 C160 170 225 315 325 585 C255 575 185 570 96 590 C120 360 118 210 122 106Z" fill="url(#otr37GoldBeam)" filter="url(#otr37Blur)"/>
-      <path d="M158 118 C205 190 300 340 420 585 C345 566 275 556 210 560 C210 360 185 220 158 118Z" fill="url(#otr37PinkBeam)" filter="url(#otr37Blur)"/>
-      <path d="M1075 112 C1030 182 952 325 850 585 C925 570 995 566 1098 590 C1072 355 1070 208 1075 112Z" fill="url(#otr37GoldBeam)" filter="url(#otr37Blur)"/>
-      <path d="M1038 120 C990 192 902 342 786 585 C860 570 930 560 995 564 C994 360 1016 225 1038 120Z" fill="url(#otr37PinkBeam)" filter="url(#otr37Blur)"/>
       <g opacity=".8">
         <circle cx="282" cy="170" r="3" fill="#65dcff"/><circle cx="346" cy="320" r="2.7" fill="#ff72bd"/>
         <circle cx="510" cy="205" r="2.4" fill="#f3ca63"/><circle cx="650" cy="166" r="3" fill="#9d6cff"/>
@@ -638,8 +681,26 @@ body{background:radial-gradient(circle at 50% -15%,#2d1b35 0,#0d0e10 38%);min-he
       </g>
     </svg>
 
-    <div class="otr37Ball otr37BallLeft" aria-hidden="true"><div class="otr37Swing"><img src="disco-ball-70s.png" alt=""></div></div>
-    <div class="otr37Ball otr37BallRight" aria-hidden="true"><div class="otr37Swing"><img src="disco-ball-70s.png" alt=""></div></div>
+    <div class="otr37Ball otr37BallLeft" aria-hidden="true"><div class="otr37Swing">
+      <svg class="otr38Beam otr38BeamLeft" viewBox="0 0 220 420" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="otr38BeamL" x1="0" y1="0" x2="0.72" y2="1"><stop offset="0" stop-color="#ffd67a" stop-opacity=".28"/><stop offset=".34" stop-color="#f39a50" stop-opacity=".14"/><stop offset=".58" stop-color="#d35cff" stop-opacity=".10"/><stop offset="1" stop-color="#8d4cff" stop-opacity="0"/></linearGradient>
+          <filter id="otr38BlurL" x="-30%" y="-10%" width="160%" height="130%"><feGaussianBlur stdDeviation="9"/></filter>
+        </defs>
+        <path d="M93 0 C76 85 40 215 5 410 C73 387 146 386 215 410 C178 219 142 88 127 0 Z" fill="url(#otr38BeamL)" filter="url(#otr38BlurL)"/>
+      </svg>
+      <img src="disco-ball-70s.png" alt="">
+    </div></div>
+    <div class="otr37Ball otr37BallRight" aria-hidden="true"><div class="otr37Swing">
+      <svg class="otr38Beam otr38BeamRight" viewBox="0 0 220 420" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="otr38BeamR" x1="1" y1="0" x2=".28" y2="1"><stop offset="0" stop-color="#ffd67a" stop-opacity=".25"/><stop offset=".32" stop-color="#f3a04f" stop-opacity=".12"/><stop offset=".55" stop-color="#bd5cff" stop-opacity=".12"/><stop offset="1" stop-color="#884cff" stop-opacity="0"/></linearGradient>
+          <filter id="otr38BlurR" x="-30%" y="-10%" width="160%" height="130%"><feGaussianBlur stdDeviation="9"/></filter>
+        </defs>
+        <path d="M93 0 C76 85 40 215 5 410 C73 387 146 386 215 410 C178 219 142 88 127 0 Z" fill="url(#otr38BeamR)" filter="url(#otr38BlurR)"/>
+      </svg>
+      <img src="disco-ball-70s.png" alt="">
+    </div></div>
 
     <div class="otr37Main">
       <div class="otr37Logo" aria-label="On the Record">
